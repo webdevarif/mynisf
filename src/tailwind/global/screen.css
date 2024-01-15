@@ -1,0 +1,23 @@
+/* ===============================
+======= <MOBILE-SCREEN> ========
+================================*/
+@layer base{
+    .screen-wrapper{
+        @apply 
+        min-h-screen
+        w-full
+        p-6
+        flex
+        justify-center
+    }
+    
+    .screen-inner{
+        @apply 
+        w-full 
+        max-w-[450px]
+        border
+        border-slate-100 
+        rounded-[6px]
+        shadow-[0_1px_10px_rgba(0,0,0,0.02),_0_1px_10px_rgba(0,0,0,0.02)]
+    }
+}
