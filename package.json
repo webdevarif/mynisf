@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "npx tailwindcss --watch -i ./src/tailwind/tailwind.css -o ./src/assets/css/style.css"
+    "build": "npm run copy-assets && npm run copy-html",
+    "copy-html": "cp -r ./src/html/. ./src/build/ && find ./src/build -type f -name '*.html' -exec sed -i 's/\\.\\.\\//\\.\\//g' {} +",
+    "copy-assets": "cp -r ./src/assets/. ./src/build/assets/ && find ./src/build/assets -type f -name '*.css' -exec sed -i 's/\\.\\.\\//\\.\\//g' {} +",
+    "watch": "npx tailwindcss --minify -i ./src/tailwind/tailwind.css -o ./src/assets/css/style.min.css && npx tailwindcss --watch -i ./src/tailwind/tailwind.css -o ./src/assets/css/style.css"
   },
   "author": "",
   "license": "ISC",

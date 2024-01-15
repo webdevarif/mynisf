@@ -5,6 +5,12 @@ Author URI: https://webdeveloperarif.com/
 Version: 1.0.0
 ==========================================================*/
 
+/* <=== STYLESHEETS: GLOBAL ===> */
 @import "./global/base.css";
 @import "./global/screen.css";
 
+/* <=== STYLESHEETS: COMPONENTS ===> */
+@import "./components/header.css";
+@import "./components/footer.css";
+
+/* <=== STYLESHEETS: PAGES ===> */
