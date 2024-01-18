@@ -17,4 +17,33 @@
         mb-0
         font-primary
     }
+    
+    .nisf-body{
+        @apply 
+        bg-[url('../images/body-bg.jpg')]
+        bg-cover
+        bg-center
+        text-[0.8rem]
+        bg-secondary
+        text-primary-50
+        font-normal
+        relative
+        h-screen
+        overflow-hidden
+        z-[1]
+    }
+    .nisf-wrapper{
+        @apply 
+        overflow-y-auto
+        h-full
+    }
+    .has-footer-bar .nisf-wrapper{
+        @apply
+        pb-[6.5rem]
+    }
+
+    .nisf-container{
+        @apply 
+        px-5 sm:px-8
+    }
 }

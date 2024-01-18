@@ -3,18 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Nisf Mobile App Development</title>
+    <title>Inscription | My Nisf Mobile App Development</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
+    
+    <!-- JS SUPPORTS -->
+    <script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
+
 </head>
 <body>
     <div class="screen-wrapper">
         <div class="screen-inner">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et officiis consectetur maxime aliquid beatae! Recusandae enim dolore doloremque saepe voluptatum quisquam aperiam corrupti nisi sunt aliquid? Voluptatem quod, modi nemo expedita animi itaque eligendi, nostrum aspernatur dolorem beatae odio amet natus eaque et laboriosam, aliquam minima provident atque quae! Aut odit, nisi repellendus provident illum debitis harum tempora quas alias, dolore eos numquam, corporis totam reprehenderit. Assumenda, optio ad? Molestiae, praesentium dolore. Maiores deserunt consectetur ex sed! Odio expedita nobis repudiandae ab labore corporis ratione nostrum, delectus eligendi eos sequi dolores eaque explicabo laborum nemo quaerat cupiditate nam fugiat laboriosam!</h1>
+            <div class="nisf-body">
+                <!-- All content should go inside nisf-wrapper -->
+                <div class="nisf-wrapper" data-scrollbar>
+                    <div class="nisf-container">
+
+                        <!-- Top Navigation -->
+                        <nav class="top-navigation py-8 flex items-center justify-between mb-5"></nav>
+
+                        <!-- Header -->
+                        <header class="header">
+                            <a href="/" class="header_logo mb-3">
+                                <img src="../assets/images/logo.png" alt="">
+                            </a>
+                            <h3 class="text-2xl text-white mb-3">Bienvenue sur l’application Mynisf, connectez-vous à votre compte.</h3>
+                            <p class="font-medium text-white">Avez vous deja un compte? <a href="#" class="link-primary">cliquez ici.</a></p>
+                        </header>
+
+                        <form action="#" class="py-8">
+                            <!-- Single Field -->
+                            <div class="input-group">
+                                <label for="form--pseudo" class="input-label">Pseudo</label>
+                                <input type="text" id="form--pseudo" placeholder="Ahmed Sabri" class="input-control" />
+                            </div>
+                            <!-- Single Field -->
+                            <div class="input-group">
+                                <label for="form--email" class="input-label">Email</label>
+                                <input type="email" id="form--email" placeholder="example@gmail.com" class="input-control" />
+                            </div>
+                            <!-- Single Field -->
+                            <div class="input-group">
+                                <label for="form--password" class="input-label">Password</label>
+                                <input type="password" id="form--password" placeholder="********" class="input-control" />
+                            </div>
+                            <!-- Single Field -->
+                            <div class="input-group">
+                                <label for="form--confirm-password" class="input-label">Confirm Password</label>
+                                <input type="password" id="form--confirm-password" placeholder="********" class="input-control" />
+                            </div>
+                            <div class="more-info">
+                                <a href="#" class="link-primary font-medium text-sm">+ Ajouter Un Code Prianage</a>
+
+                                <div class="form--check mt-8">
+                                    <input type="checkbox" class="form--check-input" name="terms-condition" id="form-terms-conditions">
+                                    <label for="form-terms-conditions" class="form--check-label text-[0.65rem]">
+                                        Oui, je comprends et accepte les <a href="#" class="link-primary">conditions générales d’utilisation,</a>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mt-8">
+                                <button type="submit" class="btn--primary w-full">SIGN UP</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- CLOUD ANIMATIONS -->
+                <img src="../assets/images/cloud-1.png" class="animation-cloud-1" alt="">
+                <img src="../assets/images/cloud-2.png" class="animation-cloud-2" alt="">
+                <img src="../assets/images/cloud-3.png" class="animation-cloud-3" alt="">
+                <img src="../assets/images/cloud-4.png" class="animation-cloud-4" alt="">
+                <img src="../assets/images/cloud-5.png" class="animation-cloud-5" alt="">
+            </div>
         </div>
     </div>
 
-    
+
+
+
+
 <!-- svgsprit icons -->
 <svg width="0" height="0" class="hidden">
     
@@ -60,5 +128,7 @@
         <path d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251" fill="#EB4335"></path>
     </symbol>
 </svg>
+
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,15 @@
+.footer-float-bar{
+    @apply
+    bg-[rgb(110,38,86)] 
+    rounded-tl-[1.25rem] 
+    rounded-tr-[1.25rem] 
+    absolute
+    bottom-0 
+    left-0
+    z-50
+    p-6 
+    w-full 
+    flex 
+    justify-around 
+    shadow-[55px_13px_250px_rgba(14,14,16,0.52)]
+}

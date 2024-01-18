@@ -1,0 +1,82 @@
+.btn--style{
+    @apply
+    inline-flex
+    items-center
+    justify-center
+    rounded-[12px]
+    font-semibold
+    text-[14px]
+    h-[56px]
+    px-[1.25rem]
+    relative
+    z-[2]
+    outline-none
+    transition-all
+    duration-300
+}
+.btn--light{
+    @apply
+    bg-[#efeff0]
+    inline-flex
+    items-center
+    justify-center
+    rounded-[12px]
+    font-semibold
+    text-primary
+    text-[14px]
+    h-[56px]
+    px-[1.25rem]
+    relative
+    z-[2]
+    outline-none
+    transition-all
+    duration-300
+    shadow-[0px_8px_15px_rgba(255,255,255,0.1)]
+    hover:shadow-[0px_15px_30px_rgba(255,255,255,0.25)]
+}
+
+.btn--secondary{
+    @apply
+    bg-white
+    bg-opacity-10
+    text-white
+    text-opacity-50
+    inline-flex
+    items-center
+    justify-center
+    rounded-[12px]
+    font-semibold
+    text-[14px]
+    h-[56px]
+    px-[1.25rem]
+    relative
+    z-[2]
+    outline-none
+    transition-all
+    duration-300
+    hover:bg-white
+    hover:text-primary
+    hover:shadow-[0px_15px_30px_rgba(255,255,255,0.25)]
+}
+
+.btn--primary{
+    @apply
+    bg-primary
+    inline-flex
+    items-center
+    justify-center
+    rounded-[12px]
+    font-semibold
+    text-white
+    text-[14px]
+    h-[56px]
+    px-[1.25rem]
+    relative
+    z-[1]
+    outline-none
+    transition-all
+    duration-300
+    shadow-[0px_8px_15px_rgba(243,2,146,0.3)]
+    hover:shadow-[0px_15px_30px_rgba(243,2,146,0.6)]
+}
+

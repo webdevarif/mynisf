@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traits personnalité | My Nisf Mobile App Development</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
+    
+    <!-- JS SUPPORTS -->
+    <script src="../assets/libs/vendors/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
+
+</head>
+<body>
+    <div class="screen-wrapper">
+        <div class="screen-inner">
+            <div class="nisf-body">
+                <!-- All content should go inside nisf-wrapper -->
+                <div class="nisf-wrapper" data-scrollbar>
+                    <div class="nisf-container overflow-hidden">
+
+                        <!-- Top Navigation -->
+                        <nav class="top-navigation py-8 flex items-center justify-between mb-5">
+                            <button class="">
+                                <svg class="w-4 h-4 text-white">
+                                    <use xlink:href="#icon-angle-left"></use>
+                                </svg>
+                            </button>
+
+                            <ul class="list-dots">
+                                <li class="active"></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </nav>
+
+                        <!-- Header -->
+                        <header class="header">
+                            <a href="/" class="header_logo mb-3">
+                                <img src="../assets/images/logo.png" alt="">
+                            </a>
+                            <h3 class="text-3xl text-white mb-3">Aidez-nous à présenter vos traits de personnalité.</h3>
+                            <p class="font-medium">Ces informations seront disponibles sur votre profil et visible pour les autres membres. </p>
+                        </header>
+
+                        <h2 class="hr-text text-primary mt-6 text-3xl">
+                            <span>Trait De Personnalité</span>
+                        </h2>
+
+                        <form action="#" class="py-8">
+                            <!-- Single Field -->
+                            <div class="input-group">
+                                <label for="form--traits-ersonnels" class="input-label">Traits Personnels</label>
+                                <div class="ul-select no-selected">
+                                    <div class="ul-select-input">
+                                        <input type="hidden" class="input-hidden-field" name="form--traits-ersonnels" value="">
+                                        <div class="ul-select-name"></div>
+                                        <div class="placeholder-label">Choose One</div>
+                                    </div>
+                                    <span class="select-arrow select-arrow-down">
+                                        <svg><use xlink:href="#icon-angle-down"></use></svg>
+                                    </span>
+                                    <span class="select-arrow select-arrow-cancel">
+                                        <svg><use xlink:href="#icon-close"></use></svg>
+                                    </span>
+                                    <ul class="ul-select-list">
+                                        <li data-value="option-1">Ajouter vos traits personnels</li>
+                                        <li data-value="option-2">Option 2</li>
+                                        <li data-value="option-3">Option 3</li>
+                                        <li data-value="option-4">Option 4</li>
+                                        <li data-value="option-5">Option 5</li>
+                                    </ul>
+                                </div>
+
+                                <!-- SELECTED TAGS-->
+                                <ul class="flex gap-3 flex-wrap mt-2">
+                                    <li>
+                                        <span class="bg-primary py-1 px-3 rounded-[6px] text-white inline-flex items-center gap-3">
+                                            <button type="button" class="w-4 h-4">
+                                                <svg class="h-full w-full"><use xlink:href="#icon-close"></use></svg>
+                                            </button>
+                                            <span class="opacity-60">Bavard</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="bg-primary py-1 px-3 rounded-[6px] text-white inline-flex items-center gap-3">
+                                            <button type="button" class="w-4 h-4">
+                                                <svg class="h-full w-full"><use xlink:href="#icon-close"></use></svg>
+                                            </button>
+                                            <span class="opacity-60">Ayant de l’humour </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Single Field -->
+                            <div class="input-group">
+                                <label for="form--quel-est" class="input-label">Quel est votre principal défaut</label>
+                                <input type="text" id="form--quel-est" class="input-control" placeholder="Je fume">
+                            </div>
+                            <!-- Single Field -->
+                            <div class="input-group">
+                                <label for="form--que-faites-vous" class="input-label">Que faites-vous de votre temps libre ?</label>
+                                <div class="ul-select no-selected">
+                                    <div class="ul-select-input">
+                                        <input type="hidden" class="input-hidden-field" name="form--que-faites-vous" value="">
+                                        <div class="ul-select-name"></div>
+                                        <div class="placeholder-label">Choose One</div>
+                                    </div>
+                                    <span class="select-arrow select-arrow-down">
+                                        <svg><use xlink:href="#icon-angle-down"></use></svg>
+                                    </span>
+                                    <span class="select-arrow select-arrow-cancel">
+                                        <svg><use xlink:href="#icon-close"></use></svg>
+                                    </span>
+                                    <ul class="ul-select-list">
+                                        <li data-value="option-1">Ajouter ce que vous faites</li>
+                                        <li data-value="option-2">Option 2</li>
+                                        <li data-value="option-3">Option 3</li>
+                                        <li data-value="option-4">Option 4</li>
+                                        <li data-value="option-5">Option 5</li>
+                                    </ul>
+                                </div>
+
+                                <!-- SELECTED TAGS-->
+                                <ul class="flex gap-3 flex-wrap mt-2">
+                                    <li>
+                                        <span class="bg-primary py-1 px-3 rounded-[6px] text-white inline-flex items-center gap-3">
+                                            <button type="button" class="w-4 h-4">
+                                                <svg class="h-full w-full"><use xlink:href="#icon-close"></use></svg>
+                                            </button>
+                                            <span class="opacity-60">Bavard</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="bg-primary py-1 px-3 rounded-[6px] text-white inline-flex items-center gap-3">
+                                            <button type="button" class="w-4 h-4">
+                                                <svg class="h-full w-full"><use xlink:href="#icon-close"></use></svg>
+                                            </button>
+                                            <span class="opacity-60">Ayant de l’humour </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Single Field -->
+                            <div class="input-group">
+                                <label for="form--Aimez-vous" class="input-label">Aimez-vous voyager ?</label>
+                                <div class="ul-select no-selected">
+                                    <div class="ul-select-input">
+                                        <input type="hidden" class="input-hidden-field" name="form--Aimez-vous" value="">
+                                        <div class="ul-select-name"></div>
+                                        <div class="placeholder-label">Choose One</div>
+                                    </div>
+                                    <span class="select-arrow select-arrow-down">
+                                        <svg><use xlink:href="#icon-angle-down"></use></svg>
+                                    </span>
+                                    <span class="select-arrow select-arrow-cancel">
+                                        <svg><use xlink:href="#icon-close"></use></svg>
+                                    </span>
+                                    <ul class="ul-select-list">
+                                        <li data-value="option-1">2 fois dans l’année</li>
+                                        <li data-value="option-2">Option 2</li>
+                                        <li data-value="option-3">Option 3</li>
+                                        <li data-value="option-4">Option 4</li>
+                                        <li data-value="option-5">Option 5</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Single Field -->
+                            <div class="input-group">
+                                <label for="form--Quelle-est-votre " class="input-label">Quelle est votre relation avec l’argent ?</label>
+                                <div class="ul-select no-selected">
+                                    <div class="ul-select-input">
+                                        <input type="hidden" class="input-hidden-field" name="form--Quelle-est-votre " value="">
+                                        <div class="ul-select-name"></div>
+                                        <div class="placeholder-label">Choose One</div>
+                                    </div>
+                                    <span class="select-arrow select-arrow-down">
+                                        <svg><use xlink:href="#icon-angle-down"></use></svg>
+                                    </span>
+                                    <span class="select-arrow select-arrow-cancel">
+                                        <svg><use xlink:href="#icon-close"></use></svg>
+                                    </span>
+                                    <ul class="ul-select-list">
+                                        <li data-value="option-1">Génereux</li>
+                                        <li data-value="option-2">Option 2</li>
+                                        <li data-value="option-3">Option 3</li>
+                                        <li data-value="option-4">Option 4</li>
+                                        <li data-value="option-5">Option 5</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Single Field -->
+                            <div class="input-group">
+                                <label for="form--Eude-Islamique" class="input-label">Eude Islamique</label>
+                                <div class="ul-select no-selected">
+                                    <div class="ul-select-input">
+                                        <input type="hidden" class="input-hidden-field" name="form--Eude-Islamique" value="">
+                                        <div class="ul-select-name"></div>
+                                        <div class="placeholder-label">Choose One</div>
+                                    </div>
+                                    <span class="select-arrow select-arrow-down">
+                                        <svg><use xlink:href="#icon-angle-down"></use></svg>
+                                    </span>
+                                    <span class="select-arrow select-arrow-cancel">
+                                        <svg><use xlink:href="#icon-close"></use></svg>
+                                    </span>
+                                    <ul class="ul-select-list">
+                                        <li data-value="option-1">Etudiez-vous les science islamique</li>
+                                        <li data-value="option-2">Option 2</li>
+                                        <li data-value="option-3">Option 3</li>
+                                        <li data-value="option-4">Option 4</li>
+                                        <li data-value="option-5">Option 5</li>
+                                    </ul>
+                                </div>
+
+                                <!-- SELECTED TAGS-->
+                                <ul class="flex gap-3 flex-wrap mt-2">
+                                    <li>
+                                        <span class="bg-primary py-1 px-3 rounded-[6px] text-white inline-flex items-center gap-3">
+                                            <button type="button" class="w-4 h-4">
+                                                <svg class="h-full w-full"><use xlink:href="#icon-close"></use></svg>
+                                            </button>
+                                            <span class="opacity-60">Istitut</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Single Field -->
+                            <div class="input-group">
+                                <label for="form--avez-vous-des" class="input-label">Avez vous des amis du sexe opposé?</label>
+                                <input type="text" id="form--avez-vous-des" class="input-control" placeholder="Non">
+                            </div>
+                            <!-- Single Field -->
+                            <div class="input-group">
+                                <label for="form--Quelles-sont-vos" class="input-label">Quelles sont vos habitudes journaliéres pour essayer d’augumenter votre foi ?</label>
+                                <input type="text" id="form--Quelles-sont-vos" class="input-control" placeholder="Vos habitudes ...">
+                                <div class="mt-2 text-white text-opacity-25 ps-4">Smileys et emoticones INTERDITS.</div>
+                            </div>
+                            <!-- Single Field -->
+                            <div class="input-group">
+                                <label for="form--Quels-sont-les-savants" class="input-label">Quels sont les savants ou prêcheurs contemporains que vous écoutez ?</label>
+                                <input type="text" id="form--Quels-sont-les-savants" class="input-control" placeholder="Savants ou prêcheurs">
+                            </div>
+
+                            <div class="mt-8">
+                                <button type="submit" class="btn--primary w-full">SUIVANT</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- CLOUD ANIMATIONS -->
+                <img src="../assets/images/cloud-1.png" class="animation-cloud-1" alt="">
+                <img src="../assets/images/cloud-2.png" class="animation-cloud-2" alt="">
+                <img src="../assets/images/cloud-3.png" class="animation-cloud-3" alt="">
+            </div>
+        </div>
+    </div>
+
+
+<!-- svgsprit icons -->
+<svg width="0" height="0" class="hidden">
+    
+    <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="icon-angle-down">
+        <path d="M 4.21875 10.78125 L 2.78125 12.21875 L 15.28125 24.71875 L 16 25.40625 L 16.71875 24.71875 L 29.21875 12.21875 L 27.78125 10.78125 L 16 22.5625 Z"></path>
+    </symbol>
+
+    <symbol stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" id="icon-angle-left">
+      <g></g>
+      <path d="M5.207 8.471l7.146 7.147-0.707 0.707-7.853-7.854 7.854-7.853 0.707 0.707-7.147 7.146z"></path>
+    </symbol>
+    
+    <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="icon-vertical-dot">
+      <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path>
+    </symbol>
+    
+    <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icon-search">
+        <path d="M456.69 421.39 362.6 327.3a173.81 173.81 0 0 0 34.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 0 0 327.3 362.6l94.09 94.09a25 25 0 0 0 35.3-35.3zM97.92 222.72a124.8 124.8 0 1 1 124.8 124.8 124.95 124.95 0 0 1-124.8-124.8z"></path>
+    </symbol>
+
+    <symbol stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-user">
+        <circle cx="12" cy="8" r="5"></circle>
+        <path d="M20 21a8 8 0 1 0-16 0"></path>
+      </symbol>
+
+    <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="icon-comments">
+        <path d="M 2 5 L 2 21 L 6 21 L 6 26.09375 L 7.625 24.78125 L 12.34375 21 L 22 21 L 22 5 Z M 4 7 L 20 7 L 20 19 L 11.65625 19 L 11.375 19.21875 L 8 21.90625 L 8 19 L 4 19 Z M 24 9 L 24 11 L 28 11 L 28 23 L 24 23 L 24 25.90625 L 20.34375 23 L 12.84375 23 L 10.34375 25 L 19.65625 25 L 26 30.09375 L 26 25 L 30 25 L 30 9 Z"></path>
+    </symbol>
+
+    <symbol stroke="currentColor" fill="currentColor" stroke-width="0" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" id="icon-close">
+        <path d="M799.855 166.312c.023.007.043.018.084.059l57.69 57.69c.041.041.052.06.059.084a.118.118 0 0 1 0 .069c-.007.023-.018.042-.059.083L569.926 512l287.703 287.703c.041.04.052.06.059.083a.118.118 0 0 1 0 .07c-.007.022-.018.042-.059.083l-57.69 57.69c-.041.041-.06.052-.084.059a.118.118 0 0 1-.069 0c-.023-.007-.042-.018-.083-.059L512 569.926 224.297 857.629c-.04.041-.06.052-.083.059a.118.118 0 0 1-.07 0c-.022-.007-.042-.018-.083-.059l-57.69-57.69c-.041-.041-.052-.06-.059-.084a.118.118 0 0 1 0-.069c.007-.023.018-.042.059-.083L454.073 512 166.371 224.297c-.041-.04-.052-.06-.059-.083a.118.118 0 0 1 0-.07c.007-.022.018-.042.059-.083l57.69-57.69c.041-.041.06-.052.084-.059a.118.118 0 0 1 .069 0c.023.007.042.018.083.059L512 454.073l287.703-287.702c.04-.041.06-.052.083-.059a.118.118 0 0 1 .07 0Z"></path>
+    </symbol>
+
+    <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icon-camera">
+        <circle cx="256" cy="280" r="63"></circle>
+        <path d="M440 96h-88l-32-32H192l-32 32H72c-22.092 0-40 17.908-40 40v272c0 22.092 17.908 40 40 40h368c22.092 0 40-17.908 40-40V136c0-22.092-17.908-40-40-40zM256 392c-61.855 0-112-50.145-112-112s50.145-112 112-112 112 50.145 112 112-50.145 112-112 112z"></path>
+    </symbol>
+    
+    <symbol xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="-3 0 262 262" id="google-icon-logo">
+        <path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027" fill="#4285F4"></path>
+        <path d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1" fill="#34A853"></path>
+        <path d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782" fill="#FBBC05"></path>
+        <path d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251" fill="#EB4335"></path>
+    </symbol>
+</svg>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

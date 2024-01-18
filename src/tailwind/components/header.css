@@ -1,0 +1,28 @@
+.header{
+
+}
+
+.header_logo{
+    @apply 
+    inline-block
+    max-w-[10rem]
+}
+
+.list-dots{
+    @apply inline-flex items-center gap-x-1
+}
+
+.list-dots li{
+    @apply 
+    inline-block 
+    w-[0.35rem]
+    h-[0.35rem]
+    bg-white
+    bg-opacity-25
+    rounded-full
+}
+.list-dots li.active{
+    @apply 
+    w-[1.5rem]
+    bg-opacity-100
+}

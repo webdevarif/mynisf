@@ -1,0 +1,227 @@
+.input-control{
+    @apply 
+    w-full
+    block
+    rounded
+    h-[56px]
+    bg-white
+    bg-opacity-[0.12]
+    py-3
+    px-6
+    text-white
+    outline-none
+    text-md
+    font-medium
+
+    placeholder:text-white
+    placeholder:text-opacity-20
+}
+
+textarea.input-control{
+    @apply 
+    h-auto
+    resize-none
+}
+
+.input-group{
+    @apply
+    mb-5
+}
+
+.input-label{
+    @apply 
+    block
+    mb-2
+    text-white
+    ps-3
+    text-md
+}
+
+select.input-control{
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1.25rem center;
+    background-size: 1em;
+}
+
+
+
+/* UL SELECT */
+.ul-select{
+    @apply 
+    relative
+    z-0
+  }
+  
+  .ul-select .ul-select-input{
+    @apply
+    relative
+    flex
+    h-[56px]
+    w-full
+    cursor-pointer
+    bg-white
+    bg-opacity-[0.12]
+    rounded
+    px-6 py-3
+    items-center
+    justify-between
+  }
+  
+  .ul-select .ul-select-list{
+    @apply 
+    absolute
+    top-[calc(100%+0.25rem)]
+    rounded
+    bg-[#68244F]
+    hidden
+    w-full
+    py-3
+    shadow-[0px_9px_20px_rgba(14,14,14,0.01)]
+    z-0
+  }
+  .ul-select.is-active{
+    @apply 
+    z-[9]
+  }
+  
+  .ul-select .ul-select-list li{
+    @apply
+    flex
+    cursor-pointer
+    items-center
+    gap-x-2
+    px-4
+    py-3
+    transition-all
+    text-md
+    duration-300
+    text-white
+    text-opacity-50
+    hover:bg-primary-50
+    hover:bg-opacity-15
+    hover:text-white
+  }
+  
+  .ul-select .ul-select-name{
+    @apply
+    flex 
+    items-center
+    gap-x-3
+    font-semibold
+    text-white
+  }
+  
+  .ul-select .ul-select-name .text-label{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+  
+  .ul-select .ul-select-name img,
+  .ul-select .ul-select-name svg{
+    @apply 
+    min-w-[25px]
+    w-[25px]
+    h-[25px]
+  }
+  
+  .ul-select.selected .placeholder-label,
+  .ul-select.selected .select-arrow-down,
+  .ul-select.no-selected .select-arrow-cancel,
+  .ul-select.no-selected .ul-select-name{
+    @apply 
+    hidden
+  }
+  
+  .ul-select .select-arrow-cancel{
+    @apply 
+    cursor-pointer
+}
+  .ul-select .select-arrow{
+    @apply 
+    inline-flex 
+    h-[56px]
+    w-[50px]
+    p-[17px]
+    min-w-3 
+    items-center 
+    justify-center
+    text-white
+    absolute
+    top-1/2
+    right-0
+    -translate-y-1/2
+  }
+
+  .ul-select .select-arrow svg{
+    @apply 
+    h-full
+    w-full
+  }
+  
+  .ul-select .placeholder-label{
+    @apply 
+    text-white
+    text-opacity-50
+  }
+  
+  .ul-select .ul-select-list li .thumbnail-icon {
+    @apply 
+    inline-flex 
+    h-5 
+    w-5 
+    min-w-[20px] 
+    object-cover 
+    rounded-full;
+  }
+  
+
+
+  /* CHECKBOX */
+  .form--check .form--check-input{
+    @apply 
+    hidden;
+  }
+  .form--check .form--check-label{
+    @apply 
+    font-medium
+    relative
+    cursor-pointer
+    
+  }
+  .form--check .form--check-label:before {
+    @apply 
+    content-[''] 
+    bg-transparent 
+    shadow-[0_1px_2px_rgba(0,0,0,0.05),inset_0px_-15px_10px_-12px_rgba(0,0,0,0.05)] 
+    inline-block 
+    relative 
+    align-middle 
+    cursor-pointer 
+    mr-[5px] p-[7px] 
+    border-2 
+    border-solid 
+    border-white
+    border-opacity-25
+  }
+  .form--check .form--check-input:checked + .form--check-label:after {
+    @apply 
+    content-[''] 
+    block 
+    absolute 
+    w-[4px]
+    h-[10px]
+    rotate-45 
+    border-solid 
+    border-primary
+    border-t-0
+    border-r-[2px]
+    border-b-[2px]
+    border-l-0
+    left-[7px] 
+    top-[4px]
+  }
+  
