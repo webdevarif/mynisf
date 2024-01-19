@@ -20,6 +20,7 @@
 .btn--light{
     @apply
     bg-[#efeff0]
+    text-primary
     shadow-[0px_8px_15px_rgba(255,255,255,0.1)]
     hover:shadow-[0px_15px_30px_rgba(255,255,255,0.25)]
 }
