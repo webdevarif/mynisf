@@ -1324,7 +1324,7 @@ body {
 }
 
 .text-4xl {
-  font-size: min(max(1.25rem,8vw),34px);
+  font-size: min(max(1.25rem,7.5vw),34px);
   font-weight: 600;
   line-height: 1.3;
 }
