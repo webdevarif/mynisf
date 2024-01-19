@@ -30,13 +30,6 @@
     after:bg-opacity-25
 }
 
-
-.text-xs{
-    @apply 
-    text-[0.7rem]
-    leading-[1.3]
-}
-
 .text-sm{
     @apply 
     text-[0.9rem]
@@ -64,6 +57,13 @@
 }
 
 /* FONT SIZES */
+
+.text-xs{
+    @apply 
+    text-[min(max(0.46rem,2vw),10px)]
+    leading-[1.3]
+}
+
 .text-md{
     @apply
     text-[min(max(0.7rem,3vw),14px)]
