@@ -1288,12 +1288,6 @@ body {
   line-height: 1.3;
 }
 
-.text-xl {
-  font-size: 1.15rem;
-  font-weight: 600;
-  line-height: 1.3;
-}
-
 .text-2xl {
   font-size: 1.25rem;
   font-weight: 600;
@@ -1310,7 +1304,7 @@ body {
 
 .text-xs {
   font-size: min(max(0.46rem,2vw),10px);
-  line-height: 1.3;
+  line-height: 1.5;
 }
 
 .text-md {
@@ -1321,6 +1315,12 @@ body {
 .text-lg {
   font-size: min(max(0.7rem,3vw),15px);
   line-height: 1.5;
+}
+
+.text-xl {
+  font-size: min(max(0.85rem,4vw),18px);
+  font-weight: 600;
+  line-height: 1.4;
 }
 
 .text-4xl {
