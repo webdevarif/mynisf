@@ -140,12 +140,13 @@ select.input-control{
     @apply 
     cursor-pointer
 }
+
   .ul-select .select-arrow{
     @apply 
     inline-flex 
     h-[56px]
     w-[50px]
-    p-[17px]
+    p-[19px]
     min-w-3 
     items-center 
     justify-center
@@ -192,6 +193,7 @@ select.input-control{
     cursor-pointer
     
   }
+
   .form--check .form--check-label:before {
     @apply 
     content-[''] 
@@ -207,6 +209,7 @@ select.input-control{
     border-white
     border-opacity-25
   }
+
   .form--check .form--check-input:checked + .form--check-label:after {
     @apply 
     content-[''] 

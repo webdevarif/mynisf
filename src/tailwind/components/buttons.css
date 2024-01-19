@@ -9,14 +9,24 @@
     rounded
     font-semibold
     text-[min(max(0.7rem,3vw),12px)]
-    h-[56px]
     px-[1.25rem]
+    py-[1rem]
     relative
     z-[2]
     outline-none
     transition-all
     duration-300
 }
+.btn--sm{
+    @apply
+    py-[0.75rem]
+    leading-[1.25]
+}
+.btn--w-lg{
+    @apply
+    min-w-[min(max(7rem,35vw),130px)]
+}
+
 .btn--light{
     @apply
     bg-[#efeff0]

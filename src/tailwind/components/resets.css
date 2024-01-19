@@ -30,26 +30,18 @@
     after:bg-opacity-25
 }
 
-.text-sm{
-    @apply 
-    text-[0.9rem]
-    leading-[1.3]
-}
-
-
-.text-3xl{
-    @apply 
-    text-[1.35rem]
-    leading-[1.3]
-    font-semibold
-}
-
 /* FONT SIZES */
 
 .text-xs{
     @apply 
     text-[min(max(0.46rem,2vw),10px)]
     leading-[1.5]
+}
+
+.text-sm{
+    @apply 
+    text-[min(max(0.6rem,0.6vw),12px)]
+    leading-[1.3]
 }
 
 .text-md{
@@ -73,10 +65,20 @@
 
 .text-2xl{
     @apply 
-    text-[min(max(1.25rem,5vw),22px)]
+    text-[min(max(1.1rem,5vw),21px)]
+    leading-[1.4]
+    font-semibold
+}
+
+
+.text-3xl{
+    @apply 
+    text-[min(max(1.32rem,5.5vw),24px)]
     leading-[1.3]
     font-semibold
 }
+
+
 .text-4xl{
     @apply 
     text-[min(max(1.8rem,7.5vw),34px)]
@@ -175,6 +177,7 @@
     text-opacity-25
     text-center
     cursor-pointer
+    text-md
 }
 .tab-navigation li.active .tab-link{
     @apply 

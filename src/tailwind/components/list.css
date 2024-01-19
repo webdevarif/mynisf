@@ -72,3 +72,92 @@
     @apply 
     bg-[#C50277]
 }
+
+/* BUTTON CHECK */
+.outline--check .outline--check-input {
+    @apply
+    hidden
+}
+.outline--check .outline--check-label {
+    @apply
+    border-2
+    block
+    border-transparent 
+    cursor-pointer
+}
+.outline--check .outline--check-input:checked ~ .outline--check-label {
+    @apply
+    border-primary
+}
+
+
+.list-stars{
+    @apply
+    flex
+    justify-evenly
+    px-[10%]
+}
+
+.list-stars-progress{
+    @apply
+    h-5
+    rounded-full
+    flex
+    justify-evenly
+    px-[10%]
+    relative
+    z-[1]
+
+    before:content-['']
+    before:absolute
+    before:w-full
+    before:h-3
+    before:top-1/2
+    before:start-1/2
+    before:-translate-x-1/2
+    before:-translate-y-1/2
+    before:bg-[#884b70]
+    before:rounded-full
+    before:-z-[1]
+}
+
+.list-stars-progress li{
+    @apply
+    bg-[#884b70]
+    inline-block
+    w-5
+    h-5
+    rounded-full
+    relative
+    z-[1]
+}
+
+.list-stars-progress li.active{
+    @apply
+    bg-primary
+    
+    before:content-['']
+    before:absolute
+    before:w-[min(max(4rem,20vw),90px)]
+    before:h-3
+    before:top-1/2
+    before:end-0
+    before:-translate-y-1/2
+    before:bg-primary
+    before:rounded-full
+    before:-z-[1]
+}
+
+.list-stars-progress li.active.current{
+    @apply
+    shadow-[0px_13px_15px_10.92px_rgba(32,31,38,0.22)]
+}
+
+img.list-stars-progress-star {
+    @apply 
+    min-w-[30px]
+    absolute
+    start-1/2
+    bottom-[40px]
+    -translate-x-1/2
+}
