@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
     
     <!-- JS SUPPORTS -->
+    <script src="../assets/libs/vendors/jquery-3.7.1.min.js"></script>
     <script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
 
 </head>
@@ -20,7 +21,7 @@
                     <div class="nisf-container">
 
                         <!-- Top Navigation -->
-                        <nav class="top-navigation py-8 flex items-center justify-between mb-5">
+                        <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-5">
                             <button class="">
                                 <svg class="w-4 h-4 text-white">
                                     <use xlink:href="#icon-angle-left"></use>
@@ -46,7 +47,7 @@
                             <p class="font-medium">Ces informations seront disponibles sur votre profil et visible pour les autres membres.</p>
                         </header>
 
-                        <form action="#" class="py-6">
+                        <form action="#" class="py-8">
                             <!-- Single Field -->
                             <div class="input-group">
                                 <label for="form--pseudo" class="input-label">Pseudo (Pas modifiable)</label>
@@ -67,11 +68,26 @@
                             <!-- Single Field -->
                             <div class="input-group">
                                 <label for="form--autre-origine" class="input-label">Autre Origine</label>
-                                <select name="autre-origine" class="input-control" id="form--autre-origine">
-                                    <option value="bangladesh">Bangladesh</option>
-                                    <option value="africa">Africa</option>
-                                    <option value="japan">Japan</option>
-                                </select>
+                                <div class="ul-select no-selected">
+                                    <div class="ul-select-input">
+                                        <input type="hidden" class="input-hidden-field" name="form--autre-origine" value="">
+                                        <div class="ul-select-name"></div>
+                                        <div class="placeholder-label">Choose One</div>
+                                    </div>
+                                    <span class="select-arrow select-arrow-down">
+                                        <svg><use xlink:href="#icon-angle-down"></use></svg>
+                                    </span>
+                                    <span class="select-arrow select-arrow-cancel">
+                                        <svg><use xlink:href="#icon-close"></use></svg>
+                                    </span>
+                                    <ul class="ul-select-list">
+                                        <li data-value="option-1">Bangladesh</li>
+                                        <li data-value="option-2">Option 2</li>
+                                        <li data-value="option-3">Option 3</li>
+                                        <li data-value="option-4">Option 4</li>
+                                        <li data-value="option-5">Option 5</li>
+                                    </ul>
+                                </div>
                             </div>
                             <!-- Single Field -->
                             <div class="input-group">
