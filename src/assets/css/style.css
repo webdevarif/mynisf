@@ -1318,7 +1318,7 @@ body {
 }
 
 .text-xl {
-  font-size: min(max(0.85rem,4vw),18px);
+  font-size: min(max(0.8rem,3.5vw),18px);
   font-weight: 600;
   line-height: 1.4;
 }
