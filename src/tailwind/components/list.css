@@ -76,17 +76,32 @@
     @apply
     hidden
 }
+
 .outline--check .outline--check-label {
     @apply
     border-2
     block
     border-transparent 
     cursor-pointer
+    relative z-[1]
 }
+
 .outline--check .outline--check-input:checked ~ .outline--check-label {
     @apply
     border-primary
+    before:content-[''] 
+    before:blur-xl 
+    before:w-full
+    before:h-4
+    before:bg-primary 
+    before:absolute 
+    before:-z-[1] 
+    before:-bottom-2 
+    before:start-1/2 
+    before:-translate-x-1/2
 }
+
+
 
 
 .list-stars{
