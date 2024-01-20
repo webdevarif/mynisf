@@ -663,6 +663,11 @@ body {
   z-index: 1;
 }
 
+.-mx-8 {
+  margin-left: -2rem;
+  margin-right: -2rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -799,6 +804,10 @@ body {
 
 .h-6 {
   height: 1.5rem;
+}
+
+.h-\[2rem\] {
+  height: 2rem;
 }
 
 .h-\[35px\] {
@@ -938,6 +947,10 @@ body {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-\[1fr_2px_1fr\] {
+  grid-template-columns: 1fr 2px 1fr;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -960,6 +973,10 @@ body {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .gap-2 {
@@ -1198,6 +1215,11 @@ body {
   padding-right: 0.25rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1216,6 +1238,11 @@ body {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-1 {
@@ -1256,6 +1283,10 @@ body {
   padding-bottom: 0.75rem;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -1264,8 +1295,16 @@ body {
   padding-bottom: 1.5rem;
 }
 
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
 .ps-4 {
   padding-inline-start: 1rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .text-center {
@@ -1335,12 +1374,21 @@ body {
   font-weight: 600;
 }
 
+.\!leading-\[1\.3\] {
+  line-height: 1.3 !important;
+}
+
 .leading-10 {
   line-height: 2.5rem;
 }
 
 .leading-6 {
   line-height: 1.5rem;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-primary {
@@ -2483,6 +2531,19 @@ img.list-stars-progress-star {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   font-size: 0px;
+}
+
+/* SUBSCRIPTION SLIDER */
+
+.subscription-slider .slider-item{
+  background-size: 100% 100%;
+  border-radius: 20px;
+  background-image: url('../images/abonnement-slide-bg.png');
+  background-position: center
+}
+
+.subscription-slider .slick-active .slider-item {
+  background-image: url('../images/abonnement-active-bg.png');
 }
 
 .footer-float-bar {

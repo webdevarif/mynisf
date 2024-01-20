@@ -80,3 +80,16 @@
 
 
 
+
+/* SUBSCRIPTION SLIDER */
+.subscription-slider .slider-item{
+    background-size: 100% 100%;
+    @apply 
+    rounded-lg
+    bg-center
+    bg-[url('../images/abonnement-slide-bg.png')]
+}
+.subscription-slider .slick-active .slider-item{
+    @apply 
+    bg-[url('../images/abonnement-active-bg.png')]
+}
