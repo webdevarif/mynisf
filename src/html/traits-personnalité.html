@@ -18,240 +18,242 @@
             <div class="nisf-body">
                 <!-- All content should go inside nisf-wrapper -->
                 <div class="nisf-wrapper" data-scrollbar>
-                    <div class="nisf-container overflow-hidden">
+                    <div class="nisf-wrapper-inner">
+                        <div class="nisf-container overflow-hidden">
 
-                        <!-- Top Navigation -->
-                        <nav class="top-navigation py-8 flex items-center justify-between mb-5">
-                            <button class="">
-                                <svg class="w-4 h-4 text-white">
-                                    <use xlink:href="#icon-angle-left"></use>
-                                </svg>
-                            </button>
+                            <!-- Top Navigation -->
+                            <nav class="top-navigation py-8 flex items-center justify-between mb-5">
+                                <button class="">
+                                    <svg class="w-4 h-4 text-white">
+                                        <use xlink:href="#icon-angle-left"></use>
+                                    </svg>
+                                </button>
 
-                            <ul class="list-dots">
-                                <li class="active"></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </nav>
-
-                        <!-- Header -->
-                        <header class="header">
-                            <a href="/" class="header_logo mb-3">
-                                <img src="../assets/images/logo.png" alt="">
-                            </a>
-                            <h3 class="text-3xl text-white mb-3">Aidez-nous à présenter vos traits de personnalité.</h3>
-                            <p class="font-medium">Ces informations seront disponibles sur votre profil et visible pour les autres membres. </p>
-                        </header>
-
-                        <h2 class="hr-text text-primary mt-6 text-2xl">
-                            <span>Trait De Personnalité</span>
-                        </h2>
-
-                        <form action="#" class="py-8">
-                            <!-- Single Field -->
-                            <div class="input-group">
-                                <label for="form--traits-ersonnels" class="input-label">Traits Personnels</label>
-                                <div class="ul-select no-selected">
-                                    <div class="ul-select-input">
-                                        <input type="hidden" class="input-hidden-field" name="form--traits-ersonnels" value="">
-                                        <div class="ul-select-name"></div>
-                                        <div class="placeholder-label">Choose One</div>
-                                    </div>
-                                    <span class="select-arrow select-arrow-down">
-                                        <svg><use xlink:href="#icon-angle-down"></use></svg>
-                                    </span>
-                                    <span class="select-arrow select-arrow-cancel">
-                                        <svg><use xlink:href="#icon-close"></use></svg>
-                                    </span>
-                                    <ul class="ul-select-list">
-                                        <li data-value="option-1">Ajouter vos traits personnels</li>
-                                        <li data-value="option-2">Option 2</li>
-                                        <li data-value="option-3">Option 3</li>
-                                        <li data-value="option-4">Option 4</li>
-                                        <li data-value="option-5">Option 5</li>
-                                    </ul>
-                                </div>
-
-                                <!-- SELECTED TAGS-->
-                                <ul class="flex gap-3 flex-wrap mt-2">
-                                    <li>
-                                        <span class="bg-primary py-1 px-3 rounded-[6px] text-white inline-flex items-center gap-3">
-                                            <button type="button" class="w-4 h-4">
-                                                <svg class="h-full w-full"><use xlink:href="#icon-close"></use></svg>
-                                            </button>
-                                            <span class="opacity-60">Bavard</span>
-                                        </span>
-                                    </li>
-                                    <li>
-                                        <span class="bg-primary py-1 px-3 rounded-[6px] text-white inline-flex items-center gap-3">
-                                            <button type="button" class="w-4 h-4">
-                                                <svg class="h-full w-full"><use xlink:href="#icon-close"></use></svg>
-                                            </button>
-                                            <span class="opacity-60">Ayant de l’humour </span>
-                                        </span>
-                                    </li>
+                                <ul class="list-dots">
+                                    <li class="active"></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
                                 </ul>
-                            </div>
-                            <!-- Single Field -->
-                            <div class="input-group">
-                                <label for="form--quel-est" class="input-label">Quel est votre principal défaut</label>
-                                <input type="text" id="form--quel-est" class="input-control" placeholder="Je fume">
-                            </div>
-                            <!-- Single Field -->
-                            <div class="input-group">
-                                <label for="form--que-faites-vous" class="input-label">Que faites-vous de votre temps libre ?</label>
-                                <div class="ul-select no-selected">
-                                    <div class="ul-select-input">
-                                        <input type="hidden" class="input-hidden-field" name="form--que-faites-vous" value="">
-                                        <div class="ul-select-name"></div>
-                                        <div class="placeholder-label">Choose One</div>
-                                    </div>
-                                    <span class="select-arrow select-arrow-down">
-                                        <svg><use xlink:href="#icon-angle-down"></use></svg>
-                                    </span>
-                                    <span class="select-arrow select-arrow-cancel">
-                                        <svg><use xlink:href="#icon-close"></use></svg>
-                                    </span>
-                                    <ul class="ul-select-list">
-                                        <li data-value="option-1">Ajouter ce que vous faites</li>
-                                        <li data-value="option-2">Option 2</li>
-                                        <li data-value="option-3">Option 3</li>
-                                        <li data-value="option-4">Option 4</li>
-                                        <li data-value="option-5">Option 5</li>
-                                    </ul>
-                                </div>
+                            </nav>
 
-                                <!-- SELECTED TAGS-->
-                                <ul class="flex gap-3 flex-wrap mt-2">
-                                    <li>
-                                        <span class="bg-primary py-1 px-3 rounded-[6px] text-white inline-flex items-center gap-3">
-                                            <button type="button" class="w-4 h-4">
-                                                <svg class="h-full w-full"><use xlink:href="#icon-close"></use></svg>
-                                            </button>
-                                            <span class="opacity-60">Bavard</span>
+                            <!-- Header -->
+                            <header class="header">
+                                <a href="/" class="header_logo mb-3">
+                                    <img src="../assets/images/logo.png" alt="">
+                                </a>
+                                <h3 class="text-3xl text-white mb-3">Aidez-nous à présenter vos traits de personnalité.</h3>
+                                <p class="font-medium">Ces informations seront disponibles sur votre profil et visible pour les autres membres. </p>
+                            </header>
+
+                            <h2 class="hr-text text-primary mt-6 text-2xl">
+                                <span>Trait De Personnalité</span>
+                            </h2>
+
+                            <form action="#" class="py-8">
+                                <!-- Single Field -->
+                                <div class="input-group">
+                                    <label for="form--traits-ersonnels" class="input-label">Traits Personnels</label>
+                                    <div class="ul-select no-selected">
+                                        <div class="ul-select-input">
+                                            <input type="hidden" class="input-hidden-field" name="form--traits-ersonnels" value="">
+                                            <div class="ul-select-name"></div>
+                                            <div class="placeholder-label">Choose One</div>
+                                        </div>
+                                        <span class="select-arrow select-arrow-down">
+                                            <svg><use xlink:href="#icon-angle-down"></use></svg>
                                         </span>
-                                    </li>
-                                    <li>
-                                        <span class="bg-primary py-1 px-3 rounded-[6px] text-white inline-flex items-center gap-3">
-                                            <button type="button" class="w-4 h-4">
-                                                <svg class="h-full w-full"><use xlink:href="#icon-close"></use></svg>
-                                            </button>
-                                            <span class="opacity-60">Ayant de l’humour </span>
+                                        <span class="select-arrow select-arrow-cancel">
+                                            <svg><use xlink:href="#icon-close"></use></svg>
                                         </span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <!-- Single Field -->
-                            <div class="input-group">
-                                <label for="form--Aimez-vous" class="input-label">Aimez-vous voyager ?</label>
-                                <div class="ul-select no-selected">
-                                    <div class="ul-select-input">
-                                        <input type="hidden" class="input-hidden-field" name="form--Aimez-vous" value="">
-                                        <div class="ul-select-name"></div>
-                                        <div class="placeholder-label">Choose One</div>
+                                        <ul class="ul-select-list">
+                                            <li data-value="option-1">Ajouter vos traits personnels</li>
+                                            <li data-value="option-2">Option 2</li>
+                                            <li data-value="option-3">Option 3</li>
+                                            <li data-value="option-4">Option 4</li>
+                                            <li data-value="option-5">Option 5</li>
+                                        </ul>
                                     </div>
-                                    <span class="select-arrow select-arrow-down">
-                                        <svg><use xlink:href="#icon-angle-down"></use></svg>
-                                    </span>
-                                    <span class="select-arrow select-arrow-cancel">
-                                        <svg><use xlink:href="#icon-close"></use></svg>
-                                    </span>
-                                    <ul class="ul-select-list">
-                                        <li data-value="option-1">2 fois dans l’année</li>
-                                        <li data-value="option-2">Option 2</li>
-                                        <li data-value="option-3">Option 3</li>
-                                        <li data-value="option-4">Option 4</li>
-                                        <li data-value="option-5">Option 5</li>
+
+                                    <!-- SELECTED TAGS-->
+                                    <ul class="flex gap-3 flex-wrap mt-2">
+                                        <li>
+                                            <span class="bg-primary py-1 px-3 rounded-[6px] text-white inline-flex items-center gap-3">
+                                                <button type="button" class="w-4 h-4">
+                                                    <svg class="h-full w-full"><use xlink:href="#icon-close"></use></svg>
+                                                </button>
+                                                <span class="opacity-60">Bavard</span>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="bg-primary py-1 px-3 rounded-[6px] text-white inline-flex items-center gap-3">
+                                                <button type="button" class="w-4 h-4">
+                                                    <svg class="h-full w-full"><use xlink:href="#icon-close"></use></svg>
+                                                </button>
+                                                <span class="opacity-60">Ayant de l’humour </span>
+                                            </span>
+                                        </li>
                                     </ul>
                                 </div>
-                            </div>
-
-                            <!-- Single Field -->
-                            <div class="input-group">
-                                <label for="form--Quelle-est-votre " class="input-label">Quelle est votre relation avec l’argent ?</label>
-                                <div class="ul-select no-selected">
-                                    <div class="ul-select-input">
-                                        <input type="hidden" class="input-hidden-field" name="form--Quelle-est-votre " value="">
-                                        <div class="ul-select-name"></div>
-                                        <div class="placeholder-label">Choose One</div>
-                                    </div>
-                                    <span class="select-arrow select-arrow-down">
-                                        <svg><use xlink:href="#icon-angle-down"></use></svg>
-                                    </span>
-                                    <span class="select-arrow select-arrow-cancel">
-                                        <svg><use xlink:href="#icon-close"></use></svg>
-                                    </span>
-                                    <ul class="ul-select-list">
-                                        <li data-value="option-1">Génereux</li>
-                                        <li data-value="option-2">Option 2</li>
-                                        <li data-value="option-3">Option 3</li>
-                                        <li data-value="option-4">Option 4</li>
-                                        <li data-value="option-5">Option 5</li>
-                                    </ul>
+                                <!-- Single Field -->
+                                <div class="input-group">
+                                    <label for="form--quel-est" class="input-label">Quel est votre principal défaut</label>
+                                    <input type="text" id="form--quel-est" class="input-control" placeholder="Je fume">
                                 </div>
-                            </div>
-                            <!-- Single Field -->
-                            <div class="input-group">
-                                <label for="form--Eude-Islamique" class="input-label">Eude Islamique</label>
-                                <div class="ul-select no-selected">
-                                    <div class="ul-select-input">
-                                        <input type="hidden" class="input-hidden-field" name="form--Eude-Islamique" value="">
-                                        <div class="ul-select-name"></div>
-                                        <div class="placeholder-label">Choose One</div>
-                                    </div>
-                                    <span class="select-arrow select-arrow-down">
-                                        <svg><use xlink:href="#icon-angle-down"></use></svg>
-                                    </span>
-                                    <span class="select-arrow select-arrow-cancel">
-                                        <svg><use xlink:href="#icon-close"></use></svg>
-                                    </span>
-                                    <ul class="ul-select-list">
-                                        <li data-value="option-1">Etudiez-vous les science islamique</li>
-                                        <li data-value="option-2">Option 2</li>
-                                        <li data-value="option-3">Option 3</li>
-                                        <li data-value="option-4">Option 4</li>
-                                        <li data-value="option-5">Option 5</li>
-                                    </ul>
-                                </div>
-
-                                <!-- SELECTED TAGS-->
-                                <ul class="flex gap-3 flex-wrap mt-2">
-                                    <li>
-                                        <span class="bg-primary py-1 px-3 rounded-[6px] text-white inline-flex items-center gap-3">
-                                            <button type="button" class="w-4 h-4">
-                                                <svg class="h-full w-full"><use xlink:href="#icon-close"></use></svg>
-                                            </button>
-                                            <span class="opacity-60">Istitut</span>
+                                <!-- Single Field -->
+                                <div class="input-group">
+                                    <label for="form--que-faites-vous" class="input-label">Que faites-vous de votre temps libre ?</label>
+                                    <div class="ul-select no-selected">
+                                        <div class="ul-select-input">
+                                            <input type="hidden" class="input-hidden-field" name="form--que-faites-vous" value="">
+                                            <div class="ul-select-name"></div>
+                                            <div class="placeholder-label">Choose One</div>
+                                        </div>
+                                        <span class="select-arrow select-arrow-down">
+                                            <svg><use xlink:href="#icon-angle-down"></use></svg>
                                         </span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Single Field -->
-                            <div class="input-group">
-                                <label for="form--avez-vous-des" class="input-label">Avez vous des amis du sexe opposé?</label>
-                                <input type="text" id="form--avez-vous-des" class="input-control" placeholder="Non">
-                            </div>
-                            <!-- Single Field -->
-                            <div class="input-group">
-                                <label for="form--Quelles-sont-vos" class="input-label">Quelles sont vos habitudes journaliéres pour essayer d’augumenter votre foi ?</label>
-                                <input type="text" id="form--Quelles-sont-vos" class="input-control" placeholder="Vos habitudes ...">
-                                <div class="mt-2 text-white text-opacity-25 ps-4">Smileys et emoticones INTERDITS.</div>
-                            </div>
-                            <!-- Single Field -->
-                            <div class="input-group">
-                                <label for="form--Quels-sont-les-savants" class="input-label">Quels sont les savants ou prêcheurs contemporains que vous écoutez ?</label>
-                                <input type="text" id="form--Quels-sont-les-savants" class="input-control" placeholder="Savants ou prêcheurs">
-                            </div>
+                                        <span class="select-arrow select-arrow-cancel">
+                                            <svg><use xlink:href="#icon-close"></use></svg>
+                                        </span>
+                                        <ul class="ul-select-list">
+                                            <li data-value="option-1">Ajouter ce que vous faites</li>
+                                            <li data-value="option-2">Option 2</li>
+                                            <li data-value="option-3">Option 3</li>
+                                            <li data-value="option-4">Option 4</li>
+                                            <li data-value="option-5">Option 5</li>
+                                        </ul>
+                                    </div>
 
-                            <div class="mt-8">
-                                <button type="submit" class="btn--primary w-full">SUIVANT</button>
-                            </div>
-                        </form>
+                                    <!-- SELECTED TAGS-->
+                                    <ul class="flex gap-3 flex-wrap mt-2">
+                                        <li>
+                                            <span class="bg-primary py-1 px-3 rounded-[6px] text-white inline-flex items-center gap-3">
+                                                <button type="button" class="w-4 h-4">
+                                                    <svg class="h-full w-full"><use xlink:href="#icon-close"></use></svg>
+                                                </button>
+                                                <span class="opacity-60">Bavard</span>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="bg-primary py-1 px-3 rounded-[6px] text-white inline-flex items-center gap-3">
+                                                <button type="button" class="w-4 h-4">
+                                                    <svg class="h-full w-full"><use xlink:href="#icon-close"></use></svg>
+                                                </button>
+                                                <span class="opacity-60">Ayant de l’humour </span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Single Field -->
+                                <div class="input-group">
+                                    <label for="form--Aimez-vous" class="input-label">Aimez-vous voyager ?</label>
+                                    <div class="ul-select no-selected">
+                                        <div class="ul-select-input">
+                                            <input type="hidden" class="input-hidden-field" name="form--Aimez-vous" value="">
+                                            <div class="ul-select-name"></div>
+                                            <div class="placeholder-label">Choose One</div>
+                                        </div>
+                                        <span class="select-arrow select-arrow-down">
+                                            <svg><use xlink:href="#icon-angle-down"></use></svg>
+                                        </span>
+                                        <span class="select-arrow select-arrow-cancel">
+                                            <svg><use xlink:href="#icon-close"></use></svg>
+                                        </span>
+                                        <ul class="ul-select-list">
+                                            <li data-value="option-1">2 fois dans l’année</li>
+                                            <li data-value="option-2">Option 2</li>
+                                            <li data-value="option-3">Option 3</li>
+                                            <li data-value="option-4">Option 4</li>
+                                            <li data-value="option-5">Option 5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Single Field -->
+                                <div class="input-group">
+                                    <label for="form--Quelle-est-votre " class="input-label">Quelle est votre relation avec l’argent ?</label>
+                                    <div class="ul-select no-selected">
+                                        <div class="ul-select-input">
+                                            <input type="hidden" class="input-hidden-field" name="form--Quelle-est-votre " value="">
+                                            <div class="ul-select-name"></div>
+                                            <div class="placeholder-label">Choose One</div>
+                                        </div>
+                                        <span class="select-arrow select-arrow-down">
+                                            <svg><use xlink:href="#icon-angle-down"></use></svg>
+                                        </span>
+                                        <span class="select-arrow select-arrow-cancel">
+                                            <svg><use xlink:href="#icon-close"></use></svg>
+                                        </span>
+                                        <ul class="ul-select-list">
+                                            <li data-value="option-1">Génereux</li>
+                                            <li data-value="option-2">Option 2</li>
+                                            <li data-value="option-3">Option 3</li>
+                                            <li data-value="option-4">Option 4</li>
+                                            <li data-value="option-5">Option 5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Single Field -->
+                                <div class="input-group">
+                                    <label for="form--Eude-Islamique" class="input-label">Eude Islamique</label>
+                                    <div class="ul-select no-selected">
+                                        <div class="ul-select-input">
+                                            <input type="hidden" class="input-hidden-field" name="form--Eude-Islamique" value="">
+                                            <div class="ul-select-name"></div>
+                                            <div class="placeholder-label">Choose One</div>
+                                        </div>
+                                        <span class="select-arrow select-arrow-down">
+                                            <svg><use xlink:href="#icon-angle-down"></use></svg>
+                                        </span>
+                                        <span class="select-arrow select-arrow-cancel">
+                                            <svg><use xlink:href="#icon-close"></use></svg>
+                                        </span>
+                                        <ul class="ul-select-list">
+                                            <li data-value="option-1">Etudiez-vous les science islamique</li>
+                                            <li data-value="option-2">Option 2</li>
+                                            <li data-value="option-3">Option 3</li>
+                                            <li data-value="option-4">Option 4</li>
+                                            <li data-value="option-5">Option 5</li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- SELECTED TAGS-->
+                                    <ul class="flex gap-3 flex-wrap mt-2">
+                                        <li>
+                                            <span class="bg-primary py-1 px-3 rounded-[6px] text-white inline-flex items-center gap-3">
+                                                <button type="button" class="w-4 h-4">
+                                                    <svg class="h-full w-full"><use xlink:href="#icon-close"></use></svg>
+                                                </button>
+                                                <span class="opacity-60">Istitut</span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Single Field -->
+                                <div class="input-group">
+                                    <label for="form--avez-vous-des" class="input-label">Avez vous des amis du sexe opposé?</label>
+                                    <input type="text" id="form--avez-vous-des" class="input-control" placeholder="Non">
+                                </div>
+                                <!-- Single Field -->
+                                <div class="input-group">
+                                    <label for="form--Quelles-sont-vos" class="input-label">Quelles sont vos habitudes journaliéres pour essayer d’augumenter votre foi ?</label>
+                                    <input type="text" id="form--Quelles-sont-vos" class="input-control" placeholder="Vos habitudes ...">
+                                    <div class="mt-2 text-white text-opacity-25 ps-4">Smileys et emoticones INTERDITS.</div>
+                                </div>
+                                <!-- Single Field -->
+                                <div class="input-group">
+                                    <label for="form--Quels-sont-les-savants" class="input-label">Quels sont les savants ou prêcheurs contemporains que vous écoutez ?</label>
+                                    <input type="text" id="form--Quels-sont-les-savants" class="input-control" placeholder="Savants ou prêcheurs">
+                                </div>
+
+                                <div class="mt-8">
+                                    <button type="submit" class="btn--primary w-full">SUIVANT</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
 

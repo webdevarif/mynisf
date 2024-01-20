@@ -5,7 +5,7 @@
     .screen-wrapper{
         @apply 
         /* md:py-[2rem] */
-        min-h-screen md:min-h-[100vh-10rem]
+        min-h-screen md:min-h-[calc(100vh-10rem)]
         w-full
         flex
         /* px-4 */

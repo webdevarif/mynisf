@@ -37,7 +37,7 @@
         overflow-y-auto
         h-full
     }
-    .has-footer-bar .nisf-wrapper{
+    .has-footer-bar .nisf-wrapper-inner{
         @apply
         pb-[6.5rem]
     }

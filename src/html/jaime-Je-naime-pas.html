@@ -18,72 +18,74 @@
             <div class="nisf-body">
                 <!-- All content should go inside nisf-wrapper -->
                 <div class="nisf-wrapper" data-scrollbar>
-                    <div class="nisf-container overflow-hidden">
+                    <div class="nisf-wrapper-inner">
+                        <div class="nisf-container overflow-hidden">
 
-                        <!-- Top Navigation -->
-                        <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-3">
-                            <button class="">
-                                <svg class="w-4 h-4 text-white">
-                                    <use xlink:href="#icon-angle-left"></use>
-                                </svg>
-                            </button>
-                            <h4 class="font-semibold text-xl text-white w-full">J'aime / J'aime pas</h4>
-                            <button class="bg-transparent">
-                                <svg class="icon w-5 h-5 text-white">
-                                    <use xlink:href="#icon-vertical-dot"></use>
-                                </svg>
-                            </button>
-                        </nav>
-                        
+                            <!-- Top Navigation -->
+                            <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-3">
+                                <button class="">
+                                    <svg class="w-4 h-4 text-white">
+                                        <use xlink:href="#icon-angle-left"></use>
+                                    </svg>
+                                </button>
+                                <h4 class="font-semibold text-xl text-white w-full">J'aime / J'aime pas</h4>
+                                <button class="bg-transparent">
+                                    <svg class="icon w-5 h-5 text-white">
+                                        <use xlink:href="#icon-vertical-dot"></use>
+                                    </svg>
+                                </button>
+                            </nav>
+                            
 
-                        <!-- PROGRESS BAR -->
-                        <div class="progress mb-5">
-                            <div class="progress-bar">
-                                <div class="progress-line" style="width: 50%;"></div>
+                            <!-- PROGRESS BAR -->
+                            <div class="progress mb-5">
+                                <div class="progress-bar">
+                                    <div class="progress-line" style="width: 50%;"></div>
+                                </div>
+                                <div class="progress-num inline-flex gap-x-2 leading-6 items-center justify-center">
+                                    <img class="inline-block max-w-[0.9rem] h-auto mb-1" src="../assets/images/progress-crown.png" alt="">
+                                    <span>12/40</span>
+                                </div>
                             </div>
-                            <div class="progress-num inline-flex gap-x-2 leading-6 items-center justify-center">
-                                <img class="inline-block max-w-[0.9rem] h-auto mb-1" src="../assets/images/progress-crown.png" alt="">
-                                <span>12/40</span>
-                            </div>
-                        </div>
 
 
-                        <form action="#" class="py-8">
-                            <div class="bg-[#814067] text-center px-6 py-10 rounded-lg shadow-[0px_50px_177.48px_26.52px_rgba(78,78,78,0.21)]">
+                            <form action="#" class="py-8">
+                                <div class="bg-[#814067] text-center px-6 py-10 rounded-lg shadow-[0px_50px_177.48px_26.52px_rgba(78,78,78,0.21)]">
 
-                                <h3 class="text-3xl text-white mb-6 text-bold">Que penses-tu des animaux ?</h3>
-                                
+                                    <h3 class="text-3xl text-white mb-6 text-bold">Que penses-tu des animaux ?</h3>
+                                    
 
-                                <div class="mb-5">
-                                    <div class="inline-block z-[1] relative before:content-[''] before:w-full before:h-full before:bg-[#FEE45A] before:bg-opacity-50 before:inline-block before:rounded-full before:absolute before:start-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:-z-[1] before:blur-3xl">
-                                        <img src="../assets/images/smile-haha.png" alt="">
+                                    <div class="mb-5">
+                                        <div class="inline-block z-[1] relative before:content-[''] before:w-full before:h-full before:bg-[#FEE45A] before:bg-opacity-50 before:inline-block before:rounded-full before:absolute before:start-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:-z-[1] before:blur-3xl">
+                                            <img src="../assets/images/smile-haha.png" alt="">
+                                        </div>
                                     </div>
-                                </div>
-                                <h4 class="mb-5 text-2xl font-semibold">Je les aime</h4>
+                                    <h4 class="mb-5 text-2xl font-semibold">Je les aime</h4>
 
-                                <div class="list-stars-progress-wrapper">
-                                    <ul class="list-stars mb-6">
-                                        <li><img src="../assets/images/star.png" alt=""></li>
-                                        <li><img src="../assets/images/star.png" alt=""></li>
-                                        <li><img src="../assets/images/star.png" alt=""></li>
-                                        <li><img src="../assets/images/star.png" alt=""></li>
-                                    </ul>
-                                    <ul class="list-stars-progress">
-                                        <li class="active"></li>
-                                        <li class="active current"></li>
-                                        <li></li>
-                                        <li></li>
-                                    </ul>
+                                    <div class="list-stars-progress-wrapper">
+                                        <ul class="list-stars mb-6">
+                                            <li><img src="../assets/images/star.png" alt=""></li>
+                                            <li><img src="../assets/images/star.png" alt=""></li>
+                                            <li><img src="../assets/images/star.png" alt=""></li>
+                                            <li><img src="../assets/images/star.png" alt=""></li>
+                                        </ul>
+                                        <ul class="list-stars-progress">
+                                            <li class="active"></li>
+                                            <li class="active current"></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                    
                                 </div>
-                                
-                            </div>
 
-                            <!-- Buttons Actions -->
-                            <div class="flex items-center mt-7 gap-3 justify-between">
-                                <button type="button" class="btn--light btn--w-lg">Non, Merci</button>
-                                <button type="button" class="btn--primary btn--w-lg">Validez</button>
-                            </div>
-                        </form>
+                                <!-- Buttons Actions -->
+                                <div class="flex items-center mt-7 gap-3 justify-between">
+                                    <button type="button" class="btn--light btn--w-lg">Non, Merci</button>
+                                    <button type="button" class="btn--primary btn--w-lg">Validez</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -18,87 +18,89 @@
             <div class="nisf-body">
                 <!-- All content should go inside nisf-wrapper -->
                 <div class="nisf-wrapper" data-scrollbar>
-                    <div class="nisf-container">
+                    <div class="nisf-wrapper-inner">
+                        <div class="nisf-container">
 
-                        <!-- Top Navigation -->
-                        <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-5">
-                            <button class="">
-                                <svg class="w-4 h-4 text-white">
-                                    <use xlink:href="#icon-angle-left"></use>
-                                </svg>
-                            </button>
+                            <!-- Top Navigation -->
+                            <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-5">
+                                <button class="">
+                                    <svg class="w-4 h-4 text-white">
+                                        <use xlink:href="#icon-angle-left"></use>
+                                    </svg>
+                                </button>
 
-                            <ul class="list-dots">
-                                <li class="active"></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </nav>
+                                <ul class="list-dots">
+                                    <li class="active"></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </nav>
 
-                        <!-- Header -->
-                        <header class="header">
-                            <a href="/" class="header_logo mb-3">
-                                <img src="../assets/images/logo.png" alt="">
-                            </a>
-                            <h3 class="text-2xl text-white mb-3">Aidez-nous à presenter vos informations.</h3>
-                            <p class="font-medium">Ces informations seront disponibles sur votre profil et visible pour les autres membres.</p>
-                        </header>
+                            <!-- Header -->
+                            <header class="header">
+                                <a href="/" class="header_logo mb-3">
+                                    <img src="../assets/images/logo.png" alt="">
+                                </a>
+                                <h3 class="text-2xl text-white mb-3">Aidez-nous à presenter vos informations.</h3>
+                                <p class="font-medium">Ces informations seront disponibles sur votre profil et visible pour les autres membres.</p>
+                            </header>
 
-                        <form action="#" class="py-8">
-                            <!-- Single Field -->
-                            <div class="input-group">
-                                <label for="form--pseudo" class="input-label">Pseudo (Pas modifiable)</label>
-                                <input type="text" id="form--pseudo" class="input-control" placeholder="Ahmed">
-                            </div>
-                            <div class="grid grid-cols-2 gap-3">
+                            <form action="#" class="py-8">
                                 <!-- Single Field -->
                                 <div class="input-group">
-                                    <label for="form--nationality" class="input-label">Nationalité</label>
-                                    <input type="text" id="form--nationality" class="input-control" placeholder="Afrique du sud">
+                                    <label for="form--pseudo" class="input-label">Pseudo (Pas modifiable)</label>
+                                    <input type="text" id="form--pseudo" class="input-control" placeholder="Ahmed">
                                 </div>
-                                <!-- Single Field -->
-                                <div class="input-group">
-                                    <label for="form--origine" class="input-label">Origine</label>
-                                    <input type="text" id="form--origine" class="input-control" placeholder="Bahrein">
-                                </div>
-                            </div>
-                            <!-- Single Field -->
-                            <div class="input-group">
-                                <label for="form--autre-origine" class="input-label">Autre Origine</label>
-                                <div class="ul-select no-selected">
-                                    <div class="ul-select-input">
-                                        <input type="hidden" class="input-hidden-field" name="form--autre-origine" value="">
-                                        <div class="ul-select-name"></div>
-                                        <div class="placeholder-label">Choose One</div>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <!-- Single Field -->
+                                    <div class="input-group">
+                                        <label for="form--nationality" class="input-label">Nationalité</label>
+                                        <input type="text" id="form--nationality" class="input-control" placeholder="Afrique du sud">
                                     </div>
-                                    <span class="select-arrow select-arrow-down">
-                                        <svg><use xlink:href="#icon-angle-down"></use></svg>
-                                    </span>
-                                    <span class="select-arrow select-arrow-cancel">
-                                        <svg><use xlink:href="#icon-close"></use></svg>
-                                    </span>
-                                    <ul class="ul-select-list">
-                                        <li data-value="option-1">Bangladesh</li>
-                                        <li data-value="option-2">Option 2</li>
-                                        <li data-value="option-3">Option 3</li>
-                                        <li data-value="option-4">Option 4</li>
-                                        <li data-value="option-5">Option 5</li>
-                                    </ul>
+                                    <!-- Single Field -->
+                                    <div class="input-group">
+                                        <label for="form--origine" class="input-label">Origine</label>
+                                        <input type="text" id="form--origine" class="input-control" placeholder="Bahrein">
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- Single Field -->
-                            <div class="input-group">
-                                <label for="form--telephone" class="input-label">Télèphone (vu que par l’admin)</label>
-                                <input type="text" id="form--telephone" class="input-control" placeholder="+212657968233">
-                            </div>
+                                <!-- Single Field -->
+                                <div class="input-group">
+                                    <label for="form--autre-origine" class="input-label">Autre Origine</label>
+                                    <div class="ul-select no-selected">
+                                        <div class="ul-select-input">
+                                            <input type="hidden" class="input-hidden-field" name="form--autre-origine" value="">
+                                            <div class="ul-select-name"></div>
+                                            <div class="placeholder-label">Choose One</div>
+                                        </div>
+                                        <span class="select-arrow select-arrow-down">
+                                            <svg><use xlink:href="#icon-angle-down"></use></svg>
+                                        </span>
+                                        <span class="select-arrow select-arrow-cancel">
+                                            <svg><use xlink:href="#icon-close"></use></svg>
+                                        </span>
+                                        <ul class="ul-select-list">
+                                            <li data-value="option-1">Bangladesh</li>
+                                            <li data-value="option-2">Option 2</li>
+                                            <li data-value="option-3">Option 3</li>
+                                            <li data-value="option-4">Option 4</li>
+                                            <li data-value="option-5">Option 5</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Single Field -->
+                                <div class="input-group">
+                                    <label for="form--telephone" class="input-label">Télèphone (vu que par l’admin)</label>
+                                    <input type="text" id="form--telephone" class="input-control" placeholder="+212657968233">
+                                </div>
 
-                            <div class="mt-8">
-                                <button type="submit" class="btn--primary w-full">SUIVANT</button>
-                            </div>
-                        </form>
+                                <div class="mt-8">
+                                    <button type="submit" class="btn--primary w-full">SUIVANT</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
 

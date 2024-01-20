@@ -18,85 +18,87 @@
             <div class="nisf-body has-footer-bar"> <!-- has-footer-bar should be when footer has bar -->
                 <!-- All content should go inside nisf-wrapper -->
                 <div class="nisf-wrapper" data-scrollbar>
-                    <div class="nisf-container overflow-hidden">
+                    <div class="nisf-wrapper-inner">
+                        <div class="nisf-container overflow-hidden">
 
-                        <!-- Top Navigation -->
-                        <nav class="top-navigation py-8 flex items-center justify-between mb-5">
-                            <button class="">
-                                <svg class="w-4 h-4 text-white">
-                                    <use xlink:href="#icon-angle-left"></use>
-                                </svg>
-                            </button>
-                        </nav>
+                            <!-- Top Navigation -->
+                            <nav class="top-navigation py-8 flex items-center justify-between mb-5">
+                                <button class="">
+                                    <svg class="w-4 h-4 text-white">
+                                        <use xlink:href="#icon-angle-left"></use>
+                                    </svg>
+                                </button>
+                            </nav>
 
-                        <!-- Header -->
-                        <header class="header">
-                            <a href="/" class="header_logo mb-3">
-                                <img src="../assets/images/logo.png" alt="">
-                            </a>
-                            <h3 class="text-3xl text-white mb-3">Aidez-nous à ccomprendre votre profil privé.</h3>
-                            <p class="font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magncin cididunt ut labore et dolore magna. </p>
-                        </header>
+                            <!-- Header -->
+                            <header class="header">
+                                <a href="/" class="header_logo mb-3">
+                                    <img src="../assets/images/logo.png" alt="">
+                                </a>
+                                <h3 class="text-3xl text-white mb-3">Aidez-nous à ccomprendre votre profil privé.</h3>
+                                <p class="font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magncin cididunt ut labore et dolore magna. </p>
+                            </header>
 
-                        <h2 class="hr-text text-primary mt-6 text-2xl">
-                            <span>Creation Profil Privé</span>
-                        </h2>
+                            <h2 class="hr-text text-primary mt-6 text-2xl">
+                                <span>Creation Profil Privé</span>
+                            </h2>
 
-                        <form action="#" class="py-6">
-                            <!-- Single Field -->
-                            <div class="input-group">
-                                <label for="" class="input-label">Prendre un selfie</label>
-                                <label for="form--prendre-un-selfie">
-                                    <input type="file" id="form--prendre-un-selfie" class="hidden">
-                                    <div class="btn--light bg-opacity-100 cursor-pointer w-full gap-x-2">
-                                        <svg class="w-5 h-5"><use xlink:href="#icon-camera"></use></svg>
-                                          <span>Take a Selfie</span>
-                                        </div>
-                                </label>
-                            </div>
-                            <!-- Single Field -->
-                            <div class="input-group">
-                                <label for="form--votre-description" class="input-label">Votre Description</label>
-                                <textarea rows="6" cols="30" id="form--votre-description" class="input-control" placeholder="Je suis une personne qui ..."></textarea>
-                                <div class="text-end text-md mt-3 font-medium">0/45</div>
-                            </div>
-                            <!-- Single Field -->
-                            <div class="input-group">
-                                <label for="form--postez-un-hadith" class="input-label">Postez un hadith</label>
-                                <textarea rows="6" cols="30" id="form--postez-un-hadith" class="input-control" placeholder="Hadith ..."></textarea>
-                                <div class="text-end text-md mt-3 font-medium">0/45</div>
-                            </div>
-                            <!-- Single Field -->
-                            <div class="input-group">
-                                <label for="form--est-ce" class="input-label">Est ce que tu as une maladie ?</label>
-                                <div class="ul-select no-selected">
-                                    <div class="ul-select-input">
-                                        <input type="hidden" class="input-hidden-field" name="form--est-ce" value="">
-                                        <div class="ul-select-name"></div>
-                                        <div class="placeholder-label">Choose One</div>
-                                    </div>
-                                    <span class="select-arrow select-arrow-down">
-                                        <svg><use xlink:href="#icon-angle-down"></use></svg>
-                                    </span>
-                                    <span class="select-arrow select-arrow-cancel">
-                                        <svg><use xlink:href="#icon-close"></use></svg>
-                                    </span>
-                                    <ul class="ul-select-list">
-                                        <li data-value="option-1">Oui</li>
-                                        <li data-value="option-2">Non</li>
-                                    </ul>
+                            <form action="#" class="py-6">
+                                <!-- Single Field -->
+                                <div class="input-group">
+                                    <label for="" class="input-label">Prendre un selfie</label>
+                                    <label for="form--prendre-un-selfie">
+                                        <input type="file" id="form--prendre-un-selfie" class="hidden">
+                                        <div class="btn--light bg-opacity-100 cursor-pointer w-full gap-x-2">
+                                            <svg class="w-5 h-5"><use xlink:href="#icon-camera"></use></svg>
+                                            <span>Take a Selfie</span>
+                                            </div>
+                                    </label>
                                 </div>
-                            </div>
-                            <!-- Single Field -->
-                            <div class="input-group">
-                                <label for="form--quelle-salaire" class="input-label">Quelle salaire gagnez vous ?</label>
-                                <input id="form--quelle-salaire" placeholder="le salaire que je gagne est ..." class="input-control" />
-                            </div>
+                                <!-- Single Field -->
+                                <div class="input-group">
+                                    <label for="form--votre-description" class="input-label">Votre Description</label>
+                                    <textarea rows="6" cols="30" id="form--votre-description" class="input-control" placeholder="Je suis une personne qui ..."></textarea>
+                                    <div class="text-end text-md mt-3 font-medium">0/45</div>
+                                </div>
+                                <!-- Single Field -->
+                                <div class="input-group">
+                                    <label for="form--postez-un-hadith" class="input-label">Postez un hadith</label>
+                                    <textarea rows="6" cols="30" id="form--postez-un-hadith" class="input-control" placeholder="Hadith ..."></textarea>
+                                    <div class="text-end text-md mt-3 font-medium">0/45</div>
+                                </div>
+                                <!-- Single Field -->
+                                <div class="input-group">
+                                    <label for="form--est-ce" class="input-label">Est ce que tu as une maladie ?</label>
+                                    <div class="ul-select no-selected">
+                                        <div class="ul-select-input">
+                                            <input type="hidden" class="input-hidden-field" name="form--est-ce" value="">
+                                            <div class="ul-select-name"></div>
+                                            <div class="placeholder-label">Choose One</div>
+                                        </div>
+                                        <span class="select-arrow select-arrow-down">
+                                            <svg><use xlink:href="#icon-angle-down"></use></svg>
+                                        </span>
+                                        <span class="select-arrow select-arrow-cancel">
+                                            <svg><use xlink:href="#icon-close"></use></svg>
+                                        </span>
+                                        <ul class="ul-select-list">
+                                            <li data-value="option-1">Oui</li>
+                                            <li data-value="option-2">Non</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Single Field -->
+                                <div class="input-group">
+                                    <label for="form--quelle-salaire" class="input-label">Quelle salaire gagnez vous ?</label>
+                                    <input id="form--quelle-salaire" placeholder="le salaire que je gagne est ..." class="input-control" />
+                                </div>
 
-                            <div class="mt-7">
-                                <button type="submit" class="btn--primary w-full">Créer</button>
-                            </div>
-                        </form>
+                                <div class="mt-7">
+                                    <button type="submit" class="btn--primary w-full">Créer</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
 
