@@ -7,9 +7,37 @@
     bottom-0 
     left-0
     z-50
-    p-6 
+    py-4 
     w-full 
     flex 
     justify-around 
     shadow-[55px_13px_250px_rgba(14,14,16,0.52)]
+}
+
+.footer-float-bar .footer-float-bar--item{
+    @apply
+    relative
+    p-3
+    text-white
+}
+
+.footer-float-bar .footer-float-bar--item > svg,
+.footer-float-bar .footer-float-bar--item > img{
+    @apply
+    w-6
+    h-6
+}
+
+.footer-float-bar .footer-float-bar--item.active{
+    @apply
+    text-primary
+    before:content-['']
+    before:w-[0.4rem]
+    before:h-[0.4rem]
+    before:bg-primary
+    before:rounded-full
+    before:absolute
+    before:start-1/2
+    before:-translate-x-1/2
+    before:bottom-0
 }

@@ -1,0 +1,31 @@
+
+.avatar-md,
+.avatar{
+    --avatar-size: 60px;
+    @apply
+    min-w-[var(--avatar-size,60px)]
+    w-[var(--avatar-size,60px)]
+    h-[var(--avatar-size,60px)]
+}
+.avatar-lg{
+    --avatar-size: 75px;
+    @apply
+    min-w-[var(--avatar-size,75px)]
+    w-[var(--avatar-size,75px)]
+    h-[var(--avatar-size,75px)]
+}
+.avatar-xl{
+    --avatar-size: 90px;
+    @apply
+    min-w-[var(--avatar-size,90px)]
+    w-[var(--avatar-size,90px)]
+    h-[var(--avatar-size,90px)]
+}
+
+.avatar img{
+    @apply
+    h-full
+    w-full
+    object-cover
+    object-center
+}

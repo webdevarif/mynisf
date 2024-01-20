@@ -1,0 +1,82 @@
+/* ARROWS */
+[theme-slider] .slick-arrow{
+    @apply 
+    absolute
+    top-1/2
+    -translate-y-1/2
+    z-50
+    bg-white
+    bg-opacity-10
+    w-7
+    h-7
+    inline-flex
+    items-center
+    justify-center
+    rounded-full
+}
+[theme-slider] .slick-arrow.arrows-left{
+    @apply 
+    -start-7
+}
+[theme-slider] .slick-arrow.arrows-right{
+    @apply 
+    -end-7
+}
+
+
+
+.popup-offer-slider .slick-track{
+    @apply
+    flex
+    items-center
+}
+
+.popup-offer-slider .slick-track .slick-slide{
+    @apply 
+    float-none
+}
+
+.popup-offer-slider .slick-track .slick-slide .thumbnail{
+    @apply 
+    h-[10rem]
+    transition-all duration-300
+}
+
+.popup-offer-slider .slick-track .slick-slide.slick-active .thumbnail{
+    @apply 
+    h-[15rem]
+}
+
+.popup-offer-slider .slick-dots li{
+    @apply 
+    mx-1
+}
+.popup-offer-slider .slick-dots li,
+.popup-offer-slider .slick-dots li button{
+    @apply 
+    p-0
+    h-2
+    w-2
+    transition-all
+    duration-300
+}
+
+.popup-offer-slider .slick-dots li.slick-active,
+.popup-offer-slider .slick-dots li.slick-active button,
+.popup-offer-slider .slick-dots li.slick-active button:before{
+    @apply 
+    p-0
+    w-6
+}
+.popup-offer-slider .slick-dots li button:before{
+    @apply 
+    h-2
+    w-2
+    rounded-full
+    inline-block
+    bg-white
+    text-[0px]
+}
+
+
+

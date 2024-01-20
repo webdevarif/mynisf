@@ -19,7 +19,7 @@
 }
 .btn--sm{
     @apply
-    py-[0.75rem]
+    py-[1rem]
     leading-[1.25]
 }
 .btn--w-lg{

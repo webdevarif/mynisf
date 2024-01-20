@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Mon Sujet My Nisf Mobile App Development</title>
+
+    <link rel="stylesheet" href="../assets/libs/slick/slick.min.css">
+    <link rel="stylesheet" href="../assets/libs/slick/slick-theme.min.css">
+    
+    <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <!-- JS SUPPORTS -->
+    <script src="../assets/libs/vendors/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
+    <script src="../assets/libs/slick/slick.min.js"></script>
+
+</head>
+<body>
+    <div class="screen-wrapper">
+        <div class="screen-inner">
+            <div class="nisf-body has-footer-bar"> <!-- has-footer-bar should be when footer has bar -->
+                <!-- All content should go inside nisf-wrapper -->
+                <div class="nisf-wrapper">
+                    <!-- body overlay -->
+                    <div class="body-overlay"></div>
+                    <div class="nisf-wrapper-inner">
+                        <div class="nisf-container">
+
+                            <!-- Top Navigation -->
+                            <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-3">
+                                <a href="#" class="">
+                                    <svg class="w-4 h-4 text-white">
+                                        <use xlink:href="#icon-angle-left"></use>
+                                    </svg>
+                                </a>
+                            </nav>
+
+                            <div class="section-heading mb-5">
+                                <div class="flex items-start gap-2">
+                                    <a href="#" class="mt-3">
+                                        <svg class="w-6 h-6 text-white">
+                                            <use xlink:href="#icon-angle-left"></use>
+                                        </svg>
+                                    </a>
+                                    <h3 class="text-3xl leading-10 font-bold text-white mb-4">5 Profils à qui vous pourriez le plus correspondre.</h3>
+                                </div>
+                                <a href="#" class="btn--primary">Lancer Le Robot</a>
+                            </div>
+
+                            <!-- Search Bar -->
+                            <div class="py-2">
+
+                                <div class="mb-3 flex items-center justify-between gap-3">
+                                    <div class="relative w-full">
+                                        <input type="text" placeholder="Je Cherche ..." class="input-control !ps-12">
+                                        <img src="../assets/images/icons/search.png" class="w-4 absolute top-1/2 start-5 -translate-y-1/2" alt="">
+                                    </div>
+                                    <button type="submit" class="w-[56px] min-w-[56px] h-[56px] p-2 bg-primary text-white inline-flex items-center justify-center rounded">
+                                        <img src="../assets/images/icons/filter.png" class="w-[20px]" alt="">
+                                    </button>
+                                </div>
+
+                                <div class="flex justify-between items-center gap-3">
+                                    <div class="font-medium text-white">Total Frères: <a href="#" class="link-primary">2763</a> profils disponibles.</div>
+                                    <div>SWITCH</div>
+                                </div>
+                            </div>
+
+                            <div class="slider-area px-4 py-5">
+                                
+                                <div theme-slider data-slick='{
+                                    "arrows": true, 
+                                    "centerPadding": "2rem",
+                                    "slidesToShow": 1, 
+                                    "slidesToScroll": 1
+                                }'
+                                >
+                                <!-- Single Slide -->
+                                <div class="px-1 single-slide pb-6">
+                                    <div class="bg-[#814067] rounded-lg relative p-2 before:content-[''] before:w-2/3 before:start-1/2 before:h-3 before:bg-black/25 before:absolute before:-bottom-1 before:-translate-x-1/2 before:blur-xl before:-z-[1]">
+                                        <div class="thumbnail mb-3">
+                                            <img class="rounded-lg h-full w-full object-center object-cover" src="../assets/images/makkah.png" alt="">
+                                        </div>
+                                        <div class="p-2 text-white">
+                                            <ul class="flex flex-col gap-y-4 mb-4">
+                                                <!-- List Item -->
+                                                <li class="flex justify-between gap-3 items-start">
+                                                    <div>
+                                                        <h3 class="text-2xl">Rachid Alawi, 28</h3>
+                                                        <p class="font-normal text-white text-opacity-60">Normandie</p>
+                                                    </div>
+                                                    <ul class="inline-flex gap-3 text-xl items-center">
+                                                        <li><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M12 6.5a9.77 9.77 0 0 1 8.82 5.5c-1.65 3.37-5.02 5.5-8.82 5.5S4.83 15.37 3.18 12A9.77 9.77 0 0 1 12 6.5m0-2C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zm0 5a2.5 2.5 0 0 1 0 5 2.5 2.5 0 0 1 0-5m0-2c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5z"></path></svg></li>
+                                                        <li class="w-[1px] h-6 bg-white bg-opacity-20"></li>
+                                                        <li><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M463 192H315.9L271.2 58.6C269 52.1 262.9 48 256 48s-13 4.1-15.2 10.6L196.1 192H48c-8.8 0-16 7.2-16 16 0 .9.1 1.9.3 2.7.2 3.5 1.8 7.4 6.7 11.3l120.9 85.2-46.4 134.9c-2.3 6.5 0 13.8 5.5 18 2.9 2.1 5.6 3.9 9 3.9 3.3 0 7.2-1.7 10-3.6l118-84.1 118 84.1c2.8 2 6.7 3.6 10 3.6 3.4 0 6.1-1.7 8.9-3.9 5.6-4.2 7.8-11.4 5.5-18L352 307.2l119.9-86 2.9-2.5c2.6-2.8 5.2-6.6 5.2-10.7 0-8.8-8.2-16-17-16zm-127.2 92.5c-10 7.2-14.2 20.2-10.2 31.8l30.1 87.7c1.3 3.7-2.9 6.8-6.1 4.6l-77.4-55.2c-4.9-3.5-10.6-5.2-16.3-5.2-5.7 0-11.4 1.7-16.2 5.2l-77.4 55.1c-3.2 2.3-7.4-.9-6.1-4.6l30.1-87.7c4-11.8-.2-24.8-10.3-32l-81-57.1c-3.2-2.2-1.6-7.3 2.3-7.3H196c12 0 22.7-7.7 26.5-19.1l29.6-88.2c1.2-3.6 6.4-3.6 7.6 0l29.6 88.2c3.8 11.4 14.5 19.1 26.5 19.1h97.3c3.9 0 5.5 5 2.3 7.2l-79.6 57.5z"></path></svg></li>
+                                                    </ul>
+                                                </li>
+
+                                                <!-- List Item -->
+                                                <li class="flex justify-between gap-3 items-start">
+                                                    <div class="text-white text-opacity-60 flex items-center gap-2">
+                                                        <img src="../assets/images/flag-icon/france-square.png" alt="" class="inline-block w-5">
+                                                        <span>Lile, France</span>
+                                                     </div>
+                                                     <ul class="inline-flex gap-3 text-xl items-center">
+                                                            <img src="../assets/images/education.png" class="w-4 h-4 rounded-full object-contain" alt="">
+                                                         <li class="w-[1px] h-6 bg-white bg-opacity-20"></li>
+                                                         <li>
+                                                            <img src="../assets/images/photos.png" class="w-4 h-4 rounded-full object-contain" alt="">
+                                                         </li>
+                                                     </ul>
+                                                </li>
+                                            </ul>
+
+                                            <a href="#" class="btn--primary w-full">VOIR LE PROFILE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Slide -->
+                                <div class="px-1 single-slide pb-6">
+                                    <div class="bg-[#814067] rounded-lg relative p-2 before:content-[''] before:w-2/3 before:start-1/2 before:h-3 before:bg-black/25 before:absolute before:-bottom-1 before:-translate-x-1/2 before:blur-xl before:-z-[1]">
+                                        <div class="thumbnail mb-3">
+                                            <img class="rounded-lg h-full w-full object-center object-cover" src="../assets/images/makkah.png" alt="">
+                                        </div>
+                                        <div class="p-2 text-white">
+                                            <ul class="flex flex-col gap-y-4 mb-4">
+                                                <!-- List Item -->
+                                                <li class="flex justify-between gap-3 items-start">
+                                                    <div>
+                                                        <h3 class="text-2xl">Rachid Alawi, 28</h3>
+                                                        <p class="font-normal text-white text-opacity-60">Normandie</p>
+                                                    </div>
+                                                    <ul class="inline-flex gap-3 text-xl items-center">
+                                                        <li><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M12 6.5a9.77 9.77 0 0 1 8.82 5.5c-1.65 3.37-5.02 5.5-8.82 5.5S4.83 15.37 3.18 12A9.77 9.77 0 0 1 12 6.5m0-2C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zm0 5a2.5 2.5 0 0 1 0 5 2.5 2.5 0 0 1 0-5m0-2c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5z"></path></svg></li>
+                                                        <li class="w-[1px] h-6 bg-white bg-opacity-20"></li>
+                                                        <li><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M463 192H315.9L271.2 58.6C269 52.1 262.9 48 256 48s-13 4.1-15.2 10.6L196.1 192H48c-8.8 0-16 7.2-16 16 0 .9.1 1.9.3 2.7.2 3.5 1.8 7.4 6.7 11.3l120.9 85.2-46.4 134.9c-2.3 6.5 0 13.8 5.5 18 2.9 2.1 5.6 3.9 9 3.9 3.3 0 7.2-1.7 10-3.6l118-84.1 118 84.1c2.8 2 6.7 3.6 10 3.6 3.4 0 6.1-1.7 8.9-3.9 5.6-4.2 7.8-11.4 5.5-18L352 307.2l119.9-86 2.9-2.5c2.6-2.8 5.2-6.6 5.2-10.7 0-8.8-8.2-16-17-16zm-127.2 92.5c-10 7.2-14.2 20.2-10.2 31.8l30.1 87.7c1.3 3.7-2.9 6.8-6.1 4.6l-77.4-55.2c-4.9-3.5-10.6-5.2-16.3-5.2-5.7 0-11.4 1.7-16.2 5.2l-77.4 55.1c-3.2 2.3-7.4-.9-6.1-4.6l30.1-87.7c4-11.8-.2-24.8-10.3-32l-81-57.1c-3.2-2.2-1.6-7.3 2.3-7.3H196c12 0 22.7-7.7 26.5-19.1l29.6-88.2c1.2-3.6 6.4-3.6 7.6 0l29.6 88.2c3.8 11.4 14.5 19.1 26.5 19.1h97.3c3.9 0 5.5 5 2.3 7.2l-79.6 57.5z"></path></svg></li>
+                                                    </ul>
+                                                </li>
+
+                                                <!-- List Item -->
+                                                <li class="flex justify-between gap-3 items-start">
+                                                    <div class="text-white text-opacity-60 flex items-center gap-2">
+                                                        <img src="../assets/images/flag-icon/france-square.png" alt="" class="inline-block w-5">
+                                                        <span>Lile, France</span>
+                                                     </div>
+                                                     <ul class="inline-flex gap-3 text-xl items-center">
+                                                            <img src="../assets/images/education.png" class="w-4 h-4 rounded-full object-contain" alt="">
+                                                         <li class="w-[1px] h-6 bg-white bg-opacity-20"></li>
+                                                         <li>
+                                                            <img src="../assets/images/photos.png" class="w-4 h-4 rounded-full object-contain" alt="">
+                                                         </li>
+                                                     </ul>
+                                                </li>
+                                            </ul>
+
+                                            <a href="#" class="btn--primary w-full">VOIR LE PROFILE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Single Slide -->
+                                <div class="px-1 single-slide pb-6">
+                                    <div class="bg-[#814067] rounded-lg relative p-2 before:content-[''] before:w-2/3 before:start-1/2 before:h-3 before:bg-black/25 before:absolute before:-bottom-1 before:-translate-x-1/2 before:blur-xl before:-z-[1]">
+                                        <div class="thumbnail mb-3">
+                                            <img class="rounded-lg h-full w-full object-center object-cover" src="../assets/images/makkah.png" alt="">
+                                        </div>
+                                        <div class="p-2 text-white">
+                                            <ul class="flex flex-col gap-y-4 mb-4">
+                                                <!-- List Item -->
+                                                <li class="flex justify-between gap-3 items-start">
+                                                    <div>
+                                                        <h3 class="text-2xl">Rachid Alawi, 28</h3>
+                                                        <p class="font-normal text-white text-opacity-60">Normandie</p>
+                                                    </div>
+                                                    <ul class="inline-flex gap-3 text-xl items-center">
+                                                        <li><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M12 6.5a9.77 9.77 0 0 1 8.82 5.5c-1.65 3.37-5.02 5.5-8.82 5.5S4.83 15.37 3.18 12A9.77 9.77 0 0 1 12 6.5m0-2C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zm0 5a2.5 2.5 0 0 1 0 5 2.5 2.5 0 0 1 0-5m0-2c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5z"></path></svg></li>
+                                                        <li class="w-[1px] h-6 bg-white bg-opacity-20"></li>
+                                                        <li><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M463 192H315.9L271.2 58.6C269 52.1 262.9 48 256 48s-13 4.1-15.2 10.6L196.1 192H48c-8.8 0-16 7.2-16 16 0 .9.1 1.9.3 2.7.2 3.5 1.8 7.4 6.7 11.3l120.9 85.2-46.4 134.9c-2.3 6.5 0 13.8 5.5 18 2.9 2.1 5.6 3.9 9 3.9 3.3 0 7.2-1.7 10-3.6l118-84.1 118 84.1c2.8 2 6.7 3.6 10 3.6 3.4 0 6.1-1.7 8.9-3.9 5.6-4.2 7.8-11.4 5.5-18L352 307.2l119.9-86 2.9-2.5c2.6-2.8 5.2-6.6 5.2-10.7 0-8.8-8.2-16-17-16zm-127.2 92.5c-10 7.2-14.2 20.2-10.2 31.8l30.1 87.7c1.3 3.7-2.9 6.8-6.1 4.6l-77.4-55.2c-4.9-3.5-10.6-5.2-16.3-5.2-5.7 0-11.4 1.7-16.2 5.2l-77.4 55.1c-3.2 2.3-7.4-.9-6.1-4.6l30.1-87.7c4-11.8-.2-24.8-10.3-32l-81-57.1c-3.2-2.2-1.6-7.3 2.3-7.3H196c12 0 22.7-7.7 26.5-19.1l29.6-88.2c1.2-3.6 6.4-3.6 7.6 0l29.6 88.2c3.8 11.4 14.5 19.1 26.5 19.1h97.3c3.9 0 5.5 5 2.3 7.2l-79.6 57.5z"></path></svg></li>
+                                                    </ul>
+                                                </li>
+
+                                                <!-- List Item -->
+                                                <li class="flex justify-between gap-3 items-start">
+                                                    <div class="text-white text-opacity-60 flex items-center gap-2">
+                                                        <img src="../assets/images/flag-icon/france-square.png" alt="" class="inline-block w-5">
+                                                        <span>Lile, France</span>
+                                                     </div>
+                                                     <ul class="inline-flex gap-3 text-xl items-center">
+                                                            <img src="../assets/images/education.png" class="w-4 h-4 rounded-full object-contain" alt="">
+                                                         <li class="w-[1px] h-6 bg-white bg-opacity-20"></li>
+                                                         <li>
+                                                            <img src="../assets/images/photos.png" class="w-4 h-4 rounded-full object-contain" alt="">
+                                                         </li>
+                                                     </ul>
+                                                </li>
+                                            </ul>
+
+                                            <a href="#" class="btn--primary w-full">VOIR LE PROFILE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                    <!-- Footer Bar -->
+                    <ul class="footer-float-bar">
+                        <li>
+                            <button class="footer-float-bar--item">
+                                <svg>
+                                    <use xlink:href="#icon-comments"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="footer-float-bar--item active">
+                                <svg>
+                                    <use xlink:href="#icon-search"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="footer-float-bar--item">
+                                <svg>
+                                    <use xlink:href="#icon-user"></use>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- svgsprit icons -->
+<svg width="0" height="0" class="hidden">
+    
+    <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="icon-angle-down">
+        <path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+    </symbol>
+    
+    <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" id="icon-angle-left">
+        <path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"></path>
+    </symbol>
+    
+    <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="icon-vertical-dot">
+      <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"></path>
+    </symbol>
+    
+    <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icon-search">
+        <path d="M456.69 421.39 362.6 327.3a173.81 173.81 0 0 0 34.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 0 0 327.3 362.6l94.09 94.09a25 25 0 0 0 35.3-35.3zM97.92 222.72a124.8 124.8 0 1 1 124.8 124.8 124.95 124.95 0 0 1-124.8-124.8z"></path>
+    </symbol>
+
+    <symbol stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-user">
+        <circle cx="12" cy="8" r="5"></circle>
+        <path d="M20 21a8 8 0 1 0-16 0"></path>
+      </symbol>
+
+    <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="icon-comments">
+        <path d="M 2 5 L 2 21 L 6 21 L 6 26.09375 L 7.625 24.78125 L 12.34375 21 L 22 21 L 22 5 Z M 4 7 L 20 7 L 20 19 L 11.65625 19 L 11.375 19.21875 L 8 21.90625 L 8 19 L 4 19 Z M 24 9 L 24 11 L 28 11 L 28 23 L 24 23 L 24 25.90625 L 20.34375 23 L 12.84375 23 L 10.34375 25 L 19.65625 25 L 26 30.09375 L 26 25 L 30 25 L 30 9 Z"></path>
+    </symbol>
+
+    <symbol stroke="currentColor" fill="currentColor" stroke-width="0" fill-rule="evenodd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" id="icon-close">
+        <path d="M799.855 166.312c.023.007.043.018.084.059l57.69 57.69c.041.041.052.06.059.084a.118.118 0 0 1 0 .069c-.007.023-.018.042-.059.083L569.926 512l287.703 287.703c.041.04.052.06.059.083a.118.118 0 0 1 0 .07c-.007.022-.018.042-.059.083l-57.69 57.69c-.041.041-.06.052-.084.059a.118.118 0 0 1-.069 0c-.023-.007-.042-.018-.083-.059L512 569.926 224.297 857.629c-.04.041-.06.052-.083.059a.118.118 0 0 1-.07 0c-.022-.007-.042-.018-.083-.059l-57.69-57.69c-.041-.041-.052-.06-.059-.084a.118.118 0 0 1 0-.069c.007-.023.018-.042.059-.083L454.073 512 166.371 224.297c-.041-.04-.052-.06-.059-.083a.118.118 0 0 1 0-.07c.007-.022.018-.042.059-.083l57.69-57.69c.041-.041.06-.052.084-.059a.118.118 0 0 1 .069 0c.023.007.042.018.083.059L512 454.073l287.703-287.702c.04-.041.06-.052.083-.059a.118.118 0 0 1 .07 0Z"></path>
+    </symbol>
+
+    <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icon-camera">
+        <circle cx="256" cy="280" r="63"></circle>
+        <path d="M440 96h-88l-32-32H192l-32 32H72c-22.092 0-40 17.908-40 40v272c0 22.092 17.908 40 40 40h368c22.092 0 40-17.908 40-40V136c0-22.092-17.908-40-40-40zM256 392c-61.855 0-112-50.145-112-112s50.145-112 112-112 112 50.145 112 112-50.145 112-112 112z"></path>
+    </symbol>
+    
+    <symbol xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="-3 0 262 262" id="google-icon-logo">
+        <path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027" fill="#4285F4"></path>
+        <path d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1" fill="#34A853"></path>
+        <path d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782" fill="#FBBC05"></path>
+        <path d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251" fill="#EB4335"></path>
+    </symbol>
+
+    <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icon-heart">
+        <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
+    </symbol>
+
+    <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="icon-check">
+      <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path>
+    </symbol>
+</svg>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
