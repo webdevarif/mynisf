@@ -21,6 +21,7 @@
     p-[1.25rem]
     relative
     bg-[url('../images/action-reaction-list-item-bg.png')]
+    z-[1]
 }
 
 .list-reactions .list-item--label{
