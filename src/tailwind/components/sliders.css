@@ -93,3 +93,11 @@
     @apply 
     bg-[url('../images/abonnement-active-bg.png')]
 }
+
+
+
+/* CAROUSEL */
+.left-swipe-carousel .slick-list{
+    @apply
+    !ps-0
+}

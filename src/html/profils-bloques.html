@@ -18,12 +18,19 @@
             <div class="nisf-body has-footer-bar"> <!-- has-footer-bar should be when footer has bar -->
                 <!-- All content should go inside nisf-wrapper -->
                 <div class="nisf-wrapper">
+                    <!-- body overlay -->
+                    <div class="body-overlay"></div>
                     <div class="nisf-wrapper-inner">
-                        <div class="nisf-container">
+                        <div class="nisf-container overflow-hidden">
 
                             <!-- Top Navigation -->
                             <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-3">
-                                <h4 class="font-semibold text-xl text-white w-full">T’es Plutôt</h4>
+                                <button class="">
+                                    <svg class="w-4 h-4 text-white">
+                                        <use xlink:href="#icon-angle-left"></use>
+                                    </svg>
+                                </button>
+                                <h4 class="font-semibold text-xl text-white w-full">Listes des Profils Bloqués</h4>
                                 <button class="bg-transparent">
                                     <svg class="icon w-5 h-5 text-white">
                                         <use xlink:href="#icon-vertical-dot"></use>
@@ -31,94 +38,127 @@
                                 </button>
                             </nav>
 
-                            <!-- PROGRESS BAR -->
-                            <div class="progress mb-5">
-                                <div class="progress-bar">
-                                    <div class="progress-line" style="width: 50%;"></div>
-                                </div>
-                                <div class="progress-num inline-flex gap-x-2 leading-6 items-center justify-center">
-                                    <img class="inline-block max-w-[0.9rem] h-auto mb-1" src="../assets/images/progress-crown.png" alt="">
-                                    <span>12/40</span>
-                                </div>
-                            </div>
-
-                            <div class="section-heading mb-5">
-                                <div class="flex items-start gap-2">
-                                    <a href="#" class="mt-3">
-                                        <svg class="w-6 h-6 text-white">
-                                            <use xlink:href="#icon-angle-left"></use>
-                                        </svg>
-                                    </a>
-                                    <h3 class="text-4xl leading-10 font-bold text-white mb-2">Vous êtes plutôt pour A ou B ?</h3>
-                                </div>
-                            </div>
-
-                            <form action="">
-
-                                <ul class="grid grid-cols-1 mb-7">
-                                    <li class="outline--check">
-                                        <input type="radio" class="outline--check-input" name="choisissez" id="form--cat">
-                                        <label for="form--cat" class="rounded-lg bg-[#562b44] outline--check-label">
-                                            <div class="p-5">
-                                                <h5 class="text-white flex gap-2 items-center">
-                                                    <span class="bg-[#2F1428] w-6 h-6 font-bold rounded-full inline-flex items-center justify-center">A</span>
-                                                    <strong>Chat</strong>
-                                                </h5>
+                            
+                            <ul class="flex flex-col gap-3">
+                                <!-- SINGLE CARD -->
+                                <li>
+                                    <div class="card">
+                                        <div class="card-header flex gap-3">
+                                            <!-- User Thumb -->
+                                            <span class="avatar overflow-hidden rounded-full">
+                                                <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/1.png" alt="">
+                                            </span>
+                                            <!-- User Info -->
+                                            <div class="mb-2">
+                                                <h3 class="mb-1 text-white text-xl flex items-center gap-x-2">
+                                                    <span>Rachid Mohamed</span>
+                                                    <span class="inline-block">
+                                                        <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
+                                                    </span>
+                                                </h3>
+                                                <p class="text-medium text-white text-opacity-25">39 ans (Agadir, Spain)</p>
                                             </div>
-                                            <div class="rounded-lg overflow-hidden">
-                                                <img src="../assets/images/cat.jpg" class="" alt="">
+                                            
+                                            <div class="more-info ms-auto">
+                                                <!-- DROPDOWN INFO-->
+                                                <div class="dropdown-wrapper">
+                                                    <button class="bg-transparent dropdown-toggler">
+                                                        <svg class="icon w-5 h-5 text-white">
+                                                            <use xlink:href="#icon-vertical-dot"></use>
+                                                        </svg>
+                                                    </button>  
+                                                    <div class="dropdown-menu">
+                                                        <ul class="dropdown-menu-list">
+                                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </label>
-                                    </li>
-
-                                    <li>
-                                        <hr class="my-7 border-white border-t-2 border-opacity-5">
-                                    </li>
-
-                                    <li class="outline--check">
-                                        <input type="radio" class="outline--check-input" name="choisissez" id="form--dog">
-                                        <label for="form--dog" class="rounded-lg bg-[#562b44] outline--check-label">
-                                            <div class="p-5">
-                                                <h5 class="text-white flex gap-2 items-center">
-                                                    <span class="bg-[#2F1428] w-6 h-6 font-bold rounded-full inline-flex items-center justify-center">B</span>
-                                                    <strong>Chien</strong>
-                                                </h5>
+                                        </div>
+                                        <div class="card-footer border-t-2 border-black border-opacity-5">
+                                            <div class="grid grid-cols-2 gap-3">
+                                                <span></span>
+                                                <button class="btn--secondary w-full btn--sm">Debloquer</button>
                                             </div>
-                                            <div class="rounded-lg overflow-hidden">
-                                                <img src="../assets/images/dog.jpg" class="" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- SINGLE CARD -->
+                                <li>
+                                    <div class="card">
+                                        <div class="card-header flex gap-3">
+                                            <!-- User Thumb -->
+                                            <span class="avatar overflow-hidden rounded-full">
+                                                <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/1.png" alt="">
+                                            </span>
+                                            <!-- User Info -->
+                                            <div class="mb-2">
+                                                <h3 class="mb-1 text-white text-xl flex items-center gap-x-2">
+                                                    <span>Rachid Mohamed</span>
+                                                    <span class="inline-block">
+                                                        <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
+                                                    </span>
+                                                </h3>
+                                                <p class="text-medium text-white text-opacity-25">39 ans (Agadir, Spain)</p>
                                             </div>
-                                        </label>
-                                    </li>
-                                </ul>
+                                            
+                                            <div class="more-info ms-auto">
+                                                <!-- DROPDOWN INFO-->
+                                                <div class="dropdown-wrapper">
+                                                    <button class="bg-transparent dropdown-toggler">
+                                                        <svg class="icon w-5 h-5 text-white">
+                                                            <use xlink:href="#icon-vertical-dot"></use>
+                                                        </svg>
+                                                    </button>  
+                                                    <div class="dropdown-menu">
+                                                        <ul class="dropdown-menu-list">
+                                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer border-t-2 border-black border-opacity-5">
+                                            <div class="grid grid-cols-2 gap-3">
+                                                <span></span>
+                                                <button class="btn--secondary w-full btn--sm">Debloquer</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
 
-                                <!-- Buttons Actions -->
-                                <div class="flex items-center gap-3 justify-between">
-                                    <button class="btn--light btn--w-lg">Non, Merci</button>
-                                    <button class="btn--primary btn--w-lg">Ajouter La Question</button>
-                                </div>
-                            </div>
-                        </form>
+                        
+                        </div>
+
+                        <!-- Footer Bar -->
+                        <div class="footer-float-bar">
+                            <button class="">
+                                <svg class="w-6 h-6 text-white">
+                                    <use xlink:href="#icon-comments"></use>
+                                </svg>
+                            </button>
+                            <button class="">
+                                <svg class="w-6 h-6 text-white">
+                                    <use xlink:href="#icon-search"></use>
+                                </svg>
+                            </button>
+                            <button class="">
+                                <svg class="w-6 h-6 text-white">
+                                    <use xlink:href="#icon-user"></use>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
 
-                    <!-- Footer Bar -->
-                    <div class="footer-float-bar">
-                        <button class="">
-                            <svg class="w-6 h-6 text-white">
-                                <use xlink:href="#icon-comments"></use>
-                            </svg>
-                        </button>
-                        <button class="">
-                            <svg class="w-6 h-6 text-white">
-                                <use xlink:href="#icon-search"></use>
-                            </svg>
-                        </button>
-                        <button class="">
-                            <svg class="w-6 h-6 text-white">
-                                <use xlink:href="#icon-user"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
+                <!-- CLOUD ANIMATIONS -->
+                <img src="../assets/images/cloud-1.png" class="animation-cloud-1" alt="">
+                <img src="../assets/images/cloud-2.png" class="animation-cloud-2" alt="">
+                <img src="../assets/images/cloud-3.png" class="animation-cloud-3" alt="">
+                <img src="../assets/images/cloud-4.png" class="animation-cloud-4" alt="">
+                <img src="../assets/images/cloud-5.png" class="animation-cloud-5" alt="">
             </div>
         </div>
     </div>

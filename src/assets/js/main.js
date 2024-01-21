@@ -6,6 +6,7 @@
         this.setupTAB();
         this.setupDropdown();
         this.setupThemeSLIDER();
+        this.setupDateCalender();
       },
   
       scrollbar() {  
@@ -127,8 +128,101 @@
             nextArrow:'<button type="button" class="arrows-right"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg></button>'
           });
         }
-      }
+      },
+      
+      setupDateCalender: function () {
+        const $container = $("[calendar]");
+        const $daysContainer = $container.find(".calender-body");
+        const $monthYear = $container.find("[monthYear]");
+        const $dateInput = $(".datepicker--id");
+        // const calendar = $("#calendar");
+  
+        let currentDate = new Date();
+        let selectedDate = null;
+  
+        // Set the value of datepicker input to the current date
+        $dateInput.val(currentDate.toDateString());
+  
+        function handleDayClick(day) {
+          selectedDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), day);
+          renderCalendar();
+          $dateInput.val(selectedDate.toDateString());
+          HatchProElementor.updateTimepicker(); // Call updateTimepicker when the day is clicked
+        }
+  
+        function createDayElement(day) {
+          const date = new Date(currentDate.getFullYear(), currentDate.getMonth(), day);
+          const today = new Date(); // Current date
+  
+          // Add custom disabled dates (replace these with your actual disabled dates)
+          const customDisabledDates = [
+            new Date("2024-01-26"), 
+            new Date("2024-01-29"), 
+            new Date("2022-01-30")
+          ];
 
+          const dayClass = date.toDateString() === today.toDateString() ? "current" : "";
+          const selectedClass = selectedDate && date.toDateString() === selectedDate.toDateString() ? "selected" : "";
+          // const disabledClass = date < today.setDate(today.getDate() - 1) ? "disabled" : "";
+          const disabledClass = date < today.setDate(today.getDate() - 1) || customDisabledDates.some(d => date.toDateString() === d.toDateString()) ? "disabled" : "";
+
+          const dayElement = $("<td>", {
+            class: `day ${dayClass} ${selectedClass} ${disabledClass}`,
+            text: day,
+          });
+  
+          dayElement.on("click", () => handleDayClick(day));
+          return dayElement;
+        }
+  
+        function renderCalendar() {
+          $daysContainer.empty();
+          const firstDay = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
+          const lastDay = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0);
+  
+          $monthYear.text(`${currentDate.toLocaleString("default", { month: "long" })} ${currentDate.getFullYear()}`);
+  
+          const dayNames = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"];
+  
+          // Create thead and append day names
+          const table = $("<table class='calender-picker-table'>");
+          const thead = $("<thead>");
+          const dayNamesRow = $("<tr>");
+          dayNames.forEach((dayName) => {
+            const dayNameElement = $("<th>", {
+              class: "day-name",
+              text: dayName,
+            });
+            dayNamesRow.append(dayNameElement);
+          });
+          thead.append(dayNamesRow);
+          table.append(thead);
+          $daysContainer.append(table);
+  
+          // Create tbody and append days
+          const tbody = $("<tbody>");
+          for (let week = 1; week <= 6; week++) {
+            const weekRow = $("<tr>");
+            for (let day = 1; day <= 7; day++) {
+              const dayNumber = (week - 1) * 7 + day - firstDay.getDay();
+              if (dayNumber >= 1 && dayNumber <= lastDay.getDate()) {
+                weekRow.append(createDayElement(dayNumber));
+              } else {
+                weekRow.append($("<td>")); // Empty cell for days outside the month
+              }
+            }
+            tbody.append(weekRow);
+          }
+          table.append(tbody);
+        }
+  
+        renderCalendar();
+  
+        $("#prevBtn, #nextBtn").on("click", function () {
+          currentDate.setMonth(currentDate.getMonth() + ($(this).is("#nextBtn") ? 1 : -1));
+          renderCalendar();
+        });
+      },
 
     };
   

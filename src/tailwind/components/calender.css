@@ -1,0 +1,48 @@
+.calender-picker-table {
+    @apply 
+    w-full
+    text-center
+}
+.calender-picker-table .day-name{
+    @apply 
+    bg-primary
+    text-white
+    text-lg
+    font-semibold
+    py-3
+}
+
+.calender-picker-table td.day{
+    @apply 
+    p-3
+    font-semibold
+    text-white
+    cursor-pointer
+}
+
+.calender-picker-table td.day.disabled{
+    @apply 
+    p-3
+    text-white 
+    text-opacity-25
+    pointer-events-none
+}
+
+.calender-picker-table td.day.selected{
+    @apply 
+    relative
+    z-[1]
+    text-primary
+
+    before:absolute
+    before:top-1/2
+    before:start-1/2
+    before:w-10
+    before:h-10
+    before:bg-white
+    before:text-primary
+    before:-translate-x-1/2
+    before:-translate-y-1/2
+    before:-z-[1]
+    before:rounded-full
+}

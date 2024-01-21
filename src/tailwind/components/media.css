@@ -7,6 +7,23 @@
     w-[var(--avatar-size,60px)]
     h-[var(--avatar-size,60px)]
 }
+
+.avatar-xs{
+    --avatar-size: 25px;
+    @apply
+    min-w-[var(--avatar-size,25px)]
+    w-[var(--avatar-size,25px)]
+    h-[var(--avatar-size,25px)]
+}
+
+.avatar-sm{
+    --avatar-size: 35px;
+    @apply
+    min-w-[var(--avatar-size,35px)]
+    w-[var(--avatar-size,35px)]
+    h-[var(--avatar-size,35px)]
+}
+
 .avatar-lg{
     --avatar-size: 75px;
     @apply
@@ -14,6 +31,7 @@
     w-[var(--avatar-size,75px)]
     h-[var(--avatar-size,75px)]
 }
+
 .avatar-xl{
     --avatar-size: 90px;
     @apply
@@ -22,10 +40,32 @@
     h-[var(--avatar-size,90px)]
 }
 
+.avatar-2xl{
+    --avatar-size: 110px;
+    @apply
+    min-w-[var(--avatar-size,110px)]
+    w-[var(--avatar-size,110px)]
+    h-[var(--avatar-size,110px)]
+}
+
 .avatar img{
     @apply
     h-full
     w-full
     object-cover
     object-center
+}
+
+
+.is-online{
+    @apply
+    relative
+
+    after:absolute
+    after:bg-[#00FF90]
+    after:w-4
+    after:h-4
+    after:rounded-full
+    after:end-1
+    after:bottom-0
 }

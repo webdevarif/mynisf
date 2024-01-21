@@ -21,7 +21,7 @@
     p-[1.25rem]
     relative
     bg-[url('../images/action-reaction-list-item-bg.png')]
-    z-[1]
+    /* z-[1] */
 }
 
 .list-reactions .list-item--label{
@@ -72,11 +72,27 @@
 }
 
 /* BUTTON CHECK */
+.btn--check .btn--check-input,
 .outline--check .outline--check-input {
     @apply
     hidden
 }
 
+.btn--check .btn--check-label{
+    @apply
+    inline-flex
+    items-center
+    justify-center
+    bg-white
+    bg-opacity-10
+    text-white
+    text-opacity-50
+    px-3
+    py-3
+    rounded
+    text-md
+    cursor-pointer
+}
 .outline--check .outline--check-label {
     @apply
     border-2
@@ -99,6 +115,12 @@
     before:-bottom-2 
     before:start-1/2 
     before:-translate-x-1/2
+}
+
+.btn--check .btn--check-input:checked ~ .btn--check-label {
+    @apply
+    !bg-primary
+    !text-white
 }
 
 
@@ -211,6 +233,7 @@ img.list-stars-progress-star {
     px-4
     transition-all
     duration-300
+    text-white
     hover:bg-white
     hover:bg-opacity-5
 }

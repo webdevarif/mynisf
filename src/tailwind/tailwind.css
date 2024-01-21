@@ -13,6 +13,7 @@ Version: 1.0.0
 @import "./components/header.css";
 @import "./components/buttons.css";
 @import "./components/media.css";
+@import "./components/calender.css";
 @import "./components/resets.css";
 @import "./components/forms.css";
 @import "./components/list.css";
