@@ -7,6 +7,8 @@
         this.setupDropdown();
         this.setupThemeSLIDER();
         this.setupDateCalender();
+        this.setupMenuDrawer();
+        this.setupVideoPlayer();
       },
   
       scrollbar() {  
@@ -130,7 +132,7 @@
         }
       },
       
-      setupDateCalender: function () {
+      setupDateCalender() {
         const $container = $("[calendar]");
         const $daysContainer = $container.find(".calender-body");
         const $monthYear = $container.find("[monthYear]");
@@ -223,6 +225,67 @@
           renderCalendar();
         });
       },
+
+      setupMenuDrawer() {
+        $(".has-submenu").each(function() {
+            let body = $('.nisf-body');
+            let trigger = $('.menu-toggler');
+    
+            trigger.on("click", function(e) {
+              e.preventDefault();
+              body.toggleClass('is-drawer-open');  
+            });
+        });
+        $(".has-submenu").each(function() {
+            let trigger = $(this).find('.menu-item-link');
+    
+            trigger.on("click", function(e) {
+                e.preventDefault();
+                let submenuWrapper = $(this).siblings("ul.submenu");
+    
+                if (submenuWrapper.length) {
+                    submenuWrapper.slideToggle();
+                }
+            });
+        });
+    },
+    
+
+      setupVideoPlayer(){
+        let videoWrappers = document.querySelectorAll(".video-wrapper");
+    
+        videoWrappers.forEach(wrapper => {
+          let video = wrapper.querySelector('.video-element');
+          let button__play = wrapper.querySelector('.video-control--play button.play');
+          let button__pause = wrapper.querySelector('.video-control--play button.pause');
+
+          button__play.addEventListener("click", function() {    
+                // For example, if you want to play/pause a video inside the wrapper:
+                // let video = wrapper.querySelector("video");
+                if (video) {
+                    if (video.paused) {
+                        video.play();
+                    } else {
+                      video.pause();
+                    }
+                }
+            });
+
+          button__pause.addEventListener("click", function() {    
+              // For example, if you want to play/pause a video inside the wrapper:
+              // let video = wrapper.querySelector("video");
+              if (video) {
+                  if (video.paused) {
+                      video.play();
+                  } else {
+                    video.pause();
+                  }
+              }
+          });
+        });
+
+        
+      }
 
     };
   

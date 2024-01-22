@@ -36,14 +36,75 @@
         @apply 
         overflow-y-auto
         h-full
+        transition-all
+        duration-300
     }
     .has-footer-bar .nisf-wrapper-inner{
         @apply
         pb-[6.5rem]
     }
-
+    .is-drawer-open .nisf-wrapper{
+        @apply
+        -translate-x-[calc(100%-2.75rem)]
+        overflow-hidden
+    }
     .nisf-container{
         @apply 
         px-5 sm:px-8
+    }
+
+    /* DRAWER */
+    .nisf-menu-drawer{
+        @apply
+        bg-[#8D4570]
+        w-full
+        max-w-[calc(100%-2.75rem)]
+        absolute
+        -end-full
+        top-0
+        h-full
+        px-6
+        py-10
+        overflow-y-auto
+        transition-all
+        duration-300
+    }
+
+    .is-drawer-open .nisf-menu-drawer{
+        @apply
+        end-0
+    }
+
+    
+    /* TOGGLER */
+    .menu-toggler .menu-toggler---icon{
+        @apply
+        w-6
+        h-6
+        text-white
+    }
+    .menu-toggler {
+        @apply
+        flex
+        items-center
+        justify-center
+    }
+
+    .menu-toggler .menu-toggler---close{
+        @apply
+        hidden
+    }
+
+    .is-drawer-open .menu-toggler .menu-toggler---open{
+        @apply
+        hidden
+    }
+    .is-drawer-open .menu-toggler {
+        @apply
+        translate-x-6
+    }
+    .is-drawer-open .menu-toggler .menu-toggler---close{
+        @apply
+        block
     }
 }

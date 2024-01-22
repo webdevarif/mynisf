@@ -69,3 +69,136 @@
     after:end-1
     after:bottom-0
 }
+
+
+/* VIDEO PLAYER */
+.video-wrapper{
+    @apply
+    relative
+    h-0
+    pt-[70.25%]
+    border-4 
+    border-white
+    border-opacity-25
+    rounded-lg
+    flex
+    items-center
+    bg-white
+    overflow-hidden
+    mb-3
+}
+.video-wrapper video,
+.video-wrapper .video-element{
+    @apply
+    absolute
+    top-0
+    start-0
+    w-full
+    h-full
+    object-cover
+    object-center
+    aspect-square
+}
+
+.video-wrapper .video-controls{
+    @apply
+    absolute
+    bottom-0
+    start-0
+    w-full
+    z-[9]
+    text-white
+    py-4
+    px-6
+
+    before:content-['']
+    before:w-full
+    before:h-full
+    before:top-0
+    before:start-0
+    before:absolute
+    before:bg-white
+    before:bg-opacity-85
+    before:-z-[1]
+
+    after:content-['']
+    after:w-full
+    after:h-full
+    after:top-0
+    after:start-0
+    after:absolute
+    after:bg-[rgb(22,22,22)]
+    after:bg-opacity-50
+    after:-z-[1]
+}
+
+.video-controls .buttons-group{
+    @apply 
+    flex
+    w-full
+    justify-between
+    items-start
+}
+.video-controls .video-control--play{
+    @apply
+    text-center
+}
+
+.video-controls .video-control--play button{
+    @apply
+    inline-flex
+    items-center
+    justify-center
+    rounded-full
+    bg-white
+    text-[#742856]
+    w-[4.5rem]
+    h-[4.5rem]
+    -my-10
+    -translate-y-1/4
+    relative
+
+    before:content-['']
+    before:w-full
+    before:h-full
+    before:top-5
+    before:start-1/2
+    before:-translate-x-1/2
+    before:absolute
+    before:bg-white
+    before:bg-opacity-50
+    before:rounded-full
+    before:blur-md
+    before:-z-[1]
+}
+
+.video-controls .video-control--volume-bar{
+	 -webkit-appearance: none;
+     @apply
+     block
+     w-full
+     bg-white
+     bg-opacity-25
+     rounded
+     mb-1
+}
+
+.video-controls .video-control--volume-bar::-webkit-slider-runnable-track {
+    @apply
+    w-full
+    h-[4px]
+    rounded
+    cursor-pointer
+    bg-white
+}
+
+.video-controls .video-control--volume-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    @apply 
+    w-[12px]
+    h-[12px]
+    rounded-full
+    bg-white
+    -mt-[4px]
+    cursor-pointer
+}

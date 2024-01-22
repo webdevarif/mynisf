@@ -15,130 +15,111 @@
 <body>
     <div class="screen-wrapper">
         <div class="screen-inner">
-            <div class="nisf-body has-footer-bar"> <!-- has-footer-bar should be when footer has bar -->
+            <div class="nisf-body">
                 <!-- All content should go inside nisf-wrapper -->
                 <div class="nisf-wrapper">
                     <div class="nisf-wrapper-inner">
-                        <div class="nisf-container">
+                        <div class="nisf-container overflow-hidden">
 
                             <!-- Top Navigation -->
-                            <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-3">
-                                <h4 class="font-semibold text-xl text-white w-full">Creation Action & Réaction</h4>
-                                <button class="bg-transparent">
-                                    <svg class="icon w-5 h-5 text-white">
+                            <nav class="top-navigation py-6 flex items-center justify-between gap-3 mb-5">
+                                <a href="#" class="">
+                                    <svg class="w-5 h-5 text-white">
+                                        <use xlink:href="#icon-angle-left"></use>
+                                    </svg>
+                                </a>
+                                
+                                <a href="/" class="header_logo mb-3">
+                                    <img src="../assets/images/logo.png" alt="">
+                                </a>
+
+                                <button type="button" class="">
+                                    <svg class="w-6 h-6 text-white">
                                         <use xlink:href="#icon-vertical-dot"></use>
                                     </svg>
                                 </button>
                             </nav>
 
-                            <!-- PROGRESS BAR -->
-                            <div class="progress mb-5">
-                                <div class="progress-bar">
-                                    <div class="progress-line" style="width: 50%;"></div>
-                                </div>
-                                <div class="progress-num">12/40</div>
-                            </div>
 
-                            <div class="section-heading mb-5">
-                                <div class="flex items-start gap-2">
-                                    <a href="#" class="mt-3">
-                                        <svg class="w-6 h-6 text-white">
-                                            <use xlink:href="#icon-angle-left"></use>
-                                        </svg>
-                                    </a>
-                                    <h3 class="text-4xl leading-10 font-bold text-white mb-2">Quand vous partez en vacances?</h3>
-                                </div>
-                                <p class="font-semibold">Voici la liste des options parmi lesquelles le récepteur choisira.</p>
-                            </div>
+                            <div class="text-desc text-lg font-medium pb-10">
+                                <h3 class="text-white h2">Introduction au Mariage</h3>
+                                <p >Lorem ipsum dolor sit amet, consectetura dipiscing elit, sed do eiusmod temporncididunt ut labore et dolore magncin.</p>
 
-                            <form action="">
+                                <!-- START: VIDEO PLAYER -->
+                                <div class='video-wrapper my-7'>
+                                    <video class='video-element' poster="../assets/images/video-poster.png">
+                                        <source src='https://www.w3schools.com/html/mov_bbb.mp4' type='video/mp4'>
+                                        <source src='https://www.w3schools.com/html/mov_bbb.ogg' type='video/ogg'>
+                                    </video>
+                                    <div class='video-controls'>
+                                        <div class="flex justify-between gap-x-8 mb-4">
+                                            <div class="buttons-group">
+                                                <button type="button" class="">
+                                                    <svg class="w-6 h-6 text-white">
+                                                        <use xlink:href="#icon-heart-alt"></use>
+                                                    </svg>
+                                                </button>
+                                                <button type="button" class="">
+                                                    <svg class="w-6 h-6 text-white">
+                                                        <use xlink:href="#icon-speaker-on"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
 
-                                <ul class="list-reactions">
-                                    <li>
-                                        <div class="list-item-check">
-                                            <input type="radio" class="list-item--input" name="reaction" id="reaction--1">
-                                            <label for="reaction--1" class="list-item--label overflow-hidden">
-                                                <div class="list-item--icon">A</div>
-                                                <div>
-                                                    <h4 class="text-lg mb-0 font-semibold">
-                                                        C'est budget illimité en se fait plaisir on fera les compens aprés les vacances.
-                                                    </h4>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="list-item-check">
-                                            <input type="radio" class="list-item--input" name="reaction" id="reaction--2">
-                                            <label for="reaction--2" class="list-item--label overflow-hidden">
-                                                <div class="list-item--icon">B</div>
-                                                <div>
-                                                    <h4 class="text-lg mb-0 font-semibold">
-                                                        Y'a un budget a ne pas dépasser donc vous faites attention.
-                                                    </h4>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="list-item-check">
-                                            <input type="radio" class="list-item--input" name="reaction" id="reaction--3">
-                                            <label for="reaction--3" class="list-item--label overflow-hidden">
-                                                <div class="list-item--icon">C</div>
-                                                <div>
-                                                    <h4 class="text-lg mb-0 font-semibold">
-                                                        Y'a un budget mais vous savez que vous allez le depasser donc vous faites attention.
-                                                    </h4>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="list-item-check">
-                                            <input type="radio" class="list-item--input" name="reaction" id="reaction--4">
-                                            <label for="reaction--4" class="list-item--label overflow-hidden">
-                                                <div class="list-item--icon">D</div>
-                                                <div>
-                                                    <h4 class="text-lg mb-0 font-semibold">
-                                                        Ne se prononce pas
-                                                    </h4>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </li>
-                                </ul>
+                                            <div class="video-control--play">
+                                                <button type="button" class="play">
+                                                    <svg class="w-8 h-8">
+                                                        <use xlink:href="#icon-play"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
 
-                                <!-- Buttons Actions -->
-                                <div class="flex items-center gap-3 justify-between">
-                                    <button class="btn--light btn--w-lg">Non, Merci</button>
-                                    <button class="btn--primary btn--w-lg">Ajouter La Question</button>
+                                            <div class="buttons-group">
+                                                <button type="button" class="">
+                                                    <svg class="w-6 h-6 text-white">
+                                                        <use xlink:href="#icon-cogs"></use>
+                                                    </svg>
+                                                </button>
+                                                <button type="button" class="">
+                                                    <svg class="w-6 h-6 text-white">
+                                                        <use xlink:href="#icon-fullscreen"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <input type="range" class="video-control--volume-bar" title="volume" min="0" max="1" step="0.1" value="1">
+                                        <!-- <progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+                                        <button id='btnReplay' class='replay' title='replay' accesskey="R" onclick='replayVideo();'>Replay</button>	
+                                        <button id='btnPlayPause' class='play' title='play' accesskey="P" onclick='playPauseVideo();'>Play</button>
+                                        <button id='btnStop' class='stop' title='stop' accesskey="X" onclick='stopVideo();'>Stop</button>
+                                       <input type="range" id="volume-bar" title="volume" min="0" max="1" step="0.1" value="1">
+                                        <button id='btnMute' class='mute' title='mute' onclick='muteVolume();'>Mute</button>	
+                                  <button id='btnFullScreen' class='fullscreen' title='toggle full screen' accesskey="T" onclick='toggleFullScreen();'>[&nbsp;&nbsp;]</button> -->
+                                    </div>
+                                </div>	
+                                <!-- END: VIDEO PLAYER -->
+
+                                <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magncin. cididunt ut labore et dolore magna.  </p>
+                                <p>modo viverra maecenas accumsan lacus vel facilisis ore magncin cididunt ut labore et dolore magna.</p>
+                                <div class="mt-10">
+                                    <button type="submit" class="btn--primary text-lg w-full">Voir Plus D’Information</button>
                                 </div>
                             </div>
-                        </form>
-                    </div>
-
-                    <!-- Footer Bar -->
-                    <div class="footer-float-bar">
-                        <button class="">
-                            <svg class="w-6 h-6 text-white">
-                                <use xlink:href="#icon-comments"></use>
-                            </svg>
-                        </button>
-                        <button class="">
-                            <svg class="w-6 h-6 text-white">
-                                <use xlink:href="#icon-search"></use>
-                            </svg>
-                        </button>
-                        <button class="">
-                            <svg class="w-6 h-6 text-white">
-                                <use xlink:href="#icon-user"></use>
-                            </svg>
-                        </button>
+                        </div>
                     </div>
                 </div>
+
+                <!-- CLOUD ANIMATIONS -->
+                <img src="../assets/images/cloud-1.png" class="animation-cloud-1" alt="">
+                <img src="../assets/images/cloud-2.png" class="animation-cloud-2" alt="">
+                <img src="../assets/images/cloud-3.png" class="animation-cloud-3" alt="">
             </div>
         </div>
     </div>
+
+
+
+
 
 <!-- svgsprit icons -->
 <svg width="0" height="0" class="hidden">

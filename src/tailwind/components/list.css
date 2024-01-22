@@ -21,7 +21,7 @@
     p-[1.25rem]
     relative
     bg-[url('../images/action-reaction-list-item-bg.png')]
-    /* z-[1] */
+    z-[1]
 }
 
 .list-reactions .list-item--label{
@@ -240,3 +240,68 @@ img.list-stars-progress-star {
 
 
 
+
+
+/* MENU LIST */
+.list-drawer-menu{
+    @apply
+    flex
+    flex-col
+    gap-y-3
+    mb-6
+}
+
+.list-drawer-menu .menu-item{
+    @apply
+    relative
+    z-[1]
+}
+.list-drawer-menu .menu-item-link{
+    @apply
+    bg-[#814067]
+    block
+    py-4
+    px-6
+    flex
+    items-center
+    gap-5
+    text-white
+    text-opacity-50
+    rounded
+    transition-all
+    duration-300
+    leading-[1.6]
+}
+.list-drawer-menu .menu-item-link:hover,
+.list-drawer-menu .menu-item-link.active{
+    @apply
+    !bg-primary
+    !text-white
+}
+.list-drawer-menu .menu-item-icon {
+    @apply
+    max-w-5
+    max-h-5
+}
+
+.list-drawer-menu .submenu{
+    @apply 
+    py-3
+    bg-[#6E3959]
+    -mt-2
+    -z-[1]
+    relative
+    rounded-b
+    hidden
+    
+}
+.list-drawer-menu .has-submenu.open .submenu{
+    @apply 
+    block
+}
+
+.list-drawer-menu .submenu .menu-item-link{
+    @apply 
+    rounded-none
+    bg-[#6E3959]
+}

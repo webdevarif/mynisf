@@ -9,7 +9,8 @@
     justify-center
     rounded
     font-semibold
-    text-[min(max(0.7rem,3vw),12px)]
+    /* text-[min(max(0.7rem,3vw),12px)] */
+    text-md
     px-[1.25rem]
     py-[1rem]
     relative
