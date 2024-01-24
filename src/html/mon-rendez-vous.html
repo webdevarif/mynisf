@@ -20,122 +20,113 @@
     <script src="../assets/libs/slick/slick.min.js"></script>
 
 </head>
-<body>
-    <div class="screen-wrapper">
-        <div class="screen-inner">
-            <div class="nisf-body"> <!-- has-footer-bar should be when footer has bar -->
-                <!-- All content should go inside nisf-wrapper -->
-                <div class="nisf-wrapper">
-                    <!-- body overlay -->
-                    <div class="body-overlay"></div>
-                    <div class="nisf-wrapper-inner">
-                        <div class="nisf-container">
-                            <!-- Top Navigation -->
-                            <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-3">
-                                <a href="#" class="inline-flex items-center">
-                                    <svg class="w-5 h-5 text-white">
-                                        <use xlink:href="#icon-angle-left"></use>
-                                    </svg>
-                                </a>
-                                <h4 class="font-semibold text-xl text-white w-full mb-0">Rendez-Vous</h4>
-                                <button class="menu-toggler ms-auto">
-                                    <svg class="menu-toggler---icon menu-toggler---open">
-                                        <use xlink:href="#icon-vertical-dot"></use>
-                                    </svg>
-                                    <svg class="menu-toggler---icon menu-toggler---close">
-                                        <use xlink:href="#icon-half-menu"></use>
-                                    </svg>
-                                </button>
-                            </nav>
+<body class="nisf-body"> <!-- has-footer-bar should be when footer has bar -->
+    <!-- All content should go inside nisf-wrapper -->
+    <div class="nisf-wrapper">
+        <!-- body overlay -->
+        <div class="body-overlay"></div>
+        <div class="nisf-container">
+            <!-- Top Navigation -->
+            <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-3">
+                <a href="#" class="inline-flex items-center">
+                    <svg class="w-5 h-5 text-white">
+                        <use xlink:href="#icon-angle-left"></use>
+                    </svg>
+                </a>
+                <h4 class="font-semibold text-xl text-white w-full mb-0">Rendez-Vous</h4>
+                <button class="menu-toggler ms-auto">
+                    <svg class="menu-toggler---icon menu-toggler---open">
+                        <use xlink:href="#icon-vertical-dot"></use>
+                    </svg>
+                    <svg class="menu-toggler---icon menu-toggler---close">
+                        <use xlink:href="#icon-half-menu"></use>
+                    </svg>
+                </button>
+            </nav>
 
-                            <!-- Tab Nav -->
-                            <ul class="tab-navigation p-0 mb-4 bg-transparent">
-                                <li class="active"><a href="#tab--mon-rendez-vous" class="tab-link py-4">Mon Rendez-Vous</a></li>
-                                <li><a href="#tab--mes-disponibilitès" class="tab-link py-4">Mes Disponibilitès</a></li>
-                            </ul>
+            <!-- Tab Nav -->
+            <ul class="tab-navigation p-0 mb-4 bg-transparent">
+                <li class="active"><a href="#tab--mon-rendez-vous" class="tab-link py-4">Mon Rendez-Vous</a></li>
+                <li><a href="#tab--mes-disponibilitès" class="tab-link py-4">Mes Disponibilitès</a></li>
+            </ul>
 
-                            <div class="tab-content">
-                                <!-- TAB PANEL -->
-                                <div class="tab-panel active" id="tab--mon-rendez-vous">
-                                    <ul class="flex flex-col gap-3 mb-6">
-                                        <li>
-                                            <div class="card">
-                                                <div class="card-header flex justify-between">
-                                                    <div>
-                                                        <h5 class="text-white h6 text-opacity-75 mb-1 font-normal">Vous avez rendez-vous le : </h5>
-                                                        <h2 class="h4 mb-0 flex items-center gap-3 text-white">
-                                                            <img class="w-5 inline-block" src="../assets/images/menu-icons/clock.png" alt="">
-                                                            <span>12 Jan 2020, 8am - 9am</span>
-                                                        </h2>
-                                                    </div>
-                                                    <div class="more-info ms-auto">
-                                                        <!-- DROPDOWN INFO-->
-                                                        <div class="dropdown-wrapper">
-                                                            <button class="bg-transparent dropdown-toggler">
-                                                                <svg class="icon w-5 h-5 text-white">
-                                                                    <use xlink:href="#icon-vertical-dot"></use>
-                                                                </svg>
-                                                            </button>  
-                                                            <div class="dropdown-menu">
-                                                                <h4 class="h5 text-white border-b-2 border-white border-opacity-5 py-2 px-2 text-center">Menu</h4>
-                                                                <ul class="dropdown-menu-list">
-                                                                    <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Option One</a></li>
-                                                                    <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Option Two</a></li>
-                                                                    <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Option Three</a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="grid grid-cols-[3fr_6fr] gap-3">
-                                                        <!-- Avatar -->
-                                                        <div class="">
-                                                            <img src="../assets/images/users/2.png" alt="">
-                                                        </div>
-                                                        <!-- Content -->
-                                                        <div>
-                                                            <h3 class="mb-1 text-white text-xl font-semibold flex items-center gap-x-2">
-                                                                <span>Salman ahmed</span>
-                                                                <span class="inline-block">
-                                                                    <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
-                                                                </span>
-                                                            </h3>
-                                                            <p class="text-medium mb-1 text-sm text-white text-opacity-25">39 ans (Agadir, Maroc)</p>
-                                                            <div class="font-medium mb-3 text-sm inline-block rounded-[6px] mt-2 bg-white bg-opacity-15 text-white px-4 py-1">Rendez vous visio</div>
-                                                            <ul class="flex gap-3 mb-0 items-end">
-                                                                <li><a href="#"><img class="max-w-[1rem]" src="../assets/images/icons/rendez-message.png" alt=""></a></li>
-                                                                <li class="w-[2px] h-3 bg-white bg-opacity-15 inline-block"></li>
-                                                                <li><a href="#"><img class="max-w-[1.15rem]" src="../assets/images/icons/rendez-video.png" alt=""></a></li>
-                                                                <li class="w-[2px] h-3 bg-white bg-opacity-15 inline-block"></li>
-                                                                <li><a href="#"><img class="max-w-[1.25rem]" src="../assets/images/icons/rendez-meeting.png" alt=""></a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="card-footer py-3">
-                                                    <div class="grid grid-cols-[3fr_7fr] gap-3">
-                                                        <div></div>
-                                                        <div class="grid grid-cols-[4fr_2fr] gap-2 items-center">
-                                                            <p class="mb-0 text-white text-opacity-75 tracking-tight text-xs text-center">Voici des suggestions de <br />question pour la mouqabala</p>
-                                                            <img src="../assets/images/icons/book.png" alt="" class="inline-block max-w-[2.25rem]">
-                                                        </div>
-                                                    </div>
-                                                </div>
+            <div class="tab-content">
+                <!-- TAB PANEL -->
+                <div class="tab-panel active" id="tab--mon-rendez-vous">
+                    <ul class="flex flex-col gap-3 mb-6">
+                        <li>
+                            <div class="card">
+                                <div class="card-header flex justify-between">
+                                    <div>
+                                        <h5 class="text-white h6 text-opacity-75 mb-1 font-normal">Vous avez rendez-vous le : </h5>
+                                        <h2 class="h4 mb-0 flex items-center gap-3 text-white">
+                                            <img class="w-5 inline-block" src="../assets/images/menu-icons/clock.png" alt="">
+                                            <span>12 Jan 2020, 8am - 9am</span>
+                                        </h2>
+                                    </div>
+                                    <div class="more-info ms-auto">
+                                        <!-- DROPDOWN INFO-->
+                                        <div class="dropdown-wrapper">
+                                            <button class="bg-transparent dropdown-toggler">
+                                                <svg class="icon w-5 h-5 text-white">
+                                                    <use xlink:href="#icon-vertical-dot"></use>
+                                                </svg>
+                                            </button>  
+                                            <div class="dropdown-menu">
+                                                <h4 class="h5 text-white border-b-2 border-white border-opacity-5 py-2 px-2 text-center">Menu</h4>
+                                                <ul class="dropdown-menu-list">
+                                                    <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Option One</a></li>
+                                                    <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Option Two</a></li>
+                                                    <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Option Three</a></li>
+                                                </ul>
                                             </div>
-                                        </li>
-                                    </ul>
-
-                                    <button class="btn--primary w-full">Accés Visio Avec Rachid Mohamed</button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <!-- TAB PANEL -->
-                                <div class="tab-panel" id="tab--mes-disponibilitès">
-                                    Mes Disponibilitès
+                                <div class="card-body">
+                                    <div class="grid grid-cols-[3fr_6fr] gap-3">
+                                        <!-- Avatar -->
+                                        <div class="">
+                                            <img src="../assets/images/users/2.png" alt="">
+                                        </div>
+                                        <!-- Content -->
+                                        <div>
+                                            <h3 class="mb-1 text-white text-xl font-semibold flex items-center gap-x-2">
+                                                <span>Salman ahmed</span>
+                                                <span class="inline-block">
+                                                    <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
+                                                </span>
+                                            </h3>
+                                            <p class="text-medium mb-1 text-sm text-white text-opacity-25">39 ans (Agadir, Maroc)</p>
+                                            <div class="font-medium mb-3 text-sm inline-block rounded-[6px] mt-2 bg-white bg-opacity-15 text-white px-4 py-1">Rendez vous visio</div>
+                                            <ul class="flex gap-3 mb-0 items-end">
+                                                <li><a href="#"><img class="max-w-[1rem]" src="../assets/images/icons/rendez-message.png" alt=""></a></li>
+                                                <li class="w-[2px] h-3 bg-white bg-opacity-15 inline-block"></li>
+                                                <li><a href="#"><img class="max-w-[1.15rem]" src="../assets/images/icons/rendez-video.png" alt=""></a></li>
+                                                <li class="w-[2px] h-3 bg-white bg-opacity-15 inline-block"></li>
+                                                <li><a href="#"><img class="max-w-[1.25rem]" src="../assets/images/icons/rendez-meeting.png" alt=""></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer py-3">
+                                    <div class="grid grid-cols-[3fr_7fr] gap-3">
+                                        <div></div>
+                                        <div class="grid grid-cols-[4fr_2fr] gap-2 items-center">
+                                            <p class="mb-0 text-white text-opacity-75 tracking-tight text-xs text-center">Voici des suggestions de <br />question pour la mouqabala</p>
+                                            <img src="../assets/images/icons/book.png" alt="" class="inline-block max-w-[2.25rem]">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                        </li>
+                    </ul>
 
-                        </div>
-                    </div>
+                    <button class="btn--primary w-full">Accés Visio Avec Rachid Mohamed</button>
+                </div>
+                <!-- TAB PANEL -->
+                <div class="tab-panel" id="tab--mes-disponibilitès">
+                    Mes Disponibilitès
                 </div>
             </div>
         </div>
