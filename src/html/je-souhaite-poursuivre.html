@@ -21,165 +21,147 @@
 
 </head>
 
-<body>
-    <div class="screen-wrapper">
-        <div class="screen-inner">
-            <div class="nisf-body has-footer-bar">
-                <!-- has-footer-bar should be when footer has bar -->
-                <!-- All content should go inside nisf-wrapper -->
-                <div class="nisf-wrapper">
-                    <!-- body overlay -->
-                    <div class="body-overlay"></div>
-                    <div class="nisf-wrapper-inner">
-                        <div class="nisf-container">
+<body class="nisf-body has-footer-bar">
+    <!-- has-footer-bar should be when footer has bar -->
+    <!-- All content should go inside nisf-wrapper -->
+    <div class="nisf-wrapper">
+        <!-- body overlay -->
+        <div class="body-overlay"></div>
+        <div class="nisf-container">
+            <!-- Top Navigation -->
+            <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-3">
+                <a href="#" class="">
+                    <svg class="w-4 h-4 text-white">
+                        <use xlink:href="#icon-angle-left"></use>
+                    </svg>
+                </a>
+                <button class="bg-transparent">
+                    <svg class="icon w-5 h-5 text-white">
+                        <use xlink:href="#icon-vertical-dot"></use>
+                    </svg>
+                </button>
+            </nav>
 
-                            <!-- Top Navigation -->
-                            <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-3">
-                                <a href="#" class="">
-                                    <svg class="w-4 h-4 text-white">
-                                        <use xlink:href="#icon-angle-left"></use>
-                                    </svg>
-                                </a>
-                                <button class="bg-transparent">
-                                    <svg class="icon w-5 h-5 text-white">
-                                        <use xlink:href="#icon-vertical-dot"></use>
-                                    </svg>
-                                </button>
-                            </nav>
-
-
-                            <!-- START: CARD -->
-                            <div class="mb-10">
-                                <h4 class="text-xl font-semibold text-white mb-4">Le/La Prétendant(e)</h4>
-                                <div class="card card-body">
-                                    <div class="flex gap-3">
-                                        <!-- Avatar -->
-                                        <div class="avatar avatar-2xl">
-                                            <img src="../assets/images/users/1.png" alt="">
-                                        </div>
-                                        <!-- Content -->
-                                        <div>
-                                            <h3 class="mb-1 text-white text-xl font-semibold flex items-center gap-x-2">
-                                                <span>Salman ahmed</span>
-                                                <span class="inline-block">
-                                                    <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png"
-                                                        alt="">
-                                                </span>
-                                            </h3>
-                                            <p class="text-medium text-sm text-white text-opacity-25">39 ans (Agadir,
-                                                Maroc)</p>
-
-                                            <div
-                                                class="font-medium text-sm inline-block rounded-[6px] mt-2 bg-white bg-opacity-15 text-white px-4 py-1">
-                                                Rendez vous visio
-                                            </div>
-
-                                            <ul class="flex gap-3 my-3 items-end">
-                                                <li><a href="#"><img class="max-w-[0.75rem]"
-                                                            src="../assets/images/icons/rendez-message.png" alt=""></a>
-                                                </li>
-                                                <li class="w-[2px] h-3 bg-white bg-opacity-15 inline-block"></li>
-                                                <li><a href="#"><img class="max-w-[0.85rem]"
-                                                            src="../assets/images/icons/rendez-video.png" alt=""></a>
-                                                </li>
-                                                <li class="w-[2px] h-3 bg-white bg-opacity-15 inline-block"></li>
-                                                <li><a href="#"><img class="max-w-[1rem]"
-                                                            src="../assets/images/icons/rendez-meeting.png" alt=""></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- END: CARD -->
-                            <form action="">
-                                <div class="input-group">
-                                    <label for="form--field-1" class="input-label text-white font-semibold mb-5"><span
-                                            class="text-xl tracking-tight">Je Souhaite Pas Poursuivre Parce
-                                            que</span></label>
-                                    <textarea name="" id="form--field-1" cols="30" class="input-control" rows="4"
-                                        placeholder="Je Pense Que ..."></textarea>
-                                    <div class="text-end font-semibold mt-3 text-white text-opacity-10">0/100</div>
-                                </div>
-
-                                <ul class="flex flex-col gap-2">
-                                    <li>
-                                        <a href="#"
-                                            class="bg-[#842f63] px-5 py-4 rounded text-lg font-semibold text-white flex items-center gap-3">
-                                            <span>On ne se correspond pas</span>
-                                            <svg class="ms-auto w-3 h-3">
-                                                <use xlink:href="#icon-angle-right"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="bg-[#842f63] px-5 py-4 rounded text-lg font-semibold text-white flex items-center gap-3">
-                                            <span>Nous avons des objectifs de vie différent</span>
-                                            <svg class="ms-auto w-3 h-3">
-                                                <use xlink:href="#icon-angle-right"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="bg-[#842f63] px-5 py-4 rounded text-lg font-semibold text-white flex items-center gap-3">
-                                            <span>Après salat Istikhara, je ne poursuis pas </span>
-                                            <svg class="ms-auto w-3 h-3">
-                                                <use xlink:href="#icon-angle-right"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="bg-[#842f63] px-5 py-4 rounded text-lg font-semibold text-white flex items-center gap-3">
-                                            <span>Autre</span>
-                                            <svg class="ms-auto w-3 h-3">
-                                                <use xlink:href="#icon-angle-right"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                                <div class="text-end mt-6">
-                                    <button type="submit" class="btn--primary btn--w-lg">Continuer</button>
-                                </div>
-
-                            </form>
+            <!-- START: CARD -->
+            <div class="mb-8">
+                <h4 class="text-xl font-semibold text-white mb-4">Le/La Prétendant(e)</h4>
+                <div class="card card-body">
+                    <div class="flex gap-3">
+                        <!-- Avatar -->
+                        <div class="avatar avatar-2xl">
+                            <img src="../assets/images/users/1.png" alt="">
                         </div>
+                        <!-- Content -->
+                        <div>
+                            <h3 class="mb-1 text-white text-xl font-semibold flex items-center gap-x-2">
+                                <span>Salman ahmed</span>
+                                <span class="inline-block">
+                                    <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png"
+                                        alt="">
+                                </span>
+                            </h3>
+                            <p class="text-medium text-sm text-white text-opacity-25">39 ans (Agadir,
+                                Maroc)</p>
 
+                            <div
+                                class="font-medium text-sm inline-block rounded-[6px] mt-2 bg-white bg-opacity-15 text-white px-4 py-1">
+                                Rendez vous visio
+                            </div>
+
+                            <ul class="flex gap-3 my-3 items-end">
+                                <li><a href="#"><img class="max-w-[0.75rem]"
+                                            src="../assets/images/icons/rendez-message.png" alt=""></a>
+                                </li>
+                                <li class="w-[2px] h-3 bg-white bg-opacity-15 inline-block"></li>
+                                <li><a href="#"><img class="max-w-[0.85rem]"
+                                            src="../assets/images/icons/rendez-video.png" alt=""></a>
+                                </li>
+                                <li class="w-[2px] h-3 bg-white bg-opacity-15 inline-block"></li>
+                                <li><a href="#"><img class="max-w-[1rem]"
+                                            src="../assets/images/icons/rendez-meeting.png" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <!-- Footer Bar -->
-                <ul class="footer-float-bar">
+            </div>
+            <!-- END: CARD -->
+            <form action="">
+                <div class="input-group">
+                    <label for="form--field-1" class="input-label text-white font-semibold mb-5"><span
+                            class="text-xl tracking-tight">Je Souhaite Pas Poursuivre Parce
+                            que</span></label>
+                    <textarea name="" id="form--field-1" cols="30" class="input-control" rows="4"
+                        placeholder="Je Pense Que ..."></textarea>
+                    <div class="text-end font-semibold mt-3 text-white text-opacity-10">0/100</div>
+                </div>
+
+                <ul class="flex flex-col gap-2">
                     <li>
-                        <button class="footer-float-bar--item">
-                            <svg>
-                                <use xlink:href="#icon-comments"></use>
+                        <a href="#"
+                            class="bg-[#842f63] px-5 py-4 rounded text-lg font-semibold text-white flex items-center gap-3">
+                            <span>On ne se correspond pas</span>
+                            <svg class="ms-auto w-3 h-3">
+                                <use xlink:href="#icon-angle-right"></use>
                             </svg>
-                        </button>
+                        </a>
                     </li>
                     <li>
-                        <button class="footer-float-bar--item">
-                            <svg>
-                                <use xlink:href="#icon-search"></use>
+                        <a href="#"
+                            class="bg-[#842f63] px-5 py-4 rounded text-lg font-semibold text-white flex items-center gap-3">
+                            <span>Nous avons des objectifs de vie différent</span>
+                            <svg class="ms-auto w-3 h-3">
+                                <use xlink:href="#icon-angle-right"></use>
                             </svg>
-                        </button>
+                        </a>
                     </li>
                     <li>
-                        <button class="footer-float-bar--item">
-                            <svg>
-                                <use xlink:href="#icon-user"></use>
+                        <a href="#"
+                            class="bg-[#842f63] px-5 py-4 rounded text-lg font-semibold text-white flex items-center gap-3">
+                            <span>Après salat Istikhara, je ne poursuis pas </span>
+                            <svg class="ms-auto w-3 h-3">
+                                <use xlink:href="#icon-angle-right"></use>
                             </svg>
-                        </button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="bg-[#842f63] px-5 py-4 rounded text-lg font-semibold text-white flex items-center gap-3">
+                            <span>Autre</span>
+                            <svg class="ms-auto w-3 h-3">
+                                <use xlink:href="#icon-angle-right"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
-            </div>
+
+                <div class="text-end mt-6">
+                    <button type="submit" class="btn--primary btn--w-lg">Continuer</button>
+                </div>
+
+            </form>
+
+    
+            <!-- Footer Bar -->
+            <ul class="footer-float-bar">
+                <li>
+                    <button class="footer-float-bar--item">
+                        <img class="w-6 h-auto" src="../assets/images/menu-icons/footer-message.png" alt="">
+                    </button>
+                </li>
+                <li>
+                    <button class="footer-float-bar--item">
+                        <img class="w-5 h-auto" src="../assets/images/menu-icons/footer-search.png" alt="">
+                    </button>
+                </li>
+                <li>
+                    <button class="footer-float-bar--item">
+                        <img class="w-5 h-auto" src="../assets/images/menu-icons/footer-user.png" alt="">
+                    </button>
+                </li>
+            </ul>
         </div>
     </div>
-    </div>
-
-
 
     <!-- svgsprit icons -->
     <svg width="0" height="0" class="hidden">

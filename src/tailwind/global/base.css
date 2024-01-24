@@ -104,7 +104,7 @@
     }
     .is-drawer-open .menu-toggler {
         @apply
-        translate-x-6
+        translate-x-2
     }
     .is-drawer-open .menu-toggler .menu-toggler---close{
         @apply
