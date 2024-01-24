@@ -486,7 +486,7 @@ body {
   transition-duration: 300ms;
 }
 
-.has-footer-bar .nisf-wrapper-inner {
+.has-footer-bar .nisf-container {
   padding-bottom: 6.5rem;
 }
 

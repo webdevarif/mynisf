@@ -39,7 +39,7 @@
         transition-all
         duration-300
     }
-    .has-footer-bar .nisf-wrapper-inner{
+    .has-footer-bar .nisf-container{
         @apply
         pb-[6.5rem]
     }
@@ -53,6 +53,7 @@
         px-5 sm:px-8
         pb-[4rem]
     }
+
 
     /* DRAWER */
     .nisf-menu-drawer{
