@@ -745,8 +745,16 @@ body {
   position: relative !important;
 }
 
+.end-0 {
+  inset-inline-end: 0px !important;
+}
+
 .end-3 {
   inset-inline-end: 0.75rem !important;
+}
+
+.start-0 {
+  inset-inline-start: 0px !important;
 }
 
 .start-5 {
@@ -759,6 +767,10 @@ body {
 
 .start-\[52\%\] {
   inset-inline-start: 52% !important;
+}
+
+.top-0 {
+  top: 0px !important;
 }
 
 .top-1\/2 {
@@ -1019,6 +1031,10 @@ body {
   height: 20rem !important;
 }
 
+.h-\[2rem\] {
+  height: 2rem !important;
+}
+
 .h-\[3\.25rem\] {
   height: 3.25rem !important;
 }
@@ -1065,10 +1081,6 @@ body {
 
 .h-screen {
   height: 100vh !important;
-}
-
-.h-\[\[4rem\]\] {
-  height: [4rem] !important;
 }
 
 .max-h-\[40px\] {
@@ -1131,6 +1143,10 @@ body {
   width: 2px !important;
 }
 
+.w-\[2rem\] {
+  width: 2rem !important;
+}
+
 .w-\[3\.25rem\] {
   width: 3.25rem !important;
 }
@@ -1169,10 +1185,6 @@ body {
 
 .w-full {
   width: 100% !important;
-}
-
-.w-\[45px\] {
-  width: 45px !important;
 }
 
 .min-w-\[130px\] {
@@ -1955,10 +1967,6 @@ body {
   padding-bottom: 2.5rem !important;
 }
 
-.pb-2 {
-  padding-bottom: 0.5rem !important;
-}
-
 .pb-3 {
   padding-bottom: 0.75rem !important;
 }
@@ -2404,17 +2412,37 @@ body {
   visibility: visible;
 }
 
-@include keyframes (glowing3) {
-  0% {
-    height: 100%;
-    width: 100%;
-  }
+.is-glowing--light {
+  position: relative;
+}
 
-  100% {
-    height: 130%;
-    width: 110%;
-    opacity: 0;
-  }
+.is-glowing--light::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.is-glowing--light:before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  --tw-translate-x: -50%;
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  animation: glowing1 1.1s linear infinite;
+  border-radius: 12px;
+  --tw-content: "";
+  content: var(--tw-content);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-animation: glowing1 1.1s linear infinite;
+  -moz-animation: glowing1 1.1s linear infinite;
+  -o-animation: glowing1 1.1s linear infinite;
 }
 
 .avatar-md,
@@ -2891,6 +2919,14 @@ h1, h2, h3, h4, h5, h6, p {
   color: rgb(243 2 146 / var(--tw-text-opacity));
 }
 
+.line--1{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
 /* TABS */
 
 .tab-navigation {
@@ -3038,6 +3074,198 @@ h1, h2, h3, h4, h5, h6, p {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   --tw-content: '';
   content: var(--tw-content);
+}
+
+.chat--wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  overflow-y: auto;
+  padding-top: 6.5rem;
+  padding-bottom: 2rem;
+}
+
+.chat--wrapper .chat--date {
+  text-align: center;
+}
+
+.chat--wrapper .chat--date > span {
+  display: inline-block;
+  border-radius: 12px;
+  background-color: rgb(51 22 48 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.75;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: min(max(0.6rem,0.6vw),12px);
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-text-opacity: 0.5;
+}
+
+.chat--wrapper .chat--message {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.chat--wrapper .chat--message > .message {
+  display: block;
+  max-width: calc(100% - 5rem);
+  align-items: center;
+  border-radius: 12px;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.25;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: min(max(0.8rem,3vw),15px);
+  line-height: 1.5;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.chat--wrapper .chat--message.me {
+  flex-direction: row-reverse;
+}
+
+.chat--wrapper .chat--message.me > .message {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 2 146 / var(--tw-bg-opacity));
+}
+
+.chat--wrapper .chat--message.admin {
+  align-items: flex-start;
+}
+
+.chat--wrapper .chat--message > .message p:last-child {
+  margin-bottom: 0px;
+}
+
+.chat--wrapper .chat--message.admin p {
+  font-weight: 400;
+}
+
+.chat--wrapper .chat--message .chat--time {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: min(max(0.6rem,0.6vw),12px);
+  line-height: 1.5;
+  font-weight: 600;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-text-opacity: 0.25;
+}
+
+.chat--wrapper .chat--message .chat--time .is-seen {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.chat--wrapper .chat--message.admin > .message {
+  max-width: calc(100% - 5.5rem);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(143 88 121 / var(--tw-text-opacity));
+}
+
+.chat--wrapper .chat--message.admin > .message .chat--time {
+  color: rgb(143 88 121 / var(--tw-text-opacity));
+  --tw-text-opacity: 0.5;
+}
+
+.chat--wrapper .chat--message .author-thumb {
+  height: 4rem;
+  width: 4rem;
+  overflow: hidden;
+  border-radius: 9999px;
+  border-width: 4px;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  --tw-border-opacity: 0.2;
+}
+
+.chat--wrapper .chat--message .author-thumb img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.chat--control {
+  position: fixed;
+  bottom: 0px;
+  inset-inline-start: 0px;
+  inset-inline-end: 0px;
+  display: flex;
+  gap: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 2 146 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.chat--control__input::-webkit-scrollbar {
+  width: 0px;
+}
+
+.chat--control__input {
+  display: block;
+  height: 56px;
+  width: 100%;
+  resize: none;
+  border-radius: 5px;
+  background-color: rgb(129 64 103 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.5;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: min(max(0.8rem,3vw),15px);
+  line-height: 1.5;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.chat--control__button {
+  display: inline-flex;
+  height: 56px;
+  width: 56px;
+  min-width: 56px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: min(max(0.8rem,4vw),18px);
+  line-height: 1.4;
+}
+
+.chat--control__option > .chat--control__button {
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.25;
+  color: rgb(51 22 48 / var(--tw-text-opacity));
+  --tw-text-opacity: 0.25;
+}
+
+.chat--control__button.send {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(243 2 146 / var(--tw-text-opacity));
 }
 
 .input-control {
@@ -3838,6 +4066,45 @@ img.list-stars-progress-star {
   }
 }
 
+@include keyframes (glowing1) {
+  0% {
+    height: 100%;
+    width: 100%;
+  }
+
+  100% {
+    height: 130%;
+    width: 130%;
+    opacity: 0;
+  }
+}
+
+@keyframes glowing1 {
+  0% {
+    height: 100%;
+    width: 100%;
+  }
+
+  100% {
+    height: 150%;
+    width: 150%;
+    opacity: 0;
+  }
+}
+
+@include keyframes (glowing3) {
+  0% {
+    height: 100%;
+    width: 100%;
+  }
+
+  100% {
+    height: 130%;
+    width: 110%;
+    opacity: 0;
+  }
+}
+
 @keyframes glowing3 {
   0% {
     height: 100%;
@@ -4281,4 +4548,9 @@ img.list-stars-progress-star {
 .hover\:text-primary:hover {
   --tw-text-opacity: 1 !important;
   color: rgb(243 2 146 / var(--tw-text-opacity)) !important;
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }

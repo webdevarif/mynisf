@@ -1,0 +1,182 @@
+.chat--wrapper{
+    @apply
+    flex
+    flex-col
+    gap-3
+    overflow-y-auto
+    pt-[6.5rem]
+    pb-[2rem]
+}
+
+.chat--wrapper .chat--date{
+    @apply 
+    text-center
+}
+
+
+.chat--wrapper .chat--date > span{
+    @apply 
+    bg-primary-dark
+    bg-opacity-75
+    text-opacity-50
+    text-white
+    px-8
+    py-2
+    inline-block
+    rounded
+    text-sm
+    tracking-widest
+}
+
+.chat--wrapper .chat--message{
+    @apply
+    flex
+    gap-3
+    items-center
+}
+.chat--wrapper .chat--message > .message{
+    @apply
+    block
+    py-4
+    px-6
+    rounded
+    bg-white
+    bg-opacity-25
+    text-white
+    text-lg
+    font-semibold
+    items-center
+    max-w-[calc(100%-5rem)]
+}
+
+.chat--wrapper .chat--message.me{
+    @apply
+    flex-row-reverse
+}
+
+.chat--wrapper .chat--message.me > .message{
+    @apply
+    bg-primary
+}
+
+.chat--wrapper .chat--message.admin{
+    @apply
+    items-start
+}
+
+.chat--wrapper .chat--message > .message p:last-child{
+    @apply
+    mb-0
+}
+
+.chat--wrapper .chat--message.admin p{
+    @apply
+    font-normal
+}
+
+.chat--wrapper .chat--message .chat--time{
+    @apply
+    text-white
+    text-opacity-25
+    text-sm
+    flex
+    items-center
+    gap-2
+    font-semibold
+}
+.chat--wrapper .chat--message .chat--time .is-seen{
+    @apply
+    text-white
+}
+
+.chat--wrapper .chat--message.admin > .message{
+    @apply
+    max-w-[calc(100%-5.5rem)]
+    bg-white
+    text-[#8F5879]
+}
+.chat--wrapper .chat--message.admin > .message .chat--time{
+    @apply
+    text-[#8F5879]
+    text-opacity-50
+}
+.chat--wrapper .chat--message .author-thumb{
+    @apply
+    w-[4rem]
+    h-[4rem]
+    rounded-full
+    overflow-hidden
+    border-[4px]
+    border-white
+    border-opacity-20
+}
+.chat--wrapper .chat--message .author-thumb img{
+    @apply
+    w-full
+    h-full
+    object-cover
+    object-center
+}
+
+.chat--control{
+    @apply
+    flex 
+    gap-2 
+    px-4 
+    fixed 
+    bottom-0 
+    start-0 
+    end-0 
+    bg-primary 
+    text-white 
+    py-2
+}
+
+
+.chat--control__input::-webkit-scrollbar {
+    @apply
+    w-0
+}
+
+.chat--control__input{
+    @apply
+    bg-card-bg
+    bg-opacity-50
+    text-white
+    w-full
+    block
+    rounded-sm
+    resize-none
+    h-[56px]
+    py-4
+    px-6
+    outline-none
+    shadow-none
+    text-lg
+}
+
+.chat--control__button{
+    @apply
+    h-[56px]
+    w-[56px]
+    min-w-[56px]
+    inline-flex
+    items-center
+    justify-center
+    rounded-sm
+    text-xl
+}
+
+.chat--control__option > .chat--control__button{
+    @apply 
+    bg-white
+    bg-opacity-25
+    text-primary-dark
+    text-opacity-25
+}
+
+.chat--control__button.send{
+    @apply 
+    bg-white
+    text-primary
+}

@@ -169,6 +169,64 @@
   }
 
   
+@include keyframes (glowing1) {
+  0% {
+      height: 100%;
+      width: 100%;
+  }
+  100% {
+      height: 130%;
+      width: 130%;
+      opacity: 0;
+  }
+}
+
+@-webkit-keyframes glowing1 {
+  0% {
+    height: 100%;
+    width: 100%; }
+  100% {
+    height: 150%;
+    width: 150%;
+    opacity: 0; } }
+@-moz-keyframes glowing1 {
+  0% {
+    height: 100%;
+    width: 100%; }
+  100% {
+    height: 150%;
+    width: 150%;
+    opacity: 0; } }
+@-o-keyframes glowing1 {
+  0% {
+    height: 100%;
+    width: 100%; }
+  100% {
+    height: 150%;
+    width: 150%;
+    opacity: 0; } }
+@keyframes glowing1 {
+  0% {
+    height: 100%;
+    width: 100%; }
+  100% {
+    height: 150%;
+    width: 150%;
+    opacity: 0; } }
+ 
+    
+@include keyframes (glowing3) {
+  0% {
+      height: 100%;
+      width: 100%;
+  }
+  100% {
+      height: 130%;
+      width: 110%;
+      opacity: 0;
+  }
+}
+
 @-webkit-keyframes glowing3 {
   0% {
     height: 100%;

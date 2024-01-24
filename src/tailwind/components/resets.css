@@ -113,6 +113,15 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 
+.line--1{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+
 
 
 /* TABS */
@@ -161,8 +170,6 @@ h1, h2, h3, h4, h5, h6, p{
     @apply 
     block
 }
-
-
 
 
 .body-overlay.show{
