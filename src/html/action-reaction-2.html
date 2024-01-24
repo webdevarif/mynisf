@@ -23,113 +23,110 @@
 <body class="nisf-body has-footer-bar"> <!-- has-footer-bar should be when footer has bar -->
     <!-- All content should go inside nisf-wrapper -->
     <div class="nisf-wrapper">
-        <div class="nisf-wrapper-inner">
-            <div class="nisf-container">
+        <div class="nisf-container">
+            <!-- Top Navigation -->
+            <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-3">
+                <a href="#" class="inline-flex items-center">
+                    <svg class="w-5 h-5 text-white">
+                        <use xlink:href="#icon-angle-left"></use>
+                    </svg>
+                </a>
+                <h4 class="font-semibold text-xl text-white w-full mb-0">Reponse Action & Réaction</h4>
+                <button class="menu-toggler ms-auto">
+                    <svg class="menu-toggler---icon menu-toggler---open">
+                        <use xlink:href="#icon-vertical-dot"></use>
+                    </svg>
+                    <svg class="menu-toggler---icon menu-toggler---close">
+                        <use xlink:href="#icon-half-menu"></use>
+                    </svg>
+                </button>
+            </nav>
 
-                <!-- Top Navigation -->
-                <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-3">
-                    <a href="#" class="inline-flex items-center">
-                        <svg class="w-5 h-5 text-white">
+            <!-- PROGRESS BAR -->
+            <div class="progress mb-5">
+                <div class="progress-bar">
+                    <div class="progress-line" style="width: 50%;"></div>
+                </div>
+                <div class="progress-num inline-flex gap-x-2 leading-6 items-center justify-center">
+                    <img class="inline-block max-w-[0.9rem] h-auto mb-1" src="../assets/images/progress-crown.png" alt="">
+                    <span>12/40</span>
+                </div>
+            </div>
+
+            <div class="section-heading mb-5">
+                <div class="flex items-start gap-2">
+                    <a href="#" class="mt-3">
+                        <svg class="w-6 h-6 text-white">
                             <use xlink:href="#icon-angle-left"></use>
                         </svg>
                     </a>
-                    <h4 class="font-semibold text-xl text-white w-full mb-0">Reponse Action & Réaction</h4>
-                    <button class="menu-toggler ms-auto">
-                        <svg class="menu-toggler---icon menu-toggler---open">
-                            <use xlink:href="#icon-vertical-dot"></use>
-                        </svg>
-                        <svg class="menu-toggler---icon menu-toggler---close">
-                            <use xlink:href="#icon-half-menu"></use>
-                        </svg>
-                    </button>
-                </nav>
-
-                <!-- PROGRESS BAR -->
-                <div class="progress mb-5">
-                    <div class="progress-bar">
-                        <div class="progress-line" style="width: 50%;"></div>
-                    </div>
-                    <div class="progress-num inline-flex gap-x-2 leading-6 items-center justify-center">
-                        <img class="inline-block max-w-[0.9rem] h-auto mb-1" src="../assets/images/progress-crown.png" alt="">
-                        <span>12/40</span>
-                    </div>
+                    <h3 class="text-4xl leading-10 font-bold text-white mb-2">Quand vous partez en vacances?</h3>
                 </div>
+                <p class="font-semibold">parmi ces options que l'utilisateur a choisies</p>
+            </div>
 
-                <div class="section-heading mb-5">
-                    <div class="flex items-start gap-2">
-                        <a href="#" class="mt-3">
-                            <svg class="w-6 h-6 text-white">
-                                <use xlink:href="#icon-angle-left"></use>
-                            </svg>
-                        </a>
-                        <h3 class="text-4xl leading-10 font-bold text-white mb-2">Quand vous partez en vacances?</h3>
-                    </div>
-                    <p class="font-semibold">parmi ces options que l'utilisateur a choisies</p>
-                </div>
+            <form action="">
 
-                <form action="">
+                <ul class="list-reactions">
+                    <li>
+                        <div class="list-item-check">
+                            <input type="radio" class="list-item--input" name="reaction" id="reaction--1">
+                            <label for="reaction--1" class="list-item--label overflow-hidden">
+                                <div class="list-item--icon">A</div>
+                                <div>
+                                    <h4 class="text-lg mb-0 font-semibold">
+                                        C'est budget illimité en se fait plaisir on fera les compens aprés les vacances.
+                                    </h4>
+                                </div>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-item-check">
+                            <input type="radio" class="list-item--input" name="reaction" id="reaction--2">
+                            <label for="reaction--2" class="list-item--label overflow-hidden">
+                                <div class="list-item--icon">B</div>
+                                <div>
+                                    <h4 class="text-lg mb-0 font-semibold">
+                                        Y'a un budget a ne pas dépasser donc vous faites attention.
+                                    </h4>
+                                </div>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-item-check">
+                            <input type="radio" class="list-item--input" name="reaction" id="reaction--3" checked>
+                            <label for="reaction--3" class="list-item--label overflow-hidden">
+                                <div class="list-item--icon">C</div>
+                                <div>
+                                    <h6 class="text-xs mb-1 font-semibold opacity-60">Le destinataire a choisit</h6>
+                                    <h4 class="text-lg mb-0 font-semibold">
+                                        Y'a un budget mais vous savez que vous allez le depasser donc vous faites attention.
+                                    </h4>
+                                </div>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-item-check">
+                            <input type="radio" class="list-item--input" name="reaction" id="reaction--4">
+                            <label for="reaction--4" class="list-item--label overflow-hidden">
+                                <div class="list-item--icon">D</div>
+                                <div>
+                                    <h4 class="text-lg mb-0 font-semibold">
+                                        Ne se prononce pas
+                                    </h4>
+                                </div>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
 
-                    <ul class="list-reactions">
-                        <li>
-                            <div class="list-item-check">
-                                <input type="radio" class="list-item--input" name="reaction" id="reaction--1">
-                                <label for="reaction--1" class="list-item--label overflow-hidden">
-                                    <div class="list-item--icon">A</div>
-                                    <div>
-                                        <h4 class="text-lg mb-0 font-semibold">
-                                            C'est budget illimité en se fait plaisir on fera les compens aprés les vacances.
-                                        </h4>
-                                    </div>
-                                </label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="list-item-check">
-                                <input type="radio" class="list-item--input" name="reaction" id="reaction--2">
-                                <label for="reaction--2" class="list-item--label overflow-hidden">
-                                    <div class="list-item--icon">B</div>
-                                    <div>
-                                        <h4 class="text-lg mb-0 font-semibold">
-                                            Y'a un budget a ne pas dépasser donc vous faites attention.
-                                        </h4>
-                                    </div>
-                                </label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="list-item-check">
-                                <input type="radio" class="list-item--input" name="reaction" id="reaction--3" checked>
-                                <label for="reaction--3" class="list-item--label overflow-hidden">
-                                    <div class="list-item--icon">C</div>
-                                    <div>
-                                        <h6 class="text-xs mb-1 font-semibold opacity-60">Le destinataire a choisit</h6>
-                                        <h4 class="text-lg mb-0 font-semibold">
-                                            Y'a un budget mais vous savez que vous allez le depasser donc vous faites attention.
-                                        </h4>
-                                    </div>
-                                </label>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="list-item-check">
-                                <input type="radio" class="list-item--input" name="reaction" id="reaction--4">
-                                <label for="reaction--4" class="list-item--label overflow-hidden">
-                                    <div class="list-item--icon">D</div>
-                                    <div>
-                                        <h4 class="text-lg mb-0 font-semibold">
-                                            Ne se prononce pas
-                                        </h4>
-                                    </div>
-                                </label>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <!-- Buttons Actions -->
-                    <div class="flex items-center gap-3 justify-between">
-                        <button type="button" class="btn--light btn--w-lg">Arrière</button>
-                        <button type="button" class="btn--primary btn--w-lg">Suivante</button>
-                    </div>
+                <!-- Buttons Actions -->
+                <div class="flex items-center gap-3 justify-between">
+                    <button type="button" class="btn--light btn--w-lg">Arrière</button>
+                    <button type="button" class="btn--primary btn--w-lg">Suivante</button>
                 </div>
             </form>
         </div>
@@ -153,7 +150,7 @@
             </li>
         </ul>
     </div>
-    
+
     <!-- svgsprit icons -->
     <svg width="0" height="0" class="hidden">
         

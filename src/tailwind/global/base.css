@@ -36,7 +36,6 @@
         @apply 
         overflow-hidden
         relative
-        min-h-screen
         transition-all
         duration-300
     }

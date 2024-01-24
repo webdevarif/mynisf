@@ -20,360 +20,352 @@
     <script src="../assets/libs/slick/slick.min.js"></script>
 
 </head>
-<body>
-    <div class="screen-wrapper">
-        <div class="screen-inner">
-            <div class="nisf-body has-footer-bar"> <!-- has-footer-bar should be when footer has bar -->
-                <!-- All content should go inside nisf-wrapper -->
-                <div class="nisf-wrapper">
-                    <!-- body overlay -->
-                    <div class="body-overlay"></div>
-                    <div class="nisf-wrapper-inner">
-                        <div class="nisf-container">
+<body class="nisf-body has-footer-bar"> <!-- has-footer-bar should be when footer has bar -->
+    <!-- All content should go inside nisf-wrapper -->
+    <div class="nisf-wrapper">
+        <!-- body overlay -->
+        <div class="body-overlay"></div>
+        <div class="nisf-container">
 
-                            <!-- Top Navigation -->
-                            <nav class="top-navigation py-8 flex items-center justify-between gap-3">
-                                <a href="#" class="inline-flex items-center">
-                                    <svg class="w-5 h-5 text-white">
-                                        <use xlink:href="#icon-angle-left"></use>
-                                    </svg>
-                                </a>
-                                <h4 class="font-semibold text-xl text-white w-full mb-0">Coups de Coeur</h4>
-                                <button class="menu-toggler ms-auto">
-                                    <svg class="menu-toggler---icon menu-toggler---open">
-                                        <use xlink:href="#icon-vertical-dot"></use>
-                                    </svg>
-                                    <svg class="menu-toggler---icon menu-toggler---close">
-                                        <use xlink:href="#icon-half-menu"></use>
-                                    </svg>
-                                </button>
-                            </nav>
-                            
+            <!-- Top Navigation -->
+            <nav class="top-navigation py-8 flex items-center justify-between gap-3">
+                <a href="#" class="inline-flex items-center">
+                    <svg class="w-5 h-5 text-white">
+                        <use xlink:href="#icon-angle-left"></use>
+                    </svg>
+                </a>
+                <h4 class="font-semibold text-xl text-white w-full mb-0">Coups de Coeur</h4>
+                <button class="menu-toggler ms-auto">
+                    <svg class="menu-toggler---icon menu-toggler---open">
+                        <use xlink:href="#icon-vertical-dot"></use>
+                    </svg>
+                    <svg class="menu-toggler---icon menu-toggler---close">
+                        <use xlink:href="#icon-half-menu"></use>
+                    </svg>
+                </button>
+            </nav>
+            
 
-                            <div class="page-wrapper">
+            <div class="page-wrapper">
 
-                                <div class="mb-7">
-                                    <div class="card card-body px-5 py-7 bg-primary shadow-primary text-white gap-5 grid grid-cols-2" style="background: url('../assets/images/heart-bg.png') no-repeat right bottom; background-size: 6rem;">
-                                        <div>
-                                            <div class="text-4xl font-bold">3<span class="text-md">/3</span></div>
-                                            <p class="mb-0 font-semibold">Coups de coeur envoyés</p>
-                                        </div>
-                                        <div>
-                                            <div class="text-4xl font-bold">25</div>
-                                            <p class="mb-0 font-semibold">Coups de coeur recues</p>
+                <div class="mb-7">
+                    <div class="card card-body px-5 py-7 bg-primary shadow-primary text-white gap-5 grid grid-cols-2" style="background: url('../assets/images/heart-bg.png') no-repeat right bottom; background-size: 6rem;">
+                        <div>
+                            <div class="text-4xl font-bold">3<span class="text-md">/3</span></div>
+                            <p class="mb-0 font-semibold">Coups de coeur envoyés</p>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold">25</div>
+                            <p class="mb-0 font-semibold">Coups de coeur recues</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-7">
+                    <h3 class="text-xl text-white mb-3">Coups de coeur envoyés</h3>
+                    <ul class="flex flex-col gap-3">
+                        <!-- Single Item -->
+                        <li>
+                            <div class="card card-body grid grid-cols-[5rem_1fr_2.5rem]">
+                                <div class="avatar avatar-md">
+                                    <img src="../assets/images/users/1.png" alt="">
+                                </div>
+                                <div class="">
+                                    <h3 class="mb-0 text-white text-xl font-semibold flex items-center gap-x-2">
+                                        <span>Rachid Mohamed</span>
+                                        <span class="inline-block">
+                                            <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
+                                        </span>
+                                    </h3>
+                                    <p class="text-medium text-xs text-white mb-0 text-opacity-25">39 ans (Agadir, Maroc)</p>
+                                </div>
+                                <div  class="flex flex-col justify-center">
+                                    <button type="button">
+                                        <svg class="w-4 h-4 text-white">
+                                            <use xlink:href="#icon-heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <!-- MORE INFO -->
+                                <div class="absolute top-3 end-3">
+                                    <!-- DROPDOWN INFO-->
+                                    <div class="dropdown-wrapper">
+                                        <button class="bg-transparent dropdown-toggler">
+                                            <svg class="icon w-5 h-5 text-white">
+                                                <use xlink:href="#icon-vertical-dot"></use>
+                                            </svg>
+                                        </button>  
+                                        <div class="dropdown-menu">
+                                            <ul class="dropdown-menu-list">
+                                                <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                                <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="mb-7">
-                                    <h3 class="text-xl text-white mb-3">Coups de coeur envoyés</h3>
-                                    <ul class="flex flex-col gap-3">
-                                        <!-- Single Item -->
-                                        <li>
-                                            <div class="card card-body grid grid-cols-[5rem_1fr_2.5rem]">
-                                                <div class="avatar avatar-md">
-                                                    <img src="../assets/images/users/1.png" alt="">
-                                                </div>
-                                                <div class="">
-                                                    <h3 class="mb-0 text-white text-xl font-semibold flex items-center gap-x-2">
-                                                        <span>Rachid Mohamed</span>
-                                                        <span class="inline-block">
-                                                            <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
-                                                        </span>
-                                                    </h3>
-                                                    <p class="text-medium text-xs text-white mb-0 text-opacity-25">39 ans (Agadir, Maroc)</p>
-                                                </div>
-                                                <div  class="flex flex-col justify-center">
-                                                    <button type="button">
-                                                        <svg class="w-4 h-4 text-white">
-                                                            <use xlink:href="#icon-heart"></use>
-                                                        </svg>
-                                                    </button>
-                                                </div>
-
-                                                <!-- MORE INFO -->
-                                                <div class="absolute top-3 end-3">
-                                                    <!-- DROPDOWN INFO-->
-                                                    <div class="dropdown-wrapper">
-                                                        <button class="bg-transparent dropdown-toggler">
-                                                            <svg class="icon w-5 h-5 text-white">
-                                                                <use xlink:href="#icon-vertical-dot"></use>
-                                                            </svg>
-                                                        </button>  
-                                                        <div class="dropdown-menu">
-                                                            <ul class="dropdown-menu-list">
-                                                                <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
-                                                                <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <!-- Single Item -->
-                                        <li>
-                                            <div class="card card-body grid grid-cols-[5rem_1fr_2.5rem]">
-                                                <div class="avatar avatar-md">
-                                                    <img src="../assets/images/users/2.png" alt="">
-                                                </div>
-                                                <div class="">
-                                                    <h3 class="mb-0 text-white text-xl font-semibold flex items-center gap-x-2">
-                                                        <span>Aminos Aliwi</span>
-                                                        <span class="inline-block">
-                                                            <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
-                                                        </span>
-                                                    </h3>
-                                                    <p class="text-medium text-xs text-white mb-0 text-opacity-25">39 ans (Agadir, Maroc)</p>
-                                                </div>
-                                                <div  class="flex flex-col justify-center">
-                                                    <button type="button">
-                                                        <svg class="w-4 h-4 text-white">
-                                                            <use xlink:href="#icon-heart"></use>
-                                                        </svg>
-                                                    </button>
-                                                </div>
-
-                                                <!-- MORE INFO -->
-                                                <div class="absolute top-3 end-3">
-                                                    <!-- DROPDOWN INFO-->
-                                                    <div class="dropdown-wrapper">
-                                                        <button class="bg-transparent dropdown-toggler">
-                                                            <svg class="icon w-5 h-5 text-white">
-                                                                <use xlink:href="#icon-vertical-dot"></use>
-                                                            </svg>
-                                                        </button>  
-                                                        <div class="dropdown-menu">
-                                                            <ul class="dropdown-menu-list">
-                                                                <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
-                                                                <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <!-- Single Item -->
-                                        <li>
-                                            <div class="card card-body grid grid-cols-[5rem_1fr_2.5rem]">
-                                                <div class="avatar avatar-md">
-                                                    <img src="../assets/images/users/3.png" alt="">
-                                                </div>
-                                                <div class="">
-                                                    <h3 class="mb-0 text-white text-xl font-semibold flex items-center gap-x-2">
-                                                        <span>Ahmed Sefriou</span>
-                                                        <span class="inline-block">
-                                                            <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
-                                                        </span>
-                                                    </h3>
-                                                    <p class="text-medium text-xs text-white mb-0 text-opacity-25">39 ans (Agadir, Maroc)</p>
-                                                </div>
-                                                <div  class="flex flex-col justify-center">
-                                                    <button type="button">
-                                                        <svg class="w-4 h-4 text-white">
-                                                            <use xlink:href="#icon-heart"></use>
-                                                        </svg>
-                                                    </button>
-                                                </div>
-
-                                                <!-- MORE INFO -->
-                                                <div class="absolute top-3 end-3">
-                                                    <!-- DROPDOWN INFO-->
-                                                    <div class="dropdown-wrapper">
-                                                        <button class="bg-transparent dropdown-toggler">
-                                                            <svg class="icon w-5 h-5 text-white">
-                                                                <use xlink:href="#icon-vertical-dot"></use>
-                                                            </svg>
-                                                        </button>  
-                                                        <div class="dropdown-menu">
-                                                            <ul class="dropdown-menu-list">
-                                                                <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
-                                                                <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <!-- Single Item -->
-                                        <li>
-                                            <div class="card card-body grid grid-cols-[5rem_1fr_2.5rem]">
-                                                <div class="avatar avatar-md">
-                                                    <img src="../assets/images/users/4.png" alt="">
-                                                </div>
-                                                <div class="">
-                                                    <h3 class="mb-0 text-white text-xl font-semibold flex items-center gap-x-2">
-                                                        <span>Salman ahmed</span>
-                                                        <span class="inline-block">
-                                                            <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
-                                                        </span>
-                                                    </h3>
-                                                    <p class="text-medium text-xs text-white mb-0 text-opacity-25">39 ans (Agadir, Maroc)</p>
-                                                </div>
-                                                <div  class="flex flex-col justify-center">
-                                                    <button type="button">
-                                                        <svg class="w-4 h-4 text-white">
-                                                            <use xlink:href="#icon-heart"></use>
-                                                        </svg>
-                                                    </button>
-                                                </div>
-
-                                                <!-- MORE INFO -->
-                                                <div class="absolute top-3 end-3">
-                                                    <!-- DROPDOWN INFO-->
-                                                    <div class="dropdown-wrapper">
-                                                        <button class="bg-transparent dropdown-toggler">
-                                                            <svg class="icon w-5 h-5 text-white">
-                                                                <use xlink:href="#icon-vertical-dot"></use>
-                                                            </svg>
-                                                        </button>  
-                                                        <div class="dropdown-menu">
-                                                            <ul class="dropdown-menu-list">
-                                                                <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
-                                                                <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="mb-7">
-                                    <h3 class="text-xl text-white mb-3">Coups de coeur reçues</h3>
-                                    <ul class="flex flex-col gap-3">
-                                        <!-- Single Item -->
-                                        <li>
-                                            <div class="card card-body grid grid-cols-[5rem_1fr_auto] items-center">
-                                                <div class="avatar avatar-md">
-                                                    <img src="../assets/images/users/1.png" alt="">
-                                                </div>
-                                                <div class="">
-                                                    <h3 class="mb-0 text-white text-xl font-semibold flex items-center gap-x-2">
-                                                        <span>Rachid Mohamed</span>
-                                                        <span class="inline-block">
-                                                            <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
-                                                        </span>
-                                                    </h3>
-                                                    <p class="text-medium text-xs text-white mb-0 text-opacity-25">39 ans (Agadir, Maroc)</p>
-                                                </div>
-                                                <div  class="flex flex-col justify-center">
-                                                    <button type="button">
-                                                        <svg class="w-4 h-4 text-white text-opacity-25">
-                                                            <use xlink:href="#icon-angle-right"></use>
-                                                        </svg>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <!-- Single Item -->
-                                        <li>
-                                            <div class="card card-body grid grid-cols-[5rem_1fr_auto] items-center">
-                                                <div class="avatar avatar-md">
-                                                    <img src="../assets/images/users/2.png" alt="">
-                                                </div>
-                                                <div class="">
-                                                    <h3 class="mb-0 text-white text-xl font-semibold flex items-center gap-x-2">
-                                                        <span>Aminos Aliwi</span>
-                                                        <span class="inline-block">
-                                                            <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
-                                                        </span>
-                                                    </h3>
-                                                    <p class="text-medium text-xs text-white mb-0 text-opacity-25">39 ans (Agadir, Maroc)</p>
-                                                </div>
-                                                <div  class="flex flex-col justify-center">
-                                                    <button type="button">
-                                                        <svg class="w-4 h-4 text-white text-opacity-25">
-                                                            <use xlink:href="#icon-angle-right"></use>
-                                                        </svg>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <!-- Single Item -->
-                                        <li>
-                                            <div class="card card-body grid grid-cols-[5rem_1fr_auto] items-center">
-                                                <div class="avatar avatar-md">
-                                                    <img src="../assets/images/users/3.png" alt="">
-                                                </div>
-                                                <div class="">
-                                                    <h3 class="mb-0 text-white text-xl font-semibold flex items-center gap-x-2">
-                                                        <span>Ahmed Sefriou</span>
-                                                        <span class="inline-block">
-                                                            <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
-                                                        </span>
-                                                    </h3>
-                                                    <p class="text-medium text-xs text-white mb-0 text-opacity-25">39 ans (Agadir, Maroc)</p>
-                                                </div>
-                                                <div  class="flex flex-col justify-center">
-                                                    <button type="button">
-                                                        <svg class="w-4 h-4 text-white text-opacity-25">
-                                                            <use xlink:href="#icon-angle-right"></use>
-                                                        </svg>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <!-- Single Item -->
-                                        <li>
-                                            <div class="card card-body grid grid-cols-[5rem_1fr_auto] items-center">
-                                                <div class="avatar avatar-md">
-                                                    <img src="../assets/images/users/4.png" alt="">
-                                                </div>
-                                                <div class="">
-                                                    <h3 class="mb-0 text-white text-xl font-semibold flex items-center gap-x-2">
-                                                        <span>Salman ahmed</span>
-                                                        <span class="inline-block">
-                                                            <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
-                                                        </span>
-                                                    </h3>
-                                                    <p class="text-medium text-xs text-white mb-0 text-opacity-25">39 ans (Agadir, Maroc)</p>
-                                                </div>
-                                                <div  class="flex flex-col justify-center">
-                                                    <button type="button">
-                                                        <svg class="w-4 h-4 text-white text-opacity-25">
-                                                            <use xlink:href="#icon-angle-right"></use>
-                                                        </svg>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-
                             </div>
-                        </div>
-                    </div>
-                    <!-- Footer Bar -->
-                    <ul class="footer-float-bar">
-                        <li>
-                            <button class="footer-float-bar--item active">
-                                <img class="w-6 h-auto" src="../assets/images/menu-icons/footer-message.png" alt="">
-                            </button>
                         </li>
+                        <!-- Single Item -->
                         <li>
-                            <button class="footer-float-bar--item">
-                                <img class="w-5 h-auto" src="../assets/images/menu-icons/footer-search.png" alt="">
-                            </button>
+                            <div class="card card-body grid grid-cols-[5rem_1fr_2.5rem]">
+                                <div class="avatar avatar-md">
+                                    <img src="../assets/images/users/2.png" alt="">
+                                </div>
+                                <div class="">
+                                    <h3 class="mb-0 text-white text-xl font-semibold flex items-center gap-x-2">
+                                        <span>Aminos Aliwi</span>
+                                        <span class="inline-block">
+                                            <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
+                                        </span>
+                                    </h3>
+                                    <p class="text-medium text-xs text-white mb-0 text-opacity-25">39 ans (Agadir, Maroc)</p>
+                                </div>
+                                <div  class="flex flex-col justify-center">
+                                    <button type="button">
+                                        <svg class="w-4 h-4 text-white">
+                                            <use xlink:href="#icon-heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <!-- MORE INFO -->
+                                <div class="absolute top-3 end-3">
+                                    <!-- DROPDOWN INFO-->
+                                    <div class="dropdown-wrapper">
+                                        <button class="bg-transparent dropdown-toggler">
+                                            <svg class="icon w-5 h-5 text-white">
+                                                <use xlink:href="#icon-vertical-dot"></use>
+                                            </svg>
+                                        </button>  
+                                        <div class="dropdown-menu">
+                                            <ul class="dropdown-menu-list">
+                                                <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                                <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
+                        <!-- Single Item -->
                         <li>
-                            <button class="footer-float-bar--item">
-                                <img class="w-5 h-auto" src="../assets/images/menu-icons/footer-user.png" alt="">
-                            </button>
+                            <div class="card card-body grid grid-cols-[5rem_1fr_2.5rem]">
+                                <div class="avatar avatar-md">
+                                    <img src="../assets/images/users/3.png" alt="">
+                                </div>
+                                <div class="">
+                                    <h3 class="mb-0 text-white text-xl font-semibold flex items-center gap-x-2">
+                                        <span>Ahmed Sefriou</span>
+                                        <span class="inline-block">
+                                            <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
+                                        </span>
+                                    </h3>
+                                    <p class="text-medium text-xs text-white mb-0 text-opacity-25">39 ans (Agadir, Maroc)</p>
+                                </div>
+                                <div  class="flex flex-col justify-center">
+                                    <button type="button">
+                                        <svg class="w-4 h-4 text-white">
+                                            <use xlink:href="#icon-heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <!-- MORE INFO -->
+                                <div class="absolute top-3 end-3">
+                                    <!-- DROPDOWN INFO-->
+                                    <div class="dropdown-wrapper">
+                                        <button class="bg-transparent dropdown-toggler">
+                                            <svg class="icon w-5 h-5 text-white">
+                                                <use xlink:href="#icon-vertical-dot"></use>
+                                            </svg>
+                                        </button>  
+                                        <div class="dropdown-menu">
+                                            <ul class="dropdown-menu-list">
+                                                <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                                <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Single Item -->
+                        <li>
+                            <div class="card card-body grid grid-cols-[5rem_1fr_2.5rem]">
+                                <div class="avatar avatar-md">
+                                    <img src="../assets/images/users/4.png" alt="">
+                                </div>
+                                <div class="">
+                                    <h3 class="mb-0 text-white text-xl font-semibold flex items-center gap-x-2">
+                                        <span>Salman ahmed</span>
+                                        <span class="inline-block">
+                                            <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
+                                        </span>
+                                    </h3>
+                                    <p class="text-medium text-xs text-white mb-0 text-opacity-25">39 ans (Agadir, Maroc)</p>
+                                </div>
+                                <div  class="flex flex-col justify-center">
+                                    <button type="button">
+                                        <svg class="w-4 h-4 text-white">
+                                            <use xlink:href="#icon-heart"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <!-- MORE INFO -->
+                                <div class="absolute top-3 end-3">
+                                    <!-- DROPDOWN INFO-->
+                                    <div class="dropdown-wrapper">
+                                        <button class="bg-transparent dropdown-toggler">
+                                            <svg class="icon w-5 h-5 text-white">
+                                                <use xlink:href="#icon-vertical-dot"></use>
+                                            </svg>
+                                        </button>  
+                                        <div class="dropdown-menu">
+                                            <ul class="dropdown-menu-list">
+                                                <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                                <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
-                
 
-                <!-- CLOUD ANIMATIONS -->
-                <img src="../assets/images/cloud-1.png" class="animation-cloud-1" alt="">
-                <img src="../assets/images/cloud-2.png" class="animation-cloud-2" alt="">
-                <img src="../assets/images/cloud-3.png" class="animation-cloud-3" alt="">
-                <img src="../assets/images/cloud-4.png" class="animation-cloud-4" alt="">
-                <img src="../assets/images/cloud-5.png" class="animation-cloud-5" alt="">
+                <div class="mb-7">
+                    <h3 class="text-xl text-white mb-3">Coups de coeur reçues</h3>
+                    <ul class="flex flex-col gap-3">
+                        <!-- Single Item -->
+                        <li>
+                            <div class="card card-body grid grid-cols-[5rem_1fr_auto] items-center">
+                                <div class="avatar avatar-md">
+                                    <img src="../assets/images/users/1.png" alt="">
+                                </div>
+                                <div class="">
+                                    <h3 class="mb-0 text-white text-xl font-semibold flex items-center gap-x-2">
+                                        <span>Rachid Mohamed</span>
+                                        <span class="inline-block">
+                                            <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
+                                        </span>
+                                    </h3>
+                                    <p class="text-medium text-xs text-white mb-0 text-opacity-25">39 ans (Agadir, Maroc)</p>
+                                </div>
+                                <div  class="flex flex-col justify-center">
+                                    <button type="button">
+                                        <svg class="w-4 h-4 text-white text-opacity-25">
+                                            <use xlink:href="#icon-angle-right"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Single Item -->
+                        <li>
+                            <div class="card card-body grid grid-cols-[5rem_1fr_auto] items-center">
+                                <div class="avatar avatar-md">
+                                    <img src="../assets/images/users/2.png" alt="">
+                                </div>
+                                <div class="">
+                                    <h3 class="mb-0 text-white text-xl font-semibold flex items-center gap-x-2">
+                                        <span>Aminos Aliwi</span>
+                                        <span class="inline-block">
+                                            <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
+                                        </span>
+                                    </h3>
+                                    <p class="text-medium text-xs text-white mb-0 text-opacity-25">39 ans (Agadir, Maroc)</p>
+                                </div>
+                                <div  class="flex flex-col justify-center">
+                                    <button type="button">
+                                        <svg class="w-4 h-4 text-white text-opacity-25">
+                                            <use xlink:href="#icon-angle-right"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Single Item -->
+                        <li>
+                            <div class="card card-body grid grid-cols-[5rem_1fr_auto] items-center">
+                                <div class="avatar avatar-md">
+                                    <img src="../assets/images/users/3.png" alt="">
+                                </div>
+                                <div class="">
+                                    <h3 class="mb-0 text-white text-xl font-semibold flex items-center gap-x-2">
+                                        <span>Ahmed Sefriou</span>
+                                        <span class="inline-block">
+                                            <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
+                                        </span>
+                                    </h3>
+                                    <p class="text-medium text-xs text-white mb-0 text-opacity-25">39 ans (Agadir, Maroc)</p>
+                                </div>
+                                <div  class="flex flex-col justify-center">
+                                    <button type="button">
+                                        <svg class="w-4 h-4 text-white text-opacity-25">
+                                            <use xlink:href="#icon-angle-right"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Single Item -->
+                        <li>
+                            <div class="card card-body grid grid-cols-[5rem_1fr_auto] items-center">
+                                <div class="avatar avatar-md">
+                                    <img src="../assets/images/users/4.png" alt="">
+                                </div>
+                                <div class="">
+                                    <h3 class="mb-0 text-white text-xl font-semibold flex items-center gap-x-2">
+                                        <span>Salman ahmed</span>
+                                        <span class="inline-block">
+                                            <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
+                                        </span>
+                                    </h3>
+                                    <p class="text-medium text-xs text-white mb-0 text-opacity-25">39 ans (Agadir, Maroc)</p>
+                                </div>
+                                <div  class="flex flex-col justify-center">
+                                    <button type="button">
+                                        <svg class="w-4 h-4 text-white text-opacity-25">
+                                            <use xlink:href="#icon-angle-right"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </div>
-    </div>
+
+        <!-- Footer Bar -->
+        <ul class="footer-float-bar">
+            <li>
+                <button class="footer-float-bar--item active">
+                    <img class="w-6 h-auto" src="../assets/images/menu-icons/footer-message.png" alt="">
+                </button>
+            </li>
+            <li>
+                <button class="footer-float-bar--item">
+                    <img class="w-5 h-auto" src="../assets/images/menu-icons/footer-search.png" alt="">
+                </button>
+            </li>
+            <li>
+                <button class="footer-float-bar--item">
+                    <img class="w-5 h-auto" src="../assets/images/menu-icons/footer-user.png" alt="">
+                </button>
+            </li>
+        </ul>
+
+    <!-- CLOUD ANIMATIONS -->
+    <img src="../assets/images/cloud-1.png" class="animation-cloud-1" alt="">
+    <img src="../assets/images/cloud-2.png" class="animation-cloud-2" alt="">
+    <img src="../assets/images/cloud-3.png" class="animation-cloud-3" alt="">
+    <img src="../assets/images/cloud-4.png" class="animation-cloud-4" alt="">
+    <img src="../assets/images/cloud-5.png" class="animation-cloud-5" alt="">
+</div>
 
 
 
