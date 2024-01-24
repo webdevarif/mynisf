@@ -474,8 +474,8 @@ body {
   font-size: min(max(0.7rem,3vw),14px);
   line-height: 1.5;
   font-weight: 400;
-  --tw-text-opacity: 1;
-  color: rgb(154 108 136 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-text-opacity: 0.5;
 }
 
 .nisf-wrapper {
@@ -2667,7 +2667,7 @@ body {
   position: absolute;
   inset-inline-end: 100%;
   top: 50%;
-  height: 0.25rem;
+  height: 3px;
   width: 40rem;
   --tw-translate-x: -1rem;
   --tw-translate-y: -50%;
@@ -2682,7 +2682,7 @@ body {
   position: absolute;
   inset-inline-start: 100%;
   top: 50%;
-  height: 0.25rem;
+  height: 3px;
   width: 40rem;
   --tw-translate-x: 1rem;
   --tw-translate-y: -50%;

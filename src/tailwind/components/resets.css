@@ -9,7 +9,7 @@
 
     before:content-['']
     before:w-[40rem]
-    before:h-1
+    before:h-[3px]
     before:absolute
     before:end-full
     before:top-1/2
@@ -20,7 +20,7 @@
 
     after:content-['']
     after:w-[40rem]
-    after:h-1
+    after:h-[3px]
     after:absolute
     after:start-full
     after:top-1/2
