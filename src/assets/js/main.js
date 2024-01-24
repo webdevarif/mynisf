@@ -1,8 +1,6 @@
 (function ($) {
     const THEME = {
       init() {
-        // this.setupLenis();
-        this.scrollbar();
         this.setupUlSelect();
         this.setupTAB();
         this.setupDropdown();
@@ -10,50 +8,6 @@
         this.setupDateCalender();
         this.setupMenuDrawer();
         this.setupVideoPlayer();
-      },
- 
-      setupLenis() {
-        window.addEventListener("DOMContentLoaded", () => {
-          // Ensure GSAP is properly included before using ScrollTrigger
-          // Ensure Lenis is properly included
-      
-          // "use strict"; // It's not needed here
-      
-          const lenis = new Lenis({
-            lerp: 0.1,
-            wheelMultiplier: 0.7,
-            infinite: false,
-            gestureOrientation: "vertical",
-            normalizeWheel: false,
-            smoothTouch: false,
-            syncTouchLerp: 1,
-            touchMultiplier: 0.1,
-            autoResize: true,
-          });
-      
-          function raf(time) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-          }
-      
-          requestAnimationFrame(raf);
-      
-          function connectToScrollTrigger() {
-            lenis.on('scroll', ScrollTrigger.update);
-            gsap.ticker.add((time) => {
-              lenis.raf(time * 1000);
-            });
-            gsap.ticker.lagSmoothing(0);
-          }
-      
-          // Uncomment this if using GSAP ScrollTrigger
-          connectToScrollTrigger();
-        });
-      },
-      
-
-      scrollbar() {  
-        Scrollbar.initAll();
       },
   
       setupUlSelect() {
@@ -363,3 +317,36 @@
 
 
 
+
+// LENIS SETUP
+  
+  window.addEventListener("DOMContentLoaded", (event) => {
+    //ScrollTrigger.config({ ignoreMobileResize: true });
+    "use strict"; // fix lenis in safari
+    const lenis = new Lenis({
+        lerp: 0.1,
+        wheelMultiplier: 0.7,
+        infinite: false,
+        gestureOrientation: "vertical",
+        normalizeWheel: false,
+        smoothTouch: false,
+        syncTouchLerp: 1,
+        touchMultiplier: 0.1,
+        autoResize: true
+      });
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+      requestAnimationFrame(raf);
+      function connectToScrollTrigger() {
+        lenis.on('scroll', ScrollTrigger.update)
+        gsap.ticker.add((time)=>{
+          lenis.raf(time * 1000)
+        })
+        gsap.ticker.lagSmoothing(0)
+      }
+      // Uncomment this if using GSAP ScrollTrigger
+      connectToScrollTrigger();
+  });
+  

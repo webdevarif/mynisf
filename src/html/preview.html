@@ -14,7 +14,7 @@
 </head>
 <body>
 
-    <iframe id="preview-frame" class="w-full max-w-[450px] h-[calc(100vh-5px)] overflow-hidden" frameborder="0"></iframe>
+    <iframe id="preview-frame" class="w-full max-w-[450px] h-screen overflow-hidden" frameborder="0"></iframe>
 
     <script>
         // A $( document ).ready() block.
@@ -25,9 +25,6 @@
             
             // Get the fragment identifier (the part after '#')
             const hashValue = window.location.hash;
-
-            console.log("URL -- ", url);
-            console.log("Hash Value -- ", hashValue);
 
             // Check if the 'url' parameter is present
             if (url) {
