@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Action reaction recu | My Nisf Mobile App Development</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>A Mon Sujet My Nisf Mobile App Development</title>
+
+    <link rel="stylesheet" href="../assets/libs/slick/slick.min.css">
+    <link rel="stylesheet" href="../assets/libs/slick/slick-theme.min.css">
+    
     <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     
     <!-- JS SUPPORTS -->
     <script src="../assets/libs/vendors/jquery-3.7.1.min.js"></script>
     <script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
+    <script src="../assets/libs/slick/slick.min.js"></script>
+
 </head>
 <body>
     <div class="screen-wrapper">
@@ -21,17 +27,21 @@
                     <div class="body-overlay"></div>
                     <div class="nisf-wrapper-inner">
                         <div class="nisf-container overflow-hidden">
+                            
                             <!-- Top Navigation -->
-                            <nav class="top-navigation py-8 flex gap-x-4 items-center justify-between mb-5">
-                                <button class="">
-                                    <svg class="w-4 h-4 text-white">
+                            <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-3">
+                                <a href="#" class="inline-flex items-center">
+                                    <svg class="w-5 h-5 text-white">
                                         <use xlink:href="#icon-angle-left"></use>
                                     </svg>
-                                </button>
-                                <h4 class="font-semibold text-xl text-white w-full">Action & Réaction</h4>
-                                <button class="bg-transparent">
-                                    <svg class="icon w-5 h-5 text-white">
+                                </a>
+                                <h4 class="font-semibold text-xl text-white w-full mb-0">Action & Réaction</h4>
+                                <button class="menu-toggler ms-auto">
+                                    <svg class="menu-toggler---icon menu-toggler---open">
                                         <use xlink:href="#icon-vertical-dot"></use>
+                                    </svg>
+                                    <svg class="menu-toggler---icon menu-toggler---close">
+                                        <use xlink:href="#icon-half-menu"></use>
                                     </svg>
                                 </button>
                             </nav>
@@ -52,14 +62,14 @@
                                         <!-- SINGLE CARD -->
                                         <li>
                                             <div class="card bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
-                                                <div class="card-header">
+                                                <div class="card-body">
                                                     <div class="flex gap-3 w-full">
                                                         <!-- User Thumb -->
                                                         <span class="avatar overflow-hidden rounded-full">
                                                             <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/1.png" alt="">
                                                         </span>
                                                         <!-- User Info -->
-                                                        <div class="mb-2">
+                                                        <div>
                                                             <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
                                                                 <span>Rachid Mohamed</span>
                                                                 <span class="inline-block">
@@ -87,7 +97,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="card-footer border-t-2 border-black border-opacity-5">
+                                                <div class="card-footer pt-3">
                                                     <div class="flex items-center gap-3 w-full">
                                                         <button class="btn--primary w-full btn--sm">Accepter</button>
                                                         <button class="btn--secondary w-full btn--sm">Bloquer</button>
@@ -98,14 +108,14 @@
                                         <!-- SINGLE CARD -->
                                         <li>
                                             <div class="card bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
-                                                <div class="card-header">
+                                                <div class="card-body">
                                                     <div class="flex gap-3 w-full">
                                                         <!-- User Thumb -->
                                                         <span class="avatar overflow-hidden rounded-full">
                                                             <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/2.png" alt="">
                                                         </span>
                                                         <!-- User Info -->
-                                                        <div class="mb-2">
+                                                        <div>
                                                             <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
                                                                 <span>Alawi Sabri</span>
                                                                 <span class="inline-block">
@@ -134,7 +144,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="card-footer border-t-2 border-black border-opacity-5">
+                                                <div class="card-footer pt-3">
                                                     <div class="flex items-center gap-3 w-full">
                                                         <button class="btn--primary w-full btn--sm">Accepter</button>
                                                         <button class="btn--secondary w-full btn--sm">Bloquer</button>
@@ -145,14 +155,14 @@
                                         <!-- SINGLE CARD -->
                                         <li>
                                             <div class="card bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
-                                                <div class="card-header">
+                                                <div class="card-body">
                                                     <div class="flex gap-3 w-full">
                                                         <!-- User Thumb -->
                                                         <span class="avatar overflow-hidden rounded-full">
                                                             <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/2.png" alt="">
                                                         </span>
                                                         <!-- User Info -->
-                                                        <div class="mb-2">
+                                                        <div>
                                                             <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
                                                                 <span>Alawi Sabri</span>
                                                                 <span class="inline-block">
@@ -181,7 +191,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="card-footer border-t-2 border-black border-opacity-5">
+                                                <div class="card-footer pt-3">
                                                     <div class="flex items-center gap-3 w-full">
                                                         <button class="btn--primary w-full btn--sm">Accepter</button>
                                                         <button class="btn--secondary w-full btn--sm">Bloquer</button>
@@ -192,14 +202,14 @@
                                         <!-- SINGLE CARD -->
                                         <li>
                                             <div class="card bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
-                                                <div class="card-header">
+                                                <div class="card-body">
                                                     <div class="flex gap-3 w-full">
                                                         <!-- User Thumb -->
                                                         <span class="avatar overflow-hidden rounded-full">
                                                             <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/1.png" alt="">
                                                         </span>
                                                         <!-- User Info -->
-                                                        <div class="mb-2">
+                                                        <div>
                                                             <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
                                                                 <span>Rachid Mohamed</span>
                                                                 <span class="inline-block">
@@ -226,7 +236,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="card-footer border-t-2 border-black border-opacity-5">
+                                                <div class="card-footer pt-3">
                                                     <div class="flex items-center gap-3 w-full">
                                                         <button class="btn--primary w-full btn--sm">Accepter</button>
                                                         <button class="btn--secondary w-full btn--sm">Bloquer</button>
@@ -237,14 +247,14 @@
                                         <!-- SINGLE CARD -->
                                         <li>
                                             <div class="card bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
-                                                <div class="card-header">
+                                                <div class="card-body">
                                                     <div class="flex gap-3 w-full">
                                                         <!-- User Thumb -->
                                                         <span class="avatar overflow-hidden rounded-full">
                                                             <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/1.png" alt="">
                                                         </span>
                                                         <!-- User Info -->
-                                                        <div class="mb-2">
+                                                        <div>
                                                             <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
                                                                 <span>Ilham Islam</span>
                                                                 <span class="inline-block">
@@ -272,7 +282,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="card-footer border-t-2 border-black border-opacity-5">
+                                                <div class="card-footer pt-3">
                                                     <div class="flex items-center gap-3 w-full">
                                                         <button class="btn--primary w-full btn--sm">Accepter</button>
                                                         <button class="btn--secondary w-full btn--sm">Bloquer</button>
@@ -294,7 +304,7 @@
                                                         <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/1.png" alt="">
                                                     </span>
                                                     <!-- User Info -->
-                                                    <div class="mb-2">
+                                                    <div>
                                                         <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
                                                             <span>Rachid Mohamed</span>
                                                             <span class="inline-block">
@@ -336,7 +346,7 @@
                                                         <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/2.png" alt="">
                                                     </span>
                                                     <!-- User Info -->
-                                                    <div class="mb-2">
+                                                    <div>
                                                         <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
                                                             <span>Alawi Salim</span>
                                                             <span class="inline-block">
@@ -378,7 +388,7 @@
                                                         <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/3.png" alt="">
                                                     </span>
                                                     <!-- User Info -->
-                                                    <div class="mb-2">
+                                                    <div>
                                                         <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
                                                             <span>Salman ahmed</span>
                                                             <span class="inline-block">
@@ -427,7 +437,7 @@
                                                         <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/1.png" alt="">
                                                     </span>
                                                     <!-- User Info -->
-                                                    <div class="mb-2">
+                                                    <div>
                                                         <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
                                                             <span>Rachid Mohamed</span>
                                                             <span class="inline-block">
@@ -469,7 +479,7 @@
                                                         <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/2.png" alt="">
                                                     </span>
                                                     <!-- User Info -->
-                                                    <div class="mb-2">
+                                                    <div>
                                                         <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
                                                             <span>Alawi Salim</span>
                                                             <span class="inline-block">
@@ -511,7 +521,7 @@
                                                         <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/3.png" alt="">
                                                     </span>
                                                     <!-- User Info -->
-                                                    <div class="mb-2">
+                                                    <div>
                                                         <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
                                                             <span>Salman ahmed</span>
                                                             <span class="inline-block">

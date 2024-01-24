@@ -72,26 +72,47 @@
             });
         });
       },
-
-      setupTAB(){
-        $(document).ready(function() {
+      
+      setupTAB() {
+        $(document).ready(function () {
+          // Get the value after the hash from the current URL
+          const hashValue = window.location.hash;
+      
+          if (hashValue) {
+            // Hide all tab content
+            $('.tab-panel').removeClass('active');
+      
+            // Show the selected tab content
+            $('.tab-panel' + hashValue).addClass('active');
+      
+            // Update the active class on the tab navigation
+            $('.tab-link').parent().removeClass('active');
+            $(`.tab-link[href="${hashValue}"]`).parent().addClass('active');
+          }
+      
           // Handle tab clicks
-          $('.tab-link').on('click', function(e) {
-              e.preventDefault();
-
-              // Hide all tab content
-              $('.tab-panel').removeClass('active');
-
-              // Show the selected tab content
-              var targetTab = $(this).attr('href');
-              $('.tab-panel' + targetTab ).addClass('active');
-
-              // Update the active class on the tab navigation
-              $('.tab-link').parent().removeClass('active');
-              $(this).parent().addClass('active');
+          $('.tab-link').on('click', function (e) {
+            e.preventDefault();
+      
+            // Get the target tab from the href attribute
+            const targetTab = $(this).attr('href');
+      
+            // Hide all tab content
+            $('.tab-panel').removeClass('active');
+      
+            // Show the selected tab content
+            $(targetTab).addClass('active');
+      
+            // Update the active class on the tab navigation
+            $('.tab-link').parent().removeClass('active');
+            $(this).parent().addClass('active');
+      
+            // Update the URL hash
+            window.location.hash = targetTab;
           });
         });
       },
+      
 
       setupDropdown(){
         $(document).ready(function() {

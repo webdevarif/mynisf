@@ -1732,6 +1732,10 @@ body {
   background-size: cover !important;
 }
 
+.bg-contain {
+  background-size: contain !important;
+}
+
 .bg-center {
   background-position: center !important;
 }
@@ -1935,6 +1939,10 @@ body {
 
 .pt-8 {
   padding-top: 2rem !important;
+}
+
+.pt-3 {
+  padding-top: 0.75rem !important;
 }
 
 .text-center {
