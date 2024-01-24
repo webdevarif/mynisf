@@ -826,6 +826,11 @@ body {
   margin-bottom: 1.75rem !important;
 }
 
+.my-8 {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+
 .-me-8 {
   margin-inline-end: -2rem !important;
 }
