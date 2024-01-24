@@ -223,6 +223,7 @@
     @apply
     relative
     pt-[25rem]
+    max-w-[28rem]
 }
 .couple-card .image-card{
     @apply
