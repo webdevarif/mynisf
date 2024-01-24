@@ -2975,8 +2975,9 @@ textarea.input-control {
   margin-bottom: 0.5rem;
   display: block;
   padding-inline-start: 0.75rem;
-  font-size: min(max(0.7rem,3vw),14px);
-  line-height: 1.5;
+  font-size: min(max(0.8rem,4vw),18px);
+  line-height: 1.4;
+  font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }

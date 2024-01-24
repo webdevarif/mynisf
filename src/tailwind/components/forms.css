@@ -28,12 +28,13 @@ textarea.input-control{
 }
 
 .input-label{
-    @apply 
-    block
-    mb-2
-    text-white
-    ps-3
-    text-md
+  @apply 
+  block
+  mb-2
+  text-white
+  ps-3
+  text-xl
+  font-medium
 }
 
 select.input-control{
