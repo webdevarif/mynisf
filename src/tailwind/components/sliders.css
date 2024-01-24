@@ -24,7 +24,6 @@
 }
 
 
-
 .popup-offer-slider .slick-track{
     @apply
     flex
@@ -47,10 +46,13 @@
     h-[15rem]
 }
 
+.slick-dots li,
 .popup-offer-slider .slick-dots li{
     @apply 
     mx-1
 }
+.slick-dots li,
+.slick-dots li button,
 .popup-offer-slider .slick-dots li,
 .popup-offer-slider .slick-dots li button{
     @apply 
@@ -61,6 +63,10 @@
     duration-300
 }
 
+.slick-dots li.slick-active,
+.slick-dots li.slick-active button,
+.slick-dots li.slick-active button:before,
+
 .popup-offer-slider .slick-dots li.slick-active,
 .popup-offer-slider .slick-dots li.slick-active button,
 .popup-offer-slider .slick-dots li.slick-active button:before{
@@ -68,6 +74,8 @@
     p-0
     w-6
 }
+
+.slick-dots li button:before,
 .popup-offer-slider .slick-dots li button:before{
     @apply 
     h-2

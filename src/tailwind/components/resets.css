@@ -235,10 +235,11 @@ h1, h2, h3, h4, h5, h6, p{
     relative
 }
 
-.card-header,
-.card-footer{
+.card-header{
     @apply
     p-5
+    bg-[#75345B]
+    rounded-t
 }
 
 .card-body{
@@ -246,4 +247,30 @@ h1, h2, h3, h4, h5, h6, p{
     p-5
     flex
     flex-col
+}
+
+.card-footer{
+    @apply
+    p-5
+    border-t-2
+    border-black
+    border-opacity-5
+}
+
+.shadow-primary{
+    @apply 
+    relative
+    z-[1]
+
+    before:content-['']
+    before:w-2/3
+    before:h-3
+    before:bg-primary
+    before:absolute
+    before:-bottom-3
+    before:start-1/2
+    before:-translate-x-1/2
+    before:blur-lg
+    before:-z-[1]
+    
 }

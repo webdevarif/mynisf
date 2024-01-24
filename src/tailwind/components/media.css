@@ -48,6 +48,14 @@
     h-[var(--avatar-size,110px)]
 }
 
+.avatar-3xl{
+    --avatar-size: 10rem;
+    @apply
+    min-w-[var(--avatar-size,10rem)]
+    w-[var(--avatar-size,10rem)]
+    h-[var(--avatar-size,10rem)]
+}
+
 .avatar img{
     @apply
     h-full
@@ -201,4 +209,50 @@
     bg-white
     -mt-[4px]
     cursor-pointer
+}
+
+/* COUPLE CARD */
+.couple-card-wrapper{
+    @apply
+    overflow-hidden
+    py-[6rem]
+    pb-[5rem]
+    -mx-[2rem]
+}
+.couple-card{
+    @apply
+    relative
+    pt-[25rem]
+}
+.couple-card .image-card{
+    @apply
+    absolute
+    rounded-xl
+    top-0
+    h-full
+    w-[20rem]
+    border-2 
+    border-white
+    bg-white
+    z-[2]
+}
+.couple-card .image-card-img{
+    @apply
+    w-full
+    h-full
+    object-center
+    object-cover
+    rounded-xl 
+}
+.couple-card .image-card:nth-child(1){
+    @apply
+    -translate-x-[6rem] 
+    -rotate-[15deg]
+}
+.couple-card .image-card:nth-child(2){
+    @apply 
+    translate-x-[12rem] 
+    -translate-y-[4rem] 
+    rotate-[6deg]
+    z-[1]
 }

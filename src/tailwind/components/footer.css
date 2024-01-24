@@ -41,3 +41,14 @@
     before:-translate-x-1/2
     before:bottom-0
 }
+
+.footer-float-bar .footer-float-bar--item.active svg,
+.footer-float-bar .footer-float-bar--item.active img {
+    /* @apply
+    invert-[19%] 
+    sepia-[94%] 
+    saturate-[7492%] 
+    hue-rotate-[316deg] 
+    brightness-[95%] 
+    contrast-[101%] */
+}

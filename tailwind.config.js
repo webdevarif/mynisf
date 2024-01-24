@@ -39,10 +39,11 @@ module.exports = {
     },
     borderRadius: {
       'none': '0',
-      'sm': '0.125rem',
+      'sm': '5px',
       DEFAULT: '12px',
       'md': '16px',
       'lg': '20px',
+      'xl': '45px',
       'full': '9999px',
       'large': '12px',
     },
@@ -53,6 +54,7 @@ module.exports = {
         "primary-dark": "#331630",
         "secondary": "#65265E",
         "card-bg": "#814067",
+        "input-bg": "#783c60",
       }
     },
   },

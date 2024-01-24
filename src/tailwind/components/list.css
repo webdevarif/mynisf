@@ -87,10 +87,11 @@
     bg-opacity-10
     text-white
     text-opacity-50
-    px-3
-    py-3
+    px-6
+    py-4
     rounded
     text-md
+    font-semibold
     cursor-pointer
 }
 .outline--check .outline--check-label {
@@ -304,4 +305,69 @@ img.list-stars-progress-star {
     @apply 
     rounded-none
     bg-[#6E3959]
+}
+
+
+/* LIST MESSAGES */
+.list-messages{
+    @apply
+    flex 
+    flex-col
+}
+.list-messages .list-messages__item{
+    @apply
+    bg-[#62224C] 
+    flex 
+    items-center 
+    gap-3 
+    py-3 
+    px-6
+}
+.list-messages .list-messages__item:not(:last-child){
+    @apply
+    border-b-2 
+    border-white 
+    border-opacity-10 
+}
+.list-messages .list-messages__item.unread{
+    @apply
+    bg-[#561E43] 
+    relative
+
+    before:content-['']
+    before:absolute
+    before:w-[5px]
+    before:h-[5px]
+    before:bg-primary
+    before:rounded-full
+    before:start-3
+    before:top-1/2
+    before:-translate-y-1/2
+}
+
+
+.icon-message-unread{
+    @apply
+    inline-block
+    relative
+    z-[1]
+
+    before:content-['']
+    before:w-2
+    before:h-2
+    before:bg-primary
+    before:rounded-full
+    before:absolute
+    before:z-[2]
+    before:top-0
+    before:end-0
+}
+
+.list-authors{
+    @apply
+    inline-flex
+}
+.list-authors img:not(:first-child){
+    @apply
+    -ms-3
 }
