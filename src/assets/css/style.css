@@ -497,6 +497,7 @@ body {
 }
 
 .nisf-container {
+  min-height: 100vh;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-bottom: 4rem;
@@ -1164,6 +1165,10 @@ body {
 
 .w-full {
   width: 100% !important;
+}
+
+.w-7 {
+  width: 1.75rem !important;
 }
 
 .min-w-\[3rem\] {
