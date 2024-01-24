@@ -1206,12 +1206,12 @@ body {
   max-width: 30px !important;
 }
 
-.max-w-\[380px\] {
-  max-width: 380px !important;
+.max-w-\[375px\] {
+  max-width: 375px !important;
 }
 
-.max-w-\[450px\] {
-  max-width: 450px !important;
+.max-w-\[440px\] {
+  max-width: 440px !important;
 }
 
 .max-w-\[60\%\] {
@@ -2383,8 +2383,8 @@ body {
   position: absolute;
   inset-inline-end: 0.25rem;
   bottom: 0px;
-  height: 1rem;
-  width: 1rem;
+  height: 0.75rem;
+  width: 0.75rem;
   border-radius: 9999px;
   content: var(--tw-content);
   --tw-bg-opacity: 1;
