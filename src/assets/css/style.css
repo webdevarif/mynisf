@@ -465,6 +465,7 @@ body {
   position: relative;
   z-index: 1;
   min-height: 100vh;
+  width: 100%;
   --tw-bg-opacity: 1;
   background-color: rgb(101 38 94 / var(--tw-bg-opacity));
   background-image: url('../images/body-bg.jpg');
@@ -478,8 +479,9 @@ body {
 }
 
 .nisf-wrapper {
+  position: relative;
   height: 100%;
-  overflow-y: auto;
+  overflow: hidden;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;

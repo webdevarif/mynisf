@@ -29,11 +29,13 @@
         font-normal
         relative
         min-h-screen
+        w-full
         z-[1]
     }
     .nisf-wrapper{
         @apply 
-        overflow-y-auto
+        overflow-hidden
+        relative
         h-full
         transition-all
         duration-300
