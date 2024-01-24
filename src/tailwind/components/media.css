@@ -259,3 +259,9 @@
     z-[1];
     animation: couple-image-card-2 0.6s 1 linear; 
 }
+
+
+
+.hide-scrollbar::-webkit-scrollbar {
+    width: 0px;
+  }
