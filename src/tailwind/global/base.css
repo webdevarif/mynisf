@@ -28,7 +28,7 @@
         text-primary-50
         font-normal
         relative
-        min-h-screen
+        h-full
         w-full
         z-[1]
     }
@@ -36,7 +36,7 @@
         @apply 
         overflow-hidden
         relative
-        h-full
+        min-h-screen
         transition-all
         duration-300
     }
