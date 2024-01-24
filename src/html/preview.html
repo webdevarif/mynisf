@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Mon Sujet My Nisf Mobile App Development</title>
+
+    <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <!-- JS SUPPORTS -->
+    <script src="../assets/libs/vendors/jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+
+    <iframe id="preview-frame" class="w-full max-w-[450px] h-[calc(100vh-5px)] overflow-hidden" frameborder="0"></iframe>
+
+    <script>
+        // A $( document ).ready() block.
+        jQuery( document ).ready(function($) {
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const url = urlParams.get('url');
+            
+            // Get the fragment identifier (the part after '#')
+            const hashValue = window.location.hash;
+
+            console.log("URL -- ", url);
+            console.log("Hash Value -- ", hashValue);
+
+            // Check if the 'url' parameter is present
+            if (url) {
+                // Concatenate 'url' parameter value and the fragment identifier
+                const fullUrl = url + (hashValue || '');
+
+                // Set the 'src' attribute of the iframe
+                $('#preview-frame').attr('src', fullUrl);
+            }
+        });
+    </script>
+</html>

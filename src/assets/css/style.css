@@ -464,8 +464,7 @@ body {
 .nisf-body {
   position: relative;
   z-index: 1;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
   --tw-bg-opacity: 1;
   background-color: rgb(101 38 94 / var(--tw-bg-opacity));
   background-image: url('../images/body-bg.jpg');
@@ -1048,6 +1047,10 @@ body {
   height: 70px !important;
 }
 
+.h-\[calc\(100vh-5px\)\] {
+  height: calc(100vh - 5px) !important;
+}
+
 .h-auto {
   height: auto !important;
 }
@@ -1200,6 +1203,10 @@ body {
   max-width: 30px !important;
 }
 
+.max-w-\[450px\] {
+  max-width: 450px !important;
+}
+
 .max-w-\[60\%\] {
   max-width: 60% !important;
 }
@@ -1348,12 +1355,12 @@ body {
   grid-template-columns: 5rem 1fr 2.5rem !important;
 }
 
-.grid-cols-\[7rem_1fr\] {
-  grid-template-columns: 7rem 1fr !important;
-}
-
 .grid-cols-\[5rem_1fr_auto\] {
   grid-template-columns: 5rem 1fr auto !important;
+}
+
+.grid-cols-\[7rem_1fr\] {
+  grid-template-columns: 7rem 1fr !important;
 }
 
 .flex-row {
@@ -1732,10 +1739,6 @@ body {
   background-size: cover !important;
 }
 
-.bg-contain {
-  background-size: contain !important;
-}
-
 .bg-center {
   background-position: center !important;
 }
@@ -1937,12 +1940,12 @@ body {
   padding-top: 2.5rem !important;
 }
 
-.pt-8 {
-  padding-top: 2rem !important;
-}
-
 .pt-3 {
   padding-top: 0.75rem !important;
+}
+
+.pt-8 {
+  padding-top: 2rem !important;
 }
 
 .text-center {
@@ -3810,7 +3813,7 @@ img.list-stars-progress-star {
 }
 
 .footer-float-bar {
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   left: 0px;
   z-index: 50;

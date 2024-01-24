@@ -3,7 +3,7 @@
     bg-[rgb(110,38,86)] 
     rounded-tl-[1.25rem] 
     rounded-tr-[1.25rem] 
-    absolute
+    fixed
     bottom-0 
     left-0
     z-50

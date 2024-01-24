@@ -9,580 +9,809 @@
     <link rel="stylesheet" href="../assets/libs/slick/slick-theme.min.css">
     
     <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="../assets/libs/gsap/lenis.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     
     <!-- JS SUPPORTS -->
     <script src="../assets/libs/vendors/jquery-3.7.1.min.js"></script>
     <script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
+    <script src="../assets/libs/gsap/gsap.min.js"></script>
+    <script src="../assets/libs/gsap/ScrollTrigger.min.js"></script>
+    <script src="../assets/libs/gsap/lenis.min.js"></script>
     <script src="../assets/libs/slick/slick.min.js"></script>
 
 </head>
-<body>
-    <div class="screen-wrapper">
-        <div class="screen-inner">
-            <div class="nisf-body has-footer-bar"> <!-- has-footer-bar should be when footer has bar -->
-                <!-- All content should go inside nisf-wrapper -->
-                <div class="nisf-wrapper">
-                    <!-- body overlay -->
-                    <div class="body-overlay"></div>
-                    <div class="nisf-wrapper-inner">
-                        <div class="nisf-container overflow-hidden">
-                            
-                            <!-- Top Navigation -->
-                            <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-3">
-                                <a href="#" class="inline-flex items-center">
-                                    <svg class="w-5 h-5 text-white">
-                                        <use xlink:href="#icon-angle-left"></use>
-                                    </svg>
-                                </a>
-                                <h4 class="font-semibold text-xl text-white w-full mb-0">Action & Réaction</h4>
-                                <button class="menu-toggler ms-auto">
-                                    <svg class="menu-toggler---icon menu-toggler---open">
-                                        <use xlink:href="#icon-vertical-dot"></use>
-                                    </svg>
-                                    <svg class="menu-toggler---icon menu-toggler---close">
-                                        <use xlink:href="#icon-half-menu"></use>
-                                    </svg>
-                                </button>
-                            </nav>
+<body class="nisf-body has-footer-bar"> <!-- has-footer-bar should be when footer has bar -->
+    <!-- body overlay -->
+    <div class="body-overlay"></div>
+    <!-- All content should go inside nisf-wrapper -->
+    <div class="nisf-wrapper">
+        <div class="nisf-wrapper-inner">
+            <div class="nisf-container">
+                
+                <!-- Top Navigation -->
+                <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-3">
+                    <a href="#" class="inline-flex items-center">
+                        <svg class="w-5 h-5 text-white">
+                            <use xlink:href="#icon-angle-left"></use>
+                        </svg>
+                    </a>
+                    <h4 class="font-semibold text-xl text-white w-full mb-0">Action & Réaction</h4>
+                    <button class="menu-toggler ms-auto">
+                        <svg class="menu-toggler---icon menu-toggler---open">
+                            <use xlink:href="#icon-vertical-dot"></use>
+                        </svg>
+                        <svg class="menu-toggler---icon menu-toggler---close">
+                            <use xlink:href="#icon-half-menu"></use>
+                        </svg>
+                    </button>
+                </nav>
 
-                            <!-- Tab Navigation  -->
-                            <ul class="nav tab-navigation mb-6">
-                                <li class="active"><a href="#tab--recu" class="tab-link">Reçu</a></li>
-                                <li><a href="#tab--envoye" class="tab-link">Envoyé</a></li>
-                                <li><a href="#tab--en-cous" class="tab-link">En Cours</a></li>
-                            </ul>
+                <!-- Tab Navigation  -->
+                <ul class="nav tab-navigation mb-6">
+                    <li class="active"><a href="#tab--recu" class="tab-link">Reçu</a></li>
+                    <li><a href="#tab--envoye" class="tab-link">Envoyé</a></li>
+                    <li><a href="#tab--en-cous" class="tab-link">En Cours</a></li>
+                </ul>
 
 
-                            <div class="tab-content">
-                                <!-- RECU -->
-                                <div class="tab-panel active" id="tab--recu">
-                                    
-                                    <ul class="flex flex-col gap-3">
-                                        <!-- SINGLE CARD -->
-                                        <li>
-                                            <div class="card bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
-                                                <div class="card-body">
-                                                    <div class="flex gap-3 w-full">
-                                                        <!-- User Thumb -->
-                                                        <span class="avatar overflow-hidden rounded-full">
-                                                            <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/1.png" alt="">
-                                                        </span>
-                                                        <!-- User Info -->
-                                                        <div>
-                                                            <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
-                                                                <span>Rachid Mohamed</span>
-                                                                <span class="inline-block">
-                                                                    <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
-                                                                </span>
-                                                            </h3>
-                                                            <p class="text-medium text-white text-opacity-25">39 ans (Agadir, Spain)</p>
-                                                        </div>
-                                                        
-                                                        <div class="more-info ms-auto">
-                                                            <!-- DROPDOWN INFO-->
-                                                            <div class="dropdown-wrapper">
-                                                                <button class="bg-transparent dropdown-toggler">
-                                                                    <svg class="icon w-5 h-5 text-white">
-                                                                        <use xlink:href="#icon-vertical-dot"></use>
-                                                                    </svg>
-                                                                </button>  
-                                                                <div class="dropdown-menu">
-                                                                    <ul class="dropdown-menu-list">
-                                                                        <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
-                                                                        <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="card-footer pt-3">
-                                                    <div class="flex items-center gap-3 w-full">
-                                                        <button class="btn--primary w-full btn--sm">Accepter</button>
-                                                        <button class="btn--secondary w-full btn--sm">Bloquer</button>
-                                                    </div>                                                    
-                                                </div>
+                <div class="tab-content">
+                    <!-- RECU -->
+                    <div class="tab-panel active" id="tab--recu">
+                        
+                        <ul class="flex flex-col gap-3">
+                            <!-- SINGLE CARD -->
+                            <li>
+                                <div class="card bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
+                                    <div class="card-body">
+                                        <div class="flex gap-3 w-full">
+                                            <!-- User Thumb -->
+                                            <span class="avatar overflow-hidden rounded-full">
+                                                <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/1.png" alt="">
+                                            </span>
+                                            <!-- User Info -->
+                                            <div>
+                                                <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
+                                                    <span>Rachid Mohamed</span>
+                                                    <span class="inline-block">
+                                                        <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
+                                                    </span>
+                                                </h3>
+                                                <p class="text-medium text-white text-opacity-25">39 ans (Agadir, Spain)</p>
                                             </div>
-                                        </li>
-                                        <!-- SINGLE CARD -->
-                                        <li>
-                                            <div class="card bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
-                                                <div class="card-body">
-                                                    <div class="flex gap-3 w-full">
-                                                        <!-- User Thumb -->
-                                                        <span class="avatar overflow-hidden rounded-full">
-                                                            <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/2.png" alt="">
-                                                        </span>
-                                                        <!-- User Info -->
-                                                        <div>
-                                                            <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
-                                                                <span>Alawi Sabri</span>
-                                                                <span class="inline-block">
-                                                                    <img class="w-4 h-4" src="../assets/images/flag-icon/france.png" alt="">
-                                                                </span>
-                                                            </h3>
-                                                            <p class="text-medium text-white text-opacity-25">20 ans (Paris, France)</p>
-                                                        </div>
-                                                        
-                                                        
-                                                        <div class="more-info ms-auto">
-                                                            <!-- DROPDOWN INFO-->
-                                                            <div class="dropdown-wrapper">
-                                                                <button class="bg-transparent dropdown-toggler">
-                                                                    <svg class="icon w-5 h-5 text-white">
-                                                                        <use xlink:href="#icon-vertical-dot"></use>
-                                                                    </svg>
-                                                                </button>  
-                                                                <div class="dropdown-menu">
-                                                                    <ul class="dropdown-menu-list">
-                                                                        <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
-                                                                        <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="card-footer pt-3">
-                                                    <div class="flex items-center gap-3 w-full">
-                                                        <button class="btn--primary w-full btn--sm">Accepter</button>
-                                                        <button class="btn--secondary w-full btn--sm">Bloquer</button>
+                                            
+                                            <div class="more-info ms-auto">
+                                                <!-- DROPDOWN INFO-->
+                                                <div class="dropdown-wrapper">
+                                                    <button class="bg-transparent dropdown-toggler">
+                                                        <svg class="icon w-5 h-5 text-white">
+                                                            <use xlink:href="#icon-vertical-dot"></use>
+                                                        </svg>
+                                                    </button>  
+                                                    <div class="dropdown-menu">
+                                                        <ul class="dropdown-menu-list">
+                                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <!-- SINGLE CARD -->
-                                        <li>
-                                            <div class="card bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
-                                                <div class="card-body">
-                                                    <div class="flex gap-3 w-full">
-                                                        <!-- User Thumb -->
-                                                        <span class="avatar overflow-hidden rounded-full">
-                                                            <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/2.png" alt="">
-                                                        </span>
-                                                        <!-- User Info -->
-                                                        <div>
-                                                            <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
-                                                                <span>Alawi Sabri</span>
-                                                                <span class="inline-block">
-                                                                    <img class="w-4 h-4" src="../assets/images/flag-icon/france.png" alt="">
-                                                                </span>
-                                                            </h3>
-                                                            <p class="text-medium text-white text-opacity-25">20 ans (Paris, France)</p>
-                                                        </div>
-                                                        
-                                                        
-                                                        <div class="more-info ms-auto">
-                                                            <!-- DROPDOWN INFO-->
-                                                            <div class="dropdown-wrapper">
-                                                                <button class="bg-transparent dropdown-toggler">
-                                                                    <svg class="icon w-5 h-5 text-white">
-                                                                        <use xlink:href="#icon-vertical-dot"></use>
-                                                                    </svg>
-                                                                </button>  
-                                                                <div class="dropdown-menu">
-                                                                    <ul class="dropdown-menu-list">
-                                                                        <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
-                                                                        <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="card-footer pt-3">
-                                                    <div class="flex items-center gap-3 w-full">
-                                                        <button class="btn--primary w-full btn--sm">Accepter</button>
-                                                        <button class="btn--secondary w-full btn--sm">Bloquer</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <!-- SINGLE CARD -->
-                                        <li>
-                                            <div class="card bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
-                                                <div class="card-body">
-                                                    <div class="flex gap-3 w-full">
-                                                        <!-- User Thumb -->
-                                                        <span class="avatar overflow-hidden rounded-full">
-                                                            <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/1.png" alt="">
-                                                        </span>
-                                                        <!-- User Info -->
-                                                        <div>
-                                                            <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
-                                                                <span>Rachid Mohamed</span>
-                                                                <span class="inline-block">
-                                                                    <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
-                                                                </span>
-                                                            </h3>
-                                                            <p class="text-medium text-white text-opacity-25">39 ans (Agadir, Spain)</p>
-                                                        </div>
-                                                        <div class="more-info ms-auto">
-                                                            <!-- DROPDOWN INFO-->
-                                                            <div class="dropdown-wrapper">
-                                                                <button class="bg-transparent dropdown-toggler">
-                                                                    <svg class="icon w-5 h-5 text-white">
-                                                                        <use xlink:href="#icon-vertical-dot"></use>
-                                                                    </svg>
-                                                                </button>  
-                                                                <div class="dropdown-menu">
-                                                                    <ul class="dropdown-menu-list">
-                                                                        <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
-                                                                        <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="card-footer pt-3">
-                                                    <div class="flex items-center gap-3 w-full">
-                                                        <button class="btn--primary w-full btn--sm">Accepter</button>
-                                                        <button class="btn--secondary w-full btn--sm">Bloquer</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <!-- SINGLE CARD -->
-                                        <li>
-                                            <div class="card bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
-                                                <div class="card-body">
-                                                    <div class="flex gap-3 w-full">
-                                                        <!-- User Thumb -->
-                                                        <span class="avatar overflow-hidden rounded-full">
-                                                            <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/1.png" alt="">
-                                                        </span>
-                                                        <!-- User Info -->
-                                                        <div>
-                                                            <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
-                                                                <span>Ilham Islam</span>
-                                                                <span class="inline-block">
-                                                                    <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
-                                                                </span>
-                                                            </h3>
-                                                            <p class="text-medium text-white text-opacity-25">39 ans (Agadir, Spain)</p>
-                                                        </div>
-                                                        
-                                                        <div class="more-info ms-auto">
-                                                            <!-- DROPDOWN INFO-->
-                                                            <div class="dropdown-wrapper">
-                                                                <button class="bg-transparent dropdown-toggler">
-                                                                    <svg class="icon w-5 h-5 text-white">
-                                                                        <use xlink:href="#icon-vertical-dot"></use>
-                                                                    </svg>
-                                                                </button>  
-                                                                <div class="dropdown-menu">
-                                                                    <ul class="dropdown-menu-list">
-                                                                        <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
-                                                                        <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="card-footer pt-3">
-                                                    <div class="flex items-center gap-3 w-full">
-                                                        <button class="btn--primary w-full btn--sm">Accepter</button>
-                                                        <button class="btn--secondary w-full btn--sm">Bloquer</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer pt-3">
+                                        <div class="flex items-center gap-3 w-full">
+                                            <button class="btn--primary w-full btn--sm">Accepter</button>
+                                            <button class="btn--secondary w-full btn--sm">Bloquer</button>
+                                        </div>                                                    
+                                    </div>
                                 </div>
-                                <!-- envoye -->
-                                <div class="tab-panel" id="tab--envoye">
-                                    <ul class="flex flex-col gap-3">
-                                        <!-- SINGLE CARD -->
-                                        <li>
-                                            <div class="card card-body bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
-                                                <div class="flex gap-3 w-full">
-                                                    <!-- User Thumb -->
-                                                    <span class="avatar avatar-lg overflow-hidden rounded-full">
-                                                        <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/1.png" alt="">
+                            </li>
+                            <!-- SINGLE CARD -->
+                            <li>
+                                <div class="card bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
+                                    <div class="card-body">
+                                        <div class="flex gap-3 w-full">
+                                            <!-- User Thumb -->
+                                            <span class="avatar overflow-hidden rounded-full">
+                                                <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/2.png" alt="">
+                                            </span>
+                                            <!-- User Info -->
+                                            <div>
+                                                <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
+                                                    <span>Alawi Sabri</span>
+                                                    <span class="inline-block">
+                                                        <img class="w-4 h-4" src="../assets/images/flag-icon/france.png" alt="">
                                                     </span>
-                                                    <!-- User Info -->
-                                                    <div>
-                                                        <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
-                                                            <span>Rachid Mohamed</span>
-                                                            <span class="inline-block">
-                                                                <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
-                                                            </span>
-                                                        </h3>
-                                                        <p class="text-medium text-white text-opacity-25">39 ans (Agadir, Spain)</p>
-
-                                                        <div class="font-medium mt-3 text-sm text-white">
-                                                            Vous avez envoyé : <a href="#" class="link-primary">40 question</a>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="more-info ms-auto">
-                                                        <!-- DROPDOWN INFO-->
-                                                        <div class="dropdown-wrapper">
-                                                            <button class="bg-transparent dropdown-toggler">
-                                                                <svg class="icon w-5 h-5 text-white">
-                                                                    <use xlink:href="#icon-vertical-dot"></use>
-                                                                </svg>
-                                                            </button>  
-                                                            <div class="dropdown-menu">
-                                                                <ul class="dropdown-menu-list">
-                                                                    <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
-                                                                    <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
+                                                </h3>
+                                                <p class="text-medium text-white text-opacity-25">20 ans (Paris, France)</p>
+                                            </div>
+                                            
+                                            
+                                            <div class="more-info ms-auto">
+                                                <!-- DROPDOWN INFO-->
+                                                <div class="dropdown-wrapper">
+                                                    <button class="bg-transparent dropdown-toggler">
+                                                        <svg class="icon w-5 h-5 text-white">
+                                                            <use xlink:href="#icon-vertical-dot"></use>
+                                                        </svg>
+                                                    </button>  
+                                                    <div class="dropdown-menu">
+                                                        <ul class="dropdown-menu-list">
+                                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <!-- SINGLE CARD -->
-                                        <li>
-                                            <div class="card card-body bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
-                                                <div class="flex gap-3 w-full">
-                                                    <!-- User Thumb -->
-                                                    <span class="avatar avatar-lg overflow-hidden rounded-full">
-                                                        <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/2.png" alt="">
-                                                    </span>
-                                                    <!-- User Info -->
-                                                    <div>
-                                                        <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
-                                                            <span>Alawi Salim</span>
-                                                            <span class="inline-block">
-                                                                <img class="w-4 h-4" src="../assets/images/flag-icon/france.png" alt="">
-                                                            </span>
-                                                        </h3>
-                                                        <p class="text-medium text-white text-opacity-25">23 ans (Agadir, Spain)</p>
-
-                                                        <div class="font-medium mt-3 text-sm text-white">
-                                                            Vous avez envoyé : <a href="#" class="link-primary">32 question</a>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="more-info ms-auto">
-                                                        <!-- DROPDOWN INFO-->
-                                                        <div class="dropdown-wrapper">
-                                                            <button class="bg-transparent dropdown-toggler">
-                                                                <svg class="icon w-5 h-5 text-white">
-                                                                    <use xlink:href="#icon-vertical-dot"></use>
-                                                                </svg>
-                                                            </button>  
-                                                            <div class="dropdown-menu">
-                                                                <ul class="dropdown-menu-list">
-                                                                    <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
-                                                                    <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <!-- SINGLE CARD -->
-                                        <li>
-                                            <div class="card card-body bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
-                                                <div class="flex gap-3 w-full">
-                                                    <!-- User Thumb -->
-                                                    <span class="avatar avatar-lg overflow-hidden rounded-full">
-                                                        <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/3.png" alt="">
-                                                    </span>
-                                                    <!-- User Info -->
-                                                    <div>
-                                                        <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
-                                                            <span>Salman ahmed</span>
-                                                            <span class="inline-block">
-                                                                <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
-                                                            </span>
-                                                        </h3>
-                                                        <p class="text-medium text-white text-opacity-25">27 ans (Agadir, Spain)</p>
-
-                                                        <div class="font-medium mt-3 text-sm text-white">
-                                                            Vous avez envoyé : <a href="#" class="link-primary">40 question</a>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    
-                                                    
-                                                    <div class="more-info ms-auto">
-                                                        <!-- DROPDOWN INFO-->
-                                                        <div class="dropdown-wrapper">
-                                                            <button class="bg-transparent dropdown-toggler">
-                                                                <svg class="icon w-5 h-5 text-white">
-                                                                    <use xlink:href="#icon-vertical-dot"></use>
-                                                                </svg>
-                                                            </button>  
-                                                            <div class="dropdown-menu">
-                                                                <ul class="dropdown-menu-list">
-                                                                    <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
-                                                                    <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer pt-3">
+                                        <div class="flex items-center gap-3 w-full">
+                                            <button class="btn--primary w-full btn--sm">Accepter</button>
+                                            <button class="btn--secondary w-full btn--sm">Bloquer</button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <!-- en-cous -->
-                                <div class="tab-panel" id="tab--en-cous">
-                                    <ul class="flex flex-col gap-3">
-                                        <!-- SINGLE CARD -->
-                                        <li>
-                                            <div class="card card-body bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
-                                                <div class="flex gap-3 w-full">
-                                                    <!-- User Thumb -->
-                                                    <span class="avatar avatar-lg overflow-hidden rounded-full">
-                                                        <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/1.png" alt="">
+                            </li>
+                            <!-- SINGLE CARD -->
+                            <li>
+                                <div class="card bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
+                                    <div class="card-body">
+                                        <div class="flex gap-3 w-full">
+                                            <!-- User Thumb -->
+                                            <span class="avatar overflow-hidden rounded-full">
+                                                <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/2.png" alt="">
+                                            </span>
+                                            <!-- User Info -->
+                                            <div>
+                                                <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
+                                                    <span>Alawi Sabri</span>
+                                                    <span class="inline-block">
+                                                        <img class="w-4 h-4" src="../assets/images/flag-icon/france.png" alt="">
                                                     </span>
-                                                    <!-- User Info -->
-                                                    <div>
-                                                        <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
-                                                            <span>Rachid Mohamed</span>
-                                                            <span class="inline-block">
-                                                                <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
-                                                            </span>
-                                                        </h3>
-                                                        <p class="text-medium text-white text-opacity-25">39 ans (Agadir, Spain)</p>
-
-                                                        <div class="font-medium text-xs rounded-[6px] mt-3 bg-primary-dark bg-opacity-55 text-white px-3 py-1">
-                                                            Il a répondu à 25 questions/40
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="more-info ms-auto">
-                                                        <!-- DROPDOWN INFO-->
-                                                        <div class="dropdown-wrapper">
-                                                            <button class="bg-transparent dropdown-toggler">
-                                                                <svg class="icon w-5 h-5 text-white">
-                                                                    <use xlink:href="#icon-vertical-dot"></use>
-                                                                </svg>
-                                                            </button>  
-                                                            <div class="dropdown-menu">
-                                                                <ul class="dropdown-menu-list">
-                                                                    <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
-                                                                    <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
+                                                </h3>
+                                                <p class="text-medium text-white text-opacity-25">20 ans (Paris, France)</p>
+                                            </div>
+                                            
+                                            
+                                            <div class="more-info ms-auto">
+                                                <!-- DROPDOWN INFO-->
+                                                <div class="dropdown-wrapper">
+                                                    <button class="bg-transparent dropdown-toggler">
+                                                        <svg class="icon w-5 h-5 text-white">
+                                                            <use xlink:href="#icon-vertical-dot"></use>
+                                                        </svg>
+                                                    </button>  
+                                                    <div class="dropdown-menu">
+                                                        <ul class="dropdown-menu-list">
+                                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <!-- SINGLE CARD -->
-                                        <li>
-                                            <div class="card card-body bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
-                                                <div class="flex gap-3 w-full">
-                                                    <!-- User Thumb -->
-                                                    <span class="avatar avatar-lg overflow-hidden rounded-full">
-                                                        <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/2.png" alt="">
-                                                    </span>
-                                                    <!-- User Info -->
-                                                    <div>
-                                                        <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
-                                                            <span>Alawi Salim</span>
-                                                            <span class="inline-block">
-                                                                <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
-                                                            </span>
-                                                        </h3>
-                                                        <p class="text-medium text-white text-opacity-25">39 ans (Agadir, Spain)</p>
-
-                                                        <div class="font-medium text-xs rounded-[6px] mt-3 bg-primary-dark bg-opacity-55 text-white px-3 py-1">
-                                                            Il a répondu à 40 questions/40
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="more-info ms-auto">
-                                                        <!-- DROPDOWN INFO-->
-                                                        <div class="dropdown-wrapper">
-                                                            <button class="bg-transparent dropdown-toggler">
-                                                                <svg class="icon w-5 h-5 text-white">
-                                                                    <use xlink:href="#icon-vertical-dot"></use>
-                                                                </svg>
-                                                            </button>  
-                                                            <div class="dropdown-menu">
-                                                                <ul class="dropdown-menu-list">
-                                                                    <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
-                                                                    <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <!-- SINGLE CARD -->
-                                        <li>
-                                            <div class="card card-body bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
-                                                <div class="flex gap-3 w-full">
-                                                    <!-- User Thumb -->
-                                                    <span class="avatar avatar-lg overflow-hidden rounded-full">
-                                                        <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/3.png" alt="">
-                                                    </span>
-                                                    <!-- User Info -->
-                                                    <div>
-                                                        <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
-                                                            <span>Salman ahmed</span>
-                                                            <span class="inline-block">
-                                                                <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
-                                                            </span>
-                                                        </h3>
-                                                        <p class="text-medium text-white text-opacity-25">39 ans (Agadir, Spain)</p>
-
-                                                        <div class="font-medium text-xs rounded-[6px] mt-3 bg-primary-dark bg-opacity-55 text-white px-3 py-1">
-                                                            Il a répondu à 25 questions/40
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="more-info ms-auto">
-                                                        <!-- DROPDOWN INFO-->
-                                                        <div class="dropdown-wrapper">
-                                                            <button class="bg-transparent dropdown-toggler">
-                                                                <svg class="icon w-5 h-5 text-white">
-                                                                    <use xlink:href="#icon-vertical-dot"></use>
-                                                                </svg>
-                                                            </button>  
-                                                            <div class="dropdown-menu">
-                                                                <ul class="dropdown-menu-list">
-                                                                    <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
-                                                                    <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer pt-3">
+                                        <div class="flex items-center gap-3 w-full">
+                                            <button class="btn--primary w-full btn--sm">Accepter</button>
+                                            <button class="btn--secondary w-full btn--sm">Bloquer</button>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-
-                        </div>
+                            </li>
+                            <!-- SINGLE CARD -->
+                            <li>
+                                <div class="card bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
+                                    <div class="card-body">
+                                        <div class="flex gap-3 w-full">
+                                            <!-- User Thumb -->
+                                            <span class="avatar overflow-hidden rounded-full">
+                                                <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/1.png" alt="">
+                                            </span>
+                                            <!-- User Info -->
+                                            <div>
+                                                <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
+                                                    <span>Rachid Mohamed</span>
+                                                    <span class="inline-block">
+                                                        <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
+                                                    </span>
+                                                </h3>
+                                                <p class="text-medium text-white text-opacity-25">39 ans (Agadir, Spain)</p>
+                                            </div>
+                                            <div class="more-info ms-auto">
+                                                <!-- DROPDOWN INFO-->
+                                                <div class="dropdown-wrapper">
+                                                    <button class="bg-transparent dropdown-toggler">
+                                                        <svg class="icon w-5 h-5 text-white">
+                                                            <use xlink:href="#icon-vertical-dot"></use>
+                                                        </svg>
+                                                    </button>  
+                                                    <div class="dropdown-menu">
+                                                        <ul class="dropdown-menu-list">
+                                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer pt-3">
+                                        <div class="flex items-center gap-3 w-full">
+                                            <button class="btn--primary w-full btn--sm">Accepter</button>
+                                            <button class="btn--secondary w-full btn--sm">Bloquer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- SINGLE CARD -->
+                            <li>
+                                <div class="card bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
+                                    <div class="card-body">
+                                        <div class="flex gap-3 w-full">
+                                            <!-- User Thumb -->
+                                            <span class="avatar overflow-hidden rounded-full">
+                                                <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/1.png" alt="">
+                                            </span>
+                                            <!-- User Info -->
+                                            <div>
+                                                <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
+                                                    <span>Ilham Islam</span>
+                                                    <span class="inline-block">
+                                                        <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
+                                                    </span>
+                                                </h3>
+                                                <p class="text-medium text-white text-opacity-25">39 ans (Agadir, Spain)</p>
+                                            </div>
+                                            
+                                            <div class="more-info ms-auto">
+                                                <!-- DROPDOWN INFO-->
+                                                <div class="dropdown-wrapper">
+                                                    <button class="bg-transparent dropdown-toggler">
+                                                        <svg class="icon w-5 h-5 text-white">
+                                                            <use xlink:href="#icon-vertical-dot"></use>
+                                                        </svg>
+                                                    </button>  
+                                                    <div class="dropdown-menu">
+                                                        <ul class="dropdown-menu-list">
+                                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer pt-3">
+                                        <div class="flex items-center gap-3 w-full">
+                                            <button class="btn--primary w-full btn--sm">Accepter</button>
+                                            <button class="btn--secondary w-full btn--sm">Bloquer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- SINGLE CARD -->
+                            <li>
+                                <div class="card bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
+                                    <div class="card-body">
+                                        <div class="flex gap-3 w-full">
+                                            <!-- User Thumb -->
+                                            <span class="avatar overflow-hidden rounded-full">
+                                                <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/1.png" alt="">
+                                            </span>
+                                            <!-- User Info -->
+                                            <div>
+                                                <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
+                                                    <span>Rachid Mohamed</span>
+                                                    <span class="inline-block">
+                                                        <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
+                                                    </span>
+                                                </h3>
+                                                <p class="text-medium text-white text-opacity-25">39 ans (Agadir, Spain)</p>
+                                            </div>
+                                            
+                                            <div class="more-info ms-auto">
+                                                <!-- DROPDOWN INFO-->
+                                                <div class="dropdown-wrapper">
+                                                    <button class="bg-transparent dropdown-toggler">
+                                                        <svg class="icon w-5 h-5 text-white">
+                                                            <use xlink:href="#icon-vertical-dot"></use>
+                                                        </svg>
+                                                    </button>  
+                                                    <div class="dropdown-menu">
+                                                        <ul class="dropdown-menu-list">
+                                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer pt-3">
+                                        <div class="flex items-center gap-3 w-full">
+                                            <button class="btn--primary w-full btn--sm">Accepter</button>
+                                            <button class="btn--secondary w-full btn--sm">Bloquer</button>
+                                        </div>                                                    
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- SINGLE CARD -->
+                            <li>
+                                <div class="card bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
+                                    <div class="card-body">
+                                        <div class="flex gap-3 w-full">
+                                            <!-- User Thumb -->
+                                            <span class="avatar overflow-hidden rounded-full">
+                                                <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/2.png" alt="">
+                                            </span>
+                                            <!-- User Info -->
+                                            <div>
+                                                <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
+                                                    <span>Alawi Sabri</span>
+                                                    <span class="inline-block">
+                                                        <img class="w-4 h-4" src="../assets/images/flag-icon/france.png" alt="">
+                                                    </span>
+                                                </h3>
+                                                <p class="text-medium text-white text-opacity-25">20 ans (Paris, France)</p>
+                                            </div>
+                                            
+                                            
+                                            <div class="more-info ms-auto">
+                                                <!-- DROPDOWN INFO-->
+                                                <div class="dropdown-wrapper">
+                                                    <button class="bg-transparent dropdown-toggler">
+                                                        <svg class="icon w-5 h-5 text-white">
+                                                            <use xlink:href="#icon-vertical-dot"></use>
+                                                        </svg>
+                                                    </button>  
+                                                    <div class="dropdown-menu">
+                                                        <ul class="dropdown-menu-list">
+                                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer pt-3">
+                                        <div class="flex items-center gap-3 w-full">
+                                            <button class="btn--primary w-full btn--sm">Accepter</button>
+                                            <button class="btn--secondary w-full btn--sm">Bloquer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- SINGLE CARD -->
+                            <li>
+                                <div class="card bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
+                                    <div class="card-body">
+                                        <div class="flex gap-3 w-full">
+                                            <!-- User Thumb -->
+                                            <span class="avatar overflow-hidden rounded-full">
+                                                <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/2.png" alt="">
+                                            </span>
+                                            <!-- User Info -->
+                                            <div>
+                                                <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
+                                                    <span>Alawi Sabri</span>
+                                                    <span class="inline-block">
+                                                        <img class="w-4 h-4" src="../assets/images/flag-icon/france.png" alt="">
+                                                    </span>
+                                                </h3>
+                                                <p class="text-medium text-white text-opacity-25">20 ans (Paris, France)</p>
+                                            </div>
+                                            
+                                            
+                                            <div class="more-info ms-auto">
+                                                <!-- DROPDOWN INFO-->
+                                                <div class="dropdown-wrapper">
+                                                    <button class="bg-transparent dropdown-toggler">
+                                                        <svg class="icon w-5 h-5 text-white">
+                                                            <use xlink:href="#icon-vertical-dot"></use>
+                                                        </svg>
+                                                    </button>  
+                                                    <div class="dropdown-menu">
+                                                        <ul class="dropdown-menu-list">
+                                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer pt-3">
+                                        <div class="flex items-center gap-3 w-full">
+                                            <button class="btn--primary w-full btn--sm">Accepter</button>
+                                            <button class="btn--secondary w-full btn--sm">Bloquer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- SINGLE CARD -->
+                            <li>
+                                <div class="card bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
+                                    <div class="card-body">
+                                        <div class="flex gap-3 w-full">
+                                            <!-- User Thumb -->
+                                            <span class="avatar overflow-hidden rounded-full">
+                                                <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/1.png" alt="">
+                                            </span>
+                                            <!-- User Info -->
+                                            <div>
+                                                <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
+                                                    <span>Rachid Mohamed</span>
+                                                    <span class="inline-block">
+                                                        <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
+                                                    </span>
+                                                </h3>
+                                                <p class="text-medium text-white text-opacity-25">39 ans (Agadir, Spain)</p>
+                                            </div>
+                                            <div class="more-info ms-auto">
+                                                <!-- DROPDOWN INFO-->
+                                                <div class="dropdown-wrapper">
+                                                    <button class="bg-transparent dropdown-toggler">
+                                                        <svg class="icon w-5 h-5 text-white">
+                                                            <use xlink:href="#icon-vertical-dot"></use>
+                                                        </svg>
+                                                    </button>  
+                                                    <div class="dropdown-menu">
+                                                        <ul class="dropdown-menu-list">
+                                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer pt-3">
+                                        <div class="flex items-center gap-3 w-full">
+                                            <button class="btn--primary w-full btn--sm">Accepter</button>
+                                            <button class="btn--secondary w-full btn--sm">Bloquer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- SINGLE CARD -->
+                            <li>
+                                <div class="card bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
+                                    <div class="card-body">
+                                        <div class="flex gap-3 w-full">
+                                            <!-- User Thumb -->
+                                            <span class="avatar overflow-hidden rounded-full">
+                                                <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/1.png" alt="">
+                                            </span>
+                                            <!-- User Info -->
+                                            <div>
+                                                <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
+                                                    <span>Ilham Islam</span>
+                                                    <span class="inline-block">
+                                                        <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
+                                                    </span>
+                                                </h3>
+                                                <p class="text-medium text-white text-opacity-25">39 ans (Agadir, Spain)</p>
+                                            </div>
+                                            
+                                            <div class="more-info ms-auto">
+                                                <!-- DROPDOWN INFO-->
+                                                <div class="dropdown-wrapper">
+                                                    <button class="bg-transparent dropdown-toggler">
+                                                        <svg class="icon w-5 h-5 text-white">
+                                                            <use xlink:href="#icon-vertical-dot"></use>
+                                                        </svg>
+                                                    </button>  
+                                                    <div class="dropdown-menu">
+                                                        <ul class="dropdown-menu-list">
+                                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer pt-3">
+                                        <div class="flex items-center gap-3 w-full">
+                                            <button class="btn--primary w-full btn--sm">Accepter</button>
+                                            <button class="btn--secondary w-full btn--sm">Bloquer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
+                    <!-- envoye -->
+                    <div class="tab-panel" id="tab--envoye">
+                        <ul class="flex flex-col gap-3">
+                            <!-- SINGLE CARD -->
+                            <li>
+                                <div class="card card-body bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
+                                    <div class="flex gap-3 w-full">
+                                        <!-- User Thumb -->
+                                        <span class="avatar avatar-lg overflow-hidden rounded-full">
+                                            <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/1.png" alt="">
+                                        </span>
+                                        <!-- User Info -->
+                                        <div>
+                                            <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
+                                                <span>Rachid Mohamed</span>
+                                                <span class="inline-block">
+                                                    <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
+                                                </span>
+                                            </h3>
+                                            <p class="text-medium text-white text-opacity-25">39 ans (Agadir, Spain)</p>
 
-                    <!-- Footer Bar -->
-                    <div class="footer-float-bar">
-                        <button class="">
-                            <svg class="w-6 h-6 text-white">
-                                <use xlink:href="#icon-comments"></use>
-                            </svg>
-                        </button>
-                        <button class="">
-                            <svg class="w-6 h-6 text-white">
-                                <use xlink:href="#icon-search"></use>
-                            </svg>
-                        </button>
-                        <button class="">
-                            <svg class="w-6 h-6 text-white">
-                                <use xlink:href="#icon-user"></use>
-                            </svg>
-                        </button>
+                                            <div class="font-medium mt-3 text-sm text-white">
+                                                Vous avez envoyé : <a href="#" class="link-primary">40 question</a>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="more-info ms-auto">
+                                            <!-- DROPDOWN INFO-->
+                                            <div class="dropdown-wrapper">
+                                                <button class="bg-transparent dropdown-toggler">
+                                                    <svg class="icon w-5 h-5 text-white">
+                                                        <use xlink:href="#icon-vertical-dot"></use>
+                                                    </svg>
+                                                </button>  
+                                                <div class="dropdown-menu">
+                                                    <ul class="dropdown-menu-list">
+                                                        <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                                        <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- SINGLE CARD -->
+                            <li>
+                                <div class="card card-body bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
+                                    <div class="flex gap-3 w-full">
+                                        <!-- User Thumb -->
+                                        <span class="avatar avatar-lg overflow-hidden rounded-full">
+                                            <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/2.png" alt="">
+                                        </span>
+                                        <!-- User Info -->
+                                        <div>
+                                            <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
+                                                <span>Alawi Salim</span>
+                                                <span class="inline-block">
+                                                    <img class="w-4 h-4" src="../assets/images/flag-icon/france.png" alt="">
+                                                </span>
+                                            </h3>
+                                            <p class="text-medium text-white text-opacity-25">23 ans (Agadir, Spain)</p>
+
+                                            <div class="font-medium mt-3 text-sm text-white">
+                                                Vous avez envoyé : <a href="#" class="link-primary">32 question</a>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="more-info ms-auto">
+                                            <!-- DROPDOWN INFO-->
+                                            <div class="dropdown-wrapper">
+                                                <button class="bg-transparent dropdown-toggler">
+                                                    <svg class="icon w-5 h-5 text-white">
+                                                        <use xlink:href="#icon-vertical-dot"></use>
+                                                    </svg>
+                                                </button>  
+                                                <div class="dropdown-menu">
+                                                    <ul class="dropdown-menu-list">
+                                                        <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                                        <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- SINGLE CARD -->
+                            <li>
+                                <div class="card card-body bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
+                                    <div class="flex gap-3 w-full">
+                                        <!-- User Thumb -->
+                                        <span class="avatar avatar-lg overflow-hidden rounded-full">
+                                            <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/3.png" alt="">
+                                        </span>
+                                        <!-- User Info -->
+                                        <div>
+                                            <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
+                                                <span>Salman ahmed</span>
+                                                <span class="inline-block">
+                                                    <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
+                                                </span>
+                                            </h3>
+                                            <p class="text-medium text-white text-opacity-25">27 ans (Agadir, Spain)</p>
+
+                                            <div class="font-medium mt-3 text-sm text-white">
+                                                Vous avez envoyé : <a href="#" class="link-primary">40 question</a>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="more-info ms-auto">
+                                            <!-- DROPDOWN INFO-->
+                                            <div class="dropdown-wrapper">
+                                                <button class="bg-transparent dropdown-toggler">
+                                                    <svg class="icon w-5 h-5 text-white">
+                                                        <use xlink:href="#icon-vertical-dot"></use>
+                                                    </svg>
+                                                </button>  
+                                                <div class="dropdown-menu">
+                                                    <ul class="dropdown-menu-list">
+                                                        <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                                        <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
+                    <!-- en-cous -->
+                    <div class="tab-panel" id="tab--en-cous">
+                        <ul class="flex flex-col gap-3">
+                            <!-- SINGLE CARD -->
+                            <li>
+                                <div class="card card-body bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
+                                    <div class="flex gap-3 w-full">
+                                        <!-- User Thumb -->
+                                        <span class="avatar avatar-lg overflow-hidden rounded-full">
+                                            <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/1.png" alt="">
+                                        </span>
+                                        <!-- User Info -->
+                                        <div>
+                                            <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
+                                                <span>Rachid Mohamed</span>
+                                                <span class="inline-block">
+                                                    <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
+                                                </span>
+                                            </h3>
+                                            <p class="text-medium text-white text-opacity-25">39 ans (Agadir, Spain)</p>
 
+                                            <div class="font-medium text-xs rounded-[6px] mt-3 bg-primary-dark bg-opacity-55 text-white px-3 py-1">
+                                                Il a répondu à 25 questions/40
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="more-info ms-auto">
+                                            <!-- DROPDOWN INFO-->
+                                            <div class="dropdown-wrapper">
+                                                <button class="bg-transparent dropdown-toggler">
+                                                    <svg class="icon w-5 h-5 text-white">
+                                                        <use xlink:href="#icon-vertical-dot"></use>
+                                                    </svg>
+                                                </button>  
+                                                <div class="dropdown-menu">
+                                                    <ul class="dropdown-menu-list">
+                                                        <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                                        <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- SINGLE CARD -->
+                            <li>
+                                <div class="card card-body bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
+                                    <div class="flex gap-3 w-full">
+                                        <!-- User Thumb -->
+                                        <span class="avatar avatar-lg overflow-hidden rounded-full">
+                                            <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/2.png" alt="">
+                                        </span>
+                                        <!-- User Info -->
+                                        <div>
+                                            <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
+                                                <span>Alawi Salim</span>
+                                                <span class="inline-block">
+                                                    <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
+                                                </span>
+                                            </h3>
+                                            <p class="text-medium text-white text-opacity-25">39 ans (Agadir, Spain)</p>
+
+                                            <div class="font-medium text-xs rounded-[6px] mt-3 bg-primary-dark bg-opacity-55 text-white px-3 py-1">
+                                                Il a répondu à 40 questions/40
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="more-info ms-auto">
+                                            <!-- DROPDOWN INFO-->
+                                            <div class="dropdown-wrapper">
+                                                <button class="bg-transparent dropdown-toggler">
+                                                    <svg class="icon w-5 h-5 text-white">
+                                                        <use xlink:href="#icon-vertical-dot"></use>
+                                                    </svg>
+                                                </button>  
+                                                <div class="dropdown-menu">
+                                                    <ul class="dropdown-menu-list">
+                                                        <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                                        <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- SINGLE CARD -->
+                            <li>
+                                <div class="card card-body bg-center bg-cover" style="background-image: url('../assets/images/action-reaction-list-item-bg.png');">
+                                    <div class="flex gap-3 w-full">
+                                        <!-- User Thumb -->
+                                        <span class="avatar avatar-lg overflow-hidden rounded-full">
+                                            <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/3.png" alt="">
+                                        </span>
+                                        <!-- User Info -->
+                                        <div>
+                                            <h3 class="mb-1 text-white font-semibold text-xl flex items-center gap-x-2">
+                                                <span>Salman ahmed</span>
+                                                <span class="inline-block">
+                                                    <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
+                                                </span>
+                                            </h3>
+                                            <p class="text-medium text-white text-opacity-25">39 ans (Agadir, Spain)</p>
+
+                                            <div class="font-medium text-xs rounded-[6px] mt-3 bg-primary-dark bg-opacity-55 text-white px-3 py-1">
+                                                Il a répondu à 25 questions/40
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="more-info ms-auto">
+                                            <!-- DROPDOWN INFO-->
+                                            <div class="dropdown-wrapper">
+                                                <button class="bg-transparent dropdown-toggler">
+                                                    <svg class="icon w-5 h-5 text-white">
+                                                        <use xlink:href="#icon-vertical-dot"></use>
+                                                    </svg>
+                                                </button>  
+                                                <div class="dropdown-menu">
+                                                    <ul class="dropdown-menu-list">
+                                                        <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                                        <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
             </div>
         </div>
+
+        <!-- Footer Bar -->
+        <ul class="footer-float-bar">
+            <li>
+                <button class="footer-float-bar--item active">
+                    <img class="w-6 h-auto" src="../assets/images/menu-icons/footer-message.png" alt="">
+                </button>
+            </li>
+            <li>
+                <button class="footer-float-bar--item">
+                    <img class="w-5 h-auto" src="../assets/images/menu-icons/footer-search.png" alt="">
+                </button>
+            </li>
+            <li>
+                <button class="footer-float-bar--item">
+                    <img class="w-5 h-auto" src="../assets/images/menu-icons/footer-user.png" alt="">
+                </button>
+            </li>
+        </ul>
+
     </div>
 
 
@@ -689,5 +918,40 @@
 </svg>
 
     <script src="../assets/js/main.js"></script>
+    
+
+  <div class="lenis-scroll w-embed w-script">
+    <script>
+    window.addEventListener("DOMContentLoaded", (event) => {
+      //ScrollTrigger.config({ ignoreMobileResize: true });
+      "use strict"; // fix lenis in safari
+      const lenis = new Lenis({
+          lerp: 0.1,
+          wheelMultiplier: 0.7,
+          infinite: false,
+          gestureOrientation: "vertical",
+          normalizeWheel: false,
+          smoothTouch: false,
+          syncTouchLerp: 1,
+          touchMultiplier: 0.1,
+          autoResize: true
+        });
+        function raf(time) {
+          lenis.raf(time);
+          requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+        function connectToScrollTrigger() {
+          lenis.on('scroll', ScrollTrigger.update)
+          gsap.ticker.add((time)=>{
+            lenis.raf(time * 1000)
+          })
+          gsap.ticker.lagSmoothing(0)
+        }
+        // Uncomment this if using GSAP ScrollTrigger
+        connectToScrollTrigger();
+    });
+    </script>
+  </div>
 </body>
 </html>

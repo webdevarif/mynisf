@@ -28,8 +28,7 @@
         text-primary-50
         font-normal
         relative
-        h-screen
-        overflow-hidden
+        min-h-screen
         z-[1]
     }
     .nisf-wrapper{
