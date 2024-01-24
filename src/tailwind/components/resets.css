@@ -96,17 +96,6 @@ h1, h2, h3, h4, h5, h6, p{
     rounded-full
     relative
     z-[1]
-
-    before:content-[""]
-    before:w-full
-    before:h-3
-    before:bg-primary
-    before:bg-opacity-50
-    before:absolute
-    before:-top-4
-    before:start-0
-    before:-z-[1]
-    before:blur-lg
 }
 .progress-num{
     @apply
@@ -203,7 +192,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 .modal.show{
     @apply
-    absolute
+    fixed
 }
 
 .modal-wrapper{

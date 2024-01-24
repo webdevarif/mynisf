@@ -28,7 +28,7 @@ module.exports = {
       '4xl': ['min(max(1.8rem,7.5vw),34px)', {
         lineHeight: '1.3',
       }],
-      '5xl': ['min(max(3rem,10.65vw),48px)', {
+      '5xl': ['min(max(2.6rem,9.5vw),42px)', {
         lineHeight: '1.3',
       }],
     },

@@ -20,152 +20,139 @@
     <script src="../assets/libs/slick/slick.min.js"></script>
 
 </head>
-<body>
-    <div class="screen-wrapper">
-        <div class="screen-inner">
-            <div class="nisf-body has-footer-bar"> <!-- has-footer-bar should be when footer has bar -->
-                <!-- All content should go inside nisf-wrapper -->
-                <div class="nisf-wrapper">
-                    <!-- body overlay -->
-                    <div class="body-overlay"></div>
-                    <div class="nisf-wrapper-inner">
-                        <div class="nisf-container">
+<body class="nisf-body has-footer-bar"> <!-- has-footer-bar should be when footer has bar -->
+    <!-- All content should go inside nisf-wrapper -->
+    <div class="nisf-wrapper">
+        <!-- body overlay -->
+        <div class="body-overlay"></div>
+        <div class="nisf-container">
+            <!-- Top Navigation -->
+            <nav class="top-navigation py-8 flex items-center justify-between gap-3">
+                <a href="#" class="inline-flex items-center">
+                    <svg class="w-5 h-5 text-white">
+                        <use xlink:href="#icon-angle-left"></use>
+                    </svg>
+                </a>
+                <h4 class="font-semibold text-xl text-white w-full mb-0">Mahram</h4>
+                <button class="menu-toggler ms-auto">
+                    <svg class="menu-toggler---icon menu-toggler---open">
+                        <use xlink:href="#icon-vertical-dot"></use>
+                    </svg>
+                    <svg class="menu-toggler---icon menu-toggler---close">
+                        <use xlink:href="#icon-half-menu"></use>
+                    </svg>
+                </button>
+            </nav>
+            
 
-                            <!-- Top Navigation -->
-                            <nav class="top-navigation py-8 flex items-center justify-between gap-3">
-                                <a href="#" class="inline-flex items-center">
-                                    <svg class="w-5 h-5 text-white">
-                                        <use xlink:href="#icon-angle-left"></use>
-                                    </svg>
-                                </a>
-                                <h4 class="font-semibold text-xl text-white w-full mb-0">Mahram</h4>
-                                <button class="menu-toggler ms-auto">
-                                    <svg class="menu-toggler---icon menu-toggler---open">
-                                        <use xlink:href="#icon-vertical-dot"></use>
-                                    </svg>
-                                    <svg class="menu-toggler---icon menu-toggler---close">
-                                        <use xlink:href="#icon-half-menu"></use>
-                                    </svg>
-                                </button>
-                            </nav>
-                            
+            <form action="">
+                <div class="mb-7">
+                    <h3 class="h4 text-white">Vous avez reçu un numéro mahram de téléphone de :</h3>
 
-                            <form action="">
-                                
+                    <div class="card card-body">
+                        <div class="flex gap-3">
+                            <!-- Avatar -->
+                            <div class="avatar avatar-2xl">
+                                <img src="../assets/images/users/4.png" alt="">
+                            </div>
+                            <!-- Content -->
+                            <div>
+                                <h3 class="mb-0 text-white text-xl font-semibold flex items-center gap-x-2">
+                                    <span>Salman ahmed</span>
+                                    <span class="inline-block">
+                                        <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
+                                    </span>
+                                </h3>
+                                <p class="text-medium text-xs text-white mb-2 text-opacity-25">39 ans (Agadir, Maroc)</p>
 
-                                <div class="mb-7">
-                                    <h3 class="h4 text-white">Vous avez reçu un numéro mahram de téléphone de :</h3>
-
-                                    <div class="card card-body">
-                                        <div class="flex gap-3">
-                                            <!-- Avatar -->
-                                            <div class="avatar avatar-2xl">
-                                                <img src="../assets/images/users/4.png" alt="">
-                                            </div>
-                                            <!-- Content -->
-                                            <div>
-                                                <h3 class="mb-0 text-white text-xl font-semibold flex items-center gap-x-2">
-                                                    <span>Salman ahmed</span>
-                                                    <span class="inline-block">
-                                                        <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
-                                                    </span>
-                                                </h3>
-                                                <p class="text-medium text-xs text-white mb-2 text-opacity-25">39 ans (Agadir, Maroc)</p>
-    
-                                                <div class="font-medium text-xs inline-block rounded-[6px] bg-white bg-opacity-15 text-white px-4 py-1">
-                                                    Rendez vous audio visual
-                                                </div>
-    
-                                                <ul class="flex gap-3 mt-3 items-end">
-                                                    <li><a href="#"><img class="max-w-[1rem]" src="../assets/images/icons/rendez-message.png" alt=""></a>
-                                                    </li>
-                                                    <li class="w-[2px] h-3 bg-white bg-opacity-15 inline-block"></li>
-                                                    <li><a href="#"><img class="max-w-[1.15rem]" src="../assets/images/icons/rendez-video.png" alt=""></a>
-                                                    </li>
-                                                    <li class="w-[2px] h-3 bg-white bg-opacity-15 inline-block"></li>
-                                                    <li><a href="#"><img class="max-w-[1.25rem]" src="../assets/images/icons/rendez-meeting.png" alt=""></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="font-medium text-xs inline-block rounded-[6px] bg-white bg-opacity-15 text-white px-4 py-1">
+                                    Rendez vous audio visual
                                 </div>
 
-                                <div class="mb-7">
-                                    <h3 class="text-xl text-white mb-3">Le Numero Mahram Est </h3>
-
-                                    <div class="card card-body py-1 h-[56px] items-center px-5 text-xl grid grid-cols-[7rem_1fr] gap-2 rounded text-white">
-                                        <span class="flex items-center gap-2 border-r-2 border-white border-opacity-25">
-                                            <span><svg class="w-4 h-4">
-                                                <use xlink:href="#icon-angle-down"></use>
-                                            </svg></span>
-                                            <img src="../assets/images/flag-icon/france-square.png" class="w-5 h-auto" alt="">
-                                            <span class="font-medium">+212</span>
-                                        </span>
-                                        <input type="text" class="input-control b-0 bg-transparent rounded-none py-1 px-3 h-auto text-2xl placeholder:text-md leading-[1]" placeholder="The Number is ...">
-                                    </div>
-                                </div>
-
-
-                                <div class="mb-7">
-                                    <h3 class="h4 text-white">Le Mahram est son :</h3>
-                                    <div class="grid grid-cols-3 gap-3 mb-3">
-                                        <div class="outline--check">
-                                            <input type="radio" name="maharam" id="form-check--1" class="outline--check-input">
-                                            <label for="form-check--1" class="outline--check-label bg-card-bg text-white py-2 px-2 text-xl font-semibold leading-10 rounded border-2 text-center">
-                                                Père
-                                            </label>
-                                        </div>
-                                        <div class="outline--check">
-                                            <input type="radio" name="maharam" id="form-check--2" class="outline--check-input">
-                                            <label for="form-check--2" class="outline--check-label bg-card-bg text-white py-2 px-2 text-xl font-semibold leading-10 rounded border-2 text-center">
-                                                Frère
-                                            </label>
-                                        </div>
-                                        <div class="outline--check">
-                                            <input type="radio" name="maharam" id="form-check--3" class="outline--check-input">
-                                            <label for="form-check--3" class="outline--check-label bg-card-bg text-white py-2 px-2 text-xl font-semibold leading-10 rounded border-2 text-center">
-                                                Oncle
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="inline-block bg-card-bg text-white py-2 px-5 text-xl font-semibold leading-10 rounded border-2 text-center border-primary">
-                                        Demi Frère
-                                    </div>
-                                </div>
-                            </form>
-
+                                <ul class="flex gap-3 mt-3 items-end">
+                                    <li><a href="#"><img class="max-w-[1rem]" src="../assets/images/icons/rendez-message.png" alt=""></a>
+                                    </li>
+                                    <li class="w-[2px] h-3 bg-white bg-opacity-15 inline-block"></li>
+                                    <li><a href="#"><img class="max-w-[1.15rem]" src="../assets/images/icons/rendez-video.png" alt=""></a>
+                                    </li>
+                                    <li class="w-[2px] h-3 bg-white bg-opacity-15 inline-block"></li>
+                                    <li><a href="#"><img class="max-w-[1.25rem]" src="../assets/images/icons/rendez-meeting.png" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <!-- Footer Bar -->
-                    <ul class="footer-float-bar">
-                        <li>
-                            <button class="footer-float-bar--item active">
-                                <img class="w-6 h-auto" src="../assets/images/menu-icons/footer-message.png" alt="">
-                            </button>
-                        </li>
-                        <li>
-                            <button class="footer-float-bar--item">
-                                <img class="w-5 h-auto" src="../assets/images/menu-icons/footer-search.png" alt="">
-                            </button>
-                        </li>
-                        <li>
-                            <button class="footer-float-bar--item">
-                                <img class="w-5 h-auto" src="../assets/images/menu-icons/footer-user.png" alt="">
-                            </button>
-                        </li>
-                    </ul>
                 </div>
-                
 
-                <!-- CLOUD ANIMATIONS -->
-                <img src="../assets/images/cloud-1.png" class="animation-cloud-1" alt="">
-                <img src="../assets/images/cloud-2.png" class="animation-cloud-2" alt="">
-                <img src="../assets/images/cloud-3.png" class="animation-cloud-3" alt="">
-                <img src="../assets/images/cloud-4.png" class="animation-cloud-4" alt="">
-                <img src="../assets/images/cloud-5.png" class="animation-cloud-5" alt="">
+                <div class="mb-7">
+                    <h3 class="text-xl text-white mb-3">Le Numero Mahram Est </h3>
+
+                    <div class="card card-body py-1 h-[56px] items-center px-5 text-xl grid grid-cols-[7rem_1fr] gap-2 rounded text-white">
+                        <span class="flex items-center gap-2 border-r-2 border-white border-opacity-25">
+                            <span><svg class="w-4 h-4">
+                                <use xlink:href="#icon-angle-down"></use>
+                            </svg></span>
+                            <img src="../assets/images/flag-icon/france-square.png" class="w-5 h-auto" alt="">
+                            <span class="font-medium">+212</span>
+                        </span>
+                        <input type="text" class="input-control b-0 bg-transparent rounded-none py-1 px-3 h-auto text-2xl placeholder:text-md leading-[1]" placeholder="The Number is ...">
+                    </div>
+                </div>
+
+                <div class="mb-7">
+                    <h3 class="h4 text-white">Le Mahram est son :</h3>
+                    <div class="grid grid-cols-3 gap-3 mb-3">
+                        <div class="outline--check">
+                            <input type="radio" name="maharam" id="form-check--1" class="outline--check-input">
+                            <label for="form-check--1" class="outline--check-label bg-card-bg text-white py-2 px-2 text-xl font-semibold leading-10 rounded border-2 text-center">
+                                Père
+                            </label>
+                        </div>
+                        <div class="outline--check">
+                            <input type="radio" name="maharam" id="form-check--2" class="outline--check-input">
+                            <label for="form-check--2" class="outline--check-label bg-card-bg text-white py-2 px-2 text-xl font-semibold leading-10 rounded border-2 text-center">
+                                Frère
+                            </label>
+                        </div>
+                        <div class="outline--check">
+                            <input type="radio" name="maharam" id="form-check--3" class="outline--check-input">
+                            <label for="form-check--3" class="outline--check-label bg-card-bg text-white py-2 px-2 text-xl font-semibold leading-10 rounded border-2 text-center">
+                                Oncle
+                            </label>
+                        </div>
+                    </div>
+                    <div class="inline-block bg-card-bg text-white py-2 px-5 text-xl font-semibold leading-10 rounded border-2 text-center border-primary">
+                        Demi Frère
+                    </div>
+                </div>
+            </form>
             </div>
-        </div>
+            
+        <!-- Footer Bar -->
+        <ul class="footer-float-bar">
+            <li>
+                <button class="footer-float-bar--item active">
+                    <img class="w-6 h-auto" src="../assets/images/menu-icons/footer-message.png" alt="">
+                </button>
+            </li>
+            <li>
+                <button class="footer-float-bar--item">
+                    <img class="w-5 h-auto" src="../assets/images/menu-icons/footer-search.png" alt="">
+                </button>
+            </li>
+            <li>
+                <button class="footer-float-bar--item">
+                    <img class="w-5 h-auto" src="../assets/images/menu-icons/footer-user.png" alt="">
+                </button>
+            </li>
+        </ul>
+                
+        <!-- CLOUD ANIMATIONS -->
+        <img src="../assets/images/cloud-1.png" class="animation-cloud-1" alt="">
+        <img src="../assets/images/cloud-2.png" class="animation-cloud-2" alt="">
+        <img src="../assets/images/cloud-3.png" class="animation-cloud-3" alt="">
+        <img src="../assets/images/cloud-4.png" class="animation-cloud-4" alt="">
+        <img src="../assets/images/cloud-5.png" class="animation-cloud-5" alt="">
     </div>
 
 
