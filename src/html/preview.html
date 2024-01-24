@@ -14,7 +14,10 @@
 </head>
 <body>
 
-    <iframe id="preview-frame" class="w-full max-w-[450px] h-screen overflow-hidden" frameborder="0"></iframe>
+    <div class="flex gap-6">
+        <iframe id="preview-frame" class="w-full max-w-[450px] h-screen overflow-hidden" frameborder="0"></iframe>
+        <iframe id="preview-frame-sm" class="w-full max-w-[380px] h-screen overflow-hidden" frameborder="0"></iframe>
+    </div>
 
     <script>
         // A $( document ).ready() block.
@@ -33,6 +36,7 @@
 
                 // Set the 'src' attribute of the iframe
                 $('#preview-frame').attr('src', fullUrl);
+                $('#preview-frame-sm').attr('src', fullUrl);
             }
         });
     </script>
