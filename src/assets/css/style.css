@@ -4315,15 +4315,15 @@ img.list-stars-progress-star {
 
 @keyframes scale1 {
   0% {
-    transform: scale(1.15);
-  }
-
-  50% {
     transform: scale(1);
   }
 
-  100% {
+  50% {
     transform: scale(1.15);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
 
