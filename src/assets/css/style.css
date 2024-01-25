@@ -1032,6 +1032,10 @@ body {
   height: 1.5rem !important;
 }
 
+.h-\[17rem\] {
+  height: 17rem !important;
+}
+
 .h-\[20rem\] {
   height: 20rem !important;
 }
@@ -1098,6 +1102,14 @@ body {
 
 .h-screen {
   height: 100vh !important;
+}
+
+.h-\[40vh\] {
+  height: 40vh !important;
+}
+
+.h-\[30vh\] {
+  height: 30vh !important;
 }
 
 .max-h-\[40px\] {
@@ -1557,7 +1569,7 @@ body {
 }
 
 .rounded-lg {
-  border-radius: 20px !important;
+  border-radius: 1.9rem !important;
 }
 
 .rounded-md {
@@ -1583,8 +1595,8 @@ body {
 }
 
 .rounded-t-lg {
-  border-top-left-radius: 20px !important;
-  border-top-right-radius: 20px !important;
+  border-top-left-radius: 1.9rem !important;
+  border-top-right-radius: 1.9rem !important;
 }
 
 .border {
@@ -2058,6 +2070,10 @@ body {
 
 .pt-8 {
   padding-top: 2rem !important;
+}
+
+.pt-5 {
+  padding-top: 1.25rem !important;
 }
 
 .text-center {
@@ -2574,7 +2590,7 @@ body {
   height: 0px;
   align-items: center;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 1.9rem;
   border-width: 4px;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
   --tw-border-opacity: 0.25;
@@ -3053,7 +3069,7 @@ h1, h2, h3, h4, h5, h6, p {
 .modal-wrapper {
   width: 100%;
   max-width: 25rem;
-  border-radius: 20px;
+  border-radius: 1.9rem;
   --tw-bg-opacity: 1;
   background-color: rgb(113 39 87 / var(--tw-bg-opacity));
 }
@@ -4562,7 +4578,7 @@ img.list-stars-progress-star {
 
 .subscription-slider .slider-item{
   background-size: 100% 100%;
-  border-radius: 20px;
+  border-radius: 1.9rem;
   background-image: url('../images/abonnement-slide-bg.png');
   background-position: center
 }

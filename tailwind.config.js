@@ -46,7 +46,7 @@ module.exports = {
       'sm': '5px',
       DEFAULT: '12px',
       'md': '16px',
-      'lg': '20px',
+      'lg': '1.9rem',
       'xl': '45px',
       'full': '9999px',
       'large': '12px',
