@@ -371,3 +371,26 @@ img.list-stars-progress-star {
     @apply
     -ms-3
 }
+
+
+/* COUNTDOWN */
+ .countdown-wrapper{
+    
+}
+.countdown-wrapper ul.countdown{
+    @apply
+    text-4xl
+    text-white
+    flex
+    items-center
+    gap-2
+    font-bold
+}
+.countdown-wrapper ul.countdown li{
+    @apply
+    flex 
+}
+.countdown-wrapper ul.countdown li>span{
+    @apply
+    flex flex-col
+}
