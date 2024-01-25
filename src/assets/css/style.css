@@ -1103,6 +1103,10 @@ body {
   min-height: 100vh !important;
 }
 
+.min-h-1 {
+  min-height: 0.25rem !important;
+}
+
 .w-1 {
   width: 0.25rem !important;
 }
