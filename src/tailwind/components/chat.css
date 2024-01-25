@@ -120,9 +120,6 @@
 
 .chat--control{
     @apply
-    flex 
-    gap-2 
-    px-4 
     fixed 
     bottom-0 
     start-0 
@@ -132,6 +129,17 @@
     py-2
 }
 
+.chat--control .nisf-container{
+    @apply
+    min-h-1
+    !p-0
+}
+.chat--control--group{
+    @apply
+    flex 
+    gap-2 
+    px-4     
+}
 
 .chat--control__input::-webkit-scrollbar {
     @apply

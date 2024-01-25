@@ -3227,16 +3227,24 @@ h1, h2, h3, h4, h5, h6, p {
   bottom: 0px;
   inset-inline-start: 0px;
   inset-inline-end: 0px;
-  display: flex;
-  gap: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(243 2 146 / var(--tw-bg-opacity));
-  padding-left: 1rem;
-  padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.chat--control .nisf-container {
+  min-height: 0.25rem;
+  padding: 0px !important;
+}
+
+.chat--control--group {
+  display: flex;
+  gap: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .chat--control__input::-webkit-scrollbar {
