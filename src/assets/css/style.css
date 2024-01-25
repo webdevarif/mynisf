@@ -1216,6 +1216,10 @@ body {
   width: 100% !important;
 }
 
+.w-7 {
+  width: 1.75rem !important;
+}
+
 .min-w-\[130px\] {
   min-width: 130px !important;
 }
@@ -2074,6 +2078,10 @@ body {
 
 .text-end {
   text-align: end !important;
+}
+
+.align-middle {
+  vertical-align: middle !important;
 }
 
 .text-2xl {
