@@ -1,3 +1,42 @@
+/* ANIMATION DELAY */
+.animation-delay-1{
+  animation-delay: 0.1s !important;
+}
+.animation-delay-2{
+  animation-delay: 0.3s !important;
+}
+.animation-delay-3{
+  animation-delay: 0.5s !important;
+}
+.animation-delay-4{
+  animation-delay: 0.7s !important;
+}
+.animation-delay-5{
+  animation-delay: 1s !important;
+}
+.animation-delay-6{
+  animation-delay: 1.3s !important;
+}
+.animation-delay-7{
+  animation-delay: 1.55s !important;
+}
+.animation-delay-8{
+  animation-delay: 2s !important;
+}
+.animation-delay-9{
+  animation-delay: 2.5s !important;
+}
+.animation-delay-10{
+  animation-delay: 3s !important;
+}
+
+.animation-scale-1{
+  @apply
+  relative;
+
+  animation: scale1 2s infinite linear;
+}
+
 .animation-cloud-1 {
     @apply
     absolute
@@ -46,6 +85,19 @@
     max-w-[11rem];
     animation: slide-left 25s infinite linear;
     animation-delay: 14s;
+}
+
+
+@keyframes scale1 {
+  0% {
+    transform: scale(1.15);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
 }
 
 

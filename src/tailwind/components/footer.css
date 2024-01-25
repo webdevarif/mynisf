@@ -6,12 +6,23 @@
     fixed
     bottom-0 
     left-0
+    right-0
+    h-[5rem]
     z-50
-    py-4 
+    flex items-center
+    shadow-[55px_13px_250px_rgba(14,14,16,0.52)]
+}
+.footer-float-bar .nisf-container{
+    @apply
+    min-h-1
+    !p-0
+}
+.footer-floar-bar__list{
+    @apply
     w-full 
     flex 
+    items-center
     justify-around 
-    shadow-[55px_13px_250px_rgba(14,14,16,0.52)]
 }
 
 .footer-float-bar .footer-float-bar--item{

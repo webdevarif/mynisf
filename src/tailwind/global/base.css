@@ -39,7 +39,7 @@
         transition-all
         duration-300
     }
-    .has-footer-bar .nisf-container{
+    .has-footer-bar .nisf-wrapper .nisf-container{
         @apply
         pb-[6.5rem]
     }
@@ -48,11 +48,17 @@
         -translate-x-[calc(100%-2.75rem)]
         overflow-hidden
     }
-    .nisf-container{
+    .nisf-wrapper .nisf-container{
         @apply 
-        px-5 sm:px-8
         pb-[4rem]
         min-h-screen
+    }
+    .nisf-container{
+        @apply 
+        px-6
+        mx-auto
+        w-full
+        max-w-[30rem]
     }
 
 
