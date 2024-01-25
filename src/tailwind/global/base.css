@@ -21,6 +21,7 @@
     .nisf-body{
         @apply 
         bg-[url('../images/body-bg.jpg')]
+        bg-fixed
         bg-cover
         bg-center
         text-md

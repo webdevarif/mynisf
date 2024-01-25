@@ -1,3 +1,23 @@
+.cloud-animation{
+  @apply
+  relative
+  z-[1]
+
+  before:content-['']
+  before:w-full
+  before:h-screen
+  before:bg-[url('../../assets/images/body-bg-animation.png')]
+  before:bg-cover
+  before:fixed
+  before:start-0
+  before:top-0
+  before:z-[-1]
+}
+.cloud-animation:before{
+  background-position: 0%;
+  animation: bg-left 50s infinite linear;
+}
+
 /* ANIMATION DELAY */
 .animation-delay-1{
   animation-delay: 0.1s !important;
@@ -37,56 +57,14 @@
   animation: scale1 2s infinite linear;
 }
 
-.animation-cloud-1 {
-    @apply
-    absolute
-    z-[-1]
-    top-[14%]
-    -start-[11rem]
-    max-w-[11rem];
-    animation: slide-left 20s infinite linear;
+@keyframes bg-left {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
 }
-.animation-cloud-2 {
-    @apply
-    absolute
-    z-[-1]
-    top-[5%]
-    -start-[9rem]
-    max-w-[9rem];
-    animation: slide-left 30s infinite linear;
-    animation-delay: 7s;
-}
-.animation-cloud-3 {
-    @apply
-    absolute
-    z-[-1]
-    top-[25%]
-    -start-[11rem]
-    max-w-[11rem];
-    animation: slide-left 25s infinite linear;
-    animation-delay: 4s;
-}
-.animation-cloud-4 {
-    @apply
-    absolute
-    z-[-1]
-    top-[43%]
-    -start-[11rem]
-    max-w-[11rem];
-    animation: slide-left 25s infinite linear;
-    animation-delay: 10s;
-}
-.animation-cloud-5 {
-    @apply
-    absolute
-    z-[-1]
-    top-[60%]
-    -start-[11rem]
-    max-w-[11rem];
-    animation: slide-left 25s infinite linear;
-    animation-delay: 14s;
-}
-
 
 @keyframes scale1 {
   0% {
