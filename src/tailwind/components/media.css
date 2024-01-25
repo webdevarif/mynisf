@@ -1,7 +1,7 @@
-
 .avatar-md,
 .avatar{
-    --avatar-size: 60px;
+    --avatar-size: min(max(3.75rem,51vw),60px);
+    /* --avatar-size: 60px; */
     @apply
     min-w-[var(--avatar-size,60px)]
     w-[var(--avatar-size,60px)]
@@ -49,11 +49,11 @@
 }
 
 .avatar-3xl{
-    --avatar-size: 10rem;
+    --avatar-size: min(max(10rem,51vw),160px);
     @apply
-    min-w-[var(--avatar-size,10rem)]
-    w-[var(--avatar-size,10rem)]
-    h-[var(--avatar-size,10rem)]
+    min-w-[var(--avatar-size,160px)]
+    w-[var(--avatar-size,160px)]
+    h-[var(--avatar-size,160px)]
 }
 
 .avatar img{

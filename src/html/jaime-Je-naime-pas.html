@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Mon Sujet My Nisf Mobile App Development</title>
 
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="../assets/libs/slick/slick.min.css">
     <link rel="stylesheet" href="../assets/libs/slick/slick-theme.min.css">
     
@@ -243,6 +244,50 @@
                 </div>
             </div>
 
+
+            <form action="" class="rating-form">
+                <div class="bg-[#814067] text-center px-6 py-10 rounded-lg shadow-[0px_50px_177.48px_26.52px_rgba(78,78,78,0.21)]">
+
+                    <h3 class="text-3xl text-white mb-6 text-bold">Que penses-tu des animaux ?</h3>
+                    
+
+                    <div class="mb-5">
+                        <div class="inline-block z-[1] relative before:content-[''] before:w-full before:h-full before:bg-[#FEE45A] before:bg-opacity-50 before:inline-block before:rounded-full before:absolute before:start-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:-z-[1] before:blur-3xl">
+                            <img src="../assets/images/smile-haha.png" alt="">
+                        </div>
+                    </div>
+                    <h4 class="mb-5 text-2xl font-semibold">Je les aime</h4>
+
+                    
+                    <div class="rating-wrapper mb-4">
+                        <fieldset class="rating">
+                            <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="5 stars"></label>
+                            <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="4 stars"></label>
+                            <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="3 stars"></label>
+                            <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="2 stars"></label>
+                            <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="1 star"></label>
+                        </fieldset>
+                    </div>
+
+                    <div class="list-stars-progress-wrapper">
+                        <ul class="list-stars-progress">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    
+                </div>                
+                <!-- Buttons Actions -->
+                <div class="flex items-center mt-7 gap-3 justify-between">
+                    <button type="button" class="btn--light btn--w-lg">Non, Merci</button>
+                    <button type="submit" disabled class="btn--primary btn--w-lg">Validez</button>
+                </div>
+
+            </form>
+
             <form action="#">
                 <div class="bg-[#814067] text-center px-6 py-10 rounded-lg shadow-[0px_50px_177.48px_26.52px_rgba(78,78,78,0.21)]">
 
@@ -385,5 +430,6 @@
     </svg>
 
     <script src="../assets/js/main.js"></script>
+
 </body>
 </html>

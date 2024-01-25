@@ -1,0 +1,141 @@
+/* RATINGS */
+
+
+.rating-form .list-stars-progress{
+    @apply
+    h-3
+    rounded-full
+    inline-flex
+    justify-center
+    relative
+    bg-white
+    bg-opacity-10
+    z-[1]
+    px-[2rem]
+}
+
+.rating-form .list-stars-progress li{
+    @apply
+    w-10
+    h-10
+    mx-[0.35rem]
+    -mt-[0.85rem]
+    relative
+    inline-block
+
+    before:content-['']
+    before:absolute
+    before:top-1/2
+    before:rounded-full
+    before:-start-[2.25rem]
+    before:-translate-y-1/2
+    before:w-0
+    before:h-3
+    before:bg-[#884B70]
+
+    after:content-['']
+    after:absolute
+    after:top-1/2
+    after:rounded-full
+    after:start-1/2
+    after:-translate-y-1/2
+    after:-translate-x-1/2
+    after:w-6
+    after:h-6
+    after:bg-[#884B70]
+    after:z-[2]
+}
+
+.list-stars-progress li:nth-child(0):before,
+.list-stars-progress li:nth-child(0):after{
+    @apply 
+    delay-0
+}
+.list-stars-progress li:nth-child(1):before,
+.list-stars-progress li:nth-child(1):after{
+    @apply 
+    delay-75
+}
+.list-stars-progress li:nth-child(2):before,
+.list-stars-progress li:nth-child(2):after{
+    @apply 
+    delay-100
+}
+.list-stars-progress li:nth-child(3):before,
+.list-stars-progress li:nth-child(3):after{
+    @apply 
+    delay-150
+}
+.list-stars-progress li:nth-child(4):before,
+.list-stars-progress li:nth-child(4):after{
+    @apply 
+    delay-200
+}
+.list-stars-progress li:nth-child(5):before,
+.list-stars-progress li:nth-child(5):after{
+    @apply 
+    delay-300
+}
+
+.list-stars-progress li.active{
+    @apply
+    before:w-[3.25rem]
+    last:before:w-[7rem]
+}
+
+.list-stars-progress li.active:before,
+.list-stars-progress li.active:after {
+    @apply 
+    bg-primary
+}
+
+.list-stars-progress li.current:after,
+.list-stars-progress li.current:after {
+    @apply 
+    bg-primary
+    shadow-[0px_13px_15px_10.92px_rgba(32,31,38,0.22)]
+}
+.rating-form .rating{
+    @apply 
+    inline-block
+}
+.rating-form .rating > input {
+    @apply
+    hidden
+}
+
+.rating-form .rating > label {
+    @apply
+    text-white
+    text-opacity-50
+    float-end
+    before:mx-[0.35rem]
+    before:font-fa
+    before:w-10
+    before:h-10
+    before:inline-flex
+    before:items-center
+    before:justify-center
+    before:font-bold
+    before:text-3xl
+    before:content-["\f005"]
+}
+
+.rating-form .rating > input:checked ~ label,
+.rating-form .rating:not(:checked) > label:hover,
+.rating-form .rating:not(:checked) > label:hover ~ label {
+    color: #FFD700;
+}
+
+.rating-form .rating > input:checked + label:hover,
+.rating-form .rating > input:checked ~ label:hover,
+.rating-form .rating > label:hover ~ input:checked ~ label,
+.rating-form .rating > input:checked ~ label:hover ~ label {
+    color: #FFED85;
+}
+
+.rating-form input, 
+.rating-form label {
+    @apply 
+    cursor-pointer
+}

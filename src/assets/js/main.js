@@ -8,6 +8,7 @@
         this.setupThemeSLIDER();
         this.setupDateCalender();
         this.setupMenuDrawer();
+        this.setupRating();
         this.setupVideoPlayer();
       },
 
@@ -268,6 +269,43 @@
                 }
             });
         });
+    },
+
+    setupRating(){
+    
+      // const $form = $('.ratingForm');
+      // const $inputRatings = $form.find('input[name="rating"]');
+      // const $submitBtn = $form.find('button[type="submit"]');
+      // const $progressList = $form.find('.list-stars-progress li');
+
+      // $inputRatings.on('change', function () {
+      //     $submitBtn.prop('disabled', !$inputRatings.is(':checked'));
+      //     updateProgress();
+      //     console.log("ALETT");
+      // });
+
+      // function updateProgress() {
+      //     const selectedStars = $form.find('input[name="rating"]:checked').val();
+      //     $progressList.removeClass('active current');
+      //     $progressList.slice(0, selectedStars).addClass('active');
+      //     $progressList.eq(selectedStars - 1).addClass('current');
+      // }
+
+      const $form = $('.rating-form');
+      const $inputRatings = $form.find('input[name="rating"]');
+      const $submitBtn = $form.find('button[type="submit"]');
+      const $progressList = $form.find('.list-stars-progress li');
+
+      $inputRatings.on('change', function () {
+          $submitBtn.prop('disabled', !$inputRatings.is(':checked'));
+          updateProgress();
+      });
+      function updateProgress() {
+          const selectedStars = $form.find('input[name="rating"]:checked').val();
+          $progressList.removeClass('active current');
+          $progressList.slice(0, selectedStars).addClass('active');
+          $progressList.eq(selectedStars - 1).addClass('current');
+      }
     },
     
 

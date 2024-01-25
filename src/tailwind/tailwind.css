@@ -15,6 +15,7 @@ Version: 1.0.0
 @import "./components/media.css";
 @import "./components/calender.css";
 @import "./components/resets.css";
+@import "./components/ratings.css";
 @import "./components/chat.css";
 @import "./components/forms.css";
 @import "./components/list.css";

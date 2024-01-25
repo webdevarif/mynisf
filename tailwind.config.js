@@ -22,7 +22,6 @@ module.exports = {
       '2xl': ['min(max(1.1rem,5vw),21px)', {
         lineHeight: '1.4',
       }],
-      // '3xl': ['min(max(1.32rem,5.5vw),24px)', {
       '3xl': ['min(max(1.3rem,5.5vw),24px)', {
         lineHeight: '1.3',
       }],
@@ -34,11 +33,8 @@ module.exports = {
       }],
     },
     fontFamily: {
-      // 'sans': ['ui-sans-serif', 'system-ui', ...],
-      // 'serif': ['ui-serif', 'Georgia', ...],
-      // 'mono': ['ui-monospace', 'SFMono-Regular', ...],
-      // 'display': ['Oswald', ...],
       'primary': ['var(--ff-primary)'],
+      'fa': '"Font Awesome 5 Pro"',
     },
     borderRadius: {
       'none': '0',

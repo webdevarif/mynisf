@@ -9,7 +9,6 @@
     justify-center
     rounded
     font-semibold
-    /* text-[min(max(0.7rem,3vw),12px)] */
     text-sm
     px-5
     py-4
@@ -18,6 +17,19 @@
     outline-none
     transition-all
     duration-300
+}
+
+.btn--primary.disabled,
+.btn--primary:disabled,
+.btn--secondary.disabled,
+.btn--secondary:disabled,
+.btn--light.disabled,
+.btn--light:disabled,
+.btn--style.disabled,
+.btn--style:disabled{
+    @apply 
+    opacity-50
+    pointer-events-none
 }
 .btn--sm{
     @apply
@@ -34,8 +46,6 @@
     bg-[#efeff0]
     text-primary
     shadow-[0px_8px_15px_rgba(255,255,255,0.1)]
-    /* hover:shadow-[0px_15px_30px_rgba(255,255,255,0.25)] */
-    before:bg-white
 }
 
 .btn--secondary{
@@ -46,7 +56,6 @@
     text-opacity-50
     hover:bg-white
     hover:text-primary
-    before:bg-white
 }
 
 .btn--primary{
@@ -55,55 +64,4 @@
     text-white
     relative
     z-[1]
-    before:bg-primary
 }
-
-.btn--light:before,
-.btn--secondary:before,
-.btn--primary:before {
-    @apply absolute h-full w-full content-[""] -translate-x-2/4 -translate-y-2/4 animate-[glowing3_1.1s_linear_infinite] z-[-1] opacity-0 invisible rounded left-2/4 top-2/4 bg-opacity-50;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -webkit-animation: glowing3 1.1s linear infinite;
-    -moz-animation: glowing3 1.1s linear infinite;
-    -o-animation: glowing3 1.1s linear infinite;
-    z-index: -1;
-  }
-  
-  .btn--light:hover:before,
-  .btn--secondary:hover:before,
-  .btn--primary:hover:before {
-    opacity: 1;
-    visibility: visible; 
-}
-  
-
-
-.is-glowing--light {
-    @apply
-    relative
-    before:bg-white;
-}
-
-.is-glowing--light:before {
-    @apply 
-    absolute 
-    h-full 
-    w-full content-[""] 
-    -translate-x-2/4 
-    -translate-y-2/4 
-    animate-[glowing1_1.1s_linear_infinite] 
-    z-[-1] 
-    rounded 
-    left-2/4 
-    top-2/4;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -webkit-animation: glowing1 1.1s linear infinite;
-    -moz-animation: glowing1 1.1s linear infinite;
-    -o-animation: glowing1 1.1s linear infinite;
-  }

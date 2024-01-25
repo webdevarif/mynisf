@@ -127,37 +127,8 @@
 
 
 
-.list-stars{
-    @apply
-    flex
-    justify-evenly
-    px-[10%]
-}
 
-.list-stars-progress{
-    @apply
-    h-5
-    rounded-full
-    flex
-    justify-evenly
-    px-[10%]
-    relative
-    z-[1]
-
-    before:content-['']
-    before:absolute
-    before:w-full
-    before:h-3
-    before:top-1/2
-    before:start-1/2
-    before:-translate-x-1/2
-    before:-translate-y-1/2
-    before:bg-[#884b70]
-    before:rounded-full
-    before:-z-[1]
-}
-
-.list-stars-progress li{
+/* .list-stars-progress li{
     @apply
     bg-[#884b70]
     inline-block
@@ -182,8 +153,8 @@
     before:bg-primary
     before:rounded-full
     before:-z-[1]
-}
-
+} */
+/* 
 .list-stars-progress li.active.current{
     @apply
     shadow-[0px_13px_15px_10.92px_rgba(32,31,38,0.22)]
@@ -197,7 +168,7 @@ img.list-stars-progress-star {
     bottom-[40px]
     -translate-x-1/2
 }
-
+ */
 
 
 /* DROPDOWN */
