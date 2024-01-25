@@ -16,7 +16,8 @@
 
     <div class="flex gap-6 flex-wrap">
         <iframe id="preview-frame" class="w-full max-w-[440px] h-screen overflow-hidden" frameborder="0"></iframe>
-        <iframe id="preview-frame-sm" class="w-full max-w-[375px] h-screen overflow-hidden" frameborder="0"></iframe>
+        <iframe id="preview-frame-sm" class="w-full max-w-[360px] h-[640px] overflow-hidden" frameborder="0"></iframe>
+        <iframe id="preview-frame-md" class="w-full max-w-[375px] h-[801px] overflow-hidden" frameborder="0"></iframe>
     </div>
 
     <script>
@@ -37,6 +38,7 @@
                 // Set the 'src' attribute of the iframe
                 $('#preview-frame').attr('src', fullUrl);
                 $('#preview-frame-sm').attr('src', fullUrl);
+                $('#preview-frame-md').attr('src', fullUrl);
             }
         });
     </script>

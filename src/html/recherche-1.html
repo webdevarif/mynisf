@@ -28,7 +28,7 @@
         <div class="nisf-container">
 
             <!-- Top Navigation -->
-            <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-3">
+            <nav class="top-navigation pt-8 flex items-center justify-between gap-3 mb-4">
                 <a href="#" class="">
                     <svg class="w-4 h-4 text-white">
                         <use xlink:href="#icon-angle-left"></use>
@@ -36,21 +36,13 @@
                 </a>
             </nav>
 
-            <div class="section-heading mb-5">
-                <div class="flex items-start gap-2">
-                    <a href="#" class="mt-3">
-                        <svg class="w-6 h-6 text-white">
-                            <use xlink:href="#icon-angle-left"></use>
-                        </svg>
-                    </a>
-                    <h3 class="text-3xl font-bold text-white mb-4">5 Profils à qui vous pourriez le plus correspondre.</h3>
-                </div>
+            <div class="section-heading mb-2 text-center">
+                <h3 class="text-3xl font-bold text-white mb-4">5 Profils à qui vous pourriez le plus correspondre.</h3>
                 <a href="#" class="btn--primary">Lancer Le Robot</a>
             </div>
 
             <!-- Search Bar -->
             <div class="py-3">
-
                 <div class="mb-3 flex items-center justify-between gap-3">
                     <div class="relative w-full">
                         <input type="text" placeholder="Je Cherche ..." class="input-control !ps-12">
@@ -75,12 +67,12 @@
                     <!-- Single Card Item -->
                     <li>
                         <div class="card">
-                            <div class="card-body">
+                            <div class="card-body p-3">
                                 <!-- Head -->
-                                <div class="flex gap-3 justify-between mb-5">
-                                    <h3 class="h5 mb-0">Profile Bloqué</h3>
-                                    <button type="button" class="text-white">
-                                        <svg class="w-4 h-4">
+                                <div class="flex gap-3 justify-between mb-3">
+                                    <h3 class="h6 mb-0">Profile Bloqué</h3>
+                                    <button type="button" class="text-white ms-auto">
+                                        <svg class="w-3 h-3">
                                             <use xlink:href="#icon-star"></use>
                                         </svg>
                                     </button>
@@ -88,57 +80,57 @@
 
                                 <!-- Thumbnail -->
                                 <div class="text-center">
-                                    <div class="avatar avatar-2xl mx-auto mb-3">
+                                    <div class="avatar avatar-xl mx-auto mb-3">
                                         <img src="../assets/images/users/3.png" alt="">
                                     </div>
-                                    <h4 class="text-white mb-0">Rachid Alawi</h4>
-                                    <p>Normandie</p>
+                                    <h4 class="text-white h5 mb-0 line--1">Rachid Alawi</h4>
+                                    <p class="text-sm">Normandie</p>
                                 </div>
                                 
-                                <ul class="my-2 flex gap-3 justify-center items-center"> 
+                                <ul class="mb-3 flex gap-3 justify-center items-center"> 
                                     <li>
                                         <a href="#">
-                                            <img class="w-[30px] h-auto" src="../assets/images/education.png" alt="">
+                                            <img class="w-[30px] min-w-[30px] h-auto" src="../assets/images/education.png" alt="">
                                         </a>
                                     </li>
                                     <li class="w-[2px] h-[1.5rem] bg-white bg-opacity-10"></li>
                                     <li>
                                         <a href="#">
-                                            <img class="w-[30px] h-auto" src="../assets/images/photos.png" alt="">
+                                            <img class="w-[30px] min-w-[30px] h-auto" src="../assets/images/photos.png" alt="">
                                         </a>
                                     </li>
                                 </ul>
 
-                                <ul class="flex-col flex gap-2 border-t-2 border-b-2 border-white border-opacity-25 mt-5 mb-2 py-3">
+                                <ul class="flex-col flex gap-2 border-t-2 border-b-2 border-white border-opacity-25 mb-1 py-3">
                                     <!-- List item -->
                                     <li class="flex justify-between">
                                         <div class="text-start">
-                                            <h6 class="mb-0">Age</h6>
-                                            <p class="text-white mb-0">54 ans</p>
+                                            <h6 class="mb-0 text-sm">Age</h6>
+                                            <p class="text-white mb-0 text-sm">54 ans</p>
                                         </div>
                                         <div class="text-end">
-                                            <h6 class="mb-0">Autre Origine</h6>
+                                            <h6 class="mb-0 text-sm">Autre Origine</h6>
                                             <div>
-                                                <img class="w-5 inline-block" src="../assets/images/flag-icon/france-square.png" alt="">
+                                                <img class="w-4 inline-block" src="../assets/images/flag-icon/france-square.png" alt="">
                                             </div>
                                         </div>
                                     </li>
                                     <!-- List item -->
                                     <li class="flex justify-between">
                                         <div class="text-start">
-                                            <h6 class="mb-0">Nationalité</h6>
+                                            <h6 class="mb-0 text-sm">Nationalité</h6>
                                             <div>
-                                                <img class="w-5 inline-block" src="../assets/images/flag-icon/france-square.png" alt="">
+                                                <img class="w-4 inline-block" src="../assets/images/flag-icon/france-square.png" alt="">
                                             </div>
                                         </div>
                                         <div class="text-end">
-                                            <h6 class="mb-0">Région</h6>
-                                            <p class="text-white mb-0">À l'étranger</p>
+                                            <h6 class="mb-0 text-sm">Région</h6>
+                                            <p class="text-white mb-0 text-sm">À l'étranger</p>
                                         </div>
                                     </li>
                                 </ul>
 
-                                <div class="flex items-center gap-2 text-sm mb-3">
+                                <div class="flex items-center gap-2 text-xs justify-between mb-3">
                                     <svg class="w-3 h-3">
                                         <use xlink:href="#icon-angle-down"></use>
                                     </svg>
@@ -148,15 +140,15 @@
                             </div>
                         </div>
                     </li>
-                    
+
                     <!-- Single Card Item -->
                     <li>
                         <div class="card">
-                            <div class="card-body">
+                            <div class="card-body p-3">
                                 <!-- Head -->
-                                <div class="flex gap-3 justify-between mb-5">
+                                <div class="flex gap-3 justify-between mb-3">
                                     <button type="button" class="text-white ms-auto">
-                                        <svg class="w-4 h-4">
+                                        <svg class="w-3 h-3">
                                             <use xlink:href="#icon-star-fill"></use>
                                         </svg>
                                     </button>
@@ -164,63 +156,62 @@
 
                                 <!-- Thumbnail -->
                                 <div class="text-center">
-                                    <div class="avatar avatar-2xl mx-auto mb-3">
+                                    <div class="avatar avatar-xl mx-auto mb-3">
                                         <img src="../assets/images/users/3.png" alt="">
                                     </div>
-                                    <h4 class="text-white mb-0">Rachid Alawi</h4>
-                                    <p>Normandie</p>
+                                    <h4 class="text-white h5 mb-0 line--1">Rachid Alawi</h4>
+                                    <p class="text-sm">Normandie</p>
                                 </div>
                                 
-                                <ul class="my-2 flex gap-3 justify-center items-center"> 
+                                <ul class="mb-3 flex gap-3 justify-center items-center"> 
                                     <li>
                                         <a href="#">
-                                            <img class="w-[30px] h-auto" src="../assets/images/messages.png" alt="">
+                                            <img class="w-[30px] min-w-[30px] h-auto" src="../assets/images/messages.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img class="w-[30px] min-w-[30px] h-auto" src="../assets/images/education.png" alt="">
                                         </a>
                                     </li>
                                     <li class="w-[2px] h-[1.5rem] bg-white bg-opacity-10"></li>
                                     <li>
                                         <a href="#">
-                                            <img class="w-[30px] h-auto" src="../assets/images/education.png" alt="">
-                                        </a>
-                                    </li>
-                                    <li class="w-[2px] h-[1.5rem] bg-white bg-opacity-10"></li>
-                                    <li>
-                                        <a href="#">
-                                            <img class="w-[30px] h-auto" src="../assets/images/photos.png" alt="">
+                                            <img class="w-[30px] min-w-[30px] h-auto" src="../assets/images/photos.png" alt="">
                                         </a>
                                     </li>
                                 </ul>
 
-                                <ul class="flex-col flex gap-2 border-t-2 border-b-2 border-white border-opacity-25 mt-5 mb-2 py-3">
+                                <ul class="flex-col flex gap-2 border-t-2 border-b-2 border-white border-opacity-25 mb-1 py-3">
                                     <!-- List item -->
                                     <li class="flex justify-between">
                                         <div class="text-start">
-                                            <h6 class="mb-0">Age</h6>
-                                            <p class="text-white mb-0">54 ans</p>
+                                            <h6 class="mb-0 text-sm">Age</h6>
+                                            <p class="text-white mb-0 text-sm">54 ans</p>
                                         </div>
                                         <div class="text-end">
-                                            <h6 class="mb-0">Autre Origine</h6>
+                                            <h6 class="mb-0 text-sm">Autre Origine</h6>
                                             <div>
-                                                <img class="w-5 inline-block" src="../assets/images/flag-icon/france-square.png" alt="">
+                                                <img class="w-4 inline-block" src="../assets/images/flag-icon/france-square.png" alt="">
                                             </div>
                                         </div>
                                     </li>
                                     <!-- List item -->
                                     <li class="flex justify-between">
                                         <div class="text-start">
-                                            <h6 class="mb-0">Nationalité</h6>
+                                            <h6 class="mb-0 text-sm">Nationalité</h6>
                                             <div>
-                                                <img class="w-5 inline-block" src="../assets/images/flag-icon/france-square.png" alt="">
+                                                <img class="w-4 inline-block" src="../assets/images/flag-icon/france-square.png" alt="">
                                             </div>
                                         </div>
                                         <div class="text-end">
-                                            <h6 class="mb-0">Région</h6>
-                                            <p class="text-white mb-0">À l'étranger</p>
+                                            <h6 class="mb-0 text-sm">Région</h6>
+                                            <p class="text-white mb-0 text-sm">À l'étranger</p>
                                         </div>
                                     </li>
                                 </ul>
 
-                                <div class="flex items-center gap-2 text-sm mb-3">
+                                <div class="flex items-center gap-2 text-xs justify-between mb-3">
                                     <svg class="w-3 h-3">
                                         <use xlink:href="#icon-angle-down"></use>
                                     </svg>
@@ -229,36 +220,33 @@
                                 <a href="#" class="btn--primary">VOIR LE PROFIL</a>
                             </div>
                         </div>
-                    </li>
-                    
+                    </li>                    
                 </ul>
             </div>
             
         </div>
         <!-- Footer Bar -->
-        <ul class="footer-float-bar">
-            <li>
-                <button class="footer-float-bar--item">
-                    <svg>
-                        <use xlink:href="#icon-comments"></use>
-                    </svg>
-                </button>
-            </li>
-            <li>
-                <button class="footer-float-bar--item active">
-                    <svg>
-                        <use xlink:href="#icon-search"></use>
-                    </svg>
-                </button>
-            </li>
-            <li>
-                <button class="footer-float-bar--item">
-                    <svg>
-                        <use xlink:href="#icon-user"></use>
-                    </svg>
-                </button>
-            </li>
-        </ul>
+        <div class="footer-float-bar">
+            <div class="nisf-container">
+                <ul class="footer-floar-bar__list">
+                    <li>
+                        <button class="footer-float-bar--item active">
+                            <img class="w-6 h-auto" src="../assets/images/menu-icons/footer-message.png" alt="">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="footer-float-bar--item">
+                            <img class="w-5 h-auto" src="../assets/images/menu-icons/footer-search.png" alt="">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="footer-float-bar--item">
+                            <img class="w-5 h-auto" src="../assets/images/menu-icons/footer-user.png" alt="">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
 

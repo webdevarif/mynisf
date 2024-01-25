@@ -506,8 +506,8 @@ body {
   margin-right: auto;
   width: 100%;
   max-width: 30rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* DRAWER */
@@ -1091,6 +1091,14 @@ body {
   height: 100vh !important;
 }
 
+.h-\[640px\] {
+  height: 640px !important;
+}
+
+.h-\[801px\] {
+  height: 801px !important;
+}
+
 .max-h-\[40px\] {
   max-height: 40px !important;
 }
@@ -1211,8 +1219,12 @@ body {
   min-width: 130px !important;
 }
 
-.min-w-\[220px\] {
-  min-width: 220px !important;
+.min-w-\[240px\] {
+  min-width: 240px !important;
+}
+
+.min-w-\[30px\] {
+  min-width: 30px !important;
 }
 
 .min-w-\[3rem\] {
@@ -1225,6 +1237,10 @@ body {
 
 .min-w-\[60px\] {
   min-width: 60px !important;
+}
+
+.min-w-\[20px\] {
+  min-width: 20px !important;
 }
 
 .max-w-\[0\.75rem\] {
@@ -1289,6 +1305,10 @@ body {
 
 .max-w-full {
   max-width: 100% !important;
+}
+
+.max-w-\[360px\] {
+  max-width: 360px !important;
 }
 
 .-translate-x-1\/2 {
@@ -2061,7 +2081,7 @@ body {
 }
 
 .text-3xl {
-  font-size: min(max(1.32rem,5.5vw),24px) !important;
+  font-size: min(max(1.3rem,5.5vw),24px) !important;
   line-height: 1.3 !important;
 }
 
@@ -2334,7 +2354,7 @@ body {
   padding-right: 1.25rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-size: min(max(0.7rem,3vw),14px);
+  font-size: min(max(0.6rem,0.6vw),12px);
   line-height: 1.5;
   font-weight: 600;
   outline: 2px solid transparent;
@@ -2863,7 +2883,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: min(max(1.32rem,5.5vw),24px);
+  font-size: min(max(1.3rem,5.5vw),24px);
   line-height: 1.3;
   font-weight: 600;
 }
