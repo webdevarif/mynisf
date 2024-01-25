@@ -33,7 +33,6 @@ module.exports = {
         lineHeight: '1.3',
       }],
     },
-
     fontFamily: {
       // 'sans': ['ui-sans-serif', 'system-ui', ...],
       // 'serif': ['ui-serif', 'Georgia', ...],
@@ -43,14 +42,13 @@ module.exports = {
     },
     borderRadius: {
       'none': '0',
-      'sm': '5px',
-      DEFAULT: '12px',
-      'md': '16px',
-      'lg': '1.9rem',
-      'xl': '45px',
+      'sm': 'min(max(0.25rem,1vw),5px)',
+      DEFAULT: 'min(max(0.6rem,0.4vw),12px)',
+      'md': 'min(max(0.85rem,5vw),16px)',
+      'lg': 'min(max(1.5rem,6vw),30px)',
+      'xl': 'min(max(2.6rem,9.5vw),42px)',
       'full': '9999px',
-      'large': '12px',
-    },
+    }, 
     extend: {
       colors: {
         "primary": "#f30292",
