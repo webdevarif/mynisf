@@ -513,7 +513,7 @@ body {
 /* DRAWER */
 
 .nisf-menu-drawer {
-  position: absolute;
+  position: fixed;
   inset-inline-end: -100%;
   top: 0px;
   height: 100%;
@@ -1095,16 +1095,16 @@ body {
   max-height: 40px !important;
 }
 
+.min-h-1 {
+  min-height: 0.25rem !important;
+}
+
 .min-h-\[50vh\] {
   min-height: 50vh !important;
 }
 
 .min-h-screen {
   min-height: 100vh !important;
-}
-
-.min-h-1 {
-  min-height: 0.25rem !important;
 }
 
 .w-1 {

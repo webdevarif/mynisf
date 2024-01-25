@@ -68,7 +68,7 @@
         bg-[#8D4570]
         w-full
         max-w-[calc(100%-2.75rem)]
-        absolute
+        fixed
         -end-full
         top-0
         h-full
