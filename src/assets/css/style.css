@@ -498,7 +498,6 @@ body {
 }
 
 .nisf-wrapper .nisf-container {
-  min-height: 100vh;
   padding-bottom: 4rem;
 }
 
@@ -1140,6 +1139,10 @@ body {
   width: 1.5rem !important;
 }
 
+.w-7 {
+  width: 1.75rem !important;
+}
+
 .w-8 {
   width: 2rem !important;
 }
@@ -1214,10 +1217,6 @@ body {
 
 .w-full {
   width: 100% !important;
-}
-
-.w-7 {
-  width: 1.75rem !important;
 }
 
 .min-w-\[130px\] {
@@ -2078,10 +2077,6 @@ body {
 
 .text-end {
   text-align: end !important;
-}
-
-.align-middle {
-  vertical-align: middle !important;
 }
 
 .text-2xl {
@@ -4608,7 +4603,6 @@ img.list-stars-progress-star {
 }
 
 .footer-float-bar .nisf-container {
-  min-height: 0.25rem;
   padding: 0px !important;
 }
 

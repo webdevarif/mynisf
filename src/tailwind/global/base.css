@@ -52,7 +52,6 @@
     .nisf-wrapper .nisf-container{
         @apply 
         pb-[4rem]
-        min-h-screen
     }
     .nisf-container{
         @apply 

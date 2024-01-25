@@ -14,7 +14,6 @@
 }
 .footer-float-bar .nisf-container{
     @apply
-    min-h-1
     !p-0
 }
 .footer-floar-bar__list{
