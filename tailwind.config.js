@@ -4,31 +4,31 @@ module.exports = {
   important: true,
   theme: {
     fontSize: {
-      'xs': ['min(max(0.46rem,2vw),10px)', {
+      'xs': ['var(--theme-size--xs)', {
         lineHeight: '1.5',
       }],
-      'sm': ['min(max(0.6rem,0.6vw),12px)', {
+      'sm': ['var(--theme-size--sm)', {
         lineHeight: '1.5',
       }],
-      'md': ['min(max(0.7rem,3vw),14px)', {
+      'md': ['var(--theme-size--md)', {
         lineHeight: '1.5',
       }],
-      'lg': ['min(max(0.8rem,3vw),15px)', {
+      'lg': ['var(--theme-size--lg)', {
         lineHeight: '1.5',
       }],
-      'xl': ['min(max(0.8rem,4vw),18px)', {
+      'xl': ['var(--theme-size--xl)', {
         lineHeight: '1.4',
       }],
-      '2xl': ['min(max(1.1rem,5vw),21px)', {
+      '2xl': ['var(--theme-size--2xl)', {
         lineHeight: '1.4',
       }],
-      '3xl': ['min(max(1.3rem,5.5vw),24px)', {
+      '3xl': ['var(--theme-size--3xl)', {
         lineHeight: '1.3',
       }],
-      '4xl': ['min(max(1.8rem,7.5vw),34px)', {
+      '4xl': ['var(--theme-size--4xl)', {
         lineHeight: '1.3',
       }],
-      '5xl': ['min(max(2.6rem,9.5vw),42px)', {
+      '5xl': ['var(--theme-size--5xl)', {
         lineHeight: '1.3',
       }],
     },

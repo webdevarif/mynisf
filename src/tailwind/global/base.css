@@ -9,6 +9,15 @@
 @layer base{
     :root {
         --ff-primary: 'Poppins';
+        --theme-size--xs: min(max(0.46rem,2vw),10px);
+        --theme-size--sm: min(max(0.6rem,0.6vw),12px);
+        --theme-size--md: min(max(0.7rem,3vw),14px);
+        --theme-size--lg: min(max(0.8rem,3vw),15px);
+        --theme-size--xl: min(max(0.8rem,4vw),18px);
+        --theme-size--2xl: min(max(1.1rem,5vw),21px);
+        --theme-size--3xl: min(max(1.3rem,5.5vw),24px);
+        --theme-size--4xl: min(max(1.8rem,7.5vw),34px);
+        --theme-size--5xl: min(max(2.6rem,9.5vw),42px);
     }
     
     body{

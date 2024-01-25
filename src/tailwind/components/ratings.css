@@ -3,7 +3,7 @@
 
 .rating-form .list-stars-progress{
     @apply
-    h-3
+    h-[var(--theme-size--sm)]
     rounded-full
     inline-flex
     justify-center
@@ -11,26 +11,26 @@
     bg-white
     bg-opacity-10
     z-[1]
-    px-[2rem]
+    items-center
+    px-[var(--theme-size--lg)]
 }
 
 .rating-form .list-stars-progress li{
     @apply
-    w-10
-    h-10
-    mx-[0.35rem]
-    -mt-[0.85rem]
+    w-[var(--theme-size--4xl)]
+    h-[var(--theme-size--4xl)]
     relative
     inline-block
+    mx-[0.35rem]
 
     before:content-['']
     before:absolute
     before:top-1/2
     before:rounded-full
-    before:-start-[2.25rem]
+    before:-start-[var(--theme-size--2xl)]
     before:-translate-y-1/2
     before:w-0
-    before:h-3
+    before:h-[var(--theme-size--sm)]
     before:bg-[#884B70]
 
     after:content-['']
@@ -40,8 +40,8 @@
     after:start-1/2
     after:-translate-y-1/2
     after:-translate-x-1/2
-    after:w-6
-    after:h-6
+    after:w-[var(--theme-size--2xl)]
+    after:h-[var(--theme-size--2xl)]
     after:bg-[#884B70]
     after:z-[2]
 }
@@ -79,8 +79,8 @@
 
 .list-stars-progress li.active{
     @apply
-    before:w-[3.25rem]
-    last:before:w-[7rem]
+    before:w-[var(--theme-size--4xl)]
+    last:before:w-[calc(var(--theme-size--2xl)*2+var(--theme-size--2xl)+0.7rem)]
 }
 
 .list-stars-progress li.active:before,
@@ -111,8 +111,8 @@
     float-end
     before:mx-[0.35rem]
     before:font-fa
-    before:w-10
-    before:h-10
+    before:w-[var(--theme-size--4xl)]
+    before:h-[var(--theme-size--4xl)]
     before:inline-flex
     before:items-center
     before:justify-center

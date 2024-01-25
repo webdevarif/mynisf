@@ -453,6 +453,15 @@ video {
 
 :root {
   --ff-primary: 'Poppins';
+  --theme-size--xs: min(max(0.46rem,2vw),10px);
+  --theme-size--sm: min(max(0.6rem,0.6vw),12px);
+  --theme-size--md: min(max(0.7rem,3vw),14px);
+  --theme-size--lg: min(max(0.8rem,3vw),15px);
+  --theme-size--xl: min(max(0.8rem,4vw),18px);
+  --theme-size--2xl: min(max(1.1rem,5vw),21px);
+  --theme-size--3xl: min(max(1.3rem,5.5vw),24px);
+  --theme-size--4xl: min(max(1.8rem,7.5vw),34px);
+  --theme-size--5xl: min(max(2.6rem,9.5vw),42px);
 }
 
 body {
@@ -472,7 +481,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  font-size: min(max(0.7rem,3vw),14px);
+  font-size: var(--theme-size--md);
   line-height: 1.5;
   font-weight: 400;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -2076,47 +2085,47 @@ body {
 }
 
 .text-2xl {
-  font-size: min(max(1.1rem,5vw),21px) !important;
+  font-size: var(--theme-size--2xl) !important;
   line-height: 1.4 !important;
 }
 
 .text-3xl {
-  font-size: min(max(1.3rem,5.5vw),24px) !important;
+  font-size: var(--theme-size--3xl) !important;
   line-height: 1.3 !important;
 }
 
 .text-4xl {
-  font-size: min(max(1.8rem,7.5vw),34px) !important;
+  font-size: var(--theme-size--4xl) !important;
   line-height: 1.3 !important;
 }
 
 .text-5xl {
-  font-size: min(max(2.6rem,9.5vw),42px) !important;
+  font-size: var(--theme-size--5xl) !important;
   line-height: 1.3 !important;
 }
 
 .text-lg {
-  font-size: min(max(0.8rem,3vw),15px) !important;
+  font-size: var(--theme-size--lg) !important;
   line-height: 1.5 !important;
 }
 
 .text-md {
-  font-size: min(max(0.7rem,3vw),14px) !important;
+  font-size: var(--theme-size--md) !important;
   line-height: 1.5 !important;
 }
 
 .text-sm {
-  font-size: min(max(0.6rem,0.6vw),12px) !important;
+  font-size: var(--theme-size--sm) !important;
   line-height: 1.5 !important;
 }
 
 .text-xl {
-  font-size: min(max(0.8rem,4vw),18px) !important;
+  font-size: var(--theme-size--xl) !important;
   line-height: 1.4 !important;
 }
 
 .text-xs {
-  font-size: min(max(0.46rem,2vw),10px) !important;
+  font-size: var(--theme-size--xs) !important;
   line-height: 1.5 !important;
 }
 
@@ -2354,7 +2363,7 @@ body {
   padding-right: 1.25rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-size: min(max(0.6rem,0.6vw),12px);
+  font-size: var(--theme-size--sm);
   line-height: 1.5;
   font-weight: 600;
   outline: 2px solid transparent;
@@ -2714,7 +2723,7 @@ body {
   background-color: rgb(243 2 146 / var(--tw-bg-opacity));
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  font-size: min(max(0.8rem,3vw),15px);
+  font-size: var(--theme-size--lg);
   line-height: 1.5;
   font-weight: 600;
   --tw-text-opacity: 1;
@@ -2804,37 +2813,37 @@ body {
 /* FONT SIZES */
 
 h1, .h1 {
-  font-size: min(max(1.8rem,7.5vw),34px);
+  font-size: var(--theme-size--4xl);
   line-height: 1.3;
   font-weight: 600;
 }
 
 h2, .h2 {
-  font-size: min(max(1.3rem,5.5vw),24px);
+  font-size: var(--theme-size--3xl);
   line-height: 1.3;
   font-weight: 600;
 }
 
 h3, .h3 {
-  font-size: min(max(1.1rem,5vw),21px);
+  font-size: var(--theme-size--2xl);
   line-height: 1.4;
   font-weight: 600;
 }
 
 h4, .h4 {
-  font-size: min(max(0.8rem,4vw),18px);
+  font-size: var(--theme-size--xl);
   line-height: 1.4;
   font-weight: 600;
 }
 
 h5, .h5 {
-  font-size: min(max(0.8rem,3vw),15px);
+  font-size: var(--theme-size--lg);
   line-height: 1.5;
   font-weight: 600;
 }
 
 h6, .h6 {
-  font-size: min(max(0.7rem,3vw),14px);
+  font-size: var(--theme-size--md);
   line-height: 1.5;
 }
 
@@ -2880,7 +2889,7 @@ h1, h2, h3, h4, h5, h6, p {
 .progress-num {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-  font-size: min(max(0.6rem,0.6vw),12px);
+  font-size: var(--theme-size--sm);
   line-height: 1.5;
   font-weight: 600;
   --tw-text-opacity: 1;
@@ -2930,7 +2939,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding-left: 1rem;
   padding-right: 1rem;
   text-align: center;
-  font-size: min(max(0.7rem,3vw),14px);
+  font-size: var(--theme-size--md);
   line-height: 1.5;
   font-weight: 500;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -3057,30 +3066,30 @@ h1, h2, h3, h4, h5, h6, p {
   position: relative;
   z-index: 1;
   display: inline-flex;
-  height: 0.75rem;
+  height: var(--theme-size--sm);
+  align-items: center;
   justify-content: center;
   border-radius: 9999px;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.1;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: var(--theme-size--lg);
+  padding-right: var(--theme-size--lg);
 }
 
 .rating-form .list-stars-progress li {
   position: relative;
   margin-left: 0.35rem;
   margin-right: 0.35rem;
-  margin-top: -0.85rem;
   display: inline-block;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: var(--theme-size--4xl);
+  width: var(--theme-size--4xl);
 }
 
 .rating-form .list-stars-progress li::before {
   position: absolute;
   top: 50%;
-  inset-inline-start: -2.25rem;
-  height: 0.75rem;
+  inset-inline-start: calc(var(--theme-size--2xl) * -1);
+  height: var(--theme-size--sm);
   width: 0px;
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3096,8 +3105,8 @@ h1, h2, h3, h4, h5, h6, p {
   top: 50%;
   inset-inline-start: 50%;
   z-index: 2;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: var(--theme-size--2xl);
+  width: var(--theme-size--2xl);
   --tw-translate-y: -50%;
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3140,12 +3149,12 @@ h1, h2, h3, h4, h5, h6, p {
 
 .list-stars-progress li.active::before {
   content: var(--tw-content);
-  width: 3.25rem;
+  width: var(--theme-size--4xl);
 }
 
 .list-stars-progress li.active:last-child::before {
   content: var(--tw-content);
-  width: 7rem;
+  width: calc(var(--theme-size--2xl) * 2 + var(--theme-size--2xl) + 0.7rem);
 }
 
 .list-stars-progress li.active:before,
@@ -3181,12 +3190,12 @@ h1, h2, h3, h4, h5, h6, p {
   margin-left: 0.35rem;
   margin-right: 0.35rem;
   display: inline-flex;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: var(--theme-size--4xl);
+  width: var(--theme-size--4xl);
   align-items: center;
   justify-content: center;
   font-family: "Font Awesome 5 Pro";
-  font-size: min(max(1.3rem,5.5vw),24px);
+  font-size: var(--theme-size--3xl);
   line-height: 1.3;
   font-weight: 700;
   --tw-content: "\f005";
@@ -3233,7 +3242,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding-right: 2rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  font-size: min(max(0.6rem,0.6vw),12px);
+  font-size: var(--theme-size--sm);
   line-height: 1.5;
   letter-spacing: 0.1em;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -3257,7 +3266,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding-bottom: 1rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  font-size: min(max(0.8rem,3vw),15px);
+  font-size: var(--theme-size--lg);
   line-height: 1.5;
   font-weight: 600;
   --tw-text-opacity: 1;
@@ -3289,7 +3298,7 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: min(max(0.6rem,0.6vw),12px);
+  font-size: var(--theme-size--sm);
   line-height: 1.5;
   font-weight: 600;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -3374,7 +3383,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding-bottom: 1rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  font-size: min(max(0.8rem,3vw),15px);
+  font-size: var(--theme-size--lg);
   line-height: 1.5;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -3393,7 +3402,7 @@ h1, h2, h3, h4, h5, h6, p {
   align-items: center;
   justify-content: center;
   border-radius: min(max(0.25rem,1vw),5px);
-  font-size: min(max(0.8rem,4vw),18px);
+  font-size: var(--theme-size--xl);
   line-height: 1.4;
 }
 
@@ -3422,7 +3431,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding-bottom: 0.75rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  font-size: min(max(0.7rem,3vw),14px);
+  font-size: var(--theme-size--md);
   line-height: 1.5;
   font-weight: 500;
   --tw-text-opacity: 1;
@@ -3454,7 +3463,7 @@ textarea.input-control {
   margin-bottom: 0.5rem;
   display: block;
   padding-inline-start: 0.75rem;
-  font-size: min(max(0.8rem,4vw),18px);
+  font-size: var(--theme-size--xl);
   line-height: 1.4;
   font-weight: 500;
   --tw-text-opacity: 1;
@@ -3525,7 +3534,7 @@ select.input-control{
   padding-right: 1rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  font-size: min(max(0.7rem,3vw),14px);
+  font-size: var(--theme-size--md);
   line-height: 1.5;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   --tw-text-opacity: 0.5;
@@ -3997,7 +4006,7 @@ select.input-control{
   padding-right: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-size: min(max(0.7rem,3vw),14px);
+  font-size: var(--theme-size--md);
   line-height: 1.5;
   font-weight: 600;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -4281,7 +4290,7 @@ img.list-stars-progress-star {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: min(max(1.8rem,7.5vw),34px);
+  font-size: var(--theme-size--4xl);
   line-height: 1.3;
   font-weight: 700;
   --tw-text-opacity: 1;
@@ -4704,12 +4713,12 @@ img.list-stars-progress-star {
 /* <=== STYLESHEETS: PAGES ===> */
 
 .placeholder\:text-md::-moz-placeholder {
-  font-size: min(max(0.7rem,3vw),14px) !important;
+  font-size: var(--theme-size--md) !important;
   line-height: 1.5 !important;
 }
 
 .placeholder\:text-md::placeholder {
-  font-size: min(max(0.7rem,3vw),14px) !important;
+  font-size: var(--theme-size--md) !important;
   line-height: 1.5 !important;
 }
 
