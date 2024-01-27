@@ -1,3 +1,4 @@
+.select2-container--default .select2-search--inline,
 .input-control{
     @apply 
     w-full
@@ -7,6 +8,7 @@
     bg-input-bg
     py-3
     px-6
+    !border-0
     text-white
     outline-none
     text-md
@@ -61,8 +63,7 @@ select.input-control{
     h-[56px]
     w-full
     cursor-pointer
-    bg-white
-    bg-opacity-[0.12]
+    bg-input-bg
     rounded
     px-6 py-3
     items-center
@@ -430,3 +431,86 @@ select.input-control{
     transition: transform 300ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
  }
   
+
+/* MULTI SELECT2 */
+.select2-container--default .select2-selection--multiple{
+  @apply
+  bg-transparent
+  !border-0
+  flex 
+  flex-col-reverse
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+  @apply
+  mt-2
+  ms-0
+  me-3
+  bg-primary 
+  py-1 
+  px-3 
+  rounded-[7px] 
+  border-0
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
+  background-image: url("data:image/svg+xml;base64,PHN2ZyBzdHJva2U9IiNmZmYiIGZpbGw9IiNmZmYiIHN0cm9rZS13aWR0aD0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGhlaWdodD0iMWVtIiB3aWR0aD0iMWVtIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik00MDUgMTM2Ljc5OEwzNzUuMjAyIDEwNyAyNTYgMjI2LjIwMiAxMzYuNzk4IDEwNyAxMDcgMTM2Ljc5OCAyMjYuMjAyIDI1NiAxMDcgMzc1LjIwMiAxMzYuNzk4IDQwNSAyNTYgMjg1Ljc5OCAzNzUuMjAyIDQwNSA0MDUgMzc1LjIwMiAyODUuNzk4IDI1NnoiPjwvcGF0aD48L3N2Zz4=");
+  @apply
+  inline-flex
+  h-full
+  bg-center
+  bg-no-repeat
+  relative
+  !bg-transparent
+  !text-white 
+  border-0
+  pe-2
+  w-[20px]
+  indent-[99px]
+  overflow-hidden
+}
+.select2-container--default .select2-search--inline .select2-search__field{
+@apply
+  placeholder:text-md
+  placeholder:font-medium
+  placeholder:text-white
+  placeholder:text-opacity-20  
+}
+
+
+.select2-container--default .select2-dropdown{
+@apply
+  border-0
+  rounded
+  bg-[#68244F]
+  w-full
+  py-3
+  shadow-[0px_9px_20px_rgba(14,14,14,0.01)]
+}
+
+.select2-container--default .select2-dropdown li.select2-results__option{
+  @apply
+  flex
+  cursor-pointer
+  items-center
+  gap-x-2
+  px-4
+  py-3
+  transition-all
+  text-md
+  duration-300
+  text-white
+  text-opacity-50
+  hover:bg-primary-50
+  hover:bg-opacity-15
+  hover:text-white
+} 
+.select2-container--default .select2-dropdown li.select2-results__option.select2-results__option--selected{
+  @apply
+  bg-primary
+  bg-opacity-25
+  text-white
+}
+.select2-container--default .select2-dropdown li.select2-results__option.select2-results__option--highlighted{
+  @apply
+  bg-primary
+  text-white
+}

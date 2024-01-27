@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="../assets/libs/slick/slick.min.css">
     <link rel="stylesheet" href="../assets/libs/slick/slick-theme.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
     
     <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
     <link rel="stylesheet" href="../assets/libs/gsap/lenis.min.css">
@@ -14,6 +16,8 @@
     
     <!-- JS SUPPORTS -->
     <script src="../assets/libs/vendors/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    
     <script src="../assets/libs/gsap/gsap.min.js"></script>
     <script src="../assets/libs/gsap/ScrollTrigger.min.js"></script>
     <script src="../assets/libs/gsap/lenis.min.js"></script>
@@ -211,48 +215,17 @@
 
             <form action="#">
                 <!-- Single Field -->
-                <div class="input-group">
+                <div class="input-group input-group-multiselect">
                     <label for="form--traits-ersonnels" class="input-label">Traits Personnels</label>
-                    <div class="ul-select no-selected">
-                        <div class="ul-select-input">
-                            <input type="hidden" class="input-hidden-field" name="form--traits-ersonnels" value="">
-                            <div class="ul-select-name"></div>
-                            <div class="placeholder-label">Choose One</div>
-                        </div>
-                        <span class="select-arrow select-arrow-down">
-                            <svg><use xlink:href="#icon-angle-down"></use></svg>
-                        </span>
-                        <span class="select-arrow select-arrow-cancel">
-                            <svg><use xlink:href="#icon-close"></use></svg>
-                        </span>
-                        <ul class="ul-select-list">
-                            <li data-value="option-1">Ajouter vos traits personnels</li>
-                            <li data-value="option-2">Option 2</li>
-                            <li data-value="option-3">Option 3</li>
-                            <li data-value="option-4">Option 4</li>
-                            <li data-value="option-5">Option 5</li>
-                        </ul>
-                    </div>
-
-                    <!-- SELECTED TAGS-->
-                    <ul class="flex gap-3 flex-wrap mt-2">
-                        <li>
-                            <span class="bg-primary py-1 px-3 rounded-[6px] text-white inline-flex items-center gap-3">
-                                <button type="button" class="w-4 h-4">
-                                    <svg class="h-full w-full"><use xlink:href="#icon-close"></use></svg>
-                                </button>
-                                <span class="opacity-60">Bavard</span>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="bg-primary py-1 px-3 rounded-[6px] text-white inline-flex items-center gap-3">
-                                <button type="button" class="w-4 h-4">
-                                    <svg class="h-full w-full"><use xlink:href="#icon-close"></use></svg>
-                                </button>
-                                <span class="opacity-60">Ayant de l’humour </span>
-                            </span>
-                        </li>
-                    </ul>
+                    <select class="input-control" data-placeholder="Select One" multi-select>
+                        <option value="AL">Bavard</option>
+                        <option value="WY">Ayant de l’humour</option>
+                        <option value="option-1">Option 1</option>
+                        <option value="option-2">Option 2</option>
+                        <option value="option-3">Option 3</option>
+                        <option value="option-4">Option 4</option>
+                        <!-- Add more options as needed -->
+                    </select>
                 </div>
                 <!-- Single Field -->
                 <div class="input-group">
@@ -262,46 +235,15 @@
                 <!-- Single Field -->
                 <div class="input-group">
                     <label for="form--que-faites-vous" class="input-label">Que faites-vous de votre temps libre ?</label>
-                    <div class="ul-select no-selected">
-                        <div class="ul-select-input">
-                            <input type="hidden" class="input-hidden-field" name="form--que-faites-vous" value="">
-                            <div class="ul-select-name"></div>
-                            <div class="placeholder-label">Choose One</div>
-                        </div>
-                        <span class="select-arrow select-arrow-down">
-                            <svg><use xlink:href="#icon-angle-down"></use></svg>
-                        </span>
-                        <span class="select-arrow select-arrow-cancel">
-                            <svg><use xlink:href="#icon-close"></use></svg>
-                        </span>
-                        <ul class="ul-select-list">
-                            <li data-value="option-1">Ajouter ce que vous faites</li>
-                            <li data-value="option-2">Option 2</li>
-                            <li data-value="option-3">Option 3</li>
-                            <li data-value="option-4">Option 4</li>
-                            <li data-value="option-5">Option 5</li>
-                        </ul>
-                    </div>
-
-                    <!-- SELECTED TAGS-->
-                    <ul class="flex gap-3 flex-wrap mt-2">
-                        <li>
-                            <span class="bg-primary py-1 px-3 rounded-[6px] text-white inline-flex items-center gap-3">
-                                <button type="button" class="w-4 h-4">
-                                    <svg class="h-full w-full"><use xlink:href="#icon-close"></use></svg>
-                                </button>
-                                <span class="opacity-60">Bavard</span>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="bg-primary py-1 px-3 rounded-[6px] text-white inline-flex items-center gap-3">
-                                <button type="button" class="w-4 h-4">
-                                    <svg class="h-full w-full"><use xlink:href="#icon-close"></use></svg>
-                                </button>
-                                <span class="opacity-60">Ayant de l’humour </span>
-                            </span>
-                        </li>
-                    </ul>
+                    <select class="input-control" data-placeholder="Select One" multi-select>
+                        <option value="AL">Bavard</option>
+                        <option value="WY">Ajouter ce que vous faites</option>
+                        <option value="option-1">Option 1</option>
+                        <option value="option-2">Option 2</option>
+                        <option value="option-3">Option 3</option>
+                        <option value="option-4">Option 4</option>
+                        <!-- Add more options as needed -->
+                    </select>
                 </div>
 
                 <!-- Single Field -->
@@ -356,38 +298,15 @@
                 <!-- Single Field -->
                 <div class="input-group">
                     <label for="form--Eude-Islamique" class="input-label">Eude Islamique</label>
-                    <div class="ul-select no-selected">
-                        <div class="ul-select-input">
-                            <input type="hidden" class="input-hidden-field" name="form--Eude-Islamique" value="">
-                            <div class="ul-select-name"></div>
-                            <div class="placeholder-label">Choose One</div>
-                        </div>
-                        <span class="select-arrow select-arrow-down">
-                            <svg><use xlink:href="#icon-angle-down"></use></svg>
-                        </span>
-                        <span class="select-arrow select-arrow-cancel">
-                            <svg><use xlink:href="#icon-close"></use></svg>
-                        </span>
-                        <ul class="ul-select-list">
-                            <li data-value="option-1">Etudiez-vous les science islamique</li>
-                            <li data-value="option-2">Option 2</li>
-                            <li data-value="option-3">Option 3</li>
-                            <li data-value="option-4">Option 4</li>
-                            <li data-value="option-5">Option 5</li>
-                        </ul>
-                    </div>
-
-                    <!-- SELECTED TAGS-->
-                    <ul class="flex gap-3 flex-wrap mt-2">
-                        <li>
-                            <span class="bg-primary py-1 px-3 rounded-[6px] text-white inline-flex items-center gap-3">
-                                <button type="button" class="w-4 h-4">
-                                    <svg class="h-full w-full"><use xlink:href="#icon-close"></use></svg>
-                                </button>
-                                <span class="opacity-60">Istitut</span>
-                            </span>
-                        </li>
-                    </ul>
+                    <select class="input-control" data-placeholder="Select One" multi-select>
+                        <option value="AL">Istitut</option>
+                        <option value="WY">Ajouter ce que vous faites</option>
+                        <option value="option-1">Option 1</option>
+                        <option value="option-2">Option 2</option>
+                        <option value="option-3">Option 3</option>
+                        <option value="option-4">Option 4</option>
+                        <!-- Add more options as needed -->
+                    </select>
                 </div>
                 <!-- Single Field -->
                 <div class="input-group">
@@ -516,5 +435,6 @@
     </svg>
 
     <script src="../assets/js/main.js"></script>
+
 </body>
 </html>

@@ -10,6 +10,7 @@
         this.setupMenuDrawer();
         this.setupRating();
         this.setupVideoPlayer();
+        this.setupSelect2();
       },
 
       setupSlideRange() {
@@ -340,9 +341,39 @@
                   }
               }
           });
-        });
-
-        
+        });        
+      },
+      setupSelect2(){
+        // Initialize Select2 with custom settings
+        if ($('[multi-select]').length) {
+          $('[multi-select]').each(function () {
+            var $placeholder = $(this).data('placeholder'); // Use "var" to declare the variable
+            $(this).select2({
+              multiple: true,
+              placeholder: $placeholder,
+            });
+          });
+        }
+    
+          // Customize rendering of selected tags
+          // $('#mySelect').on('select2:select', function (e) {
+          //   var data = e.params.data;
+          //   var $tag = $('<span class="select2-selection__choice">' + data.text + '<span class="select2-selection__choice__remove" role="presentation">×</span></span>');
+          //   $('.render-tags').append($tag);
+          // });
+    
+          // // Handle removal of each item
+          // $('#mySelect').on('select2:unselect', function (e) {
+          //   var data = e.params.data;
+          //   $('.render-tags .select2-selection__choice:contains("' + data.text + '")').remove();
+          // });
+    
+          // // Handle removal of each item by clicking on the '×'
+          // $('.render-tags').on('click', '.select2-selection__choice__remove', function () {
+          //   var text = $(this).parent().text().trim();
+          //   $('#mySelect option:contains("' + text + '")').prop('selected', false);
+          //   $('#mySelect').trigger('change');
+          // });
       }
 
     };

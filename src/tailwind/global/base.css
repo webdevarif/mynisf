@@ -82,7 +82,8 @@
         top-0
         h-full
         px-6
-        py-10
+        pt-10
+        pb-[4rem]
         overflow-y-auto
         transition-all
         duration-300
