@@ -212,14 +212,16 @@ h1, h2, h3, h4, h5, h6, p{
 
 .modal-header{
     @apply 
-    p-5
+    px-5
+    py-3
     flex
     justify-between
     items-center
 }
 .modal-body{
     @apply 
-    p-5
+    px-5
+    py-3
 }
 
 

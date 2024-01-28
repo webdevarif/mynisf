@@ -1528,6 +1528,10 @@ body {
        column-gap: 2rem !important;
 }
 
+.gap-y-3 {
+  row-gap: 0.75rem !important;
+}
+
 .gap-y-4 {
   row-gap: 1rem !important;
 }
@@ -3005,11 +3009,17 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .modal-body {
-  padding: 1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 /* CARD */
@@ -4794,14 +4804,14 @@ img.list-stars-progress-star {
 }
 
 .popup-offer-slider .slick-track .slick-slide .thumbnail {
-  height: 10rem;
+  height: min(max(7rem,3vh),125px);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
 }
 
 .popup-offer-slider .slick-track .slick-slide.slick-active .thumbnail {
-  height: 15rem;
+  height: min(max(10rem,22vh),200px);
 }
 
 .slick-dots li,
