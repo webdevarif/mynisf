@@ -48,7 +48,7 @@
                         <input type="text" placeholder="Je Cherche ..." class="input-control !ps-12">
                         <img src="../assets/images/icons/search.png" class="w-4 absolute top-1/2 start-5 -translate-y-1/2" alt="">
                     </div>
-                    <button type="submit" class="w-[56px] min-w-[56px] h-[56px] p-2 bg-primary text-white inline-flex items-center justify-center rounded">
+                    <button type="submit" class="w-[56px] min-w-[56px] h-[56px] p-2 bg-primary text-white inline-flex items-center justify-center rounded focus-effect" tabindex="-1">
                         <img src="../assets/images/icons/filter.png" class="w-[20px]" alt="">
                     </button>
                 </div>
@@ -71,7 +71,7 @@
                                 <!-- Head -->
                                 <div class="flex gap-3 justify-between mb-3">
                                     <h3 class="h6 mb-0">Profile Bloqué</h3>
-                                    <button type="button" class="text-white ms-auto">
+                                    <button type="button" class="text-white ms-auto inline-block focus-effect" tabindex="-1">
                                         <svg class="w-3 h-3">
                                             <use xlink:href="#icon-star"></use>
                                         </svg>
@@ -83,7 +83,7 @@
                                     <div class="avatar avatar-xl mx-auto mb-3">
                                         <img src="../assets/images/users/3.png" alt="">
                                     </div>
-                                    <h4 class="text-white h5 mb-0 line--1">Rachid Alawi</h4>
+                                    <a href="#"><h4 class="text-white h5 mb-0 line--1 hover:text-primary transition-all duration-300">Rachid Alawi</h4></a>
                                     <p class="text-sm">Normandie</p>
                                 </div>
                                 
@@ -147,7 +147,7 @@
                             <div class="card-body p-3">
                                 <!-- Head -->
                                 <div class="flex gap-3 justify-between mb-3">
-                                    <button type="button" class="text-white ms-auto">
+                                    <button type="button" class="text-white ms-auto inline-block focus-effect" tabindex="-1">
                                         <svg class="w-3 h-3">
                                             <use xlink:href="#icon-star-fill"></use>
                                         </svg>
@@ -159,7 +159,7 @@
                                     <div class="avatar avatar-xl mx-auto mb-3">
                                         <img src="../assets/images/users/3.png" alt="">
                                     </div>
-                                    <h4 class="text-white h5 mb-0 line--1">Rachid Alawi</h4>
+                                    <a href="#"><h4 class="text-white h5 mb-0 line--1 hover:text-primary transition-all duration-300">Rachid Alawi</h4></a>
                                     <p class="text-sm">Normandie</p>
                                 </div>
                                 
@@ -169,6 +169,7 @@
                                             <img class="w-[30px] min-w-[30px] h-auto" src="../assets/images/messages.png" alt="">
                                         </a>
                                     </li>
+                                    <li class="w-[2px] h-[1.5rem] bg-white bg-opacity-10"></li>
                                     <li>
                                         <a href="#">
                                             <img class="w-[30px] min-w-[30px] h-auto" src="../assets/images/education.png" alt="">

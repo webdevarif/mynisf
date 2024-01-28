@@ -50,6 +50,43 @@
   animation-delay: 3s !important;
 }
 
+
+.focus-effect{
+  @apply
+  relative
+  before:content-['']
+  before:bg-[aliceblue]
+  before:rounded-full
+  before:block
+  before:absolute
+  before:top-0
+  before:start-0
+  before:end-0
+  before:bottom-0
+  before:scale-[0.001]
+  before:inset-0
+  focus:outline-none
+  focus:text-white
+}
+.focus-effect:focus:before{
+  animation: effect_dylan 0.8s ease-out;
+}
+
+@keyframes effect_dylan {
+  50% {
+    transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+  99% {
+    transform: scale(0.001, 0.001);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.001, 0.001);
+    opacity: 1;
+  }
+}
+
 .animation-scale-1{
   @apply
   relative;

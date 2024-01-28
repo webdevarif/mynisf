@@ -238,21 +238,23 @@
             <div class="mb-5">
                 <div class="card card-body">
                     <h4 class="text-lg font-semibold text-white mb-4">Détails du Rendez-Vous</h4>
-                    <div class="grid grid-cols-[40%_60%] gap-3">
+                    <div class="grid grid-cols-[3fr_6fr] gap-3">
                         <!-- Avatar -->
-                        <div class="">
-                            <img src="../assets/images/users/4.png" alt="">
+                        <div class="aspect-square rounded-full overflow-hidden">
+                            <img src="../assets/images/users/4.png" alt="" class="w-full h-full object-cover">
                         </div>
                         <!-- Content -->
                         <div>
-                            <h3
-                                class="mb-0 text-white text-lg !leading-[1.3] font-semibold flex items-center gap-x-2">
-                                <span class="line--1">Salman ahmed</span>
-                                <span class="inline-block">
-                                    <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png"
-                                        alt="">
-                                </span>
-                            </h3>
+                            <a href="#">
+                                <h3
+                                    class="mb-1 text-white text-xl !leading-[1.3] font-semibold flex items-center gap-x-2 transition-all duration-300 hover:text-primary">
+                                    <span class="line--1">Salman ahmed</span>
+                                    <span class="inline-block">
+                                        <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png"
+                                            alt="">
+                                    </span>
+                                </h3>
+                            </a>
                             <p class="text-medium text-xs !leading-[1.3] text-white text-opacity-25">39
                                 ans (Agadir, Maroc)</p>
 
@@ -398,30 +400,32 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="text-xl text-white mb-0 font-semibold">Détails du Rendez-Vous</h4>
-                        <button type="button" class="modal-close-btn ms-auto">
+                        <button type="button" class="modal-close-btn ms-auto focus-effect" tabindex="-1">
                             <svg class="h-4 w-4 text-white text-opacity-50">
                                 <use xlink:href="#icon-close"></use>
-                                </svg>
+                            </svg>
                         </button>
                     </div>
                     <div class="modal-body">
                         <div class="border-b-2 border-opacity-5 border-white pb-6 mb-6">
-                            <div class="grid grid-cols-[40%_60%] gap-3">
+                            <div class="grid grid-cols-[4fr_6fr] gap-3">
                                 <!-- Avatar -->
-                                <div class="">
-                                    <img src="../assets/images/users/4.png" alt="">
+                                <div class="aspect-square rounded-full overflow-hidden">
+                                    <img src="../assets/images/users/4.png" alt="" class="w-full h-full object-cover">
                                 </div>
                                 <!-- Content -->
                                 <div>
-                                    <h3
-                                        class="mb-0 text-white text-xl !leading-[1.3] font-semibold flex items-center gap-x-2">
-                                        <span class="line--1">Salman ahmed</span>
-                                        <span class="inline-block">
-                                            <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png"
-                                                alt="">
-                                        </span>
-                                    </h3>
-                                    <p class="text-medium text-sm !leading-[1.3] text-white text-opacity-25">39
+                                    <a href="#">
+                                        <h3
+                                            class="mb-1 text-white text-xl !leading-[1.3] font-semibold flex items-center gap-x-2 transition-all duration-300 hover:text-primary">
+                                            <span class="line--1">Salman ahmed</span>
+                                            <span class="inline-block">
+                                                <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png"
+                                                    alt="">
+                                            </span>
+                                        </h3>
+                                    </a>
+                                    <p class="text-medium mb-0 text-sm !leading-[1.3] text-white text-opacity-25">39
                                         ans (Agadir, Maroc)</p>
 
                                     <div
@@ -430,25 +434,18 @@
                                     </div>
 
                                     <ul class="flex gap-3 my-2 items-end">
-                                        <li><a href="#"><img class="max-w-[0.75rem]"
-                                                    src="../assets/images/icons/rendez-message.png" alt=""></a>
-                                        </li>
+                                        <li><a href="#" class="focus-effect" tabindex="-1"><img class="max-w-[0.75rem]" src="../assets/images/icons/rendez-message.png" alt=""></a></li>
                                         <li class="w-[2px] h-3 bg-white bg-opacity-15 inline-block"></li>
-                                        <li><a href="#"><img class="max-w-[0.85rem]"
-                                                    src="../assets/images/icons/rendez-video.png" alt=""></a>
-                                        </li>
+                                        <li><a href="#" class="focus-effect" tabindex="-1"><img class="max-w-[0.85rem]" src="../assets/images/icons/rendez-video.png" alt=""></a></li>
                                         <li class="w-[2px] h-3 bg-white bg-opacity-15 inline-block"></li>
-                                        <li><a href="#"><img class="max-w-[1rem]"
-                                                    src="../assets/images/icons/rendez-meeting.png" alt=""></a>
-                                        </li>
+                                        <li><a href="#" class="focus-effect" tabindex="-1"><img class="max-w-[1rem]" src="../assets/images/icons/rendez-meeting.png" alt=""></a></li>
                                     </ul>
 
                                     <h6 class="text-white text-sm font-semibold mb-1">Emam Superviseur</h6>
 
                                     <div class="flex gap-3 items-center">
                                         <span class="inline-block avatar avatar-xs">
-                                            <img src="../assets/images/user-girl.jpg" class="rounded-full"
-                                                alt="">
+                                            <img src="../assets/images/user-girl.jpg" class="rounded-full" alt="">
                                         </span>
                                         <h4 class="text-sm font-semibold mb-0">Eric Younous</h4>
                                     </div>

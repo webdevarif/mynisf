@@ -1316,6 +1316,10 @@ body {
   max-width: 100% !important;
 }
 
+.max-w-\[50\%\] {
+  max-width: 50% !important;
+}
+
 .-translate-x-1\/2 {
   --tw-translate-x: -50% !important;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
@@ -1457,6 +1461,10 @@ body {
   grid-template-columns: 7rem 1fr !important;
 }
 
+.grid-cols-\[4fr_6fr\] {
+  grid-template-columns: 4fr 6fr !important;
+}
+
 .flex-row {
   flex-direction: row !important;
 }
@@ -1515,6 +1523,14 @@ body {
 
 .gap-6 {
   gap: 1.5rem !important;
+}
+
+.gap-8 {
+  gap: 2rem !important;
+}
+
+.gap-10 {
+  gap: 2.5rem !important;
 }
 
 .gap-x-10 {
@@ -2004,6 +2020,11 @@ body {
   padding-bottom: 2rem !important;
 }
 
+.px-7 {
+  padding-left: 1.75rem !important;
+  padding-right: 1.75rem !important;
+}
+
 .\!ps-12 {
   padding-inline-start: 3rem !important;
 }
@@ -2070,6 +2091,14 @@ body {
 
 .pt-8 {
   padding-top: 2rem !important;
+}
+
+.pt-0 {
+  padding-top: 0px !important;
+}
+
+.\!pt-0 {
+  padding-top: 0px !important;
 }
 
 .text-center {
@@ -2431,49 +2460,48 @@ body {
 .avatar-md,
 .avatar{
   --avatar-size: min(max(3.75rem,51vw),60px);
-  /* --avatar-size: 60px; */
   height: var(--avatar-size,60px);
   width: var(--avatar-size,60px);
   min-width: var(--avatar-size,60px)
 }
 
 .avatar-xs{
-  --avatar-size: 25px;
+  --avatar-size: min(max(1.563rem,6vw),25px);
   height: var(--avatar-size,25px);
   width: var(--avatar-size,25px);
   min-width: var(--avatar-size,25px)
 }
 
 .avatar-sm{
-  --avatar-size: 35px;
+  --avatar-size: min(max(1.188rem,10vw),35px);
   height: var(--avatar-size,35px);
   width: var(--avatar-size,35px);
   min-width: var(--avatar-size,35px)
 }
 
 .avatar-lg{
-  --avatar-size: 75px;
+  --avatar-size: min(max(1.688rem,17vw),75px);
   height: var(--avatar-size,75px);
   width: var(--avatar-size,75px);
   min-width: var(--avatar-size,75px)
 }
 
 .avatar-xl{
-  --avatar-size: 90px;
+  --avatar-size: min(max(1.625rem,22vw),90px);
   height: var(--avatar-size,90px);
   width: var(--avatar-size,90px);
   min-width: var(--avatar-size,90px)
 }
 
 .avatar-2xl{
-  --avatar-size: 110px;
+  --avatar-size: min(max(1.875rem,26vw),110px);
   height: var(--avatar-size,110px);
   width: var(--avatar-size,110px);
   min-width: var(--avatar-size,110px)
 }
 
 .avatar-3xl{
-  --avatar-size: min(max(10rem,51vw),160px);
+  --avatar-size: min(max(0rem,40vw),160px);
   height: var(--avatar-size,160px);
   width: var(--avatar-size,160px);
   min-width: var(--avatar-size,160px)
@@ -4481,6 +4509,56 @@ img.list-stars-progress-star {
 
 .animation-delay-10{
   animation-delay: 3s !important;
+}
+
+.focus-effect {
+  position: relative;
+}
+
+.focus-effect::before {
+  position: absolute;
+  inset: 0px;
+  top: 0px;
+  inset-inline-start: 0px;
+  inset-inline-end: 0px;
+  bottom: 0px;
+  display: block;
+  --tw-scale-x: 0.001;
+  --tw-scale-y: 0.001;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 248 255 / var(--tw-bg-opacity));
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+.focus-effect:focus {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus-effect:focus:before{
+  animation: effect_dylan 0.8s ease-out;
+}
+
+@keyframes effect_dylan {
+  50% {
+    transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+
+  99% {
+    transform: scale(0.001, 0.001);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(0.001, 0.001);
+    opacity: 1;
+  }
 }
 
 .animation-scale-1 {

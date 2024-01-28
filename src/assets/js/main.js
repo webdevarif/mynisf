@@ -17,15 +17,14 @@
       },
       
       setupUlSelect() {
-        $('.ul-select-input').on('click', function () {
-          const $menu = $(this).closest('.ul-select');
-  
-          const onMouseUp = (e) => {
-            if (!$menu.is(e.target) && $menu.has(e.target).length === 0) {
+        $('.ul-select-input').on('mousedown', function (e) {
+          const $menu = $(this).closest('.ul-select');        
+          const onMouseUp = (event) => {
+            if ($menu.is(event.target) && $menu.has(event.target).length === 0 && $menu.hasClass('is-active')) {
               $menu.removeClass('is-active').find('.ul-select-list').slideUp(100);
             }
           };
-  
+        
           $menu.toggleClass('is-active')
             .find('.ul-select-list')
             .slideDown(100)
@@ -37,7 +36,11 @@
                 $(document).off('mouseup', onMouseUp);
               }
             });
+        
+          // Prevents double-click from selecting text in the input
+          e.preventDefault();
         });
+        
   
         // CHOOSE INPUT SELECT
         $('.ul-select-list li[data-value]').on('click', function (event) {
@@ -273,24 +276,6 @@
     },
 
     setupRating(){
-    
-      // const $form = $('.ratingForm');
-      // const $inputRatings = $form.find('input[name="rating"]');
-      // const $submitBtn = $form.find('button[type="submit"]');
-      // const $progressList = $form.find('.list-stars-progress li');
-
-      // $inputRatings.on('change', function () {
-      //     $submitBtn.prop('disabled', !$inputRatings.is(':checked'));
-      //     updateProgress();
-      //     console.log("ALETT");
-      // });
-
-      // function updateProgress() {
-      //     const selectedStars = $form.find('input[name="rating"]:checked').val();
-      //     $progressList.removeClass('active current');
-      //     $progressList.slice(0, selectedStars).addClass('active');
-      //     $progressList.eq(selectedStars - 1).addClass('current');
-      // }
 
       const $form = $('.rating-form');
       const $inputRatings = $form.find('input[name="rating"]');
@@ -354,26 +339,6 @@
             });
           });
         }
-    
-          // Customize rendering of selected tags
-          // $('#mySelect').on('select2:select', function (e) {
-          //   var data = e.params.data;
-          //   var $tag = $('<span class="select2-selection__choice">' + data.text + '<span class="select2-selection__choice__remove" role="presentation">×</span></span>');
-          //   $('.render-tags').append($tag);
-          // });
-    
-          // // Handle removal of each item
-          // $('#mySelect').on('select2:unselect', function (e) {
-          //   var data = e.params.data;
-          //   $('.render-tags .select2-selection__choice:contains("' + data.text + '")').remove();
-          // });
-    
-          // // Handle removal of each item by clicking on the '×'
-          // $('.render-tags').on('click', '.select2-selection__choice__remove', function () {
-          //   var text = $(this).parent().text().trim();
-          //   $('#mySelect option:contains("' + text + '")').prop('selected', false);
-          //   $('#mySelect').trigger('change');
-          // });
       }
 
     };

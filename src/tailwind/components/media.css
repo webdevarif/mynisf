@@ -1,7 +1,6 @@
 .avatar-md,
 .avatar{
     --avatar-size: min(max(3.75rem,51vw),60px);
-    /* --avatar-size: 60px; */
     @apply
     min-w-[var(--avatar-size,60px)]
     w-[var(--avatar-size,60px)]
@@ -9,7 +8,7 @@
 }
 
 .avatar-xs{
-    --avatar-size: 25px;
+    --avatar-size: min(max(1.563rem,6vw),25px);
     @apply
     min-w-[var(--avatar-size,25px)]
     w-[var(--avatar-size,25px)]
@@ -17,7 +16,7 @@
 }
 
 .avatar-sm{
-    --avatar-size: 35px;
+    --avatar-size: min(max(1.188rem,10vw),35px);
     @apply
     min-w-[var(--avatar-size,35px)]
     w-[var(--avatar-size,35px)]
@@ -25,7 +24,7 @@
 }
 
 .avatar-lg{
-    --avatar-size: 75px;
+    --avatar-size: min(max(1.688rem,17vw),75px);
     @apply
     min-w-[var(--avatar-size,75px)]
     w-[var(--avatar-size,75px)]
@@ -33,7 +32,7 @@
 }
 
 .avatar-xl{
-    --avatar-size: 90px;
+    --avatar-size: min(max(1.625rem,22vw),90px);
     @apply
     min-w-[var(--avatar-size,90px)]
     w-[var(--avatar-size,90px)]
@@ -41,7 +40,7 @@
 }
 
 .avatar-2xl{
-    --avatar-size: 110px;
+    --avatar-size: min(max(1.875rem,26vw),110px);
     @apply
     min-w-[var(--avatar-size,110px)]
     w-[var(--avatar-size,110px)]
@@ -49,7 +48,7 @@
 }
 
 .avatar-3xl{
-    --avatar-size: min(max(10rem,51vw),160px);
+    --avatar-size: min(max(0rem,40vw),160px);
     @apply
     min-w-[var(--avatar-size,160px)]
     w-[var(--avatar-size,160px)]
