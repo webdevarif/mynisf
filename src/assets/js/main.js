@@ -23,7 +23,7 @@
           const onMouseUp = (event) => {
               // Check if the click is outside the dropdown menu
               if (!$menu.is(event.target) && $menu.has(event.target).length === 0 && $menu.hasClass('is-active')) {
-                  $menu.removeClass('is-active').find('.ul-select-list').slideUp(100);
+                  $menu.removeClass('is-active').find('.ul-select-list').slideUp(0);
                   // Remove the event listener after hiding the dropdown
                   $(document).off('mouseup', onMouseUp);
               }
@@ -32,7 +32,7 @@
           // Toggle the 'is-active' class to show/hide the dropdown
           $menu.toggleClass('is-active')
               .find('.ul-select-list')
-              .slideToggle(100, function () {
+              .slideToggle(0, function () {
                   // Add or remove the event listener based on the dropdown visibility
                   if ($menu.hasClass('is-active')) {
                       $(document).on('mouseup', onMouseUp);
@@ -56,7 +56,7 @@
   
           $menu.removeClass('is-active')
             .find('.ul-select-list')
-            .slideUp(100, () => {
+            .slideUp(0, () => {
               $name.html($that.html());
               $input.val($that.data('value'));
               $menu.removeClass('no-selected').addClass('selected');
@@ -73,7 +73,7 @@
   
           $menu.removeClass('is-active')
             .find('.ul-select-list')
-            .slideUp(200, () => {
+            .slideUp(0, () => {
               $input.val('');
               $name.html('');
               $menu.addClass('no-selected').removeClass('selected');
