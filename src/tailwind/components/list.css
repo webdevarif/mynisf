@@ -94,6 +94,13 @@
     font-semibold
     cursor-pointer
 }
+
+.btn--check .btn--check-input:checked ~ .btn--check-label {
+    @apply
+    !bg-primary
+    !text-white
+}
+
 .outline--check .outline--check-label {
     @apply
     border-2
@@ -118,9 +125,41 @@
     before:-translate-x-1/2
 }
 
-.btn--check .btn--check-input:checked ~ .btn--check-label {
+/* BLUE */
+.outline--check .outline--check-input:checked + .outline--check-label.outline--check--blue {
+    @apply
+    border-[#00F5E4]
+    before:bg-[#00F5E4]
+}
+.outline--check .outline--check-input:checked + .outline--check-label.outline--check--blue .outline--check--icon {
+    @apply
+    !bg-[#00F5E4]
+    !text-white
+}
+
+/* PINK */
+.outline--check .outline--check-input:checked + .outline--check-label.outline--check--pink {
+    @apply
+    border-primary
+    before:bg-primary
+}
+
+.outline--check .outline--check-input:checked + .outline--check-label.outline--check--pink .outline--check--icon{
     @apply
     !bg-primary
+    !text-white
+}
+
+/* SECONDARY */
+.outline--check .outline--check-input:checked + .outline--check-label.outline--check--secondary {
+    @apply
+    border-secondary
+    before:bg-secondary
+}
+
+.outline--check .outline--check-input:checked + .outline--check-label.outline--check--secondary .outline--check--icon{
+    @apply
+    !bg-secondary
     !text-white
 }
 
