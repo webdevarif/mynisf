@@ -822,6 +822,10 @@ body {
   z-index: 50 !important;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2 !important;
+}
+
 .-mx-8 {
   margin-left: -2rem !important;
   margin-right: -2rem !important;
@@ -1421,6 +1425,10 @@ body {
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+}
+
 .grid-cols-\[1fr_2px_1fr\] {
   grid-template-columns: 1fr 2px 1fr !important;
 }
@@ -1957,6 +1965,11 @@ body {
   padding-bottom: 2.5rem !important;
 }
 
+.py-14 {
+  padding-top: 3.5rem !important;
+  padding-bottom: 3.5rem !important;
+}
+
 .py-2 {
   padding-top: 0.5rem !important;
   padding-bottom: 0.5rem !important;
@@ -2422,6 +2435,157 @@ body {
 .btn--primary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 38 168 / var(--tw-bg-opacity));
+}
+
+/* Button Mask */
+
+.mask-btn {
+  position: relative;
+  overflow: hidden;
+  border-width: 2px;
+  border-color: transparent;
+  font-size: var(--theme-size--sm);
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.mask-btn .label_before{
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  -webkit-mask-size: 2300% 100%;
+  mask-size: 2300% 100%;
+  border: none;
+  cursor: pointer;
+  animation: ani2 0.7s steps(22) forwards;
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms
+}
+
+.mask-btn:hover .label_before{
+  animation: ani 0.7s steps(22) forwards;
+}
+
+.mask-btn.mask-2 .label_before{
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+  -webkit-mask-size: 3000% 100%;
+  mask-size: 3000% 100%;
+  animation: ani2 0.7s steps(29) forwards;
+}
+
+.mask-btn.mask-2:hover .label_before{
+  animation: ani 0.7s steps(29) forwards;
+}
+
+.mask-btn.mask-3 .label_before{
+  -webkit-mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
+  mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
+  -webkit-mask-size: 7100% 100%;
+  mask-size: 7100% 100%;
+  animation: ani2 0.7s steps(70) forwards;
+}
+
+.mask-btn.mask-3:hover .label_before{
+  animation: ani 0.7s steps(70) forwards;
+}
+
+.mask-btn .label_after {
+  position: absolute;
+  inset-inline-start: 50%;
+  top: 50%;
+  --tw-translate-y: -50%;
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.mask-btn:hover .label_before{
+  animation: ani 0.7s steps(22) forwards;
+}
+
+.mask-btn:hover .label_after {
+  opacity: 1;
+}
+
+/* PRIMARY */
+
+.mask-btn--primary {
+  border-radius: min(max(0.6rem,0.4vw),12px);
+  --tw-border-opacity: 1;
+  border-color: rgb(243 2 146 / var(--tw-border-opacity));
+}
+
+.mask-btn--primary .label_before {
+  --tw-border-opacity: 1;
+  border-color: rgb(243 2 146 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 2 146 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.mask-btn--primary .label_after {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* LIGHT */
+
+.mask-btn--light {
+  border-radius: min(max(0.6rem,0.4vw),12px);
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.mask-btn--light .label_before {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.mask-btn--light .label_after {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* LIGHT */
+
+.mask-btn--secondary {
+  border-radius: min(max(0.6rem,0.4vw),12px);
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  --tw-border-opacity: 0.25;
+}
+
+.mask-btn--secondary .label_before {
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.1;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.mask-btn--secondary .label_after {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  opacity: 0;
 }
 
 .avatar-md,
@@ -4902,6 +5066,30 @@ img.list-stars-progress-star {
     height: 130%;
     width: 110%;
     opacity: 0;
+  }
+}
+
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
   }
 }
 

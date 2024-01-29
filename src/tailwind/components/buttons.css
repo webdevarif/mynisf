@@ -69,3 +69,124 @@
 
     hover:bg-[#ff26a8]
 }
+
+
+/* Button Mask */
+.mask-btn{
+    @apply relative
+    border-2
+    border-transparent
+    overflow-hidden
+    text-sm
+    font-semibold
+}
+.mask-btn .label_before{
+    -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    -webkit-mask-size: 2300% 100%;
+    mask-size: 2300% 100%;
+    border: none;
+    cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(22) forwards;
+    animation: ani2 0.7s steps(22) forwards;
+    @apply
+    inline-flex
+    items-center
+    justify-center
+    px-5
+    py-4
+    relative
+    z-[2]
+    outline-none
+    transition-all
+    duration-300
+    text-center
+    w-full
+}
+.mask-btn:hover .label_before{
+    -webkit-animation: ani 0.7s steps(22) forwards;
+    animation: ani 0.7s steps(22) forwards;
+}
+.mask-btn.mask-2 .label_before{
+    -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+    mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+    -webkit-mask-size: 3000% 100%;
+    mask-size: 3000% 100%;
+    -webkit-animation: ani2 0.7s steps(29) forwards;
+    animation: ani2 0.7s steps(29) forwards;
+}
+.mask-btn.mask-2:hover .label_before{
+    -webkit-animation: ani 0.7s steps(29) forwards;
+    animation: ani 0.7s steps(29) forwards;
+}
+
+.mask-btn.mask-3 .label_before{
+    -webkit-mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
+    mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
+    -webkit-mask-size: 7100% 100%;
+    mask-size: 7100% 100%;
+    -webkit-animation: ani2 0.7s steps(70) forwards;
+    animation: ani2 0.7s steps(70) forwards;
+}
+.mask-btn.mask-3:hover .label_before{
+    -webkit-animation: ani 0.7s steps(70) forwards;
+    animation: ani 0.7s steps(70) forwards;
+}
+.mask-btn.mask-3:hover .label_before{
+    -webkit-animation: ani 0.7s steps(70) forwards;
+    animation: ani 0.7s steps(70) forwards;
+}
+
+
+.mask-btn .label_after{
+    @apply 
+    absolute
+    start-1/2
+    top-1/2
+    transition-all
+    duration-300
+    -translate-y-1/2
+    -translate-x-1/2
+}
+.mask-btn:hover .label_before{
+    -webkit-animation: ani 0.7s steps(22) forwards;
+    animation: ani 0.7s steps(22) forwards;
+}
+
+.mask-btn:hover .label_after{
+    @apply opacity-100
+}
+
+
+/* PRIMARY */
+.mask-btn--primary{
+    @apply border-primary rounded
+}
+.mask-btn--primary .label_before{
+    @apply bg-primary border-primary text-white
+}
+.mask-btn--primary .label_after{
+    @apply text-white
+}
+
+/* LIGHT */
+.mask-btn--light{
+    @apply border-white rounded
+}
+.mask-btn--light .label_before{
+    @apply bg-white border-white text-black
+}
+.mask-btn--light .label_after{
+    @apply text-white
+}
+
+/* LIGHT */
+.mask-btn--secondary{
+    @apply border-white border-opacity-25 rounded
+}
+.mask-btn--secondary .label_before{
+    @apply bg-white bg-opacity-10 text-white
+}
+.mask-btn--secondary .label_after{
+    @apply text-white opacity-0
+}
