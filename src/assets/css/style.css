@@ -2413,7 +2413,7 @@ body {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.btn--light:hover span.cursor-aware {
+.btn--light span.cursor-aware {
   --tw-bg-opacity: 1;
   background-color: rgb(243 2 146 / var(--tw-bg-opacity));
 }
@@ -2445,7 +2445,7 @@ body {
   color: rgb(243 2 146 / var(--tw-text-opacity));
 }
 
-.btn--secondary:hover span.cursor-aware {
+.btn--secondary span.cursor-aware {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
@@ -2477,7 +2477,7 @@ body {
   background-color: rgb(255 38 168 / var(--tw-bg-opacity));
 }
 
-.btn--primary:hover span.cursor-aware {
+.btn--primary span.cursor-aware {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }

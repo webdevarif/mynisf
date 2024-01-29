@@ -53,7 +53,7 @@
     text-primary
     shadow-[0px_8px_15px_rgba(255,255,255,0.1)]
 }
-.btn--light:hover span.cursor-aware{
+.btn--light span.cursor-aware{
     @apply
     bg-primary
 }
@@ -74,7 +74,7 @@
     hover:bg-white
     hover:text-primary
 }
-.btn--secondary:hover span.cursor-aware{
+.btn--secondary span.cursor-aware{
     @apply
     bg-white
 }
@@ -94,7 +94,7 @@
     z-[1]
     hover:bg-[#ff26a8]
 }
-.btn--primary:hover span.cursor-aware{
+.btn--primary span.cursor-aware{
     @apply
     bg-white
 }
