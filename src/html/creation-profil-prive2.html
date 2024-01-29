@@ -20,99 +20,63 @@
     <script src="../assets/libs/slick/slick.min.js"></script>
 
 </head>
-<body class="nisf-body cloud-animation">
+<body class="nisf-body has-footer-bar"> <!-- has-footer-bar should be when footer has bar -->
     <!-- All content should go inside nisf-wrapper -->
     <div class="nisf-wrapper">
         <div class="nisf-container">
+
             <!-- Top Navigation -->
-            <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-5">
-                <button class="">
-                    <svg class="w-4 h-4 text-white">
+            <nav class="top-navigation py-8 flex items-center justify-between gap-3">
+                <a href="#" class="inline-flex items-center">
+                    <svg class="w-5 h-5 text-white">
                         <use xlink:href="#icon-angle-left"></use>
                     </svg>
-                </button>
-
-                <ul class="list-dots">
-                    <li class="active"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                </a>
             </nav>
 
             <!-- Header -->
-            <header class="header mb-7">
+            <header class="header">
                 <a href="/" class="header_logo mb-3">
                     <img src="../assets/images/logo.png" alt="">
                 </a>
-                <h3 class="text-2xl text-white mb-3">Aidez-nous à presenter vos informations.</h3>
-                <p class="font-medium">Ces informations seront disponibles sur votre profil et visible pour les autres membres.</p>
+                <h3 class="text-3xl text-white mb-3">Aidez-nous à ccomprendre votre profil privé.</h3>
+                <p class="font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magncin cididunt ut labore et dolore magna. </p>
             </header>
 
-            <form action="#" >
+            <h2 class="hr-text text-primary my-7 text-2xl">
+                <span>Creation Profil Privé</span>
+            </h2>
+
+            <form action="#">
                 <!-- Single Field -->
                 <div class="input-group">
-                    <label for="form--pseudo" class="input-label">Pseudo (Pas modifiable)</label>
-                    <input type="text" id="form--pseudo" class="input-control" placeholder="Ahmed">
-                </div>
-                <div class="grid grid-cols-2 gap-3">
-                    <!-- Single Field -->
-                    <div class="input-group">
-                        <label for="form--nationality" class="input-label">Nationalité</label>
-                        <div class="ul-select no-selected">
-                            <div class="ul-select-input">
-                                <input type="hidden" class="input-hidden-field" name="form--nationality" value="">
-                                <div class="ul-select-name"></div>
-                                <div class="placeholder-label">Choose One</div>
+                    <label for="" class="input-label">Prendre un selfie</label>
+                    <label for="form--prendre-un-selfie">
+                        <input type="file" id="form--prendre-un-selfie" class="hidden">
+                        <div class="btn--light bg-opacity-100 cursor-pointer w-full gap-x-2">
+                            <svg class="w-5 h-5"><use xlink:href="#icon-camera"></use></svg>
+                            <span>Take a Selfie</span>
                             </div>
-                            <span class="select-arrow select-arrow-down">
-                                <svg><use xlink:href="#icon-angle-down"></use></svg>
-                            </span>
-                            <span class="select-arrow select-arrow-cancel">
-                                <svg><use xlink:href="#icon-close"></use></svg>
-                            </span>
-                            <ul class="ul-select-list">
-                                <li data-value="option-1">Option 1</li>
-                                <li data-value="option-2">Option 2</li>
-                                <li data-value="option-3">Option 3</li>
-                                <li data-value="option-4">Option 4</li>
-                                <li data-value="option-5">Option 5</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Single Field -->
-                    <div class="input-group">
-                        <label for="form--origine" class="input-label">Origine</label>
-                        <div class="ul-select no-selected">
-                            <div class="ul-select-input">
-                                <input type="hidden" class="input-hidden-field" name="form--origine" value="">
-                                <div class="ul-select-name"></div>
-                                <div class="placeholder-label">Choose One</div>
-                            </div>
-                            <span class="select-arrow select-arrow-down">
-                                <svg><use xlink:href="#icon-angle-down"></use></svg>
-                            </span>
-                            <span class="select-arrow select-arrow-cancel">
-                                <svg><use xlink:href="#icon-close"></use></svg>
-                            </span>
-                            <ul class="ul-select-list">
-                                <li data-value="option-1">Option 1</li>
-                                <li data-value="option-2">Option 2</li>
-                                <li data-value="option-3">Option 3</li>
-                                <li data-value="option-4">Option 4</li>
-                                <li data-value="option-5">Option 5</li>
-                            </ul>
-                        </div>
-                    </div>
+                    </label>
                 </div>
                 <!-- Single Field -->
                 <div class="input-group">
-                    <label for="form--autre-origine" class="input-label">Autre Origine</label>
+                    <label for="form--votre-description" class="input-label">Votre Description</label>
+                    <textarea rows="6" cols="30" id="form--votre-description" class="input-control" placeholder="Je suis une personne qui ..."></textarea>
+                    <div class="text-end text-md mt-3 font-medium">0/45</div>
+                </div>
+                <!-- Single Field -->
+                <div class="input-group">
+                    <label for="form--postez-un-hadith" class="input-label">Postez un hadith</label>
+                    <textarea rows="6" cols="30" id="form--postez-un-hadith" class="input-control" placeholder="Hadith ..."></textarea>
+                    <div class="text-end text-md mt-3 font-medium">0/45</div>
+                </div>
+                <!-- Single Field -->
+                <div class="input-group">
+                    <label for="form--est-ce" class="input-label">Est ce que tu as une maladie ?</label>
                     <div class="ul-select no-selected">
                         <div class="ul-select-input">
-                            <input type="hidden" class="input-hidden-field" name="form--autre-origine" value="">
+                            <input type="hidden" class="input-hidden-field" name="form--est-ce" value="">
                             <div class="ul-select-name"></div>
                             <div class="placeholder-label">Choose One</div>
                         </div>
@@ -123,23 +87,47 @@
                             <svg><use xlink:href="#icon-close"></use></svg>
                         </span>
                         <ul class="ul-select-list">
-                            <li data-value="option-1">Bangladesh</li>
-                            <li data-value="option-2">Option 2</li>
-                            <li data-value="option-3">Option 3</li>
-                            <li data-value="option-4">Option 4</li>
-                            <li data-value="option-5">Option 5</li>
+                            <li data-value="option-1">Oui</li>
+                            <li data-value="option-2">Non</li>
                         </ul>
                     </div>
                 </div>
                 <!-- Single Field -->
                 <div class="input-group">
-                    <label for="form--telephone" class="input-label">Télèphone (vu que par l’admin)</label>
-                    <input type="number" id="form--telephone" class="input-control" placeholder="+212657968233">
+                    <label for="form--quelle-salaire" class="input-label">Quelle salaire gagnez vous ?</label>
+                    <input id="form--quelle-salaire" placeholder="le salaire que je gagne est ..." class="input-control" />
                 </div>
-                <div class="mt-8">
-                    <button type="submit" class="mb-3 btn--primary w-full">SUIVANT</button>
+
+                <div class="mt-7">
+                    <button type="button" class="btn---animation primary w-full">
+                        <span>Créer</span>
+                        <svg class="btn---animation__circle" width="100%" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60"><circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle></svg>
+                    </button>
                 </div>
             </form>
+        </div>
+    
+        <!-- Footer Bar -->
+        <div class="footer-float-bar">
+            <div class="nisf-container">
+                <ul class="footer-floar-bar__list">
+                    <li>
+                        <button class="footer-float-bar--item active">
+                            <img class="w-6 h-auto" src="../assets/images/menu-icons/footer-message.png" alt="">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="footer-float-bar--item">
+                            <img class="w-5 h-auto" src="../assets/images/menu-icons/footer-search.png" alt="">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="footer-float-bar--item">
+                            <img class="w-5 h-auto" src="../assets/images/menu-icons/footer-user.png" alt="">
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 

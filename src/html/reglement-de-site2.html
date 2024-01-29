@@ -21,125 +21,109 @@
 
 </head>
 <body class="nisf-body cloud-animation">
-    <!-- All content should go inside nisf-wrapper -->
     <div class="nisf-wrapper">
         <div class="nisf-container">
             <!-- Top Navigation -->
-            <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-5">
-                <button class="">
-                    <svg class="w-4 h-4 text-white">
+            <nav class="top-navigation py-6 flex items-center justify-between gap-3 mb-5">
+                <a href="#" class="">
+                    <svg class="w-5 h-5 text-white">
                         <use xlink:href="#icon-angle-left"></use>
                     </svg>
-                </button>
+                </a>
 
                 <ul class="list-dots">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
                     <li class="active"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
                 </ul>
             </nav>
 
-            <!-- Header -->
-            <header class="header mb-7">
-                <a href="/" class="header_logo mb-3">
-                    <img src="../assets/images/logo.png" alt="">
+            <div class="text-xl font-medium pb-10 text-white text-opacity-50">
+                <a href="/" class="inline-block mb-3">
+                    <img src="../assets/images/logo.png" class="w-[12rem]" alt="">
                 </a>
-                <h3 class="text-2xl text-white mb-3">Aidez-nous à presenter vos informations.</h3>
-                <p class="font-medium">Ces informations seront disponibles sur votre profil et visible pour les autres membres.</p>
-            </header>
 
-            <form action="#" >
-                <!-- Single Field -->
-                <div class="input-group">
-                    <label for="form--pseudo" class="input-label">Pseudo (Pas modifiable)</label>
-                    <input type="text" id="form--pseudo" class="input-control" placeholder="Ahmed">
-                </div>
-                <div class="grid grid-cols-2 gap-3">
-                    <!-- Single Field -->
-                    <div class="input-group">
-                        <label for="form--nationality" class="input-label">Nationalité</label>
-                        <div class="ul-select no-selected">
-                            <div class="ul-select-input">
-                                <input type="hidden" class="input-hidden-field" name="form--nationality" value="">
-                                <div class="ul-select-name"></div>
-                                <div class="placeholder-label">Choose One</div>
+                <h3 class="text-white h2">Reglement Du Site. </h3>
+                <p class="mb-1">Nous vous invitons à visionner la vidéo 
+                    attentivement.
+                </p>
+                <p >Ce règlement contribue au bon 
+                    fonctionnement du site incha Allah !</p>
+
+                <!-- START: VIDEO PLAYER -->
+                <div class='video-wrapper my-7'>
+                    <video class='video-element' poster="../assets/images/reglement-video.jpg">
+                        <source src='https://www.w3schools.com/html/mov_bbb.mp4' type='video/mp4'>
+                        <source src='https://www.w3schools.com/html/mov_bbb.ogg' type='video/ogg'>
+                    </video>
+                    <div class='video-controls'>
+                        <div class="flex justify-between gap-x-8 mb-4">
+                            <div class="buttons-group">
+                                <button type="button" class="">
+                                    <svg class="w-6 h-6 text-white">
+                                        <use xlink:href="#icon-heart-alt"></use>
+                                    </svg>
+                                </button>
+                                <button type="button" class="">
+                                    <svg class="w-6 h-6 text-white">
+                                        <use xlink:href="#icon-speaker-on"></use>
+                                    </svg>
+                                </button>
                             </div>
-                            <span class="select-arrow select-arrow-down">
-                                <svg><use xlink:href="#icon-angle-down"></use></svg>
-                            </span>
-                            <span class="select-arrow select-arrow-cancel">
-                                <svg><use xlink:href="#icon-close"></use></svg>
-                            </span>
-                            <ul class="ul-select-list">
-                                <li data-value="option-1">Option 1</li>
-                                <li data-value="option-2">Option 2</li>
-                                <li data-value="option-3">Option 3</li>
-                                <li data-value="option-4">Option 4</li>
-                                <li data-value="option-5">Option 5</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Single Field -->
-                    <div class="input-group">
-                        <label for="form--origine" class="input-label">Origine</label>
-                        <div class="ul-select no-selected">
-                            <div class="ul-select-input">
-                                <input type="hidden" class="input-hidden-field" name="form--origine" value="">
-                                <div class="ul-select-name"></div>
-                                <div class="placeholder-label">Choose One</div>
+
+                            <div class="video-control--play">
+                                <button type="button" class="play">
+                                    <svg class="w-8 h-8">
+                                        <use xlink:href="#icon-play"></use>
+                                    </svg>
+                                </button>
                             </div>
-                            <span class="select-arrow select-arrow-down">
-                                <svg><use xlink:href="#icon-angle-down"></use></svg>
-                            </span>
-                            <span class="select-arrow select-arrow-cancel">
-                                <svg><use xlink:href="#icon-close"></use></svg>
-                            </span>
-                            <ul class="ul-select-list">
-                                <li data-value="option-1">Option 1</li>
-                                <li data-value="option-2">Option 2</li>
-                                <li data-value="option-3">Option 3</li>
-                                <li data-value="option-4">Option 4</li>
-                                <li data-value="option-5">Option 5</li>
-                            </ul>
+
+                            <div class="buttons-group">
+                                <button type="button" class="">
+                                    <svg class="w-6 h-6 text-white">
+                                        <use xlink:href="#icon-cogs"></use>
+                                    </svg>
+                                </button>
+                                <button type="button" class="">
+                                    <svg class="w-6 h-6 text-white">
+                                        <use xlink:href="#icon-fullscreen"></use>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
+                        <input type="range" class="video-control--volume-bar" title="volume" min="0" max="1" step="0.1" value="1">
+                        <!-- <progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+                        <button id='btnReplay' class='replay' title='replay' accesskey="R" onclick='replayVideo();'>Replay</button>	
+                        <button id='btnPlayPause' class='play' title='play' accesskey="P" onclick='playPauseVideo();'>Play</button>
+                        <button id='btnStop' class='stop' title='stop' accesskey="X" onclick='stopVideo();'>Stop</button>
+                        <input type="range" id="volume-bar" title="volume" min="0" max="1" step="0.1" value="1">
+                        <button id='btnMute' class='mute' title='mute' onclick='muteVolume();'>Mute</button>	
+                    <button id='btnFullScreen' class='fullscreen' title='toggle full screen' accesskey="T" onclick='toggleFullScreen();'>[&nbsp;&nbsp;]</button> -->
                     </div>
+                </div>	
+                <!-- END: VIDEO PLAYER -->
+
+                <p>Si vous avez des questions, n’hésitez pas 
+                    à nous envoyer un email à :
+                </p>
+                <p>contact@mynsif.fr</p>
+
+                <div class="form--check text-white mt-6 text-lg">
+                    <input type="checkbox" name="" id="form--check-1" class="form--check-input">
+                    <label for="form--check-1" class="form--check-label before:rounded-sm before:border-white before:me-3">J’ai lu le <a href="#" class="link-primary">reglement du site</a> et je les suivrai.</label>
                 </div>
-                <!-- Single Field -->
-                <div class="input-group">
-                    <label for="form--autre-origine" class="input-label">Autre Origine</label>
-                    <div class="ul-select no-selected">
-                        <div class="ul-select-input">
-                            <input type="hidden" class="input-hidden-field" name="form--autre-origine" value="">
-                            <div class="ul-select-name"></div>
-                            <div class="placeholder-label">Choose One</div>
-                        </div>
-                        <span class="select-arrow select-arrow-down">
-                            <svg><use xlink:href="#icon-angle-down"></use></svg>
-                        </span>
-                        <span class="select-arrow select-arrow-cancel">
-                            <svg><use xlink:href="#icon-close"></use></svg>
-                        </span>
-                        <ul class="ul-select-list">
-                            <li data-value="option-1">Bangladesh</li>
-                            <li data-value="option-2">Option 2</li>
-                            <li data-value="option-3">Option 3</li>
-                            <li data-value="option-4">Option 4</li>
-                            <li data-value="option-5">Option 5</li>
-                        </ul>
-                    </div>
+
+                <div class="mt-5">
+                    <button type="submit" class="btn---animation primary text-lg w-full">
+                        <span>Voir Plus D’Information</span>
+                        <svg class="btn---animation__circle" width="100%" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60"><circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle></svg>
+                    </button>
                 </div>
-                <!-- Single Field -->
-                <div class="input-group">
-                    <label for="form--telephone" class="input-label">Télèphone (vu que par l’admin)</label>
-                    <input type="number" id="form--telephone" class="input-control" placeholder="+212657968233">
-                </div>
-                <div class="mt-8">
-                    <button type="submit" class="mb-3 btn--primary w-full">SUIVANT</button>
-                </div>
-            </form>
+            </div>
         </div>
     </div>
 

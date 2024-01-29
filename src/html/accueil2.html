@@ -25,121 +25,55 @@
     <div class="nisf-wrapper">
         <div class="nisf-container">
             <!-- Top Navigation -->
-            <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-5">
-                <button class="">
-                    <svg class="w-4 h-4 text-white">
-                        <use xlink:href="#icon-angle-left"></use>
-                    </svg>
-                </button>
-
-                <ul class="list-dots">
-                    <li class="active"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </nav>
-
-            <!-- Header -->
-            <header class="header mb-7">
+            <nav class="top-navigation pt-8 flex items-center gap-3">
                 <a href="/" class="header_logo mb-3">
                     <img src="../assets/images/logo.png" alt="">
                 </a>
-                <h3 class="text-2xl text-white mb-3">Aidez-nous à presenter vos informations.</h3>
-                <p class="font-medium">Ces informations seront disponibles sur votre profil et visible pour les autres membres.</p>
-            </header>
+            </nav>
 
-            <form action="#" >
-                <!-- Single Field -->
-                <div class="input-group">
-                    <label for="form--pseudo" class="input-label">Pseudo (Pas modifiable)</label>
-                    <input type="text" id="form--pseudo" class="input-control" placeholder="Ahmed">
-                </div>
-                <div class="grid grid-cols-2 gap-3">
-                    <!-- Single Field -->
-                    <div class="input-group">
-                        <label for="form--nationality" class="input-label">Nationalité</label>
-                        <div class="ul-select no-selected">
-                            <div class="ul-select-input">
-                                <input type="hidden" class="input-hidden-field" name="form--nationality" value="">
-                                <div class="ul-select-name"></div>
-                                <div class="placeholder-label">Choose One</div>
+            <div class="page-wrapper">
+
+                <div class="couple-card-wrapper">
+                    <div class="couple-card">
+                        <div class="image-card">
+                            <img class="image-card-img" src="../assets/images/card-image--girl.jpg" alt="">
+                            <div class="image-card__icons flex justify-center items-center -mt-8">
+                                <a href="#" class="w-[70px] h-[70px] bg-[#7c0d73] inline-flex justify-center items-center text-white p-4 border-2 border-[#6D0D66] rounded animation-scale-1 focus-effect" tabindex="-1">
+                                    <img class="w-6" src="../assets/images/icons/user-girl.png" alt="">
+                                </a>
                             </div>
-                            <span class="select-arrow select-arrow-down">
-                                <svg><use xlink:href="#icon-angle-down"></use></svg>
-                            </span>
-                            <span class="select-arrow select-arrow-cancel">
-                                <svg><use xlink:href="#icon-close"></use></svg>
-                            </span>
-                            <ul class="ul-select-list">
-                                <li data-value="option-1">Option 1</li>
-                                <li data-value="option-2">Option 2</li>
-                                <li data-value="option-3">Option 3</li>
-                                <li data-value="option-4">Option 4</li>
-                                <li data-value="option-5">Option 5</li>
-                            </ul>
                         </div>
-                    </div>
-                    <!-- Single Field -->
-                    <div class="input-group">
-                        <label for="form--origine" class="input-label">Origine</label>
-                        <div class="ul-select no-selected">
-                            <div class="ul-select-input">
-                                <input type="hidden" class="input-hidden-field" name="form--origine" value="">
-                                <div class="ul-select-name"></div>
-                                <div class="placeholder-label">Choose One</div>
+                        <div class="image-card">
+                            <img class="image-card-img" src="../assets/images/card-image--boy.jpg" alt="">
+                            <div class="image-card__icons relative flex justify-center items-center -mt-10 z-[50]">
+                                <a href="#" class="w-[70px] h-[70px] bg-[#6345D1] inline-flex justify-center items-center text-white p-4 border-2 border-[#583DB9] rounded-full  animation-scale-1 animation-delay-2 focus-effect" tabindex="-1">
+                                    <img class="w-6" src="../assets/images/icons/user-boy.png" alt="">
+                                </a>
                             </div>
-                            <span class="select-arrow select-arrow-down">
-                                <svg><use xlink:href="#icon-angle-down"></use></svg>
-                            </span>
-                            <span class="select-arrow select-arrow-cancel">
-                                <svg><use xlink:href="#icon-close"></use></svg>
-                            </span>
-                            <ul class="ul-select-list">
-                                <li data-value="option-1">Option 1</li>
-                                <li data-value="option-2">Option 2</li>
-                                <li data-value="option-3">Option 3</li>
-                                <li data-value="option-4">Option 4</li>
-                                <li data-value="option-5">Option 5</li>
-                            </ul>
                         </div>
+
+                        <div class="absolute top-[25%] z-10 start-[50%] -translate-x-[65%]">
+                            <a href="#" class="w-[60px] h-[60px] bg-[#F51468] inline-flex justify-center items-center text-white p-4 border-2 border-[#F51468] rounded shadow-[0px_8px_15px_rgba(0,0,0,0.1)]  animation-scale-1 animation-delay-6 focus-effect" tabindex="-1">
+                                <img class="w-6" src="../assets/images/icons/cell.png" alt="">
+                            </a>
+                        </div>
+
                     </div>
                 </div>
-                <!-- Single Field -->
-                <div class="input-group">
-                    <label for="form--autre-origine" class="input-label">Autre Origine</label>
-                    <div class="ul-select no-selected">
-                        <div class="ul-select-input">
-                            <input type="hidden" class="input-hidden-field" name="form--autre-origine" value="">
-                            <div class="ul-select-name"></div>
-                            <div class="placeholder-label">Choose One</div>
-                        </div>
-                        <span class="select-arrow select-arrow-down">
-                            <svg><use xlink:href="#icon-angle-down"></use></svg>
-                        </span>
-                        <span class="select-arrow select-arrow-cancel">
-                            <svg><use xlink:href="#icon-close"></use></svg>
-                        </span>
-                        <ul class="ul-select-list">
-                            <li data-value="option-1">Bangladesh</li>
-                            <li data-value="option-2">Option 2</li>
-                            <li data-value="option-3">Option 3</li>
-                            <li data-value="option-4">Option 4</li>
-                            <li data-value="option-5">Option 5</li>
-                        </ul>
-                    </div>
+
+            <h1 class="h1 mb-6 tracking-tight text-white">Trouvez Votre Futur(e) Conjoint(e)  Facilement Avec <span class="italic text-primary">MyNisf.</span></h1>
+
+                <div class="mb-5 text-center">
+                    <p class="text-white text-opacity-50">Faîtes les causes vous même et Débutez vos recherches dès maintenant !</p>
                 </div>
-                <!-- Single Field -->
-                <div class="input-group">
-                    <label for="form--telephone" class="input-label">Télèphone (vu que par l’admin)</label>
-                    <input type="number" id="form--telephone" class="input-control" placeholder="+212657968233">
+                <div>
+                    <a href="#" class="btn---animation primary w-full">                        
+                        <span>CONNECTEZ VOUS MAINTENANT !</span>
+                        <svg class="btn---animation__circle" width="100%" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60"><circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle></svg>
+                    
+                    </a>
                 </div>
-                <div class="mt-8">
-                    <button type="submit" class="mb-3 btn--primary w-full">SUIVANT</button>
-                </div>
-            </form>
+            </div>
         </div>
     </div>
 
@@ -244,7 +178,9 @@
             <path d="M20 2H4c-1.103 0-2 .894-2 1.992v12.016C2 17.106 2.897 18 4 18h3v4l6.351-4H20c1.103 0 2-.894 2-1.992V3.992A1.998 1.998 0 0 0 20 2zm-6 11H7v-2h7v2zm3-4H7V7h10v2z"></path>
         </symbol>
     </svg>
-
     <script src="../assets/js/main.js"></script>
+    
+    <script>
+    </script>
 </body>
 </html>

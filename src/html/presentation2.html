@@ -21,11 +21,12 @@
 
 </head>
 <body class="nisf-body cloud-animation">
-    <!-- All content should go inside nisf-wrapper -->
+    <!-- All content should go inside nisf-wrapper -->    
     <div class="nisf-wrapper">
         <div class="nisf-container">
+
             <!-- Top Navigation -->
-            <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-5">
+            <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-3">
                 <button class="">
                     <svg class="w-4 h-4 text-white">
                         <use xlink:href="#icon-angle-left"></use>
@@ -43,27 +44,77 @@
             </nav>
 
             <!-- Header -->
-            <header class="header mb-7">
+            <header class="header">
                 <a href="/" class="header_logo mb-3">
                     <img src="../assets/images/logo.png" alt="">
                 </a>
-                <h3 class="text-2xl text-white mb-3">Aidez-nous à presenter vos informations.</h3>
-                <p class="font-medium">Ces informations seront disponibles sur votre profil et visible pour les autres membres.</p>
+                <h3 class="text-3xl text-white mb-3 text-center">Aidez-nous à vous présenter correctement.</h3>
+                <p class="font-medium">Ces informations seront disponibles sur votre profil et visible pour les autres membres. </p>
             </header>
 
-            <form action="#" >
-                <!-- Single Field -->
-                <div class="input-group">
-                    <label for="form--pseudo" class="input-label">Pseudo (Pas modifiable)</label>
-                    <input type="text" id="form--pseudo" class="input-control" placeholder="Ahmed">
+            <h2 class="hr-text text-primary my-8 text-2xl">
+                <span>Presentation</span>
+            </h2>
+
+            <form action="#">
+                <div class="grid grid-cols-2 gap-3">
+                    <!-- Single Field -->
+                    <div class="input-group">
+                        <label for="form--ville" class="input-label">Ville</label>
+                        <div class="ul-select no-selected">
+                            <div class="ul-select-input">
+                                <input type="hidden" class="input-hidden-field" name="form--ville" value="">
+                                <div class="ul-select-name"></div>
+                                <div class="placeholder-label">Choose One</div>
+                            </div>
+                            <span class="select-arrow select-arrow-down">
+                                <svg><use xlink:href="#icon-angle-down"></use></svg>
+                            </span>
+                            <span class="select-arrow select-arrow-cancel">
+                                <svg><use xlink:href="#icon-close"></use></svg>
+                            </span>
+                            <ul class="ul-select-list">
+                                <li data-value="option-1">Agadir</li>
+                                <li data-value="option-2">Option 2</li>
+                                <li data-value="option-3">Option 3</li>
+                                <li data-value="option-4">Option 4</li>
+                                <li data-value="option-5">Option 5</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Single Field -->
+                    <div class="input-group">
+                        <label for="form--region" class="input-label">Region</label>
+                        <div class="ul-select no-selected">
+                            <div class="ul-select-input">
+                                <input type="hidden" class="input-hidden-field" name="form--region" value="">
+                                <div class="ul-select-name"></div>
+                                <div class="placeholder-label">Choose One</div>
+                            </div>
+                            <span class="select-arrow select-arrow-down">
+                                <svg><use xlink:href="#icon-angle-down"></use></svg>
+                            </span>
+                            <span class="select-arrow select-arrow-cancel">
+                                <svg><use xlink:href="#icon-close"></use></svg>
+                            </span>
+                            <ul class="ul-select-list">
+                                <li data-value="option-1">Chtouka</li>
+                                <li data-value="option-2">Option 2</li>
+                                <li data-value="option-3">Option 3</li>
+                                <li data-value="option-4">Option 4</li>
+                                <li data-value="option-5">Option 5</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="grid grid-cols-2 gap-3">
                     <!-- Single Field -->
                     <div class="input-group">
-                        <label for="form--nationality" class="input-label">Nationalité</label>
+                        <label for="form--viveau" class="input-label">Niveau d’études</label>
                         <div class="ul-select no-selected">
                             <div class="ul-select-input">
-                                <input type="hidden" class="input-hidden-field" name="form--nationality" value="">
+                                <input type="hidden" class="input-hidden-field" name="form--viveau" value="">
                                 <div class="ul-select-name"></div>
                                 <div class="placeholder-label">Choose One</div>
                             </div>
@@ -74,7 +125,7 @@
                                 <svg><use xlink:href="#icon-close"></use></svg>
                             </span>
                             <ul class="ul-select-list">
-                                <li data-value="option-1">Option 1</li>
+                                <li data-value="option-1">BAC+2</li>
                                 <li data-value="option-2">Option 2</li>
                                 <li data-value="option-3">Option 3</li>
                                 <li data-value="option-4">Option 4</li>
@@ -82,12 +133,13 @@
                             </ul>
                         </div>
                     </div>
+
                     <!-- Single Field -->
                     <div class="input-group">
-                        <label for="form--origine" class="input-label">Origine</label>
+                        <label for="form--profession" class="input-label">Profession</label>
                         <div class="ul-select no-selected">
                             <div class="ul-select-input">
-                                <input type="hidden" class="input-hidden-field" name="form--origine" value="">
+                                <input type="hidden" class="input-hidden-field" name="form--profession" value="">
                                 <div class="ul-select-name"></div>
                                 <div class="placeholder-label">Choose One</div>
                             </div>
@@ -98,7 +150,7 @@
                                 <svg><use xlink:href="#icon-close"></use></svg>
                             </span>
                             <ul class="ul-select-list">
-                                <li data-value="option-1">Option 1</li>
+                                <li data-value="option-1">Chtouka</li>
                                 <li data-value="option-2">Option 2</li>
                                 <li data-value="option-3">Option 3</li>
                                 <li data-value="option-4">Option 4</li>
@@ -109,10 +161,10 @@
                 </div>
                 <!-- Single Field -->
                 <div class="input-group">
-                    <label for="form--autre-origine" class="input-label">Autre Origine</label>
+                    <label for="form--situation-famillial" class="input-label">Situation Famillial</label>
                     <div class="ul-select no-selected">
                         <div class="ul-select-input">
-                            <input type="hidden" class="input-hidden-field" name="form--autre-origine" value="">
+                            <input type="hidden" class="input-hidden-field" name="form--situation-famillial" value="">
                             <div class="ul-select-name"></div>
                             <div class="placeholder-label">Choose One</div>
                         </div>
@@ -123,7 +175,7 @@
                             <svg><use xlink:href="#icon-close"></use></svg>
                         </span>
                         <ul class="ul-select-list">
-                            <li data-value="option-1">Bangladesh</li>
+                            <li data-value="option-1">Divorcé</li>
                             <li data-value="option-2">Option 2</li>
                             <li data-value="option-3">Option 3</li>
                             <li data-value="option-4">Option 4</li>
@@ -133,11 +185,84 @@
                 </div>
                 <!-- Single Field -->
                 <div class="input-group">
-                    <label for="form--telephone" class="input-label">Télèphone (vu que par l’admin)</label>
-                    <input type="number" id="form--telephone" class="input-control" placeholder="+212657968233">
+                    <label for="form--avez-vous" class="input-label">Avez vous des enfants?</label>
+                    <input type="text" id="form--avez-vous" class="input-control" placeholder="2 enfants">
                 </div>
-                <div class="mt-8">
-                    <button type="submit" class="mb-3 btn--primary w-full">SUIVANT</button>
+                <div class="grid grid-cols-2 gap-3">
+                    <!-- Single Field -->
+                    <div class="input-group">
+                        <label for="form--hébergement" class="input-label">Hébergement</label>
+                        <input type="text" id="form--hébergement" class="input-control" placeholder="Seul">
+                    </div>
+                    <!-- Single Field -->
+                    <div class="input-group">
+                        <label for="form--fumez-vous" class="input-label">Fumez vous?</label>
+                        <input type="text" id="form--fumez-vous" class="input-control" placeholder="Non">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <!-- Single Field -->
+                    <div class="input-group">
+                        <label for="form--votre-taille-en-cm" class="input-label">Votre taille en cm</label>
+                        <div class="ul-select no-selected">
+                            <div class="ul-select-input">
+                                <input type="hidden" class="input-hidden-field" name="form--votre-taille-en-cm" value="">
+                                <div class="ul-select-name"></div>
+                                <div class="placeholder-label">Choose One</div>
+                            </div>
+                            <span class="select-arrow select-arrow-down">
+                                <svg><use xlink:href="#icon-angle-down"></use></svg>
+                            </span>
+                            <span class="select-arrow select-arrow-cancel">
+                                <svg><use xlink:href="#icon-close"></use></svg>
+                            </span>
+                            <ul class="ul-select-list">
+                                <li data-value="option-1">185 cm</li>
+                                <li data-value="option-2">Option 2</li>
+                                <li data-value="option-3">Option 3</li>
+                                <li data-value="option-4">Option 4</li>
+                                <li data-value="option-5">Option 5</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Single Field -->
+                    <div class="input-group">
+                        <label for="form--votre-silhouette" class="input-label">Votre silhouette</label>
+                        <div class="ul-select no-selected">
+                            <div class="ul-select-input">
+                                <input type="hidden" class="input-hidden-field" name="form--votre-silhouette" value="">
+                                <div class="ul-select-name"></div>
+                                <div class="placeholder-label">Choose One</div>
+                            </div>
+                            <span class="select-arrow select-arrow-down">
+                                <svg><use xlink:href="#icon-angle-down"></use></svg>
+                            </span>
+                            <span class="select-arrow select-arrow-cancel">
+                                <svg><use xlink:href="#icon-close"></use></svg>
+                            </span>
+                            <ul class="ul-select-list">
+                                <li data-value="option-1">Normal</li>
+                                <li data-value="option-2">Option 2</li>
+                                <li data-value="option-3">Option 3</li>
+                                <li data-value="option-4">Option 4</li>
+                                <li data-value="option-5">Option 5</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Field -->
+                <div class="input-group">
+                    <label for="form--parlez-vous" class="input-label">Parlez-vous l’arabe</label>
+                    <input type="text" id="form--parlez-vous" class="input-control" placeholder="J’apprends">
+                </div>
+                <div class="mt-7">
+                    <button type="submit" class="btn---animation primary w-full">
+                        <span>SUIVANT</span>
+                        <svg class="btn---animation__circle" width="100%" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60"><circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle></svg>
+                    </button>
                 </div>
             </form>
         </div>

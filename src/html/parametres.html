@@ -241,19 +241,49 @@
                             <img class="w-6 h-6 object-contain object-center" src="../assets/images/icons/lang-guide.png" alt="">
                         </span>
                         <div>
-                            <h3 class="h4 mb-2">Language</h3>
+                            <a href="#" class="text-white transition-all duration-300 hover:text-primary"><h3 class="h4 mb-2">Language</h3></a>
                             <!-- CURRENCY SELECTOR -->
-                            <div class="text-white rounded-[5px] text-sm text-opacity-50 inline-flex gap-2 items-center bg-white bg-opacity-10 px-3 py-1">
-                                <span>
-                                    <svg class="h-2 w-2">
-                                        <use xlink:href="#icon-angle-down"></use>
-                                    </svg>                                                    
-                                </span>
-                                <span class="">
-                                    <img class="w-4 h-4 object-contain object-center" src="../assets/images/flag-icon/france-square.png" alt="">
-                                </span>
-                                <span class="font-semibold">France</span>
+                            <div class="inline-block theme-select">
+                                <select name="language-select" id="" class="input-control language-selector">
+                                    <option value="france" data-icon="../assets/images/flag-icon/france-square.png">France</option>
+                                    <option value="span" data-icon="../assets/images/flag-icon/spain.png">Span</option>
+                                    <option value="france" data-icon="../assets/images/flag-icon/france-square.png">France</option>
+                                    <option value="span" data-icon="../assets/images/flag-icon/spain.png">Span</option>
+                                    <option value="france" data-icon="../assets/images/flag-icon/france-square.png">France</option>
+                                    <option value="span" data-icon="../assets/images/flag-icon/spain.png">Span</option>
+                                </select>
                             </div>
+                            <!-- <div class="lang-selector-group">
+                                <div class="lang-selector--label">
+                                    <span>
+                                        <svg class="h-2 w-2">
+                                            <use xlink:href="#icon-angle-down"></use>
+                                        </svg>                                                    
+                                    </span>
+                                    <span class="language--name">
+                                        <img class="language--flag" src="../assets/images/flag-icon/france-square.png" alt="">
+                                        <span class="font-semibold">France</span>
+                                    </span>
+                                </div>
+                                <ul class="lang-selector___list">
+                                    <li class="lang-selector___list-item">
+                                        <img class="language--flag" src="../assets/images/flag-icon/france-square.png" alt="">
+                                        <span class="font-semibold">France</span>
+                                    </li>
+                                    <li class="lang-selector___list-item">
+                                        <img class="language--flag" src="../assets/images/flag-icon/france-square.png" alt="">
+                                        <span class="font-semibold">France</span>
+                                    </li>
+                                    <li class="lang-selector___list-item">
+                                        <img class="language--flag" src="../assets/images/flag-icon/france-square.png" alt="">
+                                        <span class="font-semibold">France</span>
+                                    </li>
+                                    <li class="lang-selector___list-item">
+                                        <img class="language--flag" src="../assets/images/flag-icon/france-square.png" alt="">
+                                        <span class="font-semibold">France</span>
+                                    </li>
+                                </ul>
+                            </div> -->
                         </div>
                     </div>
                 </li>
@@ -264,7 +294,9 @@
                             <img class="w-6 h-6 object-contain object-center" src="../assets/images/icons/lang-reglement.png" alt="">
                         </span>
                         <div>
-                            <h3 class="h4 mb-0">Reglement</h3>
+                            <a href="#" class="text-white transition-all duration-300 hover:text-primary">
+                                <h3 class="h4 mb-0">Reglement</h3>
+                            </a>
                         </div>
                     </div>
                 </li>
@@ -275,7 +307,7 @@
                             <img class="w-6 h-6 object-contain object-center" src="../assets/images/icons/lang-globe.png" alt="">
                         </span>
                         <div>
-                            <h3 class="h4 mb-0">Guide D’utilisation</h3>
+                            <a href="#" class="text-white transition-all duration-300 hover:text-primary"><h3 class="h4 mb-0">Guide D’utilisation</h3></a>
                         </div>
                     </div>
                 </li>
@@ -286,20 +318,20 @@
                             <img class="w-6 h-6 object-contain object-center" src="../assets/images/icons/lang-bell.png" alt="">
                         </span>
                         <div>
-                            <h3 class="h4 mb-0">Paramètres de Notification</h3>
+                            <a href="#" class="text-white transition-all duration-300 hover:text-primary"><h3 class="h4 mb-0">Paramètres de Notification</h3></a>
                         </div>
                     </div>
                 </li>
                 <!-- Single Item -->
                 <li>
-                    <a href="#" class="card flex-row gap-4 items-center text-white card-body bg-[#5b1952]">
+                    <div class="card flex-row gap-4 items-center text-white card-body bg-[#5b1952]">
                         <span class="bg-white bg-opacity-10 inline-flex items-center justify-center rounded-full w-[60px] h-[60px] ">
                             <img class="w-6 h-6 object-contain object-center" src="../assets/images/icons/lang-trash.png" alt="">
                         </span>
                         <div>
-                            <h3 class="h4 mb-0">Suprimer Mon Compte</h3>
+                            <a href="#" class="text-white transition-all duration-300 hover:text-primary"><h3 class="h4 mb-0">Suprimer Mon Compte</h3></a>
                         </div>
-                    </a>
+                    </div>
                 </li>
             </ul>
         </div>

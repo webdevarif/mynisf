@@ -3,6 +3,7 @@
       init() {
         this.setupUlSelect();
         this.setupSlideRange();
+        this.setupMobileCode();
         this.setupTAB();
         this.setupDropdown();
         this.setupThemeSLIDER();
@@ -11,6 +12,18 @@
         this.setupRating();
         this.setupVideoPlayer();
         this.setupSelect2();
+      },
+
+      setupMobileCode() {
+        // -----Country Code Selection
+        if ($('[mobile-code-select]').length) {
+          $('[mobile-code-select]').each(function () {
+            $(this).intlTelInput({
+              initialCountry: "in",
+              separateDialCode: true,
+            });
+          });
+        }
       },
 
       setupSlideRange() {
@@ -255,28 +268,32 @@
         });
       },
 
-      setupMenuDrawer() {
-        $(".has-submenu").each(function() {
-            let body = $('.nisf-body');
-            let trigger = $('.menu-toggler');
-    
-            trigger.on("click", function(e) {
-              e.preventDefault();
-              body.toggleClass('is-drawer-open');  
-            });
-        });
-        $(".has-submenu").each(function() {
-            let trigger = $(this).find('.menu-item-link');
-    
-            trigger.on("click", function(e) {
-                e.preventDefault();
-                let submenuWrapper = $(this).siblings("ul.submenu");
-    
-                if (submenuWrapper.length) {
-                    submenuWrapper.slideToggle();
-                }
-            });
-        });
+      setupMenuDrawer() {              
+      let body = $('.nisf-body');
+      let trigger = $('.menu-toggler');
+
+      trigger.on("click", function (e) {
+          e.preventDefault();
+          body.toggleClass('is-drawer-open');
+          // Stop further propagation to prevent immediate closing
+          e.stopPropagation();
+      });
+
+      // Close menu drawer when clicking outside of it
+      $(document).on("click", function (e) {
+          if (body.hasClass('is-drawer-open') && !$(e.target).closest('.nisf-menu-drawer').length && !$(e.target).is('.menu-toggler')) {
+              body.removeClass('is-drawer-open');
+          }
+      });
+
+      $(".has-submenu .menu-item-link").on("click", function (e) {
+          e.preventDefault();
+          let submenuWrapper = $(this).siblings("ul.submenu");
+
+          if (submenuWrapper.length) {
+              submenuWrapper.slideToggle();
+          }
+      });
     },
 
     setupRating(){
@@ -353,13 +370,6 @@
   
   })(jQuery);
 
-
-
-
-
-
-
-
 // LENIS SETUP
   
   window.addEventListener("DOMContentLoaded", (event) => {
@@ -391,27 +401,6 @@
       // Uncomment this if using GSAP ScrollTrigger
       connectToScrollTrigger();
   });
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // SLIDER RANGE
   const onInput = (parent, e) => {

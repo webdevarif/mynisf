@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="../assets/libs/slick/slick.min.css">
     <link rel="stylesheet" href="../assets/libs/slick/slick-theme.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
     
     <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
     <link rel="stylesheet" href="../assets/libs/gsap/lenis.min.css">
@@ -14,6 +16,8 @@
     
     <!-- JS SUPPORTS -->
     <script src="../assets/libs/vendors/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    
     <script src="../assets/libs/gsap/gsap.min.js"></script>
     <script src="../assets/libs/gsap/ScrollTrigger.min.js"></script>
     <script src="../assets/libs/gsap/lenis.min.js"></script>
@@ -22,16 +26,170 @@
 </head>
 <body class="nisf-body cloud-animation">
     <!-- All content should go inside nisf-wrapper -->
+    <!-- MENU DRAWER -->
+    <div class="nisf-menu-drawer">
+        <h2 class="text-white h4">Tableau de bord liste</h2>
+        <ul class="list-drawer-menu">
+            <!-- Single Item -->
+            <li class="menu-item">
+                <a href="#" class="menu-item-link">
+                    <span class="menu-item-icon">
+                        <img src="../assets/images/menu-icons/hand-shake.png" alt="">
+                    </span>
+                    <span>Parrainage</span>
+                </a>
+            </li>
+            <!-- Single Item -->
+            <li class="menu-item">
+                <a href="#" class="menu-item-link active">
+                    <span class="menu-item-icon">
+                        <img src="../assets/images/menu-icons/peoples.png" alt="">
+                    </span>
+                    <span>Accés Chat</span>
+                </a>
+            </li>
+            <!-- Single Item -->
+            <li class="menu-item">
+                <a href="#" class="menu-item-link">
+                    <span class="menu-item-icon">
+                        <img src="../assets/images/menu-icons/messages.png" alt="">
+                    </span>
+                    <span>Boite de Réception</span>
+                </a>
+            </li>
+            <!-- Single Item -->
+            <li class="menu-item has-submenu">
+                <a href="#" class="menu-item-link">
+                    <span class="menu-item-icon">
+                        <img src="../assets/images/menu-icons/user-plus.png" alt="">
+                    </span>
+                    <span>Demandes privées</span>
+
+                    <span class="ms-auto">
+                        <svg class="w-4 h-4 text-white">
+                            <use xlink:href="#icon-angle-down"></use>
+                        </svg>
+                    </span>
+                </a>
+
+                <ul class="submenu">
+                    <!-- Single Item -->
+                    <li class="menu-item">
+                        <a href="#" class="menu-item-link">
+                            <span>Demende rendez-vous</span>
+                        </a>
+                    </li>
+                    <!-- Single Item -->
+                    <li class="menu-item">
+                        <a href="#" class="menu-item-link">
+                            <span>Mes disponibilités</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!-- Single Item -->
+            <li class="menu-item has-submenu">
+                <a href="#" class="menu-item-link">
+                    <span class="menu-item-icon">
+                        <img src="../assets/images/menu-icons/calender.png" alt="">
+                    </span>
+                    <span>Rendez-vous</span>
+
+                    <span class="ms-auto">
+                        <svg class="w-4 h-4 text-white">
+                            <use xlink:href="#icon-angle-down"></use>
+                        </svg>
+                    </span>
+                </a>
+
+                <ul class="submenu">
+                    <!-- Single Item -->
+                    <li class="menu-item">
+                        <a href="#" class="menu-item-link">
+                            <span>Demende rendez-vous</span>
+                        </a>
+                    </li>
+                    <!-- Single Item -->
+                    <li class="menu-item">
+                        <a href="#" class="menu-item-link">
+                            <span>Mes disponibilités</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <ul class="list-drawer-menu">
+            <!-- Single Item -->
+            <li class="menu-item">
+                <a href="#" class="menu-item-link">
+                    <span class="menu-item-icon">
+                        <img src="../assets/images/menu-icons/user.png" alt="">
+                    </span>
+                    <span>Mon Profil</span>
+                </a>
+            </li>
+            <!-- Single Item -->
+            <li class="menu-item">
+                <a href="#" class="menu-item-link">
+                    <span class="menu-item-icon">
+                        <img src="../assets/images/menu-icons/star.png" alt="">
+                    </span>
+                    <span>Favoris</span>
+                </a>
+            </li>
+            <!-- Single Item -->
+            <li class="menu-item">
+                <a href="#" class="menu-item-link">
+                    <span class="menu-item-icon">
+                        <img src="../assets/images/menu-icons/heart.png" alt="">
+                    </span>
+                    <span>Coups de coeur</span>
+                </a>
+            </li>
+            <!-- Single Item -->
+            <li class="menu-item has-submenu">
+                <a href="#" class="menu-item-link">
+                    <span class="menu-item-icon">
+                        <img src="../assets/images/menu-icons/smile.png" alt="">
+                    </span>
+                    <span>Interactions</span>
+
+                    <span class="ms-auto">
+                        <svg class="w-4 h-4 text-white">
+                            <use xlink:href="#icon-angle-down"></use>
+                        </svg>
+                    </span>
+                </a>
+
+                <ul class="submenu">
+                    <!-- Single Item -->
+                    <li class="menu-item">
+                        <a href="#" class="menu-item-link">
+                            <span>Demende rendez-vous</span>
+                        </a>
+                    </li>
+                    <!-- Single Item -->
+                    <li class="menu-item">
+                        <a href="#" class="menu-item-link">
+                            <span>Mes disponibilités</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
     <div class="nisf-wrapper">
         <div class="nisf-container">
             <!-- Top Navigation -->
-            <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-5">
-                <button class="">
-                    <svg class="w-4 h-4 text-white">
+            <nav class="top-navigation py-8 flex items-center justify-between gap-3">
+                <a href="#" class="inline-flex items-center">
+                    <svg class="w-5 h-5 text-white">
                         <use xlink:href="#icon-angle-left"></use>
                     </svg>
-                </button>
-
+                </a>
                 <ul class="list-dots">
                     <li class="active"></li>
                     <li></li>
@@ -41,78 +199,59 @@
                     <li></li>
                 </ul>
             </nav>
-
+            
             <!-- Header -->
-            <header class="header mb-7">
+            <header class="header">
                 <a href="/" class="header_logo mb-3">
                     <img src="../assets/images/logo.png" alt="">
                 </a>
-                <h3 class="text-2xl text-white mb-3">Aidez-nous à presenter vos informations.</h3>
-                <p class="font-medium">Ces informations seront disponibles sur votre profil et visible pour les autres membres.</p>
+                <h3 class="text-3xl text-white mb-3">Aidez-nous à présenter vos traits de personnalité.</h3>
+                <p class="font-medium">Ces informations seront disponibles sur votre profil et visible pour les autres membres. </p>
             </header>
 
-            <form action="#" >
+            <h2 class="hr-text text-primary my-8 text-2xl">
+                <span>Trait De Personnalité</span>
+            </h2>
+
+            <form action="#">
                 <!-- Single Field -->
-                <div class="input-group">
-                    <label for="form--pseudo" class="input-label">Pseudo (Pas modifiable)</label>
-                    <input type="text" id="form--pseudo" class="input-control" placeholder="Ahmed">
-                </div>
-                <div class="grid grid-cols-2 gap-3">
-                    <!-- Single Field -->
-                    <div class="input-group">
-                        <label for="form--nationality" class="input-label">Nationalité</label>
-                        <div class="ul-select no-selected">
-                            <div class="ul-select-input">
-                                <input type="hidden" class="input-hidden-field" name="form--nationality" value="">
-                                <div class="ul-select-name"></div>
-                                <div class="placeholder-label">Choose One</div>
-                            </div>
-                            <span class="select-arrow select-arrow-down">
-                                <svg><use xlink:href="#icon-angle-down"></use></svg>
-                            </span>
-                            <span class="select-arrow select-arrow-cancel">
-                                <svg><use xlink:href="#icon-close"></use></svg>
-                            </span>
-                            <ul class="ul-select-list">
-                                <li data-value="option-1">Option 1</li>
-                                <li data-value="option-2">Option 2</li>
-                                <li data-value="option-3">Option 3</li>
-                                <li data-value="option-4">Option 4</li>
-                                <li data-value="option-5">Option 5</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Single Field -->
-                    <div class="input-group">
-                        <label for="form--origine" class="input-label">Origine</label>
-                        <div class="ul-select no-selected">
-                            <div class="ul-select-input">
-                                <input type="hidden" class="input-hidden-field" name="form--origine" value="">
-                                <div class="ul-select-name"></div>
-                                <div class="placeholder-label">Choose One</div>
-                            </div>
-                            <span class="select-arrow select-arrow-down">
-                                <svg><use xlink:href="#icon-angle-down"></use></svg>
-                            </span>
-                            <span class="select-arrow select-arrow-cancel">
-                                <svg><use xlink:href="#icon-close"></use></svg>
-                            </span>
-                            <ul class="ul-select-list">
-                                <li data-value="option-1">Option 1</li>
-                                <li data-value="option-2">Option 2</li>
-                                <li data-value="option-3">Option 3</li>
-                                <li data-value="option-4">Option 4</li>
-                                <li data-value="option-5">Option 5</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="input-group input-group-multiselect">
+                    <label for="form--traits-ersonnels" class="input-label">Traits Personnels</label>
+                    <select class="input-control" data-placeholder="Select One" multi-select>
+                        <option value="AL">Bavard</option>
+                        <option value="WY">Ayant de l’humour</option>
+                        <option value="option-1">Option 1</option>
+                        <option value="option-2">Option 2</option>
+                        <option value="option-3">Option 3</option>
+                        <option value="option-4">Option 4</option>
+                        <!-- Add more options as needed -->
+                    </select>
                 </div>
                 <!-- Single Field -->
                 <div class="input-group">
-                    <label for="form--autre-origine" class="input-label">Autre Origine</label>
+                    <label for="form--quel-est" class="input-label">Quel est votre principal défaut</label>
+                    <input type="text" id="form--quel-est" class="input-control" placeholder="Je fume">
+                </div>
+                <!-- Single Field -->
+                <div class="input-group">
+                    <label for="form--que-faites-vous" class="input-label">Que faites-vous de votre temps libre ?</label>
+                    <select class="input-control" data-placeholder="Select One" multi-select>
+                        <option value="AL">Bavard</option>
+                        <option value="WY">Ajouter ce que vous faites</option>
+                        <option value="option-1">Option 1</option>
+                        <option value="option-2">Option 2</option>
+                        <option value="option-3">Option 3</option>
+                        <option value="option-4">Option 4</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+
+                <!-- Single Field -->
+                <div class="input-group">
+                    <label for="form--Aimez-vous" class="input-label">Aimez-vous voyager ?</label>
                     <div class="ul-select no-selected">
                         <div class="ul-select-input">
-                            <input type="hidden" class="input-hidden-field" name="form--autre-origine" value="">
+                            <input type="hidden" class="input-hidden-field" name="form--Aimez-vous" value="">
                             <div class="ul-select-name"></div>
                             <div class="placeholder-label">Choose One</div>
                         </div>
@@ -123,7 +262,32 @@
                             <svg><use xlink:href="#icon-close"></use></svg>
                         </span>
                         <ul class="ul-select-list">
-                            <li data-value="option-1">Bangladesh</li>
+                            <li data-value="option-1">2 fois dans l’année</li>
+                            <li data-value="option-2">Option 2</li>
+                            <li data-value="option-3">Option 3</li>
+                            <li data-value="option-4">Option 4</li>
+                            <li data-value="option-5">Option 5</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Single Field -->
+                <div class="input-group">
+                    <label for="form--Quelle-est-votre " class="input-label">Quelle est votre relation avec l’argent ?</label>
+                    <div class="ul-select no-selected">
+                        <div class="ul-select-input">
+                            <input type="hidden" class="input-hidden-field" name="form--Quelle-est-votre " value="">
+                            <div class="ul-select-name"></div>
+                            <div class="placeholder-label">Choose One</div>
+                        </div>
+                        <span class="select-arrow select-arrow-down">
+                            <svg><use xlink:href="#icon-angle-down"></use></svg>
+                        </span>
+                        <span class="select-arrow select-arrow-cancel">
+                            <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+                        <ul class="ul-select-list">
+                            <li data-value="option-1">Génereux</li>
                             <li data-value="option-2">Option 2</li>
                             <li data-value="option-3">Option 3</li>
                             <li data-value="option-4">Option 4</li>
@@ -133,11 +297,39 @@
                 </div>
                 <!-- Single Field -->
                 <div class="input-group">
-                    <label for="form--telephone" class="input-label">Télèphone (vu que par l’admin)</label>
-                    <input type="number" id="form--telephone" class="input-control" placeholder="+212657968233">
+                    <label for="form--Eude-Islamique" class="input-label">Eude Islamique</label>
+                    <select class="input-control" data-placeholder="Select One" multi-select>
+                        <option value="AL">Istitut</option>
+                        <option value="WY">Ajouter ce que vous faites</option>
+                        <option value="option-1">Option 1</option>
+                        <option value="option-2">Option 2</option>
+                        <option value="option-3">Option 3</option>
+                        <option value="option-4">Option 4</option>
+                        <!-- Add more options as needed -->
+                    </select>
                 </div>
+                <!-- Single Field -->
+                <div class="input-group">
+                    <label for="form--avez-vous-des" class="input-label">Avez vous des amis du sexe opposé?</label>
+                    <input type="text" id="form--avez-vous-des" class="input-control" placeholder="Non">
+                </div>
+                <!-- Single Field -->
+                <div class="input-group">
+                    <label for="form--Quelles-sont-vos" class="input-label">Quelles sont vos habitudes journaliéres pour essayer d’augumenter votre foi ?</label>
+                    <input type="text" id="form--Quelles-sont-vos" class="input-control" placeholder="Vos habitudes ...">
+                    <div class="mt-2 text-white text-opacity-25 ps-4">Smileys et emoticones INTERDITS.</div>
+                </div>
+                <!-- Single Field -->
+                <div class="input-group">
+                    <label for="form--Quels-sont-les-savants" class="input-label">Quels sont les savants ou prêcheurs contemporains que vous écoutez ?</label>
+                    <input type="text" id="form--Quels-sont-les-savants" class="input-control" placeholder="Savants ou prêcheurs">
+                </div>
+
                 <div class="mt-8">
-                    <button type="submit" class="mb-3 btn--primary w-full">SUIVANT</button>
+                    <button type="submit" class="btn---animation primary w-full">
+                        <span>SUIVANT</span>
+                        <svg class="btn---animation__circle" width="100%" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60"><circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle></svg>
+                    </button>
                 </div>
             </form>
         </div>
@@ -246,5 +438,6 @@
     </svg>
 
     <script src="../assets/js/main.js"></script>
+
 </body>
 </html>

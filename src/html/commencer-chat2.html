@@ -20,129 +20,306 @@
     <script src="../assets/libs/slick/slick.min.js"></script>
 
 </head>
-<body class="nisf-body cloud-animation">
+<body class="nisf-body cloud-animation"> <!-- has-footer-bar should be when footer has bar -->
     <!-- All content should go inside nisf-wrapper -->
+    <!-- MENU DRAWER -->
+    <div class="nisf-menu-drawer">
+        <h2 class="text-white h4">Tableau de bord liste</h2>
+        <ul class="list-drawer-menu">
+            <!-- Single Item -->
+            <li class="menu-item">
+                <a href="#" class="menu-item-link">
+                    <span class="menu-item-icon">
+                        <img src="../assets/images/menu-icons/hand-shake.png" alt="">
+                    </span>
+                    <span>Parrainage</span>
+                </a>
+            </li>
+            <!-- Single Item -->
+            <li class="menu-item">
+                <a href="#" class="menu-item-link active">
+                    <span class="menu-item-icon">
+                        <img src="../assets/images/menu-icons/peoples.png" alt="">
+                    </span>
+                    <span>Accés Chat</span>
+                </a>
+            </li>
+            <!-- Single Item -->
+            <li class="menu-item">
+                <a href="#" class="menu-item-link">
+                    <span class="menu-item-icon">
+                        <img src="../assets/images/menu-icons/messages.png" alt="">
+                    </span>
+                    <span>Boite de Réception</span>
+                </a>
+            </li>
+            <!-- Single Item -->
+            <li class="menu-item has-submenu">
+                <a href="#" class="menu-item-link">
+                    <span class="menu-item-icon">
+                        <img src="../assets/images/menu-icons/user-plus.png" alt="">
+                    </span>
+                    <span>Demandes privées</span>
+
+                    <span class="ms-auto">
+                        <svg class="w-4 h-4 text-white">
+                            <use xlink:href="#icon-angle-down"></use>
+                        </svg>
+                    </span>
+                </a>
+
+                <ul class="submenu">
+                    <!-- Single Item -->
+                    <li class="menu-item">
+                        <a href="#" class="menu-item-link">
+                            <span>Demende rendez-vous</span>
+                        </a>
+                    </li>
+                    <!-- Single Item -->
+                    <li class="menu-item">
+                        <a href="#" class="menu-item-link">
+                            <span>Mes disponibilités</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!-- Single Item -->
+            <li class="menu-item has-submenu">
+                <a href="#" class="menu-item-link">
+                    <span class="menu-item-icon">
+                        <img src="../assets/images/menu-icons/calender.png" alt="">
+                    </span>
+                    <span>Rendez-vous</span>
+
+                    <span class="ms-auto">
+                        <svg class="w-4 h-4 text-white">
+                            <use xlink:href="#icon-angle-down"></use>
+                        </svg>
+                    </span>
+                </a>
+
+                <ul class="submenu">
+                    <!-- Single Item -->
+                    <li class="menu-item">
+                        <a href="#" class="menu-item-link">
+                            <span>Demende rendez-vous</span>
+                        </a>
+                    </li>
+                    <!-- Single Item -->
+                    <li class="menu-item">
+                        <a href="#" class="menu-item-link">
+                            <span>Mes disponibilités</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <ul class="list-drawer-menu">
+            <!-- Single Item -->
+            <li class="menu-item">
+                <a href="#" class="menu-item-link">
+                    <span class="menu-item-icon">
+                        <img src="../assets/images/menu-icons/user.png" alt="">
+                    </span>
+                    <span>Mon Profil</span>
+                </a>
+            </li>
+            <!-- Single Item -->
+            <li class="menu-item">
+                <a href="#" class="menu-item-link">
+                    <span class="menu-item-icon">
+                        <img src="../assets/images/menu-icons/star.png" alt="">
+                    </span>
+                    <span>Favoris</span>
+                </a>
+            </li>
+            <!-- Single Item -->
+            <li class="menu-item">
+                <a href="#" class="menu-item-link">
+                    <span class="menu-item-icon">
+                        <img src="../assets/images/menu-icons/heart.png" alt="">
+                    </span>
+                    <span>Coups de coeur</span>
+                </a>
+            </li>
+            <!-- Single Item -->
+            <li class="menu-item has-submenu">
+                <a href="#" class="menu-item-link">
+                    <span class="menu-item-icon">
+                        <img src="../assets/images/menu-icons/smile.png" alt="">
+                    </span>
+                    <span>Interactions</span>
+
+                    <span class="ms-auto">
+                        <svg class="w-4 h-4 text-white">
+                            <use xlink:href="#icon-angle-down"></use>
+                        </svg>
+                    </span>
+                </a>
+
+                <ul class="submenu">
+                    <!-- Single Item -->
+                    <li class="menu-item">
+                        <a href="#" class="menu-item-link">
+                            <span>Demende rendez-vous</span>
+                        </a>
+                    </li>
+                    <!-- Single Item -->
+                    <li class="menu-item">
+                        <a href="#" class="menu-item-link">
+                            <span>Mes disponibilités</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <h2 class="text-white h4">Gestion du compte</h2>
+
+        <ul class="list-drawer-menu">
+            <!-- Single Item -->
+            <li class="menu-item">
+                <a href="#" class="menu-item-link">
+                    <span class="menu-item-icon">
+                        <img src="../assets/images/menu-icons/sub.png" alt="">
+                    </span>
+                    <span>Renouveler Mon Abo </span>
+                </a>
+            </li>
+            <!-- Single Item -->
+            <li class="menu-item">
+                <a href="#" class="menu-item-link">
+                    <span class="menu-item-icon">
+                        <img src="../assets/images/menu-icons/cog.png" alt="">
+                    </span>
+                    <span>Paramètre</span>
+                </a>
+            </li>
+            <!-- Single Item -->
+            <li class="menu-item">
+                <a href="#" class="menu-item-link">
+                    <span class="menu-item-icon">
+                        <img src="../assets/images/menu-icons/log-out.png" alt="">
+                    </span>
+                    <span>Log Out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
     <div class="nisf-wrapper">
+        <!-- body overlay -->
+        <div class="body-overlay"></div>
         <div class="nisf-container">
             <!-- Top Navigation -->
-            <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-5">
-                <button class="">
-                    <svg class="w-4 h-4 text-white">
+            <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-3">
+                <a href="#" class="inline-flex items-center">
+                    <svg class="w-5 h-5 text-white">
                         <use xlink:href="#icon-angle-left"></use>
                     </svg>
+                </a>
+                <h4 class="font-semibold text-xl text-white w-full mb-0">Commencer Le Chat</h4>
+                <button class="menu-toggler ms-auto">
+                    <svg class="menu-toggler---icon menu-toggler---open">
+                        <use xlink:href="#icon-vertical-dot"></use>
+                    </svg>
+                    <svg class="menu-toggler---icon menu-toggler---close">
+                        <use xlink:href="#icon-half-menu"></use>
+                    </svg>
                 </button>
-
-                <ul class="list-dots">
-                    <li class="active"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
             </nav>
 
-            <!-- Header -->
-            <header class="header mb-7">
-                <a href="/" class="header_logo mb-3">
-                    <img src="../assets/images/logo.png" alt="">
-                </a>
-                <h3 class="text-2xl text-white mb-3">Aidez-nous à presenter vos informations.</h3>
-                <p class="font-medium">Ces informations seront disponibles sur votre profil et visible pour les autres membres.</p>
-            </header>
+            <div class="text-center mb-6">
+                <img class="w-[18rem] max-w-[70%] mx-auto" src="../assets/images/chat-icon.png" alt="">
+            </div>
 
-            <form action="#" >
-                <!-- Single Field -->
-                <div class="input-group">
-                    <label for="form--pseudo" class="input-label">Pseudo (Pas modifiable)</label>
-                    <input type="text" id="form--pseudo" class="input-control" placeholder="Ahmed">
-                </div>
-                <div class="grid grid-cols-2 gap-3">
-                    <!-- Single Field -->
-                    <div class="input-group">
-                        <label for="form--nationality" class="input-label">Nationalité</label>
-                        <div class="ul-select no-selected">
-                            <div class="ul-select-input">
-                                <input type="hidden" class="input-hidden-field" name="form--nationality" value="">
-                                <div class="ul-select-name"></div>
-                                <div class="placeholder-label">Choose One</div>
-                            </div>
-                            <span class="select-arrow select-arrow-down">
-                                <svg><use xlink:href="#icon-angle-down"></use></svg>
-                            </span>
-                            <span class="select-arrow select-arrow-cancel">
-                                <svg><use xlink:href="#icon-close"></use></svg>
-                            </span>
-                            <ul class="ul-select-list">
-                                <li data-value="option-1">Option 1</li>
-                                <li data-value="option-2">Option 2</li>
-                                <li data-value="option-3">Option 3</li>
-                                <li data-value="option-4">Option 4</li>
-                                <li data-value="option-5">Option 5</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Single Field -->
-                    <div class="input-group">
-                        <label for="form--origine" class="input-label">Origine</label>
-                        <div class="ul-select no-selected">
-                            <div class="ul-select-input">
-                                <input type="hidden" class="input-hidden-field" name="form--origine" value="">
-                                <div class="ul-select-name"></div>
-                                <div class="placeholder-label">Choose One</div>
-                            </div>
-                            <span class="select-arrow select-arrow-down">
-                                <svg><use xlink:href="#icon-angle-down"></use></svg>
-                            </span>
-                            <span class="select-arrow select-arrow-cancel">
-                                <svg><use xlink:href="#icon-close"></use></svg>
-                            </span>
-                            <ul class="ul-select-list">
-                                <li data-value="option-1">Option 1</li>
-                                <li data-value="option-2">Option 2</li>
-                                <li data-value="option-3">Option 3</li>
-                                <li data-value="option-4">Option 4</li>
-                                <li data-value="option-5">Option 5</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Field -->
-                <div class="input-group">
-                    <label for="form--autre-origine" class="input-label">Autre Origine</label>
-                    <div class="ul-select no-selected">
-                        <div class="ul-select-input">
-                            <input type="hidden" class="input-hidden-field" name="form--autre-origine" value="">
-                            <div class="ul-select-name"></div>
-                            <div class="placeholder-label">Choose One</div>
-                        </div>
-                        <span class="select-arrow select-arrow-down">
-                            <svg><use xlink:href="#icon-angle-down"></use></svg>
-                        </span>
-                        <span class="select-arrow select-arrow-cancel">
-                            <svg><use xlink:href="#icon-close"></use></svg>
-                        </span>
-                        <ul class="ul-select-list">
-                            <li data-value="option-1">Bangladesh</li>
-                            <li data-value="option-2">Option 2</li>
-                            <li data-value="option-3">Option 3</li>
-                            <li data-value="option-4">Option 4</li>
-                            <li data-value="option-5">Option 5</li>
+            <div class="card card-body bg-primary mb-8 flex py-8 px-6 gap-3 items-center justify-between flex-row" style="background-image: url('../assets/images/counter-bg.png'); background-size:  100% 100%;">
+                <div>
+                                    
+                    <div class="countdown-wrapper">
+                        <ul class="countdown" id="countdown">
+                            <!-- Hour -->
+                            <li class="hour"><span></span><span></span></li>
+                            <li>:</li>
+                            <!-- Mins -->
+                            <li class="mins"><span></span><span></span></li>
+                            <li>:</li>
+                            <!-- Seconds -->
+                            <li class="seconds"><span></span><span></span></li>
                         </ul>
                     </div>
+                
+                    <script>
+                        function updateCountdown() {
+                            const countdownElement = document.getElementById('countdown');
+                    
+                            const now = new Date().getTime();
+                            const targetDate = new Date('2024-12-31T23:59:59').getTime(); // Set your target date here
+                    
+                            const timeRemaining = targetDate - now;
+                    
+                            const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+                            const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+                    
+                            const hoursDigits = padDigits(hours);
+                            const minutesDigits = padDigits(minutes);
+                            const secondsDigits = padDigits(seconds);
+                    
+                            updateDigits(countdownElement, hoursDigits, 'hour');
+                            updateDigits(countdownElement, minutesDigits, 'mins');
+                            updateDigits(countdownElement, secondsDigits, 'seconds');
+                        }
+                    
+                        function padDigits(number) {
+                            return ('0' + number).slice(-2);
+                        }
+                    
+                        function updateDigits(countdownElement, digits, className) {
+                            const digitElements = countdownElement.getElementsByClassName(className)[0].getElementsByTagName('span');
+                    
+                            for (let i = 0; i < 2; i++) {
+                                digitElements[i].textContent = digits[i];
+                            }
+                        }
+                    
+                        // Initial update
+                        updateCountdown();
+                    
+                        // Update every second
+                        setInterval(updateCountdown, 1000);
+                    </script>
+                    
                 </div>
-                <!-- Single Field -->
-                <div class="input-group">
-                    <label for="form--telephone" class="input-label">Télèphone (vu que par l’admin)</label>
-                    <input type="number" id="form--telephone" class="input-control" placeholder="+212657968233">
+                    <div class="text-sm text-white inline-flex items-center gap-2">
+                        <svg class="w-4 h-4 text-white">
+                            <use xlink:href="#icon-clock"></use>
+                        </svg>
+                        <span>Commence a 7:25 PM</span>
+                    </div>
                 </div>
-                <div class="mt-8">
-                    <button type="submit" class="mb-3 btn--primary w-full">SUIVANT</button>
+
+                <div class="text-center px-6 mb-8">
+                    <h2 class="h2 text-white font-bold">Le chat commencera après la <span class="text-primary">fin du minuteur.</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
-            </form>
+
+                <a href="#" class="btn---animation light w-full">
+                    <span>
+                        <div class="flex items-center justify-center gap-3">
+                            <img class="w-6" src="../assets/images/chat-button-icon.png" alt="">
+                            <span>Commencer Le Chat </span>
+                        </div>
+                    </span>
+                    <svg class="btn---animation__circle" width="100%" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60"><circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle></svg>
+                </a>
+
         </div>
     </div>
-
+        
     <!-- svgsprit icons -->
     <svg width="0" height="0" class="hidden">
         
@@ -243,8 +420,15 @@
         <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-messages">
             <path d="M20 2H4c-1.103 0-2 .894-2 1.992v12.016C2 17.106 2.897 18 4 18h3v4l6.351-4H20c1.103 0 2-.894 2-1.992V3.992A1.998 1.998 0 0 0 20 2zm-6 11H7v-2h7v2zm3-4H7V7h10v2z"></path>
         </symbol>
+                
+        <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icon-clock">
+            <path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path>
+        </symbol>
     </svg>
-
     <script src="../assets/js/main.js"></script>
-</body>
+
+
+
+    
+    </body>
 </html>

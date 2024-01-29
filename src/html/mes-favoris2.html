@@ -10,7 +10,6 @@
     
     <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
     <link rel="stylesheet" href="../assets/libs/gsap/lenis.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     
     <!-- JS SUPPORTS -->
@@ -19,9 +18,6 @@
     <script src="../assets/libs/gsap/ScrollTrigger.min.js"></script>
     <script src="../assets/libs/gsap/lenis.min.js"></script>
     <script src="../assets/libs/slick/slick.min.js"></script>
-
-    <!-- JS FROM CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
 
 </head>
 <body class="nisf-body cloud-animation has-footer-bar"> <!-- has-footer-bar should be when footer has bar -->
@@ -219,13 +215,13 @@
         <div class="body-overlay"></div>
         <div class="nisf-container">
             <!-- Top Navigation -->
-            <nav class="top-navigation py-8 flex items-center justify-between gap-3">
+            <nav class="top-navigation py-8 flex items-center gap-3 mb-3">
                 <a href="#" class="inline-flex items-center">
                     <svg class="w-5 h-5 text-white">
                         <use xlink:href="#icon-angle-left"></use>
                     </svg>
                 </a>
-                <h4 class="font-semibold text-xl text-white w-full mb-0">Mahram</h4>
+                <h4 class="font-semibold text-xl text-white mb-0">Mes favoris</h4>
                 <button class="menu-toggler ms-auto">
                     <svg class="menu-toggler---icon menu-toggler---open">
                         <use xlink:href="#icon-vertical-dot"></use>
@@ -235,86 +231,264 @@
                     </svg>
                 </button>
             </nav>
-            
 
-            <form action="">
-                <div class="mb-7">
-                    <h3 class="h4 text-white">Vous avez reçu un numéro mahram de téléphone de :</h3>
-
-                    <div class="card card-body">
-                        <div class="flex gap-3">
-                            <!-- Avatar -->
-                            <div class="avatar avatar-2xl">
-                                <img src="../assets/images/users/4.png" alt="">
-                            </div>
-                            <!-- Content -->
-                            <div>
+            <ul class="list-card mb-0">
+                <!-- SINGLE CARD -->
+                <li>
+                    <div class="card">
+                        <div class="card-body flex flex-row gap-3 w-full">
+                            <!-- User Thumb -->
+                            <span class="w-[60px] min-w-[60px] h-[60px] overflow-hidden rounded-full">
+                                <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/1.png" alt="">
+                            </span>
+                            <!-- User Info -->
+                            <div class="mb-2">
                                 <a href="#">
-                                    <h3 class="mb-0 text-white text-xl font-semibold flex items-center gap-x-2 transition-all duration-300 hover:text-primary">
-                                        <span class="line--1">Salman ahmed</span>
+                                    <h3 class="mb-1 text-xl flex items-center gap-x-2 text-white transition-all duration-300 hover:text-primary ">
+                                        <span class="line--1">Rachid Mohamed</span>
                                         <span class="inline-block">
                                             <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
                                         </span>
                                     </h3>
                                 </a>
-                                <p class="text-medium text-xs text-white mb-2 text-opacity-25">39 ans (Agadir, Maroc)</p>
-
-                                <div class="font-medium text-xs inline-block rounded-[6px] bg-white bg-opacity-15 text-white px-4 py-1">
-                                    Rendez vous audio visual
+                                <p class="text-medium text-white text-opacity-25">39 ans (Agadir, Spain)</p>
+                            </div>
+                            
+                            <div class="more-info ms-auto">
+                                <!-- DROPDOWN INFO-->
+                                <div class="dropdown-wrapper">
+                                    <button class="bg-transparent dropdown-toggler">
+                                        <svg class="icon w-5 h-5 text-white">
+                                            <use xlink:href="#icon-vertical-dot"></use>
+                                        </svg>
+                                    </button>  
+                                    <div class="dropdown-menu">
+                                        <ul class="dropdown-menu-list">
+                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-
-                                <ul class="flex gap-3 mt-3 items-end">
-                                    <li><a href="#"><img class="max-w-[1rem]" src="../assets/images/icons/rendez-message.png" alt=""></a>
-                                    </li>
-                                    <li class="w-[2px] h-3 bg-white bg-opacity-15 inline-block"></li>
-                                    <li><a href="#"><img class="max-w-[1.15rem]" src="../assets/images/icons/rendez-video.png" alt=""></a>
-                                    </li>
-                                    <li class="w-[2px] h-3 bg-white bg-opacity-15 inline-block"></li>
-                                    <li><a href="#"><img class="max-w-[1.25rem]" src="../assets/images/icons/rendez-meeting.png" alt=""></a>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="mb-7">
-                    <h3 class="text-xl text-white mb-3">Le Numero Mahram Est </h3>
-
-                    <div class="input-group">
-                        <input type="number" class="input-control" placeholder="The Number is ..." mobile-code-select>
-                    </div>
-                </div>
-
-                <div class="mb-7">
-                    <h3 class="h4 text-white">Le Mahram est son :</h3>
-                    <div class="grid grid-cols-3 gap-3 mb-3">
-                        <div class="outline--check">
-                            <input type="radio" name="maharam" id="form-check--1" class="outline--check-input">
-                            <label for="form-check--1" class="outline--check-label bg-card-bg text-white py-2 px-2 text-xl font-semibold leading-10 rounded border-2 text-center">
-                                Père
-                            </label>
-                        </div>
-                        <div class="outline--check">
-                            <input type="radio" name="maharam" id="form-check--2" class="outline--check-input">
-                            <label for="form-check--2" class="outline--check-label bg-card-bg text-white py-2 px-2 text-xl font-semibold leading-10 rounded border-2 text-center">
-                                Frère
-                            </label>
-                        </div>
-                        <div class="outline--check">
-                            <input type="radio" name="maharam" id="form-check--3" class="outline--check-input">
-                            <label for="form-check--3" class="outline--check-label bg-card-bg text-white py-2 px-2 text-xl font-semibold leading-10 rounded border-2 text-center">
-                                Oncle
-                            </label>
+                        <div class="card-footer flex items-center gap-3 w-full">
+                            <a href="#" class="btn---animation primary w-full btn--sm">
+                                <span>Voir Profil</span>
+                                <svg class="btn---animation__circle" width="100%" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60"><circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle></svg>
+                            </a>
+                            <a href="#" class="btn---animation secondary w-full btn--sm">
+                                <span>Retirer</span>
+                                <svg class="btn---animation__circle" width="100%" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60"><circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle></svg>
+                            </a>
                         </div>
                     </div>
-                    <div class="inline-block bg-card-bg text-white py-2 px-5 text-xl font-semibold leading-10 rounded border-2 text-center border-primary">
-                        Demi Frère
+                </li>
+                <!-- SINGLE CARD -->
+                <li>
+                    <div class="card">
+                        <div class="card-body flex flex-row gap-3 w-full">
+                            <!-- User Thumb -->
+                            <span class="w-[60px] min-w-[60px] h-[60px] overflow-hidden rounded-full">
+                                <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/2.png" alt="">
+                            </span>
+                            <!-- User Info -->
+                            <div class="mb-2">
+                                <a href="#">
+                                    <h3 class="mb-1 text-xl flex items-center gap-x-2 text-white transition-all duration-300 hover:text-primary ">
+                                        <span class="line--1">Alawi Sabri</span>
+                                        <span class="inline-block">
+                                            <img class="w-4 h-4" src="../assets/images/flag-icon/france.png" alt="">
+                                        </span>
+                                    </h3>
+                                </a>
+                                <p class="text-medium text-white text-opacity-25">20 ans (Paris, France)</p>
+                            </div>
+                            
+                            
+                            <div class="more-info ms-auto">
+                                <!-- DROPDOWN INFO-->
+                                <div class="dropdown-wrapper">
+                                    <button class="bg-transparent dropdown-toggler">
+                                        <svg class="icon w-5 h-5 text-white">
+                                            <use xlink:href="#icon-vertical-dot"></use>
+                                        </svg>
+                                    </button>  
+                                    <div class="dropdown-menu">
+                                        <ul class="dropdown-menu-list">
+                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer flex items-center gap-3 w-full">
+                            <a href="#" class="btn---animation primary w-full btn--sm">
+                                <span>Voir Profil</span>
+                                <svg class="btn---animation__circle" width="100%" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60"><circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle></svg>
+                            </a>
+                            <a href="#" class="btn---animation secondary w-full btn--sm">
+                                <span>Retirer</span>
+                                <svg class="btn---animation__circle" width="100%" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60"><circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle></svg>
+                            </a>
+                        </div>
                     </div>
-                </div>
-            </form>
+                </li>
+                <!-- SINGLE CARD -->
+                <li>
+                    <div class="card">
+                        <div class="card-body flex flex-row gap-3 w-full">
+                            <!-- User Thumb -->
+                            <span class="w-[60px] min-w-[60px] h-[60px] overflow-hidden rounded-full">
+                                <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/2.png" alt="">
+                            </span>
+                            <!-- User Info -->
+                            <div class="mb-2">
+                                <a href="#">
+                                    <h3 class="mb-1 text-xl flex items-center gap-x-2 text-white transition-all duration-300 hover:text-primary ">
+                                        <span class="line--1">Alawi Sabri</span>
+                                        <span class="inline-block">
+                                            <img class="w-4 h-4" src="../assets/images/flag-icon/france.png" alt="">
+                                        </span>
+                                    </h3>
+                                </a>
+                                <p class="text-medium text-white text-opacity-25">20 ans (Paris, France)</p>
+                            </div>
+                            
+                            
+                            <div class="more-info ms-auto">
+                                <!-- DROPDOWN INFO-->
+                                <div class="dropdown-wrapper">
+                                    <button class="bg-transparent dropdown-toggler">
+                                        <svg class="icon w-5 h-5 text-white">
+                                            <use xlink:href="#icon-vertical-dot"></use>
+                                        </svg>
+                                    </button>  
+                                    <div class="dropdown-menu">
+                                        <ul class="dropdown-menu-list">
+                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer flex items-center gap-3 w-full">
+                            <a href="#" class="btn---animation primary w-full btn--sm">
+                                <span>Voir Profil</span>
+                                <svg class="btn---animation__circle" width="100%" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60"><circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle></svg>
+                            </a>
+                            <a href="#" class="btn---animation secondary w-full btn--sm">
+                                <span>Retirer</span>
+                                <svg class="btn---animation__circle" width="100%" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60"><circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle></svg>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <!-- SINGLE CARD -->
+                <li>
+                    <div class="card">
+                        <div class="card-body flex flex-row gap-3 w-full">
+                            <!-- User Thumb -->
+                            <span class="w-[60px] min-w-[60px] h-[60px] overflow-hidden rounded-full">
+                                <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/1.png" alt="">
+                            </span>
+                            <!-- User Info -->
+                            <div class="mb-2">
+                                <a href="#">
+                                    <h3 class="mb-1 text-xl flex items-center gap-x-2 text-white transition-all duration-300 hover:text-primary ">
+                                        <span class="line--1">Rachid Mohamed</span>
+                                        <span class="inline-block">
+                                            <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
+                                        </span>
+                                    </h3>
+                                </a>
+                                <p class="text-medium text-white text-opacity-25">39 ans (Agadir, Spain)</p>
+                            </div>
+                            
+                            <div class="more-info ms-auto">
+                                <!-- DROPDOWN INFO-->
+                                <div class="dropdown-wrapper">
+                                    <button class="bg-transparent dropdown-toggler">
+                                        <svg class="icon w-5 h-5 text-white">
+                                            <use xlink:href="#icon-vertical-dot"></use>
+                                        </svg>
+                                    </button>  
+                                    <div class="dropdown-menu">
+                                        <ul class="dropdown-menu-list">
+                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="card-footer flex items-center gap-3 w-full">
+                                <a href="#" class="btn---animation primary w-full btn--sm">
+                                    <span>Voir Profil</span>
+                                    <svg class="btn---animation__circle" width="100%" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60"><circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle></svg>
+                                </a>
+                                <a href="#" class="btn---animation secondary w-full btn--sm">
+                                    <span>Retirer</span>
+                                    <svg class="btn---animation__circle" width="100%" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60"><circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle></svg>
+                                </a>
+                        </div>
+                    </div>
+                </li>
+                <!-- SINGLE CARD -->
+                <li>
+                    <div class="card">
+                        <div class="card-body flex flex-row gap-3 w-full">
+                            <!-- User Thumb -->
+                            <span class="w-[60px] min-w-[60px] h-[60px] overflow-hidden rounded-full">
+                                <img class="max-w-full h-auto object-cover object-center" src="../assets/images/users/1.png" alt="">
+                            </span>
+                            <!-- User Info -->
+                            <div class="mb-2">
+                                <a href="#">
+                                    <h3 class="mb-1 text-xl flex items-center gap-x-2 text-white transition-all duration-300 hover:text-primary ">
+                                        <span class="line--1">Ilham Islam</span>
+                                        <span class="inline-block">
+                                            <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
+                                        </span>
+                                    </h3>
+                                </a>
+                                <p class="text-medium text-white text-opacity-25">39 ans (Agadir, Spain)</p>
+                            </div>
+                            
+                            <div class="more-info ms-auto">
+                                <!-- DROPDOWN INFO-->
+                                <div class="dropdown-wrapper">
+                                    <button class="bg-transparent dropdown-toggler">
+                                        <svg class="icon w-5 h-5 text-white">
+                                            <use xlink:href="#icon-vertical-dot"></use>
+                                        </svg>
+                                    </button>  
+                                    <div class="dropdown-menu">
+                                        <ul class="dropdown-menu-list">
+                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Modifier</a></li>
+                                            <li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">Suprimer</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer flex items-center gap-3 w-full">
+                            <a href="#" class="btn---animation primary w-full btn--sm">
+                                <span>Voir Profil</span>
+                                <svg class="btn---animation__circle" width="100%" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60"><circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle></svg>
+                            </a>
+                            <a href="#" class="btn---animation secondary w-full btn--sm">
+                                <span>Retirer</span>
+                                <svg class="btn---animation__circle" width="100%" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60"><circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle></svg>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
+
     
     <!-- Footer Bar -->
     <div class="footer-float-bar">
@@ -338,6 +512,7 @@
             </ul>
         </div>
     </div>
+
 
 <!-- svgsprit icons -->
 <svg width="0" height="0" class="hidden">
@@ -390,10 +565,10 @@
     <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icon-heart">
         <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
     </symbol>
-    
+
     <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icon-heart-alt">
-      <path d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path>
-    </symbol>
+        <path d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path>
+      </symbol>
 
     <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="icon-check">
       <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path>
@@ -439,7 +614,6 @@
     <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-messages">
         <path d="M20 2H4c-1.103 0-2 .894-2 1.992v12.016C2 17.106 2.897 18 4 18h3v4l6.351-4H20c1.103 0 2-.894 2-1.992V3.992A1.998 1.998 0 0 0 20 2zm-6 11H7v-2h7v2zm3-4H7V7h10v2z"></path>
     </symbol>
-
 </svg>
 
     <script src="../assets/js/main.js"></script>

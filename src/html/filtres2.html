@@ -20,7 +20,7 @@
     <script src="../assets/libs/slick/slick.min.js"></script>
 
 </head>
-<body class="nisf-body has-footer-bar"> <!-- has-footer-bar should be when footer has bar -->
+<body class="nisf-body"> <!-- has-footer-bar should be when footer has bar -->
     <!-- All content should go inside nisf-wrapper -->
     <!-- MENU DRAWER -->
     <div class="nisf-menu-drawer">
@@ -175,319 +175,318 @@
                 </ul>
             </li>
         </ul>
-    </div>
 
+
+        <h2 class="text-white h4">Gestion du compte</h2>
+
+        <ul class="list-drawer-menu">
+            <!-- Single Item -->
+            <li class="menu-item">
+                <a href="#" class="menu-item-link">
+                    <span class="menu-item-icon">
+                        <img src="../assets/images/menu-icons/sub.png" alt="">
+                    </span>
+                    <span>Renouveler Mon Abo </span>
+                </a>
+            </li>
+            <!-- Single Item -->
+            <li class="menu-item">
+                <a href="#" class="menu-item-link">
+                    <span class="menu-item-icon">
+                        <img src="../assets/images/menu-icons/cog.png" alt="">
+                    </span>
+                    <span>Paramètre</span>
+                </a>
+            </li>
+            <!-- Single Item -->
+            <li class="menu-item">
+                <a href="#" class="menu-item-link">
+                    <span class="menu-item-icon">
+                        <img src="../assets/images/menu-icons/log-out.png" alt="">
+                    </span>
+                    <span>Log Out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
     <div class="nisf-wrapper">
         <!-- body overlay -->
         <div class="body-overlay"></div>
         <div class="nisf-container">
             <!-- Top Navigation -->
-            <nav class="top-navigation pt-8 flex items-center justify-between gap-3 mb-5">
-                <a href="#" class="inline-flex items-center">
+            <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-3">
+                <a href="#" class="inline-flex items-center focus-effect" tabindex="-1">
                     <svg class="w-5 h-5 text-white">
-                        <use xlink:href="#icon-angle-left"></use>
+                        <use xlink:href="#icon-close"></use>
                     </svg>
                 </a>
+                <h4 class="font-semibold text-xl text-white w-full mb-0 text-center">Filtres</h4>
+                <button class="menu-toggler">
+                    <svg class="menu-toggler---icon menu-toggler---open">
+                        <use xlink:href="#icon-vertical-dot"></use>
+                    </svg>
+                    <svg class="menu-toggler---icon menu-toggler---close">
+                        <use xlink:href="#icon-half-menu"></use>
+                    </svg>
+                </button>
             </nav>
 
-            <div class="section-heading mb-2 text-center">
-                <h3 class="text-3xl font-bold text-white mb-4">5 Profils à qui vous pourriez le plus correspondre.</h3>
-                <a href="#" class="btn--primary">Lancer Le Robot</a>
-            </div>
-
-            <!-- Search Bar -->
-            <div class="py-3">
-                <div class="mb-3 flex items-center justify-between gap-3">
-                    <div class="relative w-full">
-                        <input type="text" placeholder="Je Cherche ..." class="input-control !ps-12">
-                        <img src="../assets/images/icons/search.png" class="w-4 absolute top-1/2 start-5 -translate-y-1/2" alt="">
-                    </div>
-                    <button type="submit" class="w-[56px] min-w-[56px] h-[56px] p-2 bg-primary text-white inline-flex items-center justify-center rounded">
-                        <img src="../assets/images/icons/filter.png" class="w-[20px]" alt="">
-                    </button>
-                </div>
-
-                <div class="flex justify-between items-center gap-3">
-                    <div class="font-medium text-white">Total Frères: <a href="#" class="link-primary">2763</a> profils disponibles.</div>
-                    <div class="switch-toggle">
-                        <input type="checkbox" class="switch-toggle__input" id="toggle" />
-                            <label for="toggle" class="switch-toggle__label"></label>
+            <form action="">
+                
+                <!-- Single Field -->
+                <div class="input-group">
+                    <label for="form--age" class="input-label font-bold">Age</label>
+                    <!-- Slider Range -->
+                    <div class="range-slider">
+                        <input type="range" min="0" max="100" step="1" value="30" class="range-slider__input" />
+                        <input type="range" min="0" max="100" step="1" value="70" class="range-slider__input" />
+                        <div class="range-slider__display"></div>
                     </div>
                 </div>
-            </div>
-
-            <div class="slider-area px-6">
-                <div class="text-center mb-2">
-                    <a href="#" class="w-7 h-7 bg-white bg-opacity-10 inline-flex justify-center items-center rounded-full">
-                        <svg class="w-3 h-3 text-white">
-                            <use xlink:href="#icon-angle-up"></use>
-                        </svg>
-                    </a>                
-                </div>
-                <div theme-slider data-slick='{
-                    "arrows": true, 
-                    "centerPadding": "2rem",
-                    "slidesToShow": 1, 
-                    "slidesToScroll": 1
-                }'
-                >
-                    <!-- Single Slide -->
-                    <div class="px-1 single-slide pb-3">
-                        <div class="bg-[#814067] rounded-lg relative p-2 before:content-[''] before:w-2/3 before:start-1/2 before:h-3 before:bg-black/25 before:absolute before:-bottom-1 before:-translate-x-1/2 before:blur-xl before:-z-[1]">
-                            <div class="thumbnail mb-3">
-                                <img class="rounded-lg h-full w-full object-center object-cover" src="../assets/images/makkah.png" alt="">
-                            </div>
-                            <div class="p-2 text-white">
-                                <ul class="flex flex-col gap-y-4 mb-4">
-                                    <!-- List Item -->
-                                    <li class="flex justify-between gap-3 items-start">
-                                        <div>
-                                            <a href="#"><h3 class="text-2xl text-white transition-all duration-300 hover:text-primary line--1">Rachid Alawi, 28</h3></a>
-                                            <p class="font-normal text-white text-opacity-60">Normandie</p>
-                                        </div>
-                                        <ul class="inline-flex gap-3 text-xl items-center">
-                                            <li>
-                                                <a href="#" class="inline-flex justify-center items-center rounded-full focus-effect" tabindex="1">
-                                                    <svg class="w-4 h-4 text-white">
-                                                        <use xlink:href="#icon-eye-on"></use>
-                                                    </svg>
-                                                </a>                                            
-                                            </li>
-                                            <li class="w-[1px] h-6 bg-white bg-opacity-20"></li>
-                                            <li>
-                                                <a href="#" class="inline-flex justify-center items-center rounded-full focus-effect" tabindex="1">
-                                                    <svg class="w-4 h-4 text-white">
-                                                        <use xlink:href="#icon-star"></use>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <!-- List Item -->
-                                    <li class="flex justify-between gap-3 items-start">
-                                        <div class="text-white text-opacity-60 flex items-center gap-2">
-                                            <img src="../assets/images/flag-icon/france-square.png" alt="" class="inline-block w-5">
-                                            <span>Lile, France</span>
-                                        </div>
-                                        <ul class="inline-flex gap-3 text-xl items-center">
-                                            <img src="../assets/images/education.png" class="w-4 h-4 rounded-full object-contain" alt="">
-                                            <li class="w-[1px] h-6 bg-white bg-opacity-20"></li>
-                                            <li>
-                                                <img src="../assets/images/photos.png" class="w-4 h-4 rounded-full object-contain" alt="">
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-
-                                <a href="#" class="btn--primary w-full">VOIR LE PROFILE</a>
-                            </div>
+                
+                <!-- Single Field -->
+                <div class="input-group">
+                    <div class="ul-select no-selected">
+                        <div class="ul-select-input">
+                            <input type="hidden" class="input-hidden-field" name="form--autre-origine" value="">
+                            <div class="ul-select-name"></div>
+                            <div class="placeholder-label text-white h4">Nationalitè</div>
                         </div>
+                        <span class="select-arrow select-arrow-down">
+                            <svg><use xlink:href="#icon-angle-down"></use></svg>
+                        </span>
+                        <span class="select-arrow select-arrow-cancel">
+                            <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+                        <ul class="ul-select-list">
+                            <li data-value="option-1">Bangladesh</li>
+                            <li data-value="option-2">Option 2</li>
+                            <li data-value="option-3">Option 3</li>
+                            <li data-value="option-4">Option 4</li>
+                            <li data-value="option-5">Option 5</li>
+                        </ul>
                     </div>
-                    <!-- Single Slide -->
-                    <div class="px-1 single-slide pb-3">
-                        <div class="bg-[#814067] rounded-lg relative p-2 before:content-[''] before:w-2/3 before:start-1/2 before:h-3 before:bg-black/25 before:absolute before:-bottom-1 before:-translate-x-1/2 before:blur-xl before:-z-[1]">
-                            <div class="thumbnail mb-3">
-                                <img class="rounded-lg h-full w-full object-center object-cover" src="../assets/images/makkah.png" alt="">
-                            </div>
-                            <div class="p-2 text-white">
-                                <ul class="flex flex-col gap-y-4 mb-4">
-                                    <!-- List Item -->
-                                    <li class="flex justify-between gap-3 items-start">
-                                        <div>
-                                            <a href="#"><h3 class="text-2xl text-white transition-all duration-300 hover:text-primary line--1">Rachid Alawi, 28</h3></a>
-                                            <p class="font-normal text-white text-opacity-60">Normandie</p>
-                                        </div>
-                                        <ul class="inline-flex gap-3 text-xl items-center">
-                                            <li>
-                                                <a href="#" class="inline-flex justify-center items-center rounded-full focus-effect" tabindex="1">
-                                                    <svg class="w-4 h-4 text-white">
-                                                        <use xlink:href="#icon-eye-on"></use>
-                                                    </svg>
-                                                </a>                                            
-                                            </li>
-                                            <li class="w-[1px] h-6 bg-white bg-opacity-20"></li>
-                                            <li>
-                                                <a href="#" class="inline-flex justify-center items-center rounded-full focus-effect" tabindex="1">
-                                                    <svg class="w-4 h-4 text-white">
-                                                        <use xlink:href="#icon-star"></use>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <!-- List Item -->
-                                    <li class="flex justify-between gap-3 items-start">
-                                        <div class="text-white text-opacity-60 flex items-center gap-2">
-                                            <img src="../assets/images/flag-icon/france-square.png" alt="" class="inline-block w-5">
-                                            <span>Lile, France</span>
-                                        </div>
-                                        <ul class="inline-flex gap-3 text-xl items-center">
-                                            <img src="../assets/images/education.png" class="w-4 h-4 rounded-full object-contain" alt="">
-                                            <li class="w-[1px] h-6 bg-white bg-opacity-20"></li>
-                                            <li>
-                                                <img src="../assets/images/photos.png" class="w-4 h-4 rounded-full object-contain" alt="">
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-
-                                <a href="#" class="btn--primary w-full">VOIR LE PROFILE</a>
-                            </div>
+                    <p class="text-white text-opacity-25 text-sm tracking-wider mt-3 mb-0 font-semibold text-center">Sélectionnez la nationalité du partenaire que vous recherchez</p>
+                </div>
+                
+                <!-- Single Field -->
+                <div class="input-group">
+                    <div class="ul-select no-selected">
+                        <div class="ul-select-input">
+                            <input type="hidden" class="input-hidden-field" name="form--autre-origine" value="">
+                            <div class="ul-select-name"></div>
+                            <div class="placeholder-label text-white h4">Origine</div>
                         </div>
+                        <span class="select-arrow select-arrow-down">
+                            <svg><use xlink:href="#icon-angle-down"></use></svg>
+                        </span>
+                        <span class="select-arrow select-arrow-cancel">
+                            <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+                        <ul class="ul-select-list">
+                            <li data-value="option-1">Option 1</li>
+                            <li data-value="option-2">Option 2</li>
+                            <li data-value="option-3">Option 3</li>
+                            <li data-value="option-4">Option 4</li>
+                            <li data-value="option-5">Option 5</li>
+                        </ul>
                     </div>
-                    <!-- Single Slide -->
-                    <div class="px-1 single-slide pb-3">
-                        <div class="bg-[#814067] rounded-lg relative p-2 before:content-[''] before:w-2/3 before:start-1/2 before:h-3 before:bg-black/25 before:absolute before:-bottom-1 before:-translate-x-1/2 before:blur-xl before:-z-[1]">
-                            <div class="thumbnail mb-3">
-                                <img class="rounded-lg h-full w-full object-center object-cover" src="../assets/images/makkah.png" alt="">
-                            </div>
-                            <div class="p-2 text-white">
-                                <ul class="flex flex-col gap-y-4 mb-4">
-                                    <!-- List Item -->
-                                    <li class="flex justify-between gap-3 items-start">
-                                        <div>
-                                            <a href="#"><h3 class="text-2xl text-white transition-all duration-300 hover:text-primary line--1">Rachid Alawi, 28</h3></a>
-                                            <p class="font-normal text-white text-opacity-60">Normandie</p>
-                                        </div>
-                                        <ul class="inline-flex gap-3 text-xl items-center">
-                                            <li>
-                                                <a href="#" class="inline-flex justify-center items-center rounded-full focus-effect" tabindex="1">
-                                                    <svg class="w-4 h-4 text-white">
-                                                        <use xlink:href="#icon-eye-on"></use>
-                                                    </svg>
-                                                </a>                                            
-                                            </li>
-                                            <li class="w-[1px] h-6 bg-white bg-opacity-20"></li>
-                                            <li>
-                                                <a href="#" class="inline-flex justify-center items-center rounded-full focus-effect" tabindex="1">
-                                                    <svg class="w-4 h-4 text-white">
-                                                        <use xlink:href="#icon-star"></use>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <!-- List Item -->
-                                    <li class="flex justify-between gap-3 items-start">
-                                        <div class="text-white text-opacity-60 flex items-center gap-2">
-                                            <img src="../assets/images/flag-icon/france-square.png" alt="" class="inline-block w-5">
-                                            <span>Lile, France</span>
-                                        </div>
-                                        <ul class="inline-flex gap-3 text-xl items-center">
-                                            <img src="../assets/images/education.png" class="w-4 h-4 rounded-full object-contain" alt="">
-                                            <li class="w-[1px] h-6 bg-white bg-opacity-20"></li>
-                                            <li>
-                                                <img src="../assets/images/photos.png" class="w-4 h-4 rounded-full object-contain" alt="">
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-
-                                <a href="#" class="btn--primary w-full">VOIR LE PROFILE</a>
-                            </div>
+                    <p class="text-white text-opacity-25 text-sm tracking-wider mt-3 mb-0 font-semibold text-center">Sélectionnez l’origine du partenaire que vous recherchez           </p>
+                </div>
+                
+                <!-- Single Field -->
+                <div class="input-group">
+                    <div class="ul-select no-selected">
+                        <div class="ul-select-input">
+                            <input type="hidden" class="input-hidden-field" name="form--autre-origine" value="">
+                            <div class="ul-select-name"></div>
+                            <div class="placeholder-label text-white h4">Region</div>
                         </div>
+                        <span class="select-arrow select-arrow-down">
+                            <svg><use xlink:href="#icon-angle-down"></use></svg>
+                        </span>
+                        <span class="select-arrow select-arrow-cancel">
+                            <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+                        <ul class="ul-select-list">
+                            <li data-value="option-1">Option 1</li>
+                            <li data-value="option-2">Option 2</li>
+                            <li data-value="option-3">Option 3</li>
+                            <li data-value="option-4">Option 4</li>
+                            <li data-value="option-5">Option 5</li>
+                        </ul>
                     </div>
-                    <!-- Single Slide -->
-                    <div class="px-1 single-slide pb-3">
-                        <div class="bg-[#814067] rounded-lg relative p-2 before:content-[''] before:w-2/3 before:start-1/2 before:h-3 before:bg-black/25 before:absolute before:-bottom-1 before:-translate-x-1/2 before:blur-xl before:-z-[1]">
-                            <div class="thumbnail mb-3">
-                                <img class="rounded-lg h-full w-full object-center object-cover" src="../assets/images/makkah.png" alt="">
+                    <p class="text-white text-opacity-25 text-sm tracking-wider mt-3 mb-0 font-semibold text-center">Sélectionnez la  région du partenaire que vous recherchez</p>
+                </div>
+                
+                <!-- Single Field -->
+                <div class="input-group">
+                    <div class="ul-select no-selected">
+                        <div class="ul-select-input flex-col items-start border-2 border-primary h-[80px]">
+                            <div class="flex gap-2 items-center mb-1">
+                                <img src="../assets/images/crown.png" class="w-5 h-auto" alt="">
+                                <input type="hidden" class="input-hidden-field" name="form--autre-origine" value="">
+                                <div class="ul-select-name"></div>
+                                <div class="placeholder-label text-white h4">Situation familiale</div>
                             </div>
-                            <div class="p-2 text-white">
-                                <ul class="flex flex-col gap-y-4 mb-4">
-                                    <!-- List Item -->
-                                    <li class="flex justify-between gap-3 items-start">
-                                        <div>
-                                            <a href="#"><h3 class="text-2xl text-white transition-all duration-300 hover:text-primary line--1">Rachid Alawi, 28</h3></a>
-                                            <p class="font-normal text-white text-opacity-60">Normandie</p>
-                                        </div>
-                                        <ul class="inline-flex gap-3 text-xl items-center">
-                                            <li>
-                                                <a href="#" class="inline-flex justify-center items-center rounded-full focus-effect" tabindex="1">
-                                                    <svg class="w-4 h-4 text-white">
-                                                        <use xlink:href="#icon-eye-on"></use>
-                                                    </svg>
-                                                </a>                                            
-                                            </li>
-                                            <li class="w-[1px] h-6 bg-white bg-opacity-20"></li>
-                                            <li>
-                                                <a href="#" class="inline-flex justify-center items-center rounded-full focus-effect" tabindex="1">
-                                                    <svg class="w-4 h-4 text-white">
-                                                        <use xlink:href="#icon-star"></use>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <!-- List Item -->
-                                    <li class="flex justify-between gap-3 items-start">
-                                        <div class="text-white text-opacity-60 flex items-center gap-2">
-                                            <img src="../assets/images/flag-icon/france-square.png" alt="" class="inline-block w-5">
-                                            <span>Lile, France</span>
-                                        </div>
-                                        <ul class="inline-flex gap-3 text-xl items-center">
-                                            <img src="../assets/images/education.png" class="w-4 h-4 rounded-full object-contain" alt="">
-                                            <li class="w-[1px] h-6 bg-white bg-opacity-20"></li>
-                                            <li>
-                                                <img src="../assets/images/photos.png" class="w-4 h-4 rounded-full object-contain" alt="">
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-
-                                <a href="#" class="btn--primary w-full">VOIR LE PROFILE</a>
-                            </div>
+                            <p class="mb-0">Cette fonctionnalité sera gratuite après 14 jours.</p>
                         </div>
+                        <span class="select-arrow select-arrow-down">
+                            <svg><use xlink:href="#icon-angle-down"></use></svg>
+                        </span>
+                        <span class="select-arrow select-arrow-cancel">
+                            <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+                        <ul class="ul-select-list">
+                            <li data-value="option-1">Option 1</li>
+                            <li data-value="option-2">Option 2</li>
+                            <li data-value="option-3">Option 3</li>
+                            <li data-value="option-4">Option 4</li>
+                            <li data-value="option-5">Option 5</li>
+                        </ul>
+                    </div>
+                    <p class="text-white text-opacity-25 text-sm tracking-wider mt-3 mb-0 font-semibold text-center">Sélectionnez l’hebergement du partenaire que vous recherchez</p>
+                </div>
+                
+                <!-- Single Field -->
+                <div class="input-group">
+                    <div class="ul-select no-selected">
+                        <div class="ul-select-input">
+                            <input type="hidden" class="input-hidden-field" name="form--autre-origine" value="">
+                            <div class="ul-select-name"></div>
+                            <div class="placeholder-label text-white h4">Niveau D’etudes</div>
+                        </div>
+                        <span class="select-arrow select-arrow-down">
+                            <svg><use xlink:href="#icon-angle-down"></use></svg>
+                        </span>
+                        <span class="select-arrow select-arrow-cancel">
+                            <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+                        <ul class="ul-select-list">
+                            <li data-value="option-1">Option 1</li>
+                            <li data-value="option-2">Option 2</li>
+                            <li data-value="option-3">Option 3</li>
+                            <li data-value="option-4">Option 4</li>
+                            <li data-value="option-5">Option 5</li>
+                        </ul>
+                    </div>
+                    <p class="text-white text-opacity-25 text-sm tracking-wider mt-3 mb-0 font-semibold text-center">Sélectionnez le niveau d’étude du partenaire que vous recherchez</p>
+                </div>
+                
+                <!-- Single Field -->
+                <div class="input-group">
+                    <label for="form--age" class="input-label font-bold">Taille</label>
+                    <!-- Slider Range -->
+                    <div class="range-slider">
+                        <input type="range" min="0" max="100" step="1" value="30" class="range-slider__input" />
+                        <input type="range" min="0" max="100" step="1" value="70" class="range-slider__input" />
+                        <div class="range-slider__display"></div>
                     </div>
                 </div>
-                <div class="text-center mt-2">
-                    <a href="#" class="w-7 h-7 bg-white bg-opacity-10 inline-flex justify-center items-center rounded-full">
-                        <svg class="w-3 h-3 text-white">
-                            <use xlink:href="#icon-angle-down"></use>
-                        </svg>
-                    </a>
+                
+                <!-- Single Field -->
+                <div class="input-group">
+                    <div class="ul-select no-selected">
+                        <div class="ul-select-input">
+                            <input type="hidden" class="input-hidden-field" name="form--autre-origine" value="">
+                            <div class="ul-select-name"></div>
+                            <div class="placeholder-label text-white h4">Abonnement Chat</div>
+                        </div>
+                        <span class="select-arrow select-arrow-down">
+                            <svg><use xlink:href="#icon-angle-down"></use></svg>
+                        </span>
+                        <span class="select-arrow select-arrow-cancel">
+                            <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+                        <ul class="ul-select-list">
+                            <li data-value="option-1">Option 1</li>
+                            <li data-value="option-2">Option 2</li>
+                            <li data-value="option-3">Option 3</li>
+                            <li data-value="option-4">Option 4</li>
+                            <li data-value="option-5">Option 5</li>
+                        </ul>
+                    </div>
+                    <p class="text-white text-opacity-25 text-sm tracking-wider mt-3 mb-0 font-semibold text-center">Sélectionnez l’abonnement du partenaire que vous recherchez</p>
                 </div>
-            </div>
+                
+                <!-- Single Field -->
+                <div class="input-group">
+                    <div class="ul-select no-selected">
+                        <div class="ul-select-input">
+                            <input type="hidden" class="input-hidden-field" name="form--autre-origine" value="">
+                            <div class="ul-select-name"></div>
+                            <div class="placeholder-label text-white h4">Avec Enfants(s)</div>
+                        </div>
+                        <span class="select-arrow select-arrow-down">
+                            <svg><use xlink:href="#icon-angle-down"></use></svg>
+                        </span>
+                        <span class="select-arrow select-arrow-cancel">
+                            <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+                        <ul class="ul-select-list">
+                            <li data-value="option-1">Option 1</li>
+                            <li data-value="option-2">Option 2</li>
+                            <li data-value="option-3">Option 3</li>
+                            <li data-value="option-4">Option 4</li>
+                            <li data-value="option-5">Option 5</li>
+                        </ul>
+                    </div>
+                    <p class="text-white text-opacity-25 text-sm tracking-wider mt-3 mb-0 font-semibold text-center">Sélectionnez l’abonnement du partenaire que vous recherchez</p>
+                </div>
+                
+                <!-- Single Field -->
+                <div class="input-group">
+                    <div class="ul-select no-selected">
+                        <div class="ul-select-input flex-col items-start border-2 border-primary h-[80px]">
+                            <div class="flex gap-2 items-center mb-1">
+                                <img src="../assets/images/crown.png" class="w-5 h-auto" alt="">
+                                <input type="hidden" class="input-hidden-field" name="form--autre-origine" value="">
+                                <div class="ul-select-name"></div>
+                                <div class="placeholder-label text-white h4">Hébergement</div>
+                            </div>
+                            <p class="mb-0">Cette fonctionnalité sera gratuite après 14 jours.</p>
+                        </div>
+                        <span class="select-arrow select-arrow-down">
+                            <svg><use xlink:href="#icon-angle-down"></use></svg>
+                        </span>
+                        <span class="select-arrow select-arrow-cancel">
+                            <svg><use xlink:href="#icon-close"></use></svg>
+                        </span>
+                        <ul class="ul-select-list">
+                            <li data-value="option-1">Option 1</li>
+                            <li data-value="option-2">Option 2</li>
+                            <li data-value="option-3">Option 3</li>
+                            <li data-value="option-4">Option 4</li>
+                            <li data-value="option-5">Option 5</li>
+                        </ul>
+                    </div>
+                    <p class="text-white text-opacity-25 text-sm tracking-wider mt-3 mb-0 font-semibold text-center">Sélectionnez l’hebergement du partenaire que vous recherchez</p>
+                </div>
+                
+                <!-- Single Field -->
+                <div class="input-group">
+                    <div class="form--check">
+                        <input type="checkbox" class="form--check-input" name="sauvgarder" id="form-sauvgarder">
+                        <label for="form-sauvgarder" class="form--check-label before:rounded-sm before:border-white text-white">
+                            Sauvgarder les filter
+                        </label>
+                    </div>
+                </div>
+
+                <button type="button" class="btn---animation primary w-full">
+                    <span>Valider</span>
+                    <svg class="btn---animation__circle" width="100%" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60"><circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle></svg>
+                </button>
+            </form>
         </div>
     </div>
 
-
-    <!-- Footer Bar -->
-    <div class="footer-float-bar">
-        <div class="nisf-container">
-            <ul class="footer-floar-bar__list">
-                <li>
-                    <button class="footer-float-bar--item active">
-                        <img class="w-6 h-auto" src="../assets/images/menu-icons/footer-message.png" alt="">
-                    </button>
-                </li>
-                <li>
-                    <button class="footer-float-bar--item">
-                        <img class="w-5 h-auto" src="../assets/images/menu-icons/footer-search.png" alt="">
-                    </button>
-                </li>
-                <li>
-                    <button class="footer-float-bar--item">
-                        <img class="w-5 h-auto" src="../assets/images/menu-icons/footer-user.png" alt="">
-                    </button>
-                </li>
-            </ul>
-        </div>
-    </div>
-    
     <!-- svgsprit icons -->
     <svg width="0" height="0" class="hidden">
         
         <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="icon-angle-down">
             <path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
-        </symbol>
-        
-        <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="icon-angle-up">
-          <path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"></path>
         </symbol>
         
         <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" id="icon-angle-left">
@@ -583,18 +582,7 @@
         <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-messages">
             <path d="M20 2H4c-1.103 0-2 .894-2 1.992v12.016C2 17.106 2.897 18 4 18h3v4l6.351-4H20c1.103 0 2-.894 2-1.992V3.992A1.998 1.998 0 0 0 20 2zm-6 11H7v-2h7v2zm3-4H7V7h10v2z"></path>
         </symbol>
-        
-        <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icon-eye-on">
-          <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M255.66 112c-77.94 0-157.89 45.11-220.83 135.33a16 16 0 0 0-.27 17.77C82.92 340.8 161.8 400 255.66 400c92.84 0 173.34-59.38 221.79-135.25a16.14 16.14 0 0 0 0-17.47C428.89 172.28 347.8 112 255.66 112z"></path>
-          <circle cx="256" cy="256" r="80" fill="none" stroke-miterlimit="10" stroke-width="32"></circle>
-        </symbol>
-        
-        <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" id="icon-star">
-            <path d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path>
-        </symbol>
-
     </svg>
-
     <script src="../assets/js/main.js"></script>
 </body>
 </html>

@@ -10,6 +10,7 @@
     
     <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
     <link rel="stylesheet" href="../assets/libs/gsap/lenis.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     
     <!-- JS SUPPORTS -->
@@ -18,6 +19,9 @@
     <script src="../assets/libs/gsap/ScrollTrigger.min.js"></script>
     <script src="../assets/libs/gsap/lenis.min.js"></script>
     <script src="../assets/libs/slick/slick.min.js"></script>
+
+    <!-- JS FROM CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
 
 </head>
 <body class="nisf-body cloud-animation has-footer-bar"> <!-- has-footer-bar should be when footer has bar -->
@@ -243,15 +247,8 @@
                         </p>
                     </div>
 
-                    <div class="card card-body py-3 h-[56px] px-5 text-xl grid grid-cols-[7rem_1fr] gap-2 rounded text-white">
-                        <span class="flex items-center gap-2 border-r-2 border-white border-opacity-25">
-                            <span><svg class="w-4 h-4">
-                                <use xlink:href="#icon-angle-down"></use>
-                            </svg></span>
-                            <img src="../assets/images/flag-icon/france-square.png" class="w-5 h-auto" alt="">
-                            <span class="font-medium">+212</span>
-                        </span>
-                        <input type="text" class="input-control b-0 bg-transparent rounded-none py-1 px-3 h-auto" placeholder="The Number is ...">
+                    <div class="input-group">
+                        <input type="number" class="input-control" placeholder="The Number is ..." mobile-code-select>
                     </div>
                 </div>
 
@@ -280,7 +277,7 @@
                     </div>
 
                     <div class="input-group">
-                        <input type="text" class="input-control" placeholder="Demi Fre">
+                        <input type="text" class="input-control focus:border-2 focus:!border-primary" placeholder="Demi Fre">
                     </div>
                 </div>
 
@@ -296,7 +293,7 @@
                             <!-- Content -->
                             <div>
                                 <a href="#">
-                                    <h3 class="mb-0 text-white text-xl font-semibold flex items-center gap-x-2">
+                                    <h3 class="mb-0 text-white text-xl font-semibold flex items-center gap-x-2 hover:text-primary transition-all duration-300">
                                         <span class="line--1">Salman ahmed</span>
                                         <span class="inline-block">
                                             <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">

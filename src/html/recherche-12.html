@@ -10,7 +10,6 @@
     
     <link rel="stylesheet" href="../assets/fonts/stylesheet.css">
     <link rel="stylesheet" href="../assets/libs/gsap/lenis.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     
     <!-- JS SUPPORTS -->
@@ -20,302 +19,225 @@
     <script src="../assets/libs/gsap/lenis.min.js"></script>
     <script src="../assets/libs/slick/slick.min.js"></script>
 
-    <!-- JS FROM CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
-
 </head>
-<body class="nisf-body cloud-animation has-footer-bar"> <!-- has-footer-bar should be when footer has bar -->
+<body class="nisf-body has-footer-bar"> <!-- has-footer-bar should be when footer has bar -->
     <!-- All content should go inside nisf-wrapper -->
-    <!-- MENU DRAWER -->
-    <div class="nisf-menu-drawer">
-        <h2 class="text-white h4">Tableau de bord liste</h2>
-        <ul class="list-drawer-menu">
-            <!-- Single Item -->
-            <li class="menu-item">
-                <a href="#" class="menu-item-link">
-                    <span class="menu-item-icon">
-                        <img src="../assets/images/menu-icons/hand-shake.png" alt="">
-                    </span>
-                    <span>Parrainage</span>
-                </a>
-            </li>
-            <!-- Single Item -->
-            <li class="menu-item">
-                <a href="#" class="menu-item-link active">
-                    <span class="menu-item-icon">
-                        <img src="../assets/images/menu-icons/peoples.png" alt="">
-                    </span>
-                    <span>Accés Chat</span>
-                </a>
-            </li>
-            <!-- Single Item -->
-            <li class="menu-item">
-                <a href="#" class="menu-item-link">
-                    <span class="menu-item-icon">
-                        <img src="../assets/images/menu-icons/messages.png" alt="">
-                    </span>
-                    <span>Boite de Réception</span>
-                </a>
-            </li>
-            <!-- Single Item -->
-            <li class="menu-item has-submenu">
-                <a href="#" class="menu-item-link">
-                    <span class="menu-item-icon">
-                        <img src="../assets/images/menu-icons/user-plus.png" alt="">
-                    </span>
-                    <span>Demandes privées</span>
-
-                    <span class="ms-auto">
-                        <svg class="w-4 h-4 text-white">
-                            <use xlink:href="#icon-angle-down"></use>
-                        </svg>
-                    </span>
-                </a>
-
-                <ul class="submenu">
-                    <!-- Single Item -->
-                    <li class="menu-item">
-                        <a href="#" class="menu-item-link">
-                            <span>Demende rendez-vous</span>
-                        </a>
-                    </li>
-                    <!-- Single Item -->
-                    <li class="menu-item">
-                        <a href="#" class="menu-item-link">
-                            <span>Mes disponibilités</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <!-- Single Item -->
-            <li class="menu-item has-submenu">
-                <a href="#" class="menu-item-link">
-                    <span class="menu-item-icon">
-                        <img src="../assets/images/menu-icons/calender.png" alt="">
-                    </span>
-                    <span>Rendez-vous</span>
-
-                    <span class="ms-auto">
-                        <svg class="w-4 h-4 text-white">
-                            <use xlink:href="#icon-angle-down"></use>
-                        </svg>
-                    </span>
-                </a>
-
-                <ul class="submenu">
-                    <!-- Single Item -->
-                    <li class="menu-item">
-                        <a href="#" class="menu-item-link">
-                            <span>Demende rendez-vous</span>
-                        </a>
-                    </li>
-                    <!-- Single Item -->
-                    <li class="menu-item">
-                        <a href="#" class="menu-item-link">
-                            <span>Mes disponibilités</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-
-
-        <ul class="list-drawer-menu">
-            <!-- Single Item -->
-            <li class="menu-item">
-                <a href="#" class="menu-item-link">
-                    <span class="menu-item-icon">
-                        <img src="../assets/images/menu-icons/user.png" alt="">
-                    </span>
-                    <span>Mon Profil</span>
-                </a>
-            </li>
-            <!-- Single Item -->
-            <li class="menu-item">
-                <a href="#" class="menu-item-link">
-                    <span class="menu-item-icon">
-                        <img src="../assets/images/menu-icons/star.png" alt="">
-                    </span>
-                    <span>Favoris</span>
-                </a>
-            </li>
-            <!-- Single Item -->
-            <li class="menu-item">
-                <a href="#" class="menu-item-link">
-                    <span class="menu-item-icon">
-                        <img src="../assets/images/menu-icons/heart.png" alt="">
-                    </span>
-                    <span>Coups de coeur</span>
-                </a>
-            </li>
-            <!-- Single Item -->
-            <li class="menu-item has-submenu">
-                <a href="#" class="menu-item-link">
-                    <span class="menu-item-icon">
-                        <img src="../assets/images/menu-icons/smile.png" alt="">
-                    </span>
-                    <span>Interactions</span>
-
-                    <span class="ms-auto">
-                        <svg class="w-4 h-4 text-white">
-                            <use xlink:href="#icon-angle-down"></use>
-                        </svg>
-                    </span>
-                </a>
-
-                <ul class="submenu">
-                    <!-- Single Item -->
-                    <li class="menu-item">
-                        <a href="#" class="menu-item-link">
-                            <span>Demende rendez-vous</span>
-                        </a>
-                    </li>
-                    <!-- Single Item -->
-                    <li class="menu-item">
-                        <a href="#" class="menu-item-link">
-                            <span>Mes disponibilités</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-
-
-        <h2 class="text-white h4">Gestion du compte</h2>
-
-        <ul class="list-drawer-menu">
-            <!-- Single Item -->
-            <li class="menu-item">
-                <a href="#" class="menu-item-link">
-                    <span class="menu-item-icon">
-                        <img src="../assets/images/menu-icons/sub.png" alt="">
-                    </span>
-                    <span>Renouveler Mon Abo </span>
-                </a>
-            </li>
-            <!-- Single Item -->
-            <li class="menu-item">
-                <a href="#" class="menu-item-link">
-                    <span class="menu-item-icon">
-                        <img src="../assets/images/menu-icons/cog.png" alt="">
-                    </span>
-                    <span>Paramètre</span>
-                </a>
-            </li>
-            <!-- Single Item -->
-            <li class="menu-item">
-                <a href="#" class="menu-item-link">
-                    <span class="menu-item-icon">
-                        <img src="../assets/images/menu-icons/log-out.png" alt="">
-                    </span>
-                    <span>Log Out</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-    
     <div class="nisf-wrapper">
         <!-- body overlay -->
         <div class="body-overlay"></div>
         <div class="nisf-container">
+
             <!-- Top Navigation -->
-            <nav class="top-navigation py-8 flex items-center justify-between gap-3">
-                <a href="#" class="inline-flex items-center">
-                    <svg class="w-5 h-5 text-white">
+            <nav class="top-navigation pt-8 flex items-center justify-between gap-3 mb-4">
+                <a href="#" class="">
+                    <svg class="w-4 h-4 text-white">
                         <use xlink:href="#icon-angle-left"></use>
-                    </svg>
+                    </svg>  
                 </a>
-                <h4 class="font-semibold text-xl text-white w-full mb-0">Mahram</h4>
-                <button class="menu-toggler ms-auto">
-                    <svg class="menu-toggler---icon menu-toggler---open">
-                        <use xlink:href="#icon-vertical-dot"></use>
-                    </svg>
-                    <svg class="menu-toggler---icon menu-toggler---close">
-                        <use xlink:href="#icon-half-menu"></use>
-                    </svg>
-                </button>
             </nav>
-            
 
-            <form action="">
-                <div class="mb-7">
-                    <h3 class="h4 text-white">Vous avez reçu un numéro mahram de téléphone de :</h3>
+            <div class="section-heading mb-2 text-center">
+                <h3 class="text-3xl font-bold text-white mb-4">5 Profils à qui vous pourriez le plus correspondre.</h3>
+                <a href="#" class="btn---animation primary btn--sm">
+                    <span>Lancer Le Robot</span>
+                    <svg class="btn---animation__circle" width="100%" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60"><circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle></svg>
+                </a>
+            </div>
 
-                    <div class="card card-body">
-                        <div class="flex gap-3">
-                            <!-- Avatar -->
-                            <div class="avatar avatar-2xl">
-                                <img src="../assets/images/users/4.png" alt="">
-                            </div>
-                            <!-- Content -->
-                            <div>
-                                <a href="#">
-                                    <h3 class="mb-0 text-white text-xl font-semibold flex items-center gap-x-2 transition-all duration-300 hover:text-primary">
-                                        <span class="line--1">Salman ahmed</span>
-                                        <span class="inline-block">
-                                            <img class="w-4 h-4" src="../assets/images/flag-icon/spain.png" alt="">
-                                        </span>
-                                    </h3>
-                                </a>
-                                <p class="text-medium text-xs text-white mb-2 text-opacity-25">39 ans (Agadir, Maroc)</p>
+            <!-- Search Bar -->
+            <div class="py-3">
+                <div class="mb-3 flex items-center justify-between gap-3">
+                    <div class="relative w-full">
+                        <input type="text" placeholder="Je Cherche ..." class="input-control !ps-12">
+                        <img src="../assets/images/icons/search.png" class="w-4 absolute top-1/2 start-5 -translate-y-1/2" alt="">
+                    </div>
+                    <button type="submit" class="w-[56px] min-w-[56px] h-[56px] p-2 bg-primary text-white inline-flex items-center justify-center rounded focus-effect" tabindex="-1">
+                        <img src="../assets/images/icons/filter.png" class="w-[20px]" alt="">
+                    </button>
+                </div>
 
-                                <div class="font-medium text-xs inline-block rounded-[6px] bg-white bg-opacity-15 text-white px-4 py-1">
-                                    Rendez vous audio visual
+                <div class="flex justify-between items-center gap-3">
+                    <div class="font-medium text-white">Total Frères: <a href="#" class="link-primary">2763</a> profils disponibles.</div>
+                    <div class="switch-toggle">
+                        <input type="checkbox" class="switch-toggle__input" id="toggle" />
+                            <label for="toggle" class="switch-toggle__label"></label>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <ul class="grid grid-cols-2 gap-2">
+                    <!-- Single Card Item -->
+                    <li>
+                        <div class="card">
+                            <div class="card-body p-3">
+                                <!-- Head -->
+                                <div class="flex gap-3 justify-between mb-3">
+                                    <h3 class="h6 mb-0">Profile Bloqué</h3>
+                                    <button type="button" class="text-white ms-auto inline-block focus-effect" tabindex="-1">
+                                        <svg class="w-3 h-3">
+                                            <use xlink:href="#icon-star"></use>
+                                        </svg>
+                                    </button>
                                 </div>
 
-                                <ul class="flex gap-3 mt-3 items-end">
-                                    <li><a href="#"><img class="max-w-[1rem]" src="../assets/images/icons/rendez-message.png" alt=""></a>
+                                <!-- Thumbnail -->
+                                <div class="text-center">
+                                    <div class="avatar avatar-xl mx-auto mb-3">
+                                        <img src="../assets/images/users/3.png" alt="">
+                                    </div>
+                                    <a href="#"><h4 class="text-white h5 mb-0 line--1 hover:text-primary transition-all duration-300">Rachid Alawi</h4></a>
+                                    <p class="text-sm">Normandie</p>
+                                </div>
+                                
+                                <ul class="mb-3 flex gap-3 justify-center items-center"> 
+                                    <li>
+                                        <a href="#">
+                                            <img class="w-[30px] min-w-[30px] h-auto" src="../assets/images/education.png" alt="">
+                                        </a>
                                     </li>
-                                    <li class="w-[2px] h-3 bg-white bg-opacity-15 inline-block"></li>
-                                    <li><a href="#"><img class="max-w-[1.15rem]" src="../assets/images/icons/rendez-video.png" alt=""></a>
-                                    </li>
-                                    <li class="w-[2px] h-3 bg-white bg-opacity-15 inline-block"></li>
-                                    <li><a href="#"><img class="max-w-[1.25rem]" src="../assets/images/icons/rendez-meeting.png" alt=""></a>
+                                    <li class="w-[2px] h-[1.5rem] bg-white bg-opacity-10"></li>
+                                    <li>
+                                        <a href="#">
+                                            <img class="w-[30px] min-w-[30px] h-auto" src="../assets/images/photos.png" alt="">
+                                        </a>
                                     </li>
                                 </ul>
+
+                                <ul class="flex-col flex gap-2 border-t-2 border-b-2 border-white border-opacity-25 mb-1 py-3">
+                                    <!-- List item -->
+                                    <li class="flex justify-between">
+                                        <div class="text-start">
+                                            <h6 class="mb-0 text-sm">Age</h6>
+                                            <p class="text-white mb-0 text-sm">54 ans</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <h6 class="mb-0 text-sm">Autre Origine</h6>
+                                            <div>
+                                                <img class="w-4 inline-block" src="../assets/images/flag-icon/france-square.png" alt="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- List item -->
+                                    <li class="flex justify-between">
+                                        <div class="text-start">
+                                            <h6 class="mb-0 text-sm">Nationalité</h6>
+                                            <div>
+                                                <img class="w-4 inline-block" src="../assets/images/flag-icon/france-square.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="text-end">
+                                            <h6 class="mb-0 text-sm">Région</h6>
+                                            <p class="text-white mb-0 text-sm">À l'étranger</p>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="flex items-center gap-2 text-xs justify-between mb-3">
+                                    <svg class="w-3 h-3">
+                                        <use xlink:href="#icon-angle-down"></use>
+                                    </svg>
+                                    <span>VOIR PLUS D’INFORMATION </span>
+                                </div>
+                                <a href="#" class="btn---animation primary">
+                                    <span>VOIR LE PROFIL</span>
+                                    <svg class="btn---animation__circle" width="100%" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60"><circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle></svg>
+                                </a>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </li>
 
-                <div class="mb-7">
-                    <h3 class="text-xl text-white mb-3">Le Numero Mahram Est </h3>
+                    <!-- Single Card Item -->
+                    <li>
+                        <div class="card">
+                            <div class="card-body p-3">
+                                <!-- Head -->
+                                <div class="flex gap-3 justify-between mb-3">
+                                    <button type="button" class="text-white ms-auto inline-block focus-effect" tabindex="-1">
+                                        <svg class="w-3 h-3">
+                                            <use xlink:href="#icon-star-fill"></use>
+                                        </svg>
+                                    </button>
+                                </div>
 
-                    <div class="input-group">
-                        <input type="number" class="input-control" placeholder="The Number is ..." mobile-code-select>
-                    </div>
-                </div>
+                                <!-- Thumbnail -->
+                                <div class="text-center">
+                                    <div class="avatar avatar-xl mx-auto mb-3">
+                                        <img src="../assets/images/users/3.png" alt="">
+                                    </div>
+                                    <a href="#"><h4 class="text-white h5 mb-0 line--1 hover:text-primary transition-all duration-300">Rachid Alawi</h4></a>
+                                    <p class="text-sm">Normandie</p>
+                                </div>
+                                
+                                <ul class="mb-3 flex gap-3 justify-center items-center"> 
+                                    <li>
+                                        <a href="#">
+                                            <img class="w-[30px] min-w-[30px] h-auto" src="../assets/images/messages.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="w-[2px] h-[1.5rem] bg-white bg-opacity-10"></li>
+                                    <li>
+                                        <a href="#">
+                                            <img class="w-[30px] min-w-[30px] h-auto" src="../assets/images/education.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="w-[2px] h-[1.5rem] bg-white bg-opacity-10"></li>
+                                    <li>
+                                        <a href="#">
+                                            <img class="w-[30px] min-w-[30px] h-auto" src="../assets/images/photos.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
 
-                <div class="mb-7">
-                    <h3 class="h4 text-white">Le Mahram est son :</h3>
-                    <div class="grid grid-cols-3 gap-3 mb-3">
-                        <div class="outline--check">
-                            <input type="radio" name="maharam" id="form-check--1" class="outline--check-input">
-                            <label for="form-check--1" class="outline--check-label bg-card-bg text-white py-2 px-2 text-xl font-semibold leading-10 rounded border-2 text-center">
-                                Père
-                            </label>
+                                <ul class="flex-col flex gap-2 border-t-2 border-b-2 border-white border-opacity-25 mb-1 py-3">
+                                    <!-- List item -->
+                                    <li class="flex justify-between">
+                                        <div class="text-start">
+                                            <h6 class="mb-0 text-sm">Age</h6>
+                                            <p class="text-white mb-0 text-sm">54 ans</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <h6 class="mb-0 text-sm">Autre Origine</h6>
+                                            <div>
+                                                <img class="w-4 inline-block" src="../assets/images/flag-icon/france-square.png" alt="">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- List item -->
+                                    <li class="flex justify-between">
+                                        <div class="text-start">
+                                            <h6 class="mb-0 text-sm">Nationalité</h6>
+                                            <div>
+                                                <img class="w-4 inline-block" src="../assets/images/flag-icon/france-square.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="text-end">
+                                            <h6 class="mb-0 text-sm">Région</h6>
+                                            <p class="text-white mb-0 text-sm">À l'étranger</p>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <div class="flex items-center gap-2 text-xs justify-between mb-3">
+                                    <svg class="w-3 h-3">
+                                        <use xlink:href="#icon-angle-down"></use>
+                                    </svg>
+                                    <span>VOIR PLUS D’INFORMATION </span>
+                                </div>
+                                <a href="#" class="btn---animation primary">
+                                    <span>VOIR LE PROFIL</span>
+                                    <svg class="btn---animation__circle" width="100%" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60"><circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle></svg>
+                                </a>
+                            </div>
                         </div>
-                        <div class="outline--check">
-                            <input type="radio" name="maharam" id="form-check--2" class="outline--check-input">
-                            <label for="form-check--2" class="outline--check-label bg-card-bg text-white py-2 px-2 text-xl font-semibold leading-10 rounded border-2 text-center">
-                                Frère
-                            </label>
-                        </div>
-                        <div class="outline--check">
-                            <input type="radio" name="maharam" id="form-check--3" class="outline--check-input">
-                            <label for="form-check--3" class="outline--check-label bg-card-bg text-white py-2 px-2 text-xl font-semibold leading-10 rounded border-2 text-center">
-                                Oncle
-                            </label>
-                        </div>
-                    </div>
-                    <div class="inline-block bg-card-bg text-white py-2 px-5 text-xl font-semibold leading-10 rounded border-2 text-center border-primary">
-                        Demi Frère
-                    </div>
-                </div>
-            </form>
+                    </li>                    
+                </ul>
+            </div>
+            
         </div>
     </div>
-    
+
+
     <!-- Footer Bar -->
     <div class="footer-float-bar">
         <div class="nisf-container">
@@ -439,7 +361,23 @@
     <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-messages">
         <path d="M20 2H4c-1.103 0-2 .894-2 1.992v12.016C2 17.106 2.897 18 4 18h3v4l6.351-4H20c1.103 0 2-.894 2-1.992V3.992A1.998 1.998 0 0 0 20 2zm-6 11H7v-2h7v2zm3-4H7V7h10v2z"></path>
     </symbol>
+        
+    <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" id="icon-star">
+        <path d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path>
+    </symbol>
 
+    <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="icon-user-fill">
+        <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path>
+    </symbol>
+    
+    <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-user-presentation">
+        <path d="M8 4C8 5.10457 7.10457 6 6 6 4.89543 6 4 5.10457 4 4 4 2.89543 4.89543 2 6 2 7.10457 2 8 2.89543 8 4ZM5 16V22H3V10C3 8.34315 4.34315 7 6 7 6.82059 7 7.56423 7.32946 8.10585 7.86333L10.4803 10.1057 12.7931 7.79289 14.2073 9.20711 10.5201 12.8943 9 11.4587V22H7V16H5ZM10 5H19V14H10V16H14.3654L17.1889 22H19.3993L16.5758 16H20C20.5523 16 21 15.5523 21 15V4C21 3.44772 20.5523 3 20 3H10V5Z"></path>
+    </symbol>
+    
+    <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" id="icon-star-fill">
+        <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path>
+    </symbol>
+    
 </svg>
 
     <script src="../assets/js/main.js"></script>

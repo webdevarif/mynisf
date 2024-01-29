@@ -128,12 +128,12 @@
 /* BLUE */
 .outline--check .outline--check-input:checked + .outline--check-label.outline--check--blue {
     @apply
-    border-[#00F5E4]
-    before:bg-[#00F5E4]
+    border-[#0e6777]
+    before:bg-[#0e6777]
 }
 .outline--check .outline--check-input:checked + .outline--check-label.outline--check--blue .outline--check--icon {
     @apply
-    !bg-[#00F5E4]
+    !bg-[#0e6777]
     !text-white
 }
 
@@ -272,10 +272,10 @@ img.list-stars-progress-star {
     bg-[#814067]
     block
     py-4
-    px-6
+    px-4
     flex
     items-center
-    gap-5
+    gap-4
     text-white
     text-opacity-50
     rounded
@@ -401,3 +401,71 @@ img.list-stars-progress-star {
     @apply
     flex flex-col
 }
+
+
+/* LANGUAGE SELECTOR */
+.language-selector{
+    background-image: none !important;
+    @apply
+    h-auto
+    px-3
+    py-1
+    rounded-sm
+    text-sm
+}
+
+.lang-selector-group{
+    @apply
+    relative
+}
+.lang-selector-group .lang-selector--label{
+    @apply
+    text-white 
+    rounded-[5px] 
+    text-sm 
+    text-opacity-50 
+    inline-flex 
+    gap-2 
+    items-center 
+    bg-white 
+    bg-opacity-10 
+    px-3 
+    py-1
+    cursor-pointer
+}
+.lang-selector-group .language--name{
+    @apply
+    inline-flex
+    items-center
+    gap-2
+}
+.lang-selector-group .language--flag{
+    @apply
+    w-auto 
+    h-3 
+}
+.lang-selector-group .lang-selector___list{
+    @apply
+    absolute
+    top-[calc(100%+0.5rem)]
+    z-[10]
+    bg-input-bg
+    min-w-[15rem]
+    py-2
+    rounded-sm
+    hidden
+}
+.lang-selector-group .lang-selector___list-item{
+    @apply
+    flex
+    items-center
+    gap-3
+    py-3
+    px-3
+    border-b
+    border-white
+    border-opacity-15
+    last:border-b-0
+    cursor-pointer
+}
+

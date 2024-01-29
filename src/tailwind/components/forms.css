@@ -514,3 +514,65 @@ select.input-control{
   bg-primary
   text-white
 }
+
+
+/* MOBILE CODE */
+.input-group .iti{
+  @apply
+  w-full
+}
+.input-group .iti__country-list{
+  @apply
+  bg-input-bg
+  border-0
+  py-3
+  rounded
+  my-2
+}
+.input-group .iti__country-list .iti__country{
+  @apply
+  py-3
+  px-3
+}
+.input-group .iti--separate-dial-code .iti__selected-dial-code{
+  @apply
+  text-lg
+  text-white
+  font-medium
+  ms-2
+}
+
+.input-group .iti__arrow {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyBzdHJva2U9IiNmZmYiIGZpbGw9IiNmZmYiIHN0cm9rZS13aWR0aD0iMCIgdmlld0JveD0iMCAwIDMyIDMyIiBoZWlnaHQ9IjFlbSIgd2lkdGg9IjFlbSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNIDQuMjE4NzUgMTAuNzgxMjUgTCAyLjc4MTI1IDEyLjIxODc1IEwgMTUuMjgxMjUgMjQuNzE4NzUgTCAxNiAyNS40MDYyNSBMIDE2LjcxODc1IDI0LjcxODc1IEwgMjkuMjE4NzUgMTIuMjE4NzUgTCAyNy43ODEyNSAxMC43ODEyNSBMIDE2IDIyLjU2MjUgWiI+PC9wYXRoPjwvc3ZnPg==");
+  @apply
+  order-first
+  w-4
+  h-4
+  overflow-hidden
+  border-0
+  me-3
+  bg-center
+  bg-no-repeat
+  bg-transparent
+}
+.input-group .iti__selected-dial-code {
+  @apply
+  pe-2
+}
+.input-group .iti--separate-dial-code .iti__selected-flag {
+  @apply
+  bg-white
+  bg-opacity-5
+  transition-all
+  duration-300
+  hover:bg-white
+  hover:bg-opacity-10
+  rounded-l
+}
+
+.input-group .iti__flag-box, 
+.input-group .iti__country-name, 
+.input-group .iti__dial-code {
+  @apply
+  text-white
+}

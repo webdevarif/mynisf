@@ -24,120 +24,59 @@
     <!-- All content should go inside nisf-wrapper -->
     <div class="nisf-wrapper">
         <div class="nisf-container">
+
             <!-- Top Navigation -->
-            <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-5">
-                <button class="">
-                    <svg class="w-4 h-4 text-white">
+            <nav class="top-navigation py-8 flex items-center justify-between gap-3 mb-3">
+                <a href="#" class="inline-flex items-center">
+                    <svg class="w-5 h-5 text-white">
                         <use xlink:href="#icon-angle-left"></use>
                     </svg>
-                </button>
-
-                <ul class="list-dots">
-                    <li class="active"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                </a>
             </nav>
 
             <!-- Header -->
-            <header class="header mb-7">
+            <header class="header mb-8">
                 <a href="/" class="header_logo mb-3">
                     <img src="../assets/images/logo.png" alt="">
                 </a>
-                <h3 class="text-2xl text-white mb-3">Aidez-nous à presenter vos informations.</h3>
-                <p class="font-medium">Ces informations seront disponibles sur votre profil et visible pour les autres membres.</p>
+                <h3 class="text-2xl text-white mb-3">Pour continuer l’inscription sur MyNisf merci de prèciser votre sexe.</h3>
+                <p class="font-medium">Faîtes les causes sur Mynisf !</p>
             </header>
 
-            <form action="#" >
-                <!-- Single Field -->
-                <div class="input-group">
-                    <label for="form--pseudo" class="input-label">Pseudo (Pas modifiable)</label>
-                    <input type="text" id="form--pseudo" class="input-control" placeholder="Ahmed">
-                </div>
-                <div class="grid grid-cols-2 gap-3">
-                    <!-- Single Field -->
-                    <div class="input-group">
-                        <label for="form--nationality" class="input-label">Nationalité</label>
-                        <div class="ul-select no-selected">
-                            <div class="ul-select-input">
-                                <input type="hidden" class="input-hidden-field" name="form--nationality" value="">
-                                <div class="ul-select-name"></div>
-                                <div class="placeholder-label">Choose One</div>
-                            </div>
-                            <span class="select-arrow select-arrow-down">
-                                <svg><use xlink:href="#icon-angle-down"></use></svg>
-                            </span>
-                            <span class="select-arrow select-arrow-cancel">
-                                <svg><use xlink:href="#icon-close"></use></svg>
-                            </span>
-                            <ul class="ul-select-list">
-                                <li data-value="option-1">Option 1</li>
-                                <li data-value="option-2">Option 2</li>
-                                <li data-value="option-3">Option 3</li>
-                                <li data-value="option-4">Option 4</li>
-                                <li data-value="option-5">Option 5</li>
-                            </ul>
-                        </div>
+            <form action="#">
+                <div class="bg-[#833c67] p-6 rounded-lg shadow-[0px_50px_177.48px_26.52px_rgba(78,78,78,0.21)]">
+
+                    <h6 class="h5 text-white text-bold">Choisissez votre sexe.</h6>
+
+                    <ul class="grid grid-cols-2 gap-3 text-center">
+                        <li class="outline--check">
+                            <input type="radio" class="outline--check-input" name="choisissez" id="form--homme">
+                            <label for="form--homme" class="rounded-md bg-black bg-opacity-15 outline--check-label outline--check--blue p-5">
+                                <div class="flex mb-3 w-full bg-black aspect-square bg-opacity-25 justify-center items-center rounded-full outline--check--icon">
+                                    <img class="max-w-[var(--theme-size--4xl)]" src="../assets/images/homme.png" alt="">
+                                </div>
+                                <h3 class="text-xl text-white">Homme</h3>
+                            </label>
+                        </li>
+
+                        <li class="outline--check">
+                            <input type="radio" class="outline--check-input" name="choisissez" id="form--femme">
+                            <label for="form--femme"class="rounded-md bg-black bg-opacity-15 outline--check-label outline--check--pink p-5">
+                                <div class="flex mb-3 w-full bg-black aspect-square bg-opacity-25 justify-center items-center rounded-full outline--check--icon">
+                                    <img class="max-w-[var(--theme-size--4xl)]" src="../assets/images/femme.png" alt="">
+                                </div>
+                                <h3 class="text-xl text-white">Femme</h3>
+                            </label>
+                        </li>
+                    </ul>
+                    
+                    <div class="mt-7">
+                        <button type="button" class="btn---animation primary w-full">
+                            <span>SUIVANT</span>
+                            <svg class="btn---animation__circle" width="100%" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60"><circle class="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle></svg>
+                        </button>
                     </div>
-                    <!-- Single Field -->
-                    <div class="input-group">
-                        <label for="form--origine" class="input-label">Origine</label>
-                        <div class="ul-select no-selected">
-                            <div class="ul-select-input">
-                                <input type="hidden" class="input-hidden-field" name="form--origine" value="">
-                                <div class="ul-select-name"></div>
-                                <div class="placeholder-label">Choose One</div>
-                            </div>
-                            <span class="select-arrow select-arrow-down">
-                                <svg><use xlink:href="#icon-angle-down"></use></svg>
-                            </span>
-                            <span class="select-arrow select-arrow-cancel">
-                                <svg><use xlink:href="#icon-close"></use></svg>
-                            </span>
-                            <ul class="ul-select-list">
-                                <li data-value="option-1">Option 1</li>
-                                <li data-value="option-2">Option 2</li>
-                                <li data-value="option-3">Option 3</li>
-                                <li data-value="option-4">Option 4</li>
-                                <li data-value="option-5">Option 5</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Field -->
-                <div class="input-group">
-                    <label for="form--autre-origine" class="input-label">Autre Origine</label>
-                    <div class="ul-select no-selected">
-                        <div class="ul-select-input">
-                            <input type="hidden" class="input-hidden-field" name="form--autre-origine" value="">
-                            <div class="ul-select-name"></div>
-                            <div class="placeholder-label">Choose One</div>
-                        </div>
-                        <span class="select-arrow select-arrow-down">
-                            <svg><use xlink:href="#icon-angle-down"></use></svg>
-                        </span>
-                        <span class="select-arrow select-arrow-cancel">
-                            <svg><use xlink:href="#icon-close"></use></svg>
-                        </span>
-                        <ul class="ul-select-list">
-                            <li data-value="option-1">Bangladesh</li>
-                            <li data-value="option-2">Option 2</li>
-                            <li data-value="option-3">Option 3</li>
-                            <li data-value="option-4">Option 4</li>
-                            <li data-value="option-5">Option 5</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Single Field -->
-                <div class="input-group">
-                    <label for="form--telephone" class="input-label">Télèphone (vu que par l’admin)</label>
-                    <input type="number" id="form--telephone" class="input-control" placeholder="+212657968233">
-                </div>
-                <div class="mt-8">
-                    <button type="submit" class="mb-3 btn--primary w-full">SUIVANT</button>
+                    
                 </div>
             </form>
         </div>
