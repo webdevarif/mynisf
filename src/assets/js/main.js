@@ -12,6 +12,7 @@
         this.setupRating();
         this.setupVideoPlayer();
         this.setupSelect2();
+        this.setupButtonCursor();
       },
 
       setupMobileCode() {
@@ -322,7 +323,7 @@
         videoWrappers.forEach(wrapper => {
           let video = wrapper.querySelector('.video-element');
           let button__play = wrapper.querySelector('.video-control--play button.play');
-          let button__pause = wrapper.querySelector('.video-control--play button.pause');
+          // let button__pause = wrapper.querySelector('.video-control--play button.pause');
 
           button__play.addEventListener("click", function() {    
                 // For example, if you want to play/pause a video inside the wrapper:
@@ -336,17 +337,17 @@
                 }
             });
 
-          button__pause.addEventListener("click", function() {    
-              // For example, if you want to play/pause a video inside the wrapper:
-              // let video = wrapper.querySelector("video");
-              if (video) {
-                  if (video.paused) {
-                      video.play();
-                  } else {
-                    video.pause();
-                  }
-              }
-          });
+          // button__pause.addEventListener("click", function() {    
+          //     // For example, if you want to play/pause a video inside the wrapper:
+          //     // let video = wrapper.querySelector("video");
+          //     if (video) {
+          //         if (video.paused) {
+          //             video.play();
+          //         } else {
+          //           video.pause();
+          //         }
+          //     }
+          // });
         });        
       },
       setupSelect2(){
@@ -360,7 +361,26 @@
             });
           });
         }
-      }
+      },
+
+      setupButtonCursor() {
+        if ($('.nisf-btn').length) {
+          $('.nisf-btn')
+          .on('mouseenter', function(e) {
+            var parentOffset = $(this).offset(),
+            relX = e.pageX - parentOffset.left,
+            relY = e.pageY - parentOffset.top;
+            $(this).find('span.cursor-aware').css({top:relY, left:relX})
+          })
+          .on('mouseout', function(e) {
+            var parentOffset = $(this).offset(),
+            relX = e.pageX - parentOffset.left,
+            relY = e.pageY - parentOffset.top;
+            $(this).find('span.cursor-aware').css({top:relY, left:relX})
+          });
+        }
+      },
+      
 
     };
   
