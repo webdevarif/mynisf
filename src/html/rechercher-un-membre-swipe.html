@@ -218,13 +218,13 @@
 
             <div class="slider-area px-6">
                 <div class="text-center mb-2">
-                    <a href="#" class="w-7 h-7 bg-white bg-opacity-10 inline-flex justify-center items-center rounded-full">
+                    <button type="button" onclick="profileSaved()" class="w-7 h-7 bg-white bg-opacity-10 inline-flex justify-center items-center rounded-full">
                         <svg class="w-3 h-3 text-white">
                             <use xlink:href="#icon-angle-up"></use>
                         </svg>
-                    </a>                
+                    </button>                
                 </div>
-                <div theme-slider data-slick='{
+                <div theme-slider class="theme-slider" data-slick='{
                     "arrows": true, 
                     "centerPadding": "2rem",
                     "slidesToShow": 1, 
@@ -242,7 +242,7 @@
                                     <!-- List Item -->
                                     <li class="flex justify-between gap-3 items-start">
                                         <div>
-                                            <a href="#"><h3 class="text-2xl text-white transition-all duration-300 hover:text-primary line--1">Rachid Alawi, 28</h3></a>
+                                            <a href="#"><h3 class="text-2xl text-white transition-all duration-300 hover:text-primary line--1">Salman Mohammad, 28</h3></a>
                                             <p class="font-normal text-white text-opacity-60">Normandie</p>
                                         </div>
                                         <ul class="inline-flex gap-3 text-xl items-center">
@@ -295,7 +295,7 @@
                                     <!-- List Item -->
                                     <li class="flex justify-between gap-3 items-start">
                                         <div>
-                                            <a href="#"><h3 class="text-2xl text-white transition-all duration-300 hover:text-primary line--1">Rachid Alawi, 28</h3></a>
+                                            <a href="#"><h3 class="text-2xl text-white transition-all duration-300 hover:text-primary line--1">Emran Hossain, 28</h3></a>
                                             <p class="font-normal text-white text-opacity-60">Normandie</p>
                                         </div>
                                         <ul class="inline-flex gap-3 text-xl items-center">
@@ -348,7 +348,7 @@
                                     <!-- List Item -->
                                     <li class="flex justify-between gap-3 items-start">
                                         <div>
-                                            <a href="#"><h3 class="text-2xl text-white transition-all duration-300 hover:text-primary line--1">Rachid Alawi, 28</h3></a>
+                                            <a href="#"><h3 class="text-2xl text-white transition-all duration-300 hover:text-primary line--1">Rajib Hossin, 28</h3></a>
                                             <p class="font-normal text-white text-opacity-60">Normandie</p>
                                         </div>
                                         <ul class="inline-flex gap-3 text-xl items-center">
@@ -444,11 +444,11 @@
                     </div>
                 </div>
                 <div class="text-center mt-2">
-                    <a href="#" class="w-7 h-7 bg-white bg-opacity-10 inline-flex justify-center items-center rounded-full">
+                    <button type="button" class=" slide-remover-item w-7 h-7 bg-white bg-opacity-10 inline-flex justify-center items-center rounded-full">
                         <svg class="w-3 h-3 text-white">
                             <use xlink:href="#icon-angle-down"></use>
                         </svg>
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -595,5 +595,27 @@
     </svg>
 
     <script src="../assets/js/main.js"></script>
+
+
+
+    <!-- THIS FUNCTION IS FOR TEST ONLY -->
+    <script>
+    function profileSaved() {
+        alert("Profile is Saved Successfully");
+    }
+
+    // Shorthand for $( document ).ready()
+    jQuery(function($) {
+
+        $('.slide-remover-item').on('click', function() {
+            
+            $('.theme-slider').slick('slickRemove',1 - 1);
+            if (slideIndex !== 0){
+                slideIndex--;
+            }
+        });
+    });
+    </script>
+    <!-- THIS FUNCTION IS FOR TEST ONLY -->
 </body>
 </html>

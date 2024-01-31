@@ -1124,10 +1124,6 @@ body {
   min-height: 50vh !important;
 }
 
-.min-h-screen {
-  min-height: 100vh !important;
-}
-
 .w-1 {
   width: 0.25rem !important;
 }
@@ -1407,10 +1403,6 @@ body {
 
 .resize {
   resize: both !important;
-}
-
-.list-decimal {
-  list-style-type: decimal !important;
 }
 
 .grid-cols-1 {
