@@ -312,11 +312,11 @@
           const selectedStars = $form.find('input[name="rating"]:checked').val();
           $progressList.removeClass('active current');
           $progressList.slice(0, selectedStars).addClass('active');
+          $('.rating-reaction--emoji').attr('src', $progressList.eq(selectedStars - 1).data('react'));
           $progressList.eq(selectedStars - 1).addClass('current');
       }
     },
     
-
       setupVideoPlayer(){
         let videoWrappers = document.querySelectorAll(".video-wrapper");
     
