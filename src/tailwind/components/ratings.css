@@ -1,5 +1,8 @@
 /* RATINGS */
-
+.rating-reaction--emoji{
+    @apply
+    max-w-[200px]
+}
 
 .rating-form .list-stars-progress{
     @apply

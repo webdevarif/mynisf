@@ -313,6 +313,7 @@
           $progressList.removeClass('active current');
           $progressList.slice(0, selectedStars).addClass('active');
           $('.rating-reaction--emoji').attr('src', $progressList.eq(selectedStars - 1).data('react'));
+          $('.rating-reaction--text').text($progressList.eq(selectedStars - 1).data('text'));
           $progressList.eq(selectedStars - 1).addClass('current');
       }
     },

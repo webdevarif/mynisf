@@ -3297,6 +3297,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* RATINGS */
 
+.rating-reaction--emoji {
+  max-width: 200px;
+}
+
 .rating-form .list-stars-progress {
   position: relative;
   z-index: 1;
