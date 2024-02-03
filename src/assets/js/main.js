@@ -380,6 +380,30 @@
             $(this).find('span.cursor-aware').css({top:relY, left:relX})
           });
         }
+
+        if ($('.btn--send').length) {
+          $('.btn--send').click(function () {
+            var $button = $(this);
+            $button.removeClass("send");
+            $button.addClass("loading", 250);
+        
+            setTimeout(function () {
+              $button.removeClass("loading").addClass("sent", 450);
+        
+                setTimeout(function () {
+                  $button.removeClass("sent");
+                  $button.addClass("send");
+                }, 1250);
+            }, 2250);
+          });
+        }
+        if ($('.btn--star').length) {
+          $('.btn--star').click(function () {
+            var $button = $(this);
+            $button.toggleClass('selected');
+          });
+        }
+      
       },
       
 

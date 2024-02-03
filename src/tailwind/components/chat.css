@@ -183,8 +183,28 @@
     text-opacity-25
 }
 
-.chat--control__button.send{
+.chat--control__button.btn--send{
     @apply 
     bg-white
     text-primary
+}
+
+.chat--control__button.btn--send svg{
+    @apply 
+    hidden
+}
+
+.chat--control__button.send svg.default{
+    @apply 
+    block
+}
+
+.chat--control__button.loading svg.sending{
+    @apply 
+    block
+}
+
+.chat--control__button.sent svg.sent{
+    @apply 
+    block
 }

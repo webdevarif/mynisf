@@ -245,3 +245,85 @@
     width: 225%;
     height: 562.5px;
 }
+
+
+.btn--star{
+    @apply
+    px-1 
+    min-w-[56px] 
+    inline-flex 
+    items-center 
+    justify-center 
+    border-2 
+    border-white 
+    rounded 
+    bg-white 
+    text-black 
+    relative
+}
+
+.btn--star .circle {
+    @apply relative w-full h-full z-0 before:border-0 before:border-solid before:border-[#ffac33] after:border-0 after:border-solid after:border-white;
+  }
+  .btn--star .circle:before,
+  .btn--star .circle:after {
+    @apply absolute -translate-x-2/4 -translate-y-2/4 content-[""] w-0 h-0 rounded-[50%] left-2/4 top-2/4;
+  }
+  .btn--star .shine {
+    @apply absolute h-0 w-0 z-[1] left-2/4 top-2/4;
+  }
+  .btn--star .shine .shiner {
+    @apply absolute w-0.5 h-0 left-0 top-[5px];
+    background: #ffac33;
+  }
+  .btn--star .shine .shiner:nth-child(1) {
+    @apply rotate-0;
+  }
+  .btn--star .shine .shiner:nth-child(2) {
+    @apply rotate-[72deg];
+  }
+  .btn--star .shine .shiner:nth-child(3) {
+    @apply rotate-[144deg];
+  }
+  .btn--star .shine .shiner:nth-child(4) {
+    @apply rotate-[216deg];
+  }
+  .btn--star .shine .shiner:nth-child(5) {
+    @apply rotate-[288deg];
+  }
+  .btn--star i.fa-star {
+    @apply absolute z-[2] -translate-x-2/4 -translate-y-2/4 transition-[font-size] duration-[0.2s] ease-[ease-in-out] ml-px mt-px left-2/4 top-2/4;
+    @apply text-black
+    text-xl;
+  }
+  .btn--star:hover {
+    @apply cursor-pointer;
+  }
+  .btn--star:hover .fa-star {
+    @apply text-[#ffac33];
+  }
+  .btn--star.selected .circle:before {
+    @apply animate-[yellow-circle_0.6s_ease-in-out_0_1];
+    -webkit-animation: yellow-circle 0.6s ease-in-out 0 1;
+    -moz-animation: yellow-circle 0.6s ease-in-out 0 1;
+    -o-animation: yellow-circle 0.6s ease-in-out 0 1;
+  }
+  .btn--star.selected .circle:after {
+    @apply animate-[white-circle_0.5s_ease-in-out_0.2s_1];
+    -webkit-animation: white-circle 0.5s ease-in-out 0.2s 1;
+    -moz-animation: white-circle 0.5s ease-in-out 0.2s 1;
+    -o-animation: white-circle 0.5s ease-in-out 0.2s 1;
+  }
+  .btn--star.selected .shine .shiner {
+    @apply animate-[shiner_0.6s_ease-out_1_0s];
+    -webkit-animation: shiner 0.6s ease-out 1 0s;
+    -moz-animation: shiner 0.6s ease-out 1 0s;
+    -o-animation: shiner 0.6s ease-out 1 0s;
+  }
+  .btn--star.selected i.fa-star {
+    @apply animate-[star_1.1s_ease-in-out_1_0s] text-[1.2em] text-[#ffac33];
+    -webkit-animation: star 1.1s ease-in-out 1 0s;
+    -moz-animation: star 1.1s ease-in-out 1 0s;
+    -o-animation: star 1.1s ease-in-out 1 0s;
+  }
+  

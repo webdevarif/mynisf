@@ -178,9 +178,15 @@
                         </button>
                     </div>
 
-                    <button type="button" class="chat--control__button send">
-                        <svg class="w-5 h-5">
+                    <button type="button" class="chat--control__button send btn--send">
+                        <svg class="w-5 h-5 default">
                             <use xlink:href="#icon-paper-plane"></use>
+                        </svg>
+                        <svg class="w-5 h-5 sending animate-spin">
+                            <use xlink:href="#icon-spinner"></use>
+                        </svg>
+                        <svg class="w-5 h-5 sent">
+                            <use xlink:href="#icon-check"></use>
                         </svg>
                     </button>
                 </div>
@@ -317,6 +323,11 @@
   
   <symbol stroke="currentColor" fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="icon-double-check">
     <path fill="none" stroke-linecap="square" stroke-miterlimit="10" stroke-width="44" d="M465 127 241 384l-92-92m-9 93-93-93m316-165L236 273"></path>
+  </symbol>
+  
+  <symbol stroke="currentColor" fill="none" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-spinner">
+    <path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="currentColor"></path>
+    <path d="M2 12C2 6.47715 6.47715 2 12 2V5C8.13401 5 5 8.13401 5 12H2Z" fill="currentColor"></path>
   </symbol>
 
 </svg>
