@@ -109,3 +109,30 @@
     @apply
     !ps-0
 }
+
+.slider-wrapper{
+    @apply
+    relative
+}
+
+.slider-wrapper .slider-arrow{
+    @apply
+    absolute
+    top-1/2
+    bg-white
+    bg-opacity-10
+    w-7
+    h-7
+    inline-flex
+    items-center
+    justify-center
+    rounded-full
+}
+.slider-wrapper .slider-arrow--prev{
+    @apply
+    -start-7
+}
+.slider-wrapper .slider-arrow--next{
+    @apply
+    -end-7
+}

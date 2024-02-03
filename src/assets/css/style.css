@@ -5550,6 +5550,31 @@ img.list-stars-progress-star {
   padding-inline-start: 0px !important;
 }
 
+.slider-wrapper {
+  position: relative;
+}
+
+.slider-wrapper .slider-arrow {
+  position: absolute;
+  top: 50%;
+  display: inline-flex;
+  height: 1.75rem;
+  width: 1.75rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.1;
+}
+
+.slider-wrapper .slider-arrow--prev {
+  inset-inline-start: -1.75rem;
+}
+
+.slider-wrapper .slider-arrow--next {
+  inset-inline-end: -1.75rem;
+}
+
 .footer-float-bar {
   position: fixed;
   bottom: 0px;
