@@ -168,9 +168,11 @@
 
       setupThemeSLIDER(){
         if($('[theme-slider]').length){
-          $('[theme-slider]').slick({
-            prevArrow:'.slider-arrow--prev',
-            nextArrow:'.slider-arrow--next'
+          $('[theme-slider]').each(function(){
+            $(this).slick({
+              prevArrow: $(this).data('prev') ? $(this).data('prev') : '.slider-arrow--prev',
+              nextArrow: $(this).data('next') ? $(this).data('next') : '.slider-arrow--next'
+            });
           });
         }
       },
