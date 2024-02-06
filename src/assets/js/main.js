@@ -174,7 +174,6 @@
           });
         }
       },
-      
       setupDateCalender() {
         const $container = $("[calendar]");
         const $daysContainer = $container.find(".calender-body");
