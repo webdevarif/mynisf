@@ -5575,6 +5575,10 @@ img.list-stars-progress-star {
   inset-inline-end: -1.75rem;
 }
 
+.slider-area .swiper-3d .swiper-slide-shadow {
+  border-radius: min(max(1.5rem,6vw),30px);
+}
+
 .footer-float-bar {
   position: fixed;
   bottom: 0px;

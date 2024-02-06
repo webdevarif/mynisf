@@ -136,3 +136,8 @@
     @apply
     -end-7
 }
+
+.slider-area .swiper-3d .swiper-slide-shadow{
+    @apply
+    rounded-lg
+}
