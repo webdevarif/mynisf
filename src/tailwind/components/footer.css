@@ -29,6 +29,20 @@
     relative
     p-3
     text-white
+    block
+    
+    before:content-['']
+    before:w-0
+    before:h-0
+    before:bg-primary
+    before:rounded-full
+    before:absolute
+    before:start-1/2
+    before:-translate-x-1/2
+    before:bottom-0
+    before:transition-all
+    before:duration-300
+    before:delay-1000
 }
 
 .footer-float-bar .footer-float-bar--item > svg,
@@ -41,15 +55,8 @@
 .footer-float-bar .footer-float-bar--item.active{
     @apply
     text-primary
-    before:content-['']
     before:w-[0.4rem]
     before:h-[0.4rem]
-    before:bg-primary
-    before:rounded-full
-    before:absolute
-    before:start-1/2
-    before:-translate-x-1/2
-    before:bottom-0
 }
 
 .footer-float-bar .footer-float-bar--item.active svg,
